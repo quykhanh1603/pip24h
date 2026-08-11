@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /go/
+
+Sitemap: https://pip24h.com/sitemap-index.xml
