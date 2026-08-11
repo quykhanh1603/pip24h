@@ -38,6 +38,14 @@ const terms = [
 	{ term: 'Volatility (Biến động)', def: 'Mức độ và tốc độ thay đổi giá của một tài sản trong một khoảng thời gian — biến động càng cao, giá dao động càng mạnh và nhanh.' },
 	{ term: 'Volume (Khối lượng)', def: 'Tổng khối lượng tài sản được giao dịch trong một khoảng thời gian, thường dùng làm chỉ báo mức độ quan tâm hoặc thanh khoản của thị trường.' }
 ];
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const grouped = new Map<string, typeof terms>();
+for (const item of [...terms].sort((a, b) => a.term.localeCompare(b.term))) {
+	const letter = item.term[0].toUpperCase();
+	if (!grouped.has(letter)) grouped.set(letter, []);
+	grouped.get(letter)!.push(item);
+}
 ---
 
 <Layout lang="vi" title="Từ điển thuật ngữ Forex &amp; Crypto — Pip24h" description="Giải thích dễ hiểu các thuật ngữ giao dịch forex và crypto thường gặp: pip, spread, đòn bẩy, ký quỹ và hơn thế nữa.">
@@ -49,12 +57,36 @@ const terms = [
 		</p>
 	</article>
 
-	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200 dark:divide-slate-800 dark:border-slate-800">
-		{terms.map(({ term, def }) => (
-			<div class="py-4">
-				<dt class="font-semibold text-brand-navy dark:text-white">{term}</dt>
-				<dd class="mt-1 text-sm text-slate-600 dark:text-slate-400">{def}</dd>
-			</div>
+	<div class="sticky top-0 z-10 -mx-4 mt-6 flex flex-wrap gap-1.5 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-lg sm:border sm:px-3 dark:border-slate-800 dark:bg-slate-950/95">
+		{alphabet.map((letter) =>
+			grouped.has(letter) ? (
+				<a
+					href={`#letter-${letter}`}
+					class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-300 text-sm font-semibold text-brand-navy hover:border-brand-blue hover:bg-brand-blue-light dark:border-slate-700 dark:text-slate-200 dark:hover:bg-brand-blue/10"
+				>
+					{letter}
+				</a>
+			) : (
+				<span class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-100 text-sm text-slate-300 dark:border-slate-800 dark:text-slate-700">
+					{letter}
+				</span>
+			)
+		)}
+	</div>
+
+	<div class="mt-8 space-y-10">
+		{[...grouped.entries()].map(([letter, items]) => (
+			<section id={`letter-${letter}`} class="scroll-mt-24">
+				<h2 class="text-xl font-bold text-brand-blue">{letter}</h2>
+				<div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{items.map(({ term, def }) => (
+						<div class="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+							<h3 class="font-semibold text-brand-navy dark:text-white">{term}</h3>
+							<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{def}</p>
+						</div>
+					))}
+				</div>
+			</section>
 		))}
-	</dl>
+	</div>
 </Layout>
