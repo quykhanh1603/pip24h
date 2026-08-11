@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+	lang: 'vi' | 'en';
+}
+
+const { title, description = '', lang } = Astro.props;
+
+const nav = {
+	vi: { home: 'Trang chủ', reviews: 'Đánh giá sàn', compare: 'So sánh' },
+	en: { home: 'Home', reviews: 'Broker Reviews', compare: 'Compare' }
+};
+const t = nav[lang];
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="min-h-screen bg-slate-50 text-slate-900">
+		<header class="border-b border-slate-200 bg-white">
+			<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+				<a href={`/${lang}/`} class="text-lg font-bold text-blue-700">Pip24h</a>
+				<nav class="flex gap-6 text-sm font-medium text-slate-600">
+					<a href={`/${lang}/`} class="hover:text-blue-700">{t.home}</a>
+					<a href={`/${lang}/reviews/`} class="hover:text-blue-700">{t.reviews}</a>
+				</nav>
+			</div>
+		</header>
+		<main class="mx-auto max-w-6xl px-4 py-8">
+			<slot />
+		</main>
+		<footer class="mt-16 border-t border-slate-200 bg-white py-8 text-center text-sm text-slate-500">
+			<p>
+				{
+					lang === 'vi'
+						? 'Giao dịch forex/crypto tiềm ẩn rủi ro cao. Nội dung mang tính tham khảo, không phải lời khuyên đầu tư.'
+						: 'Trading forex/crypto carries significant risk. Content is for informational purposes only, not investment advice.'
+				}
+			</p>
+			<p class="mt-1">
+				{
+					lang === 'vi'
+						? 'Một số liên kết trên trang là liên kết affiliate — chúng tôi có thể nhận hoa hồng khi bạn đăng ký qua các liên kết này.'
+						: 'Some links on this site are affiliate links — we may earn a commission if you sign up through them.'
+				}
+			</p>
+		</footer>
+	</body>
+</html>

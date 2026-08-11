@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import BrokerCard from '../../../components/BrokerCard.astro';
+
+const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('en/'))).sort(
+	(a, b) => b.data.rating - a.data.rating
+);
+---
+
+<Layout lang="en" title="All Broker Reviews — Pip24h" description="Full list of reviewed forex and crypto brokers.">
+	<h1 class="text-2xl font-bold">All Broker Reviews</h1>
+	<div class="mt-8 flex flex-col gap-4">
+		{brokers.length === 0 && <p class="text-slate-500">No brokers added yet.</p>}
+		{brokers.map((broker) => <BrokerCard broker={broker} lang="en" />)}
+	</div>
+</Layout>

@@ -1,0 +1,26 @@
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+
+const brokers = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/brokers' }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      logo: image(),
+      assetType: z.enum(['forex', 'crypto', 'both']),
+      rating: z.number().min(0).max(5),
+      summary: z.string(),
+      foundedYear: z.number().optional(),
+      minDeposit: z.string().optional(),
+      spreadFrom: z.string().optional(),
+      regulation: z.array(z.string()).default([]),
+      platforms: z.array(z.string()).default([]),
+      pros: z.array(z.string()).default([]),
+      cons: z.array(z.string()).default([]),
+      affiliateUrl: z.string().default('AFF_LINK_PLACEHOLDER'),
+      featured: z.boolean().default(false),
+      updatedDate: z.coerce.date()
+    })
+});
+
+export const collections = { brokers };

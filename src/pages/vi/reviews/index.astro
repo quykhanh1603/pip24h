@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import BrokerCard from '../../../components/BrokerCard.astro';
+
+const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('vi/'))).sort(
+	(a, b) => b.data.rating - a.data.rating
+);
+---
+
+<Layout lang="vi" title="Đánh giá tất cả các sàn — Pip24h" description="Danh sách đầy đủ các sàn forex, crypto đã được đánh giá.">
+	<h1 class="text-2xl font-bold">Tất cả đánh giá sàn</h1>
+	<div class="mt-8 flex flex-col gap-4">
+		{brokers.length === 0 && <p class="text-slate-500">Chưa có sàn nào được thêm.</p>}
+		{brokers.map((broker) => <BrokerCard broker={broker} lang="vi" />)}
+	</div>
+</Layout>

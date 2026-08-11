@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import BrokerCard from '../../components/BrokerCard.astro';
+
+const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('vi/'))).sort(
+	(a, b) => b.data.rating - a.data.rating
+);
+---
+
+<Layout lang="vi" title="Pip24h — Đánh giá sàn Forex & Crypto uy tín" description="So sánh và đánh giá các sàn giao dịch forex, crypto phổ biến: phí giao dịch, nền tảng, độ uy tín.">
+	<h1 class="text-2xl font-bold">Đánh giá & so sánh sàn Forex, Crypto</h1>
+	<p class="mt-2 text-slate-600">Xếp hạng dựa trên phí giao dịch, độ uy tín, nền tảng và trải nghiệm người dùng thực tế.</p>
+
+	<div class="mt-8 flex flex-col gap-4">
+		{brokers.length === 0 && <p class="text-slate-500">Chưa có sàn nào được thêm.</p>}
+		{brokers.map((broker) => <BrokerCard broker={broker} lang="vi" />)}
+	</div>
+</Layout>

@@ -1,0 +1,85 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '../../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+	const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('en/'));
+	return brokers.map((broker) => ({
+		params: { slug: broker.id.split('/').slice(1).join('/') },
+		props: { broker }
+	}));
+}
+
+const { broker } = Astro.props;
+const { name, logo, rating, summary, foundedYear, minDeposit, spreadFrom, regulation, platforms, pros, cons } =
+	broker.data;
+const { Content } = await render(broker);
+const slug = broker.id.split('/').slice(1).join('/');
+---
+
+<Layout lang="en" title={`${name} Review — Pip24h`} description={summary}>
+	<div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+		<div class="flex items-center gap-4">
+			<Image src={logo} alt={`${name} logo`} width={140} height={70} class="max-h-16 w-auto object-contain" />
+			<div>
+				<h1 class="text-2xl font-bold">{name}</h1>
+				<p class="text-sm text-slate-500">⭐ {rating.toFixed(1)}/5</p>
+			</div>
+		</div>
+		<a
+			href={`/go/${slug}/`}
+			target="_blank"
+			rel="nofollow sponsored noopener"
+			class="rounded-md bg-blue-700 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-800"
+		>
+			Open account at {name}
+		</a>
+	</div>
+
+	<dl class="mt-8 grid grid-cols-2 gap-4 rounded-lg border border-slate-200 bg-white p-5 sm:grid-cols-4">
+		<div>
+			<dt class="text-xs text-slate-500">Founded</dt>
+			<dd class="font-medium">{foundedYear ?? '—'}</dd>
+		</div>
+		<div>
+			<dt class="text-xs text-slate-500">Min deposit</dt>
+			<dd class="font-medium">{minDeposit ?? '—'}</dd>
+		</div>
+		<div>
+			<dt class="text-xs text-slate-500">Spread from</dt>
+			<dd class="font-medium">{spreadFrom ?? '—'}</dd>
+		</div>
+		<div>
+			<dt class="text-xs text-slate-500">Regulated by</dt>
+			<dd class="font-medium">{regulation.length ? regulation.join(', ') : '—'}</dd>
+		</div>
+	</dl>
+
+	{platforms.length > 0 && (
+		<p class="mt-4 text-sm text-slate-600">
+			<span class="font-medium text-slate-800">Trading platforms:</span> {platforms.join(', ')}
+		</p>
+	)}
+
+	{(pros.length > 0 || cons.length > 0) && (
+		<div class="mt-6 grid gap-4 sm:grid-cols-2">
+			<div class="rounded-lg border border-green-200 bg-green-50 p-4">
+				<h2 class="font-semibold text-green-800">Pros</h2>
+				<ul class="mt-2 list-inside list-disc text-sm text-green-900">
+					{pros.map((p) => <li>{p}</li>)}
+				</ul>
+			</div>
+			<div class="rounded-lg border border-red-200 bg-red-50 p-4">
+				<h2 class="font-semibold text-red-800">Cons</h2>
+				<ul class="mt-2 list-inside list-disc text-sm text-red-900">
+					{cons.map((c) => <li>{c}</li>)}
+				</ul>
+			</div>
+		</div>
+	)}
+
+	<article class="prose prose-slate mt-8 max-w-none">
+		<Content />
+	</article>
+</Layout>
