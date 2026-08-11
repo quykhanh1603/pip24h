@@ -2,9 +2,9 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-	--color-brand-navy: #0f2447;
-	--color-brand-navy-light: #1e3a66;
-	--color-brand-blue: #2563eb;
-	--color-brand-blue-dark: #1d4ed8;
-	--color-brand-blue-light: #eff6ff;
+	--color-brand-navy: #0284c7;
+	--color-brand-navy-light: #38bdf8;
+	--color-brand-blue: #0ea5e9;
+	--color-brand-blue-dark: #0284c7;
+	--color-brand-blue-light: #e0f2fe;
 }
