@@ -33,7 +33,7 @@ const guides = defineCollection({
     z.object({
       title: z.string(),
       summary: z.string(),
-      category: z.enum(['basics', 'risk-management', 'technical-analysis', 'chart-patterns']),
+      category: z.enum(['basics', 'risk-management', 'technical-analysis', 'chart-patterns', 'psychology', 'fundamentals']),
       updatedDate: z.coerce.date()
     })
 });
