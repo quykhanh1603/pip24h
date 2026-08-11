@@ -41,7 +41,7 @@ const terms = [
 ---
 
 <Layout lang="vi" title="Từ điển thuật ngữ Forex &amp; Crypto — Pip24h" description="Giải thích dễ hiểu các thuật ngữ giao dịch forex và crypto thường gặp: pip, spread, đòn bẩy, ký quỹ và hơn thế nữa.">
-	<article class="prose prose-slate max-w-none">
+	<article class="prose prose-slate dark:prose-invert max-w-none">
 		<h1>Từ điển thuật ngữ Forex &amp; Crypto</h1>
 		<p>
 			Giải thích ngắn gọn, dễ hiểu các thuật ngữ giao dịch mà bạn thường gặp trên website sàn giao
@@ -49,11 +49,11 @@ const terms = [
 		</p>
 	</article>
 
-	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200">
+	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200 dark:divide-slate-800 dark:border-slate-800">
 		{terms.map(({ term, def }) => (
 			<div class="py-4">
-				<dt class="font-semibold text-brand-navy">{term}</dt>
-				<dd class="mt-1 text-sm text-slate-600">{def}</dd>
+				<dt class="font-semibold text-brand-navy dark:text-white">{term}</dt>
+				<dd class="mt-1 text-sm text-slate-600 dark:text-slate-400">{def}</dd>
 			</div>
 		))}
 	</dl>

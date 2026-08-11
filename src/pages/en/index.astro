@@ -16,22 +16,27 @@ const badges = [
 ---
 
 <Layout lang="en" title="Pip24h — Best Forex & Crypto Brokers 2026, Ranked & Reviewed" description="Compare and review popular forex and crypto brokers: fees, platforms, and trustworthiness, tested with real accounts.">
-	<section class="py-10 text-center sm:py-14">
-		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl">
+	<section class="relative overflow-hidden py-10 text-center sm:py-14">
+		<div
+			class="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden h-72 dark:block"
+			style="background: radial-gradient(circle at 30% 20%, rgba(45,212,191,0.16), transparent 45%), radial-gradient(circle at 75% 10%, rgba(168,85,247,0.16), transparent 45%);"
+		>
+		</div>
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl dark:bg-gradient-to-r dark:from-teal-300 dark:via-sky-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent">
 			Best Forex &amp; Crypto Brokers 2026 — Ranked &amp; Reviewed
 		</h1>
-		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
 			We tested spreads, withdrawals, regulation, and platforms across leading brokers so you don't have to.
 		</p>
-		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy">
+		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy dark:text-slate-300">
 			{badges.map((b) => (
-				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">{b}</span>
+				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm dark:border-slate-700 dark:bg-slate-900">{b}</span>
 			))}
 		</div>
 	</section>
 
 	<section id="comparison" class="scroll-mt-6">
-		<h2 class="text-xl font-bold text-brand-navy">Quick Comparison</h2>
+		<h2 class="text-xl font-bold text-brand-navy dark:text-white">Quick Comparison</h2>
 		<div class="mt-4">
 			<BrokerTable brokers={brokers} lang="en" />
 		</div>
@@ -39,7 +44,7 @@ const badges = [
 
 	{featured.length > 0 && (
 		<section class="mt-14">
-			<h2 class="text-xl font-bold text-brand-navy">In Depth</h2>
+			<h2 class="text-xl font-bold text-brand-navy dark:text-white">In Depth</h2>
 			<div class="mt-4 flex flex-col gap-5">
 				{featured.map((broker) => <InDepthCard broker={broker} lang="en" />)}
 			</div>
@@ -49,7 +54,7 @@ const badges = [
 	<section class="mt-14 text-center">
 		<a
 			href="/en/reviews/"
-			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white"
+			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white dark:border-brand-blue dark:text-brand-blue-light dark:hover:bg-brand-blue dark:hover:text-white"
 		>
 			View all {brokers.length} reviewed brokers
 		</a>

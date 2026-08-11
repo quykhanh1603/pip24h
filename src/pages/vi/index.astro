@@ -16,22 +16,27 @@ const badges = [
 ---
 
 <Layout lang="vi" title="Pip24h — Top sàn Forex & Crypto 2026, xếp hạng & đánh giá" description="So sánh và đánh giá các sàn giao dịch forex, crypto phổ biến: phí giao dịch, nền tảng, độ uy tín, được kiểm định bằng tài khoản thật.">
-	<section class="py-10 text-center sm:py-14">
-		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl">
+	<section class="relative overflow-hidden py-10 text-center sm:py-14">
+		<div
+			class="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden h-72 dark:block"
+			style="background: radial-gradient(circle at 30% 20%, rgba(45,212,191,0.16), transparent 45%), radial-gradient(circle at 75% 10%, rgba(168,85,247,0.16), transparent 45%);"
+		>
+		</div>
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl dark:bg-gradient-to-r dark:from-teal-300 dark:via-sky-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent">
 			Sàn Forex &amp; Crypto tốt nhất 2026 — Xếp hạng &amp; Đánh giá chi tiết
 		</h1>
-		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
 			Chúng tôi kiểm tra spread, tốc độ rút tiền, mức độ quản lý và nền tảng giao dịch trên nhiều sàn để bạn không phải tự mình thử nghiệm.
 		</p>
-		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy">
+		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy dark:text-slate-300">
 			{badges.map((b) => (
-				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">{b}</span>
+				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm dark:border-slate-700 dark:bg-slate-900">{b}</span>
 			))}
 		</div>
 	</section>
 
 	<section id="comparison" class="scroll-mt-6">
-		<h2 class="text-xl font-bold text-brand-navy">Bảng so sánh nhanh</h2>
+		<h2 class="text-xl font-bold text-brand-navy dark:text-white">Bảng so sánh nhanh</h2>
 		<div class="mt-4">
 			<BrokerTable brokers={brokers} lang="vi" />
 		</div>
@@ -39,7 +44,7 @@ const badges = [
 
 	{featured.length > 0 && (
 		<section class="mt-14">
-			<h2 class="text-xl font-bold text-brand-navy">Đánh giá chi tiết</h2>
+			<h2 class="text-xl font-bold text-brand-navy dark:text-white">Đánh giá chi tiết</h2>
 			<div class="mt-4 flex flex-col gap-5">
 				{featured.map((broker) => <InDepthCard broker={broker} lang="vi" />)}
 			</div>
@@ -49,7 +54,7 @@ const badges = [
 	<section class="mt-14 text-center">
 		<a
 			href="/vi/reviews/"
-			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white"
+			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white dark:border-brand-blue dark:text-brand-blue-light dark:hover:bg-brand-blue dark:hover:text-white"
 		>
 			Xem tất cả {brokers.length} sàn đã đánh giá
 		</a>

@@ -65,7 +65,7 @@ const tabs = [
 						'rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer border',
 						i === 0
 							? 'bg-brand-navy text-white border-brand-navy'
-							: 'bg-white text-brand-navy border-slate-300 hover:border-brand-navy'
+							: 'bg-white text-brand-navy border-slate-300 hover:border-brand-navy dark:bg-slate-900 dark:text-slate-300 dark:border-slate-700 dark:hover:border-brand-blue'
 					]}
 				>
 					{tab.label}
@@ -74,9 +74,9 @@ const tabs = [
 		}
 	</div>
 
-	<div class="mt-4 overflow-x-auto rounded-lg border border-slate-200 bg-white">
+	<div class="mt-4 overflow-x-auto rounded-lg border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
 		<table class="w-full min-w-[760px] text-left text-sm">
-			<thead class="bg-brand-navy text-white">
+			<thead class="bg-brand-navy text-white dark:bg-slate-950">
 				<tr>
 					<th class="px-4 py-3 font-semibold">{t.rank}</th>
 					<th class="px-4 py-3 font-semibold">{t.broker}</th>
@@ -98,20 +98,20 @@ const tabs = [
 						return (
 							<tr
 								data-category={category.join(' ')}
-								class="border-t border-slate-100 hover:bg-brand-blue-light/40"
+								class="border-t border-slate-100 hover:bg-brand-blue-light/40 dark:border-slate-800 dark:hover:bg-slate-800/60"
 							>
-								<td class="px-4 py-3 font-semibold text-slate-500">#{index + 1}</td>
+								<td class="px-4 py-3 font-semibold text-slate-500 dark:text-slate-400">#{index + 1}</td>
 								<td class="px-4 py-3">
-									<a href={`/${lang}/reviews/${slug}/`} class="flex items-center gap-2 font-semibold text-brand-navy hover:text-brand-blue">
+									<a href={`/${lang}/reviews/${slug}/`} class="flex items-center gap-2 font-semibold text-brand-navy hover:text-brand-blue dark:text-white">
 										<img src={logo} alt={`${name} logo`} width="28" height="28" class="h-7 w-7 shrink-0 object-contain" />
 										{name}
 									</a>
 								</td>
 								<td class="px-4 py-3 font-semibold text-brand-blue">{rating.toFixed(1)}</td>
-								<td class="px-4 py-3 text-slate-600">{spreadFrom ?? '—'}</td>
-								<td class="px-4 py-3 text-slate-600">{minDeposit ?? '—'}</td>
-								<td class="px-4 py-3 text-slate-600">{maxLeverage ?? '—'}</td>
-								<td class="px-4 py-3 text-slate-600">{regulation[0] ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{spreadFrom ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{minDeposit ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{maxLeverage ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{regulation[0] ?? '—'}</td>
 								<td class="px-4 py-3">{instantWithdrawal ? '✅' : '—'}</td>
 								<td class="px-4 py-3">
 									<a
@@ -142,9 +142,23 @@ const tabs = [
 
 			tabsEl.querySelectorAll('button[data-filter]').forEach((b) => {
 				b.classList.remove('bg-brand-navy', 'text-white', 'border-brand-navy');
-				b.classList.add('bg-white', 'text-brand-navy', 'border-slate-300');
+				b.classList.add(
+					'bg-white',
+					'text-brand-navy',
+					'border-slate-300',
+					'dark:bg-slate-900',
+					'dark:text-slate-300',
+					'dark:border-slate-700'
+				);
 			});
-			btn.classList.remove('bg-white', 'text-brand-navy', 'border-slate-300');
+			btn.classList.remove(
+				'bg-white',
+				'text-brand-navy',
+				'border-slate-300',
+				'dark:bg-slate-900',
+				'dark:text-slate-300',
+				'dark:border-slate-700'
+			);
 			btn.classList.add('bg-brand-navy', 'text-white', 'border-brand-navy');
 
 			document.querySelectorAll('tr[data-category]').forEach((row) => {

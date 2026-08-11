@@ -41,7 +41,7 @@ const terms = [
 ---
 
 <Layout lang="en" title="Forex &amp; Crypto Glossary — Pip24h" description="Plain-language definitions of common forex and crypto trading terms: pip, spread, leverage, margin, and more.">
-	<article class="prose prose-slate max-w-none">
+	<article class="prose prose-slate dark:prose-invert max-w-none">
 		<h1>Forex &amp; Crypto Glossary</h1>
 		<p>
 			Clear, plain-language definitions of the trading terms you'll run into most often on broker
@@ -49,11 +49,11 @@ const terms = [
 		</p>
 	</article>
 
-	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200">
+	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200 dark:divide-slate-800 dark:border-slate-800">
 		{terms.map(({ term, def }) => (
 			<div class="py-4">
-				<dt class="font-semibold text-brand-navy">{term}</dt>
-				<dd class="mt-1 text-sm text-slate-600">{def}</dd>
+				<dt class="font-semibold text-brand-navy dark:text-white">{term}</dt>
+				<dd class="mt-1 text-sm text-slate-600 dark:text-slate-400">{def}</dd>
 			</div>
 		))}
 	</dl>
