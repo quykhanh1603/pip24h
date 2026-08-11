@@ -16,10 +16,13 @@ export default {
 			});
 
 			if (!upstreamResponse.ok) {
-				return new Response(JSON.stringify({ error: 'Upstream unavailable' }), {
-					status: 502,
-					headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' }
-				});
+				return new Response(
+					JSON.stringify({ error: 'Upstream unavailable', status: upstreamResponse.status, statusText: upstreamResponse.statusText }),
+					{
+						status: 502,
+						headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' }
+					}
+				);
 			}
 
 			const body = await upstreamResponse.text();
@@ -32,7 +35,7 @@ export default {
 				}
 			});
 		} catch (err) {
-			return new Response(JSON.stringify({ error: 'Fetch failed' }), {
+			return new Response(JSON.stringify({ error: 'Fetch failed', message: String(err) }), {
 				status: 502,
 				headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' }
 			});
