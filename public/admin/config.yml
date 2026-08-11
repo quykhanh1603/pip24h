@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: quykhanh1603/pip24h
+  branch: master
+  base_url: https://pip24h-cms-auth.quykhanh1603-haiduong.workers.dev
+  auth_endpoint: auth
+
+media_folder: "src/assets/brokers"
+public_folder: "src/assets/brokers"
+
+collections:
+  - name: "brokers_vi"
+    label: "Sàn (Tiếng Việt)"
+    folder: "src/content/brokers/vi"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../../assets/brokers/{{slug}}"
+    public_folder: "../../../assets/brokers/{{slug}}"
+    fields:
+      - { label: "Tên sàn", name: "name", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Loại sàn", name: "assetType", widget: "select", options: ["forex", "crypto", "both"] }
+      - { label: "Điểm đánh giá (0-5)", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
+      - { label: "Mô tả ngắn", name: "summary", widget: "text" }
+      - { label: "Năm thành lập", name: "foundedYear", widget: "number", required: false }
+      - { label: "Nạp tối thiểu", name: "minDeposit", widget: "string", required: false }
+      - { label: "Spread từ", name: "spreadFrom", widget: "string", required: false }
+      - { label: "Quản lý bởi", name: "regulation", widget: "list", default: [] }
+      - { label: "Nền tảng giao dịch", name: "platforms", widget: "list", default: [] }
+      - { label: "Ưu điểm", name: "pros", widget: "list", default: [] }
+      - { label: "Nhược điểm", name: "cons", widget: "list", default: [] }
+      - { label: "Link affiliate", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
+      - { label: "Nổi bật (featured)", name: "featured", widget: "boolean", default: false }
+      - { label: "Ngày cập nhật", name: "updatedDate", widget: "datetime" }
+      - { label: "Nội dung chi tiết", name: "body", widget: "markdown" }
+
+  - name: "brokers_en"
+    label: "Broker (English)"
+    folder: "src/content/brokers/en"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../../assets/brokers/{{slug}}"
+    public_folder: "../../../assets/brokers/{{slug}}"
+    fields:
+      - { label: "Broker name", name: "name", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Asset type", name: "assetType", widget: "select", options: ["forex", "crypto", "both"] }
+      - { label: "Rating (0-5)", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Founded year", name: "foundedYear", widget: "number", required: false }
+      - { label: "Min deposit", name: "minDeposit", widget: "string", required: false }
+      - { label: "Spread from", name: "spreadFrom", widget: "string", required: false }
+      - { label: "Regulated by", name: "regulation", widget: "list", default: [] }
+      - { label: "Trading platforms", name: "platforms", widget: "list", default: [] }
+      - { label: "Pros", name: "pros", widget: "list", default: [] }
+      - { label: "Cons", name: "cons", widget: "list", default: [] }
+      - { label: "Affiliate link", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Updated date", name: "updatedDate", widget: "datetime" }
+      - { label: "Body content", name: "body", widget: "markdown" }
