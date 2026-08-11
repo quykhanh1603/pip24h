@@ -9,12 +9,40 @@ interface Props {
 }
 
 const { title, description = '', lang } = Astro.props;
+const otherLang = lang === 'vi' ? 'en' : 'vi';
+const switchedPath = Astro.url.pathname.replace(/^\/(vi|en)/, `/${otherLang}`);
 
-const nav = {
-	vi: { home: 'Trang chủ', reviews: 'Đánh giá sàn' },
-	en: { home: 'Home', reviews: 'Broker Reviews' }
-};
-const t = nav[lang];
+const navText = {
+	vi: {
+		topBrokers: 'Sàn hàng đầu',
+		news: 'Tin tức',
+		guides: 'Hướng dẫn',
+		glossary: 'Từ điển',
+		compare: 'So sánh',
+		about: 'Giới thiệu',
+		reviews: 'Đánh giá sàn'
+	},
+	en: {
+		topBrokers: 'Top Brokers',
+		news: 'News',
+		guides: 'Guides',
+		glossary: 'Glossary',
+		compare: 'Compare',
+		about: 'About',
+		reviews: 'Broker Reviews'
+	}
+}[lang];
+
+const navItems = [
+	{ key: 'topBrokers', href: `/${lang}/` },
+	{ key: 'news', href: `/${lang}/news/` },
+	{ key: 'guides', href: `/${lang}/guides/` },
+	{ key: 'glossary', href: `/${lang}/glossary/` },
+	{ key: 'compare', href: `/${lang}/#comparison` },
+	{ key: 'about', href: `/${lang}/about/` }
+];
+
+const currentPath = Astro.url.pathname;
 
 const footerText = {
 	vi: {
@@ -60,15 +88,33 @@ const topBrokers = [...brokers]
 		<title>{title}</title>
 	</head>
 	<body class="min-h-screen bg-slate-50 text-slate-900">
-		<header class="border-b border-slate-200 bg-white">
-			<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-				<a href={`/${lang}/`} class="text-lg font-extrabold text-brand-navy">
-					Pip<span class="text-brand-blue">24h</span>
+		<header class="bg-brand-navy">
+			<div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+				<a href={`/${lang}/`} class="text-lg font-extrabold text-white">
+					Pip<span class="text-brand-blue-light">24h</span>
 				</a>
-				<nav class="flex gap-6 text-sm font-medium text-slate-600">
-					<a href={`/${lang}/`} class="hover:text-brand-blue">{t.home}</a>
-					<a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{t.reviews}</a>
+				<nav class="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-300">
+					{navItems.map((item) => {
+						const isActive = item.href === `/${lang}/` ? currentPath === `/${lang}/` : currentPath.startsWith(item.href.split('#')[0]);
+						return (
+							<a
+								href={item.href}
+								class:list={[
+									'rounded-full px-3 py-1.5 transition-colors',
+									isActive ? 'bg-brand-blue text-white' : 'hover:text-white'
+								]}
+							>
+								{navText[item.key as keyof typeof navText]}
+							</a>
+						);
+					})}
 				</nav>
+				<a
+					href={switchedPath}
+					class="rounded-full border border-slate-500 px-3 py-1 text-xs font-semibold text-slate-200 hover:border-white hover:text-white"
+				>
+					{lang === 'vi' ? 'VI' : 'EN'} <span class="text-slate-500">/</span> {lang === 'vi' ? 'EN' : 'VI'}
+				</a>
 			</div>
 		</header>
 		<main class="mx-auto max-w-6xl px-4 py-8">
@@ -85,8 +131,11 @@ const topBrokers = [...brokers]
 				<div>
 					<h3 class="text-sm font-semibold text-brand-navy">{footerText.quickLinks}</h3>
 					<ul class="mt-3 space-y-2 text-sm text-slate-500">
-						<li><a href={`/${lang}/`} class="hover:text-brand-blue">{t.home}</a></li>
-						<li><a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{t.reviews}</a></li>
+						<li><a href={`/${lang}/`} class="hover:text-brand-blue">{navText.topBrokers}</a></li>
+						<li><a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{navText.reviews}</a></li>
+						<li><a href={`/${lang}/guides/`} class="hover:text-brand-blue">{navText.guides}</a></li>
+						<li><a href={`/${lang}/glossary/`} class="hover:text-brand-blue">{navText.glossary}</a></li>
+						<li><a href={`/${lang}/about/`} class="hover:text-brand-blue">{navText.about}</a></li>
 					</ul>
 				</div>
 				<div>
