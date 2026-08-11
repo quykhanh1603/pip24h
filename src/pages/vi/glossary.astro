@@ -1,8 +1,60 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import ComingSoon from '../../components/ComingSoon.astro';
+
+const terms = [
+	{ term: 'Altcoin', def: 'Bất kỳ đồng tiền mã hóa nào không phải Bitcoin — ví dụ Ethereum, Solana hay XRP.' },
+	{ term: 'Balance (Số dư)', def: 'Tổng tiền mặt trong tài khoản giao dịch, chưa tính lãi/lỗ của các lệnh đang mở.' },
+	{ term: 'Bid Price (Giá mua)', def: 'Mức giá bạn có thể bán một công cụ giao dịch. Luôn thấp hơn giá Ask một chút.' },
+	{ term: 'Ask Price (Giá bán/chào bán)', def: 'Mức giá bạn có thể mua một công cụ giao dịch. Luôn cao hơn giá Bid một chút.' },
+	{ term: 'Blockchain (Chuỗi khối)', def: 'Sổ cái phân tán, khó bị chỉnh sửa, ghi lại giao dịch trên nhiều máy tính — công nghệ nền tảng đằng sau Bitcoin và hầu hết tiền mã hóa.' },
+	{ term: 'CFD (Hợp đồng chênh lệch)', def: 'Hợp đồng phái sinh cho phép giao dịch theo biến động giá của một tài sản mà không cần sở hữu tài sản đó. Lãi/lỗ tính theo chênh lệch giữa giá mở và giá đóng lệnh.' },
+	{ term: 'Cold Wallet (Ví lạnh)', def: 'Ví tiền mã hóa lưu trữ offline (ví dụ thiết bị phần cứng), an toàn hơn cho lưu trữ dài hạn vì không kết nối internet nên khó bị tấn công.' },
+	{ term: 'Drawdown', def: 'Mức sụt giảm từ đỉnh vốn chủ sở hữu (equity) xuống đáy tiếp theo, thường tính theo phần trăm — chỉ số quan trọng đo mức độ rủi ro.' },
+	{ term: 'ECN (Electronic Communication Network)', def: 'Mô hình khớp lệnh trực tiếp giữa các bên tham gia thị trường, thường có spread thấp hơn nhưng tính thêm hoa hồng riêng.' },
+	{ term: 'Equity (Vốn chủ sở hữu)', def: 'Số dư tài khoản đã điều chỉnh theo lãi/lỗ tạm tính (floating) của các lệnh đang mở.' },
+	{ term: 'Hedging (Phòng hộ)', def: 'Mở một lệnh để bù trừ rủi ro cho một lệnh khác đang có — ví dụ giữ cả lệnh mua và bán trên cùng một cặp tiền.' },
+	{ term: 'Hot Wallet (Ví nóng)', def: 'Ví tiền mã hóa kết nối internet, tiện cho giao dịch thường xuyên nhưng dễ bị tấn công hơn ví lạnh.' },
+	{ term: 'Leverage (Đòn bẩy)', def: 'Vốn vay từ sàn giúp bạn kiểm soát vị thế lớn hơn nhiều so với số tiền nạp — ví dụ đòn bẩy 1:100 cho phép $100 kiểm soát vị thế $10.000. Đòn bẩy khuếch đại cả lãi lẫn lỗ.' },
+	{ term: 'Limit Order (Lệnh giới hạn)', def: 'Lệnh mua/bán chỉ khớp ở một mức giá xác định hoặc tốt hơn, thay vì khớp ngay theo giá thị trường hiện tại.' },
+	{ term: 'Liquidity (Thanh khoản)', def: 'Mức độ dễ dàng mua/bán một tài sản mà không làm giá biến động mạnh. Thị trường thanh khoản cao (như các cặp forex chính) thường có spread thấp hơn.' },
+	{ term: 'Lot', def: 'Đơn vị khối lượng giao dịch chuẩn hóa. 1 lot tiêu chuẩn = 100.000 đơn vị tiền cơ sở; 1 lot mini = 10.000; 1 lot micro = 1.000.' },
+	{ term: 'Margin (Ký quỹ)', def: 'Phần vốn của chính bạn mà sàn giữ lại làm tài sản đảm bảo để mở và duy trì một vị thế có đòn bẩy.' },
+	{ term: 'Margin Call (Gọi ký quỹ)', def: 'Cảnh báo từ sàn khi vốn chủ sở hữu trong tài khoản gần chạm mức ký quỹ yêu cầu, báo hiệu bạn cần nạp thêm tiền hoặc giảm vị thế để tránh bị Stop Out.' },
+	{ term: 'Market Maker', def: 'Mô hình sàn tự đối ứng lệnh của khách hàng nội bộ, thay vì chuyển lệnh ra các nhà cung cấp thanh khoản bên ngoài.' },
+	{ term: 'Market Order (Lệnh thị trường)', def: 'Lệnh mua/bán khớp ngay lập tức theo mức giá thị trường hiện có.' },
+	{ term: 'MetaTrader (MT4/MT5)', def: 'Nền tảng giao dịch bên thứ ba phổ biến nhất trong forex bán lẻ, hỗ trợ biểu đồ, giao dịch tự động (EA) và giao diện chung trên nhiều sàn khác nhau.' },
+	{ term: 'Phí qua đêm / Swap (Rollover)', def: 'Khoản phí hoặc tiền lãi phát sinh khi giữ một vị thế có đòn bẩy qua thời điểm đóng cửa thị trường hằng ngày, phản ánh chênh lệch lãi suất giữa hai đồng tiền giao dịch.' },
+	{ term: 'Pip', def: 'Đơn vị biến động giá nhỏ nhất được chuẩn hóa của một cặp tiền, thường là chữ số thập phân thứ tư (hoặc thứ hai với các cặp có đồng Yên Nhật).' },
+	{ term: 'Regulator (Cơ quan quản lý)', def: 'Cơ quan nhà nước hoặc tổ chức độc lập (như FCA, ASIC, CySEC) cấp phép và giám sát sàn giao dịch nhằm bảo vệ tiền của khách hàng và đảm bảo hoạt động minh bạch.' },
+	{ term: 'Scalping', def: 'Phong cách giao dịch ngắn hạn nhằm kiếm lời từ biến động giá nhỏ, thường giữ lệnh vài giây đến vài phút và vào nhiều lệnh trong ngày.' },
+	{ term: 'Slippage (Trượt giá)', def: 'Chênh lệch giữa mức giá bạn kỳ vọng lệnh khớp và mức giá thực tế khớp, thường xảy ra khi thị trường biến động nhanh hoặc thanh khoản thấp.' },
+	{ term: 'Spread', def: 'Chênh lệch giữa giá Bid và giá Ask của một công cụ giao dịch — một trong những cách chính sàn thu phí giao dịch.' },
+	{ term: 'Stablecoin', def: 'Đồng tiền mã hóa được thiết kế để giữ giá trị ổn định, thường neo tỷ giá 1:1 với một loại tiền pháp định như USD (ví dụ USDT, USDC).' },
+	{ term: 'Staking', def: 'Khóa tiền mã hóa để giúp bảo mật một mạng lưới proof-of-stake, đổi lại nhận phần thưởng bằng chính đồng tiền đó.' },
+	{ term: 'Stop Loss (Cắt lỗ)', def: 'Lệnh tự động đóng vị thế khi giá chạm đến một mức xác định, dùng để giới hạn mức thua lỗ tối đa.' },
+	{ term: 'Stop Out Level (Mức Stop Out)', def: 'Mức ký quỹ mà tại đó sàn sẽ tự động bắt đầu đóng các lệnh đang mở của trader để tránh số dư tài khoản âm.' },
+	{ term: 'STP (Straight Through Processing)', def: 'Mô hình sàn chuyển lệnh của khách hàng thẳng đến nhà cung cấp thanh khoản bên ngoài mà không qua bàn giao dịch (dealing desk) trung gian.' },
+	{ term: 'Take Profit (Chốt lời)', def: 'Lệnh tự động đóng vị thế khi giá đạt đến mức mục tiêu lợi nhuận đã đặt trước.' },
+	{ term: 'Volatility (Biến động)', def: 'Mức độ và tốc độ thay đổi giá của một tài sản trong một khoảng thời gian — biến động càng cao, giá dao động càng mạnh và nhanh.' },
+	{ term: 'Volume (Khối lượng)', def: 'Tổng khối lượng tài sản được giao dịch trong một khoảng thời gian, thường dùng làm chỉ báo mức độ quan tâm hoặc thanh khoản của thị trường.' }
+];
 ---
 
-<Layout lang="vi" title="Từ điển thuật ngữ — Pip24h" description="Từ điển thuật ngữ forex và crypto.">
-	<ComingSoon lang="vi" title="Từ điển thuật ngữ" />
+<Layout lang="vi" title="Từ điển thuật ngữ Forex &amp; Crypto — Pip24h" description="Giải thích dễ hiểu các thuật ngữ giao dịch forex và crypto thường gặp: pip, spread, đòn bẩy, ký quỹ và hơn thế nữa.">
+	<article class="prose prose-slate max-w-none">
+		<h1>Từ điển thuật ngữ Forex &amp; Crypto</h1>
+		<p>
+			Giải thích ngắn gọn, dễ hiểu các thuật ngữ giao dịch mà bạn thường gặp trên website sàn giao
+			dịch và trong các bài đánh giá của chúng tôi.
+		</p>
+	</article>
+
+	<dl class="mt-8 divide-y divide-slate-200 border-t border-slate-200">
+		{terms.map(({ term, def }) => (
+			<div class="py-4">
+				<dt class="font-semibold text-brand-navy">{term}</dt>
+				<dd class="mt-1 text-sm text-slate-600">{def}</dd>
+			</div>
+		))}
+	</dl>
 </Layout>
