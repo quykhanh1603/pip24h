@@ -91,8 +91,8 @@ const topBrokers = [...brokers]
 	<body class="min-h-screen bg-slate-50 text-slate-900">
 		<header class="bg-brand-navy">
 			<div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-				<a href={`/${lang}/`} class="text-lg font-extrabold text-white">
-					Pip<span class="text-brand-blue-light">24h</span>
+				<a href={`/${lang}/`} class="flex items-center">
+					<img src="/images/logo.png" alt="Pip24h" class="h-11 w-auto sm:h-12" />
 				</a>
 				<nav class="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-300">
 					{navItems.map((item) => {
@@ -124,8 +124,8 @@ const topBrokers = [...brokers]
 		<footer class="mt-16 border-t border-slate-200 bg-white">
 			<div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-12 sm:grid-cols-4">
 				<div class="col-span-2 sm:col-span-1">
-					<a href={`/${lang}/`} class="text-lg font-extrabold text-brand-navy">
-						Pip<span class="text-brand-blue">24h</span>
+					<a href={`/${lang}/`} class="inline-block">
+						<img src="/images/logo.png" alt="Pip24h" class="h-14 w-auto" />
 					</a>
 					<p class="mt-3 text-sm text-slate-500">{footerText.mission}</p>
 				</div>
