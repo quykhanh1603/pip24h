@@ -1,6 +1,6 @@
 ---
 name: "Exness"
-logo: "../../../assets/brokers/exness/logo.png"
+logo: "/images/brokers/exness/logo.png"
 assetType: "both"
 rating: 4.5
 summary: "A major forex and crypto broker known for near-instant withdrawals and unlimited leverage options."

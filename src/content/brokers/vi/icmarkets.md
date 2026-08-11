@@ -1,6 +1,6 @@
 ---
 name: "IC Markets"
-logo: "../../../assets/brokers/icmarkets/logo.png"
+logo: "/images/brokers/icmarkets/logo.png"
 assetType: "forex"
 rating: 4.7
 summary: "Sàn ECN nổi tiếng với spread siêu thấp, được nhiều trader chuyên nghiệp và scalper tin dùng."

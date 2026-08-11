@@ -1,6 +1,6 @@
 ---
 name: "Pepperstone"
-logo: "../../../assets/brokers/pepperstone/logo.png"
+logo: "/images/brokers/pepperstone/logo.png"
 assetType: "forex"
 rating: 4.6
 summary: "Sàn forex uy tín từ Úc, nổi bật với dịch vụ khách hàng tốt và nhiều nền tảng giao dịch hỗ trợ."

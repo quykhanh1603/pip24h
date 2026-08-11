@@ -5,8 +5,8 @@ backend:
   base_url: https://pip24h-cms-auth.quykhanh1603-haiduong.workers.dev
   auth_endpoint: auth
 
-media_folder: "src/assets/brokers"
-public_folder: "src/assets/brokers"
+media_folder: "public/images/brokers"
+public_folder: "/images/brokers"
 
 collections:
   - name: "brokers_vi"
@@ -14,8 +14,8 @@ collections:
     folder: "src/content/brokers/vi"
     create: true
     slug: "{{slug}}"
-    media_folder: "../../../assets/brokers/{{slug}}"
-    public_folder: "../../../assets/brokers/{{slug}}"
+    media_folder: "../../../../public/images/brokers/{{slug}}"
+    public_folder: "/images/brokers/{{slug}}"
     fields:
       - { label: "Tên sàn", name: "name", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
@@ -39,8 +39,8 @@ collections:
     folder: "src/content/brokers/en"
     create: true
     slug: "{{slug}}"
-    media_folder: "../../../assets/brokers/{{slug}}"
-    public_folder: "../../../assets/brokers/{{slug}}"
+    media_folder: "../../../../public/images/brokers/{{slug}}"
+    public_folder: "/images/brokers/{{slug}}"
     fields:
       - { label: "Broker name", name: "name", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }

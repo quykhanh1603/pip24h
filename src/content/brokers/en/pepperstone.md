@@ -1,6 +1,6 @@
 ---
 name: "Pepperstone"
-logo: "../../../assets/brokers/pepperstone/logo.png"
+logo: "/images/brokers/pepperstone/logo.png"
 assetType: "forex"
 rating: 4.6
 summary: "A reputable Australian forex broker known for strong customer support and wide platform support."

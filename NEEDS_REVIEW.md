@@ -1,12 +1,12 @@
 # Logo cần bạn kiểm tra lại thủ công
 
 ## Đã import tự động: 169 sàn
-Logo đã được copy vào `src/assets/brokers/[slug]/logo.*` dựa theo tên file gốc trong `Logo dự án/Logo dự án`. Xem chi tiết từng slug ↔ file gốc trong `src/assets/brokers/_import-report.json`.
+Logo đã được copy vào `public/images/brokers/[slug]/logo.*` dựa theo tên file gốc trong `Logo dự án/Logo dự án`. Xem chi tiết từng slug ↔ file gốc trong `public/images/brokers/_import-report.json`.
 
 Đã tự gộp `justmarket` + `justmarkets` (cùng 1 sàn JustMarkets, khác chính tả filename) thành 1 slug `justmarkets`, dùng bản logo lớn hơn.
 
 ## Chưa import — cần xem bằng mắt (102 file)
-Các file trong `Logo dự án/Logo dự án` có tên dạng `11zon_cropped (N).png` — không có tên sàn trong filename nên không thể tự động gán. Bạn cần mở từng file, xác định là logo của sàn nào, rồi tôi sẽ copy thủ công vào đúng thư mục `src/assets/brokers/[slug]/`.
+Các file trong `Logo dự án/Logo dự án` có tên dạng `11zon_cropped (N).png` — không có tên sàn trong filename nên không thể tự động gán. Bạn cần mở từng file, xác định là logo của sàn nào, rồi tôi sẽ copy thủ công vào đúng thư mục `public/images/brokers/[slug]/`.
 
 ## Bỏ qua — không xác định được / không liên quan (8 file + 1 file lạc)
 Các file tên dạng hash ngẫu nhiên (không phải tên sàn, không đoán được):

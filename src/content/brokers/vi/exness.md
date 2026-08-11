@@ -1,6 +1,6 @@
 ---
 name: "Exness"
-logo: "../../../assets/brokers/exness/logo.png"
+logo: "/images/brokers/exness/logo.png"
 assetType: "both"
 rating: 4.5
 summary: "Sàn forex và crypto lớn, nổi bật với tốc độ rút tiền nhanh và không giới hạn đòn bẩy."

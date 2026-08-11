@@ -3,10 +3,10 @@ import { glob } from 'astro/loaders';
 
 const brokers = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/brokers' }),
-  schema: ({ image }) =>
+  schema: () =>
     z.object({
       name: z.string(),
-      logo: image(),
+      logo: z.string(),
       assetType: z.enum(['forex', 'crypto', 'both']),
       rating: z.number().min(0).max(5),
       summary: z.string(),

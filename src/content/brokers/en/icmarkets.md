@@ -1,6 +1,6 @@
 ---
 name: "IC Markets"
-logo: "../../../assets/brokers/icmarkets/logo.png"
+logo: "/images/brokers/icmarkets/logo.png"
 assetType: "forex"
 rating: 4.7
 summary: "A well-known ECN broker with ultra-low spreads, favored by professional traders and scalpers."
