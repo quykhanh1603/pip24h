@@ -1,0 +1,32 @@
+name: Update economic calendar data
+
+on:
+  schedule:
+    - cron: '15 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest calendar data
+        run: |
+          curl -sf "https://nfs.faireconomy.media/ff_calendar_thisweek.json" -o public/calendar-data.json.new
+          if [ -s public/calendar-data.json.new ] && jq empty public/calendar-data.json.new 2>/dev/null; then
+            mv public/calendar-data.json.new public/calendar-data.json
+          else
+            echo "Fetched file is empty or invalid JSON, keeping previous version"
+            rm -f public/calendar-data.json.new
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/calendar-data.json
+          git diff --cached --quiet || git commit -m "chore: update economic calendar data [skip ci]"
+          git push

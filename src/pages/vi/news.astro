@@ -5,7 +5,7 @@ import Layout from '../../layouts/Layout.astro';
 <Layout lang="vi" title="Lịch kinh tế — Pip24h" description="Lịch kinh tế forex trong tuần: sự kiện quan trọng, số liệu thực tế, dự báo và kỳ trước của các đồng tiền chính.">
 	<h1 class="text-2xl font-bold text-brand-navy dark:text-white">Lịch kinh tế</h1>
 	<p class="mt-2 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
-		Các sự kiện kinh tế quan trọng của những đồng tiền chính trong tuần, cập nhật mỗi giờ. Giờ hiển thị theo múi giờ thiết bị của bạn.
+		Các sự kiện kinh tế quan trọng của những đồng tiền chính trong tuần, cập nhật mỗi 6 giờ. Giờ hiển thị theo múi giờ thiết bị của bạn.
 	</p>
 
 	<div id="impact-filters" class="mt-5 flex flex-wrap gap-2">
@@ -25,7 +25,7 @@ import Layout from '../../layouts/Layout.astro';
 </Layout>
 
 <script>
-	const WORKER_URL = 'https://pip24h-calendar.quykhanh1603-haiduong.workers.dev';
+	const CALENDAR_URL = '/calendar-data.json';
 
 	type CalendarEvent = {
 		title: string;
@@ -117,7 +117,7 @@ import Layout from '../../layouts/Layout.astro';
 	async function loadCalendar() {
 		const status = document.getElementById('calendar-status');
 		try {
-			const res = await fetch(WORKER_URL);
+			const res = await fetch(CALENDAR_URL);
 			if (!res.ok) throw new Error('bad response');
 			allEvents = await res.json();
 			allEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
