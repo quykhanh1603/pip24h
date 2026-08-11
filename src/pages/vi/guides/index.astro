@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+
+const guides = (await getCollection('guides', (entry) => entry.id.startsWith('vi/'))).sort(
+	(a, b) => a.data.title.localeCompare(b.data.title)
+);
+
+const categories = [
+	{ key: 'basics', label: 'Kiến thức cơ bản' },
+	{ key: 'risk-management', label: 'Quản lý rủi ro' },
+	{ key: 'technical-analysis', label: 'Phân tích kỹ thuật' },
+	{ key: 'chart-patterns', label: 'Mẫu hình biểu đồ' }
+] as const;
+---
+
+<Layout lang="vi" title="Hướng dẫn giao dịch — Pip24h" description="Các bài hướng dẫn dễ hiểu về kiến thức forex cơ bản, quản lý rủi ro, phân tích kỹ thuật và mẫu hình biểu đồ.">
+	<h1 class="text-2xl font-bold text-brand-navy">Hướng dẫn giao dịch</h1>
+	<p class="mt-2 max-w-2xl text-sm text-slate-600">
+		Các bài hướng dẫn dễ hiểu giúp bạn nắm kiến thức giao dịch forex, từ cơ bản nhất đến cách đọc biểu đồ.
+	</p>
+
+	{categories.map(({ key, label }) => {
+		const items = guides.filter((g) => g.data.category === key);
+		if (items.length === 0) return null;
+		return (
+			<section class="mt-10">
+				<h2 class="text-lg font-bold text-brand-navy">{label}</h2>
+				<div class="mt-4 grid gap-4 sm:grid-cols-2">
+					{items.map((g) => (
+						<a
+							href={`/vi/guides/${g.id.split('/').slice(1).join('/')}/`}
+							class="rounded-lg border border-slate-200 bg-white p-4 hover:border-brand-blue"
+						>
+							<h3 class="font-semibold text-brand-navy">{g.data.title}</h3>
+							<p class="mt-1 text-sm text-slate-500">{g.data.summary}</p>
+						</a>
+					))}
+				</div>
+			</section>
+		);
+	})}
+</Layout>

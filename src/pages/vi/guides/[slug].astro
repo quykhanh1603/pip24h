@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+	const guides = await getCollection('guides', (entry) => entry.id.startsWith('vi/'));
+	return guides.map((guide) => ({
+		params: { slug: guide.id.split('/').slice(1).join('/') },
+		props: { guide }
+	}));
+}
+
+const { guide } = Astro.props;
+const { title, summary } = guide.data;
+const { Content } = await render(guide);
+---
+
+<Layout lang="vi" title={`${title} — Pip24h`} description={summary}>
+	<article class="prose prose-slate max-w-none">
+		<h1>{title}</h1>
+		<Content />
+	</article>
+	<p class="mt-10 text-sm">
+		<a href="/vi/guides/" class="text-brand-blue hover:underline">&larr; Quay lại danh sách hướng dẫn</a>
+	</p>
+</Layout>

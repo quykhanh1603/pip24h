@@ -27,4 +27,15 @@ const brokers = defineCollection({
     })
 });
 
-export const collections = { brokers };
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  schema: () =>
+    z.object({
+      title: z.string(),
+      summary: z.string(),
+      category: z.enum(['basics', 'risk-management', 'technical-analysis', 'chart-patterns']),
+      updatedDate: z.coerce.date()
+    })
+});
+
+export const collections = { brokers, guides };
