@@ -7,6 +7,12 @@ summary: "A major forex and crypto broker known for near-instant withdrawals and
 foundedYear: 2008
 minDeposit: "$1"
 spreadFrom: "0.0 pips"
+maxLeverage: "Unlimited"
+instantWithdrawal: true
+category:
+  - "beginners"
+  - "low-deposit"
+badge: "Fastest Withdrawals"
 regulation:
   - "FCA (UK)"
   - "CySEC (Cyprus)"

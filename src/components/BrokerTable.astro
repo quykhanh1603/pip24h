@@ -1,0 +1,157 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	brokers: CollectionEntry<'brokers'>[];
+	lang: 'vi' | 'en';
+}
+
+const { brokers, lang } = Astro.props;
+
+const sorted = [...brokers].sort((a, b) => b.data.rating - a.data.rating);
+
+const t = {
+	vi: {
+		all: 'Tất cả',
+		scalping: 'Scalping',
+		beginners: 'Người mới',
+		ecn: 'ECN/Raw',
+		lowDeposit: 'Nạp thấp',
+		rank: 'Hạng',
+		broker: 'Sàn',
+		score: 'Điểm',
+		minSpread: 'Spread tối thiểu',
+		minDeposit: 'Nạp tối thiểu',
+		maxLeverage: 'Đòn bẩy tối đa',
+		regulation: 'Quản lý bởi',
+		instantWithdrawal: 'Rút nhanh',
+		open: 'Mở tài khoản'
+	},
+	en: {
+		all: 'All Brokers',
+		scalping: 'Scalping',
+		beginners: 'Beginners',
+		ecn: 'ECN/Raw',
+		lowDeposit: 'Low Deposit',
+		rank: 'Rank',
+		broker: 'Broker',
+		score: 'Score',
+		minSpread: 'Min Spread',
+		minDeposit: 'Min Deposit',
+		maxLeverage: 'Max Leverage',
+		regulation: 'Regulation',
+		instantWithdrawal: 'Instant Withdrawal',
+		open: 'Open Account'
+	}
+}[lang];
+
+const tabs = [
+	{ key: 'all', label: t.all },
+	{ key: 'scalping', label: t.scalping },
+	{ key: 'beginners', label: t.beginners },
+	{ key: 'ecn', label: t.ecn },
+	{ key: 'low-deposit', label: t.lowDeposit }
+];
+---
+
+<div>
+	<div class="broker-table-tabs flex flex-wrap gap-2">
+		{
+			tabs.map((tab, i) => (
+				<button
+					type="button"
+					data-filter={tab.key}
+					class:list={[
+						'rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer border',
+						i === 0
+							? 'bg-brand-navy text-white border-brand-navy'
+							: 'bg-white text-brand-navy border-slate-300 hover:border-brand-navy'
+					]}
+				>
+					{tab.label}
+				</button>
+			))
+		}
+	</div>
+
+	<div class="mt-4 overflow-x-auto rounded-lg border border-slate-200 bg-white">
+		<table class="w-full min-w-[760px] text-left text-sm">
+			<thead class="bg-brand-navy text-white">
+				<tr>
+					<th class="px-4 py-3 font-semibold">{t.rank}</th>
+					<th class="px-4 py-3 font-semibold">{t.broker}</th>
+					<th class="px-4 py-3 font-semibold">{t.score}</th>
+					<th class="px-4 py-3 font-semibold">{t.minSpread}</th>
+					<th class="px-4 py-3 font-semibold">{t.minDeposit}</th>
+					<th class="px-4 py-3 font-semibold">{t.maxLeverage}</th>
+					<th class="px-4 py-3 font-semibold">{t.regulation}</th>
+					<th class="px-4 py-3 font-semibold">{t.instantWithdrawal}</th>
+					<th class="px-4 py-3 font-semibold"></th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					sorted.map((broker, index) => {
+						const { name, logo, rating, spreadFrom, minDeposit, maxLeverage, regulation, instantWithdrawal, category } =
+							broker.data;
+						const slug = broker.id.split('/').slice(1).join('/');
+						return (
+							<tr
+								data-category={category.join(' ')}
+								class="border-t border-slate-100 hover:bg-brand-blue-light/40"
+							>
+								<td class="px-4 py-3 font-semibold text-slate-500">#{index + 1}</td>
+								<td class="px-4 py-3">
+									<a href={`/${lang}/reviews/${slug}/`} class="flex items-center gap-2 font-semibold text-brand-navy hover:text-brand-blue">
+										<img src={logo} alt={`${name} logo`} width="28" height="28" class="h-7 w-7 shrink-0 object-contain" />
+										{name}
+									</a>
+								</td>
+								<td class="px-4 py-3 font-semibold text-brand-blue">{rating.toFixed(1)}</td>
+								<td class="px-4 py-3 text-slate-600">{spreadFrom ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600">{minDeposit ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600">{maxLeverage ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600">{regulation[0] ?? '—'}</td>
+								<td class="px-4 py-3">{instantWithdrawal ? '✅' : '—'}</td>
+								<td class="px-4 py-3">
+									<a
+										href={`/go/${slug}/`}
+										target="_blank"
+										rel="nofollow sponsored noopener"
+										class="rounded-md bg-brand-blue px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-white hover:bg-brand-blue-dark"
+									>
+										{t.open}
+									</a>
+								</td>
+							</tr>
+						);
+					})
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script>
+	const tabsEl = document.querySelector('.broker-table-tabs');
+	if (tabsEl) {
+		tabsEl.addEventListener('click', (e) => {
+			const btn = (e.target as HTMLElement).closest('button[data-filter]') as HTMLButtonElement | null;
+			if (!btn) return;
+			const filter = btn.dataset.filter!;
+
+			tabsEl.querySelectorAll('button[data-filter]').forEach((b) => {
+				b.classList.remove('bg-brand-navy', 'text-white', 'border-brand-navy');
+				b.classList.add('bg-white', 'text-brand-navy', 'border-slate-300');
+			});
+			btn.classList.remove('bg-white', 'text-brand-navy', 'border-slate-300');
+			btn.classList.add('bg-brand-navy', 'text-white', 'border-brand-navy');
+
+			document.querySelectorAll('tr[data-category]').forEach((row) => {
+				const categories = (row as HTMLElement).dataset.category ?? '';
+				const match = filter === 'all' || categories.split(' ').includes(filter);
+				(row as HTMLElement).style.display = match ? '' : 'none';
+			});
+		});
+	}
+</script>

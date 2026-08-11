@@ -7,6 +7,12 @@ summary: "A reputable Australian forex broker known for strong customer support 
 foundedYear: 2010
 minDeposit: "$0"
 spreadFrom: "0.0 pips"
+maxLeverage: "1:500"
+instantWithdrawal: false
+category:
+  - "beginners"
+  - "ecn"
+badge: "Best Overall"
 regulation:
   - "ASIC (Australia)"
   - "FCA (UK)"
@@ -24,7 +30,7 @@ cons:
   - "Islamic swap-free accounts not available on every account type"
   - "Fewer CFD instruments than some competitors"
 affiliateUrl: "AFF_LINK_PLACEHOLDER_PEPPERSTONE"
-featured: false
+featured: true
 updatedDate: 2026-08-11
 ---
 

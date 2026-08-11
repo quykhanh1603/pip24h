@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getCollection } from 'astro:content';
 
 interface Props {
 	title: string;
@@ -10,10 +11,42 @@ interface Props {
 const { title, description = '', lang } = Astro.props;
 
 const nav = {
-	vi: { home: 'Trang chủ', reviews: 'Đánh giá sàn', compare: 'So sánh' },
-	en: { home: 'Home', reviews: 'Broker Reviews', compare: 'Compare' }
+	vi: { home: 'Trang chủ', reviews: 'Đánh giá sàn' },
+	en: { home: 'Home', reviews: 'Broker Reviews' }
 };
 const t = nav[lang];
+
+const footerText = {
+	vi: {
+		mission: 'Pip24h giúp trader Việt Nam chọn sàn forex, crypto uy tín thông qua đánh giá độc lập, kiểm tra bằng tài khoản thật.',
+		quickLinks: 'Liên kết nhanh',
+		topBrokers: 'Sàn nổi bật',
+		legal: 'Pháp lý',
+		privacy: 'Chính sách bảo mật',
+		terms: 'Điều khoản & Cảnh báo rủi ro',
+		disclosure: 'Công bố Affiliate',
+		risk: 'Giao dịch forex/crypto tiềm ẩn rủi ro cao. Nội dung mang tính tham khảo, không phải lời khuyên đầu tư.',
+		affiliate: 'Một số liên kết trên trang là liên kết affiliate — chúng tôi có thể nhận hoa hồng khi bạn đăng ký qua các liên kết này.',
+		rights: 'Bảo lưu mọi quyền.'
+	},
+	en: {
+		mission: 'Pip24h helps traders choose trustworthy forex and crypto brokers through independent, real-account-tested reviews.',
+		quickLinks: 'Quick Links',
+		topBrokers: 'Top Brokers',
+		legal: 'Legal',
+		privacy: 'Privacy Policy',
+		terms: 'Terms & Risk Disclaimer',
+		disclosure: 'Affiliate Disclosure',
+		risk: 'Trading forex/crypto carries significant risk. Content is for informational purposes only, not investment advice.',
+		affiliate: 'Some links on this site are affiliate links — we may earn a commission if you sign up through them.',
+		rights: 'All rights reserved.'
+	}
+}[lang];
+
+const brokers = await getCollection('brokers', (entry) => entry.id.startsWith(`${lang}/`));
+const topBrokers = [...brokers]
+	.sort((a, b) => b.data.rating - a.data.rating)
+	.slice(0, 5);
 ---
 
 <!doctype html>
@@ -29,31 +62,59 @@ const t = nav[lang];
 	<body class="min-h-screen bg-slate-50 text-slate-900">
 		<header class="border-b border-slate-200 bg-white">
 			<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-				<a href={`/${lang}/`} class="text-lg font-bold text-blue-700">Pip24h</a>
+				<a href={`/${lang}/`} class="text-lg font-extrabold text-brand-navy">
+					Pip<span class="text-brand-blue">24h</span>
+				</a>
 				<nav class="flex gap-6 text-sm font-medium text-slate-600">
-					<a href={`/${lang}/`} class="hover:text-blue-700">{t.home}</a>
-					<a href={`/${lang}/reviews/`} class="hover:text-blue-700">{t.reviews}</a>
+					<a href={`/${lang}/`} class="hover:text-brand-blue">{t.home}</a>
+					<a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{t.reviews}</a>
 				</nav>
 			</div>
 		</header>
 		<main class="mx-auto max-w-6xl px-4 py-8">
 			<slot />
 		</main>
-		<footer class="mt-16 border-t border-slate-200 bg-white py-8 text-center text-sm text-slate-500">
-			<p>
-				{
-					lang === 'vi'
-						? 'Giao dịch forex/crypto tiềm ẩn rủi ro cao. Nội dung mang tính tham khảo, không phải lời khuyên đầu tư.'
-						: 'Trading forex/crypto carries significant risk. Content is for informational purposes only, not investment advice.'
-				}
-			</p>
-			<p class="mt-1">
-				{
-					lang === 'vi'
-						? 'Một số liên kết trên trang là liên kết affiliate — chúng tôi có thể nhận hoa hồng khi bạn đăng ký qua các liên kết này.'
-						: 'Some links on this site are affiliate links — we may earn a commission if you sign up through them.'
-				}
-			</p>
+		<footer class="mt-16 border-t border-slate-200 bg-white">
+			<div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-12 sm:grid-cols-4">
+				<div class="col-span-2 sm:col-span-1">
+					<a href={`/${lang}/`} class="text-lg font-extrabold text-brand-navy">
+						Pip<span class="text-brand-blue">24h</span>
+					</a>
+					<p class="mt-3 text-sm text-slate-500">{footerText.mission}</p>
+				</div>
+				<div>
+					<h3 class="text-sm font-semibold text-brand-navy">{footerText.quickLinks}</h3>
+					<ul class="mt-3 space-y-2 text-sm text-slate-500">
+						<li><a href={`/${lang}/`} class="hover:text-brand-blue">{t.home}</a></li>
+						<li><a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{t.reviews}</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="text-sm font-semibold text-brand-navy">{footerText.topBrokers}</h3>
+					<ul class="mt-3 space-y-2 text-sm text-slate-500">
+						{topBrokers.map((broker) => (
+							<li>
+								<a href={`/${lang}/reviews/${broker.id.split('/').slice(1).join('/')}/`} class="hover:text-brand-blue">
+									{broker.data.name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div>
+					<h3 class="text-sm font-semibold text-brand-navy">{footerText.legal}</h3>
+					<ul class="mt-3 space-y-2 text-sm text-slate-500">
+						<li><a href={`/${lang}/privacy/`} class="hover:text-brand-blue">{footerText.privacy}</a></li>
+						<li><a href={`/${lang}/terms/`} class="hover:text-brand-blue">{footerText.terms}</a></li>
+						<li><a href={`/${lang}/affiliate-disclosure/`} class="hover:text-brand-blue">{footerText.disclosure}</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="border-t border-slate-200 px-4 py-6 text-center text-xs text-slate-400">
+				<p>{footerText.risk}</p>
+				<p class="mt-1">{footerText.affiliate}</p>
+				<p class="mt-3">&copy; {new Date().getFullYear()} Pip24h. {footerText.rights}</p>
+			</div>
 		</footer>
 	</body>
 </html>

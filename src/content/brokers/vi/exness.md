@@ -7,6 +7,12 @@ summary: "Sàn forex và crypto lớn, nổi bật với tốc độ rút tiền
 foundedYear: 2008
 minDeposit: "$1"
 spreadFrom: "0.0 pip"
+maxLeverage: "Không giới hạn"
+instantWithdrawal: true
+category:
+  - "beginners"
+  - "low-deposit"
+badge: "Rút tiền nhanh nhất"
 regulation:
   - "FCA (Anh)"
   - "CySEC (Síp)"

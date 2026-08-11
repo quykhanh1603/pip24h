@@ -1,19 +1,57 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import BrokerCard from '../../components/BrokerCard.astro';
+import BrokerTable from '../../components/BrokerTable.astro';
+import InDepthCard from '../../components/InDepthCard.astro';
 
-const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('en/'))).sort(
-	(a, b) => b.data.rating - a.data.rating
-);
+const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('en/'));
+const featured = brokers.filter((b) => b.data.featured).sort((a, b) => b.data.rating - a.data.rating);
+
+const badges = [
+	`${brokers.length} brokers tested`,
+	'Real accounts used',
+	'Updated monthly',
+	'Independent reviews'
+];
 ---
 
-<Layout lang="en" title="Pip24h — Trusted Forex & Crypto Broker Reviews" description="Compare and review popular forex and crypto brokers: fees, platforms, and trustworthiness.">
-	<h1 class="text-2xl font-bold">Forex & Crypto Broker Reviews</h1>
-	<p class="mt-2 text-slate-600">Rankings based on trading fees, trustworthiness, platform quality, and real user experience.</p>
+<Layout lang="en" title="Pip24h — Best Forex & Crypto Brokers 2026, Ranked & Reviewed" description="Compare and review popular forex and crypto brokers: fees, platforms, and trustworthiness, tested with real accounts.">
+	<section class="py-10 text-center sm:py-14">
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl">
+			Best Forex &amp; Crypto Brokers 2026 — Ranked &amp; Reviewed
+		</h1>
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
+			We tested spreads, withdrawals, regulation, and platforms across leading brokers so you don't have to.
+		</p>
+		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy">
+			{badges.map((b) => (
+				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">{b}</span>
+			))}
+		</div>
+	</section>
 
-	<div class="mt-8 flex flex-col gap-4">
-		{brokers.length === 0 && <p class="text-slate-500">No brokers added yet.</p>}
-		{brokers.map((broker) => <BrokerCard broker={broker} lang="en" />)}
-	</div>
+	<section>
+		<h2 class="text-xl font-bold text-brand-navy">Quick Comparison</h2>
+		<div class="mt-4">
+			<BrokerTable brokers={brokers} lang="en" />
+		</div>
+	</section>
+
+	{featured.length > 0 && (
+		<section class="mt-14">
+			<h2 class="text-xl font-bold text-brand-navy">In Depth</h2>
+			<div class="mt-4 flex flex-col gap-5">
+				{featured.map((broker) => <InDepthCard broker={broker} lang="en" />)}
+			</div>
+		</section>
+	)}
+
+	<section class="mt-14 text-center">
+		<a
+			href="/en/reviews/"
+			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white"
+		>
+			View all {brokers.length} reviewed brokers
+		</a>
+	</section>
 </Layout>

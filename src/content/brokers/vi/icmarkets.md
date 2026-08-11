@@ -7,6 +7,12 @@ summary: "Sàn ECN nổi tiếng với spread siêu thấp, được nhiều tra
 foundedYear: 2007
 minDeposit: "$200"
 spreadFrom: "0.0 pip"
+maxLeverage: "1:500"
+instantWithdrawal: false
+category:
+  - "ecn"
+  - "scalping"
+badge: "Tốt nhất cho Scalping"
 regulation:
   - "ASIC (Úc)"
   - "CySEC (Síp)"

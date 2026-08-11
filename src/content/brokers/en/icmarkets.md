@@ -7,6 +7,12 @@ summary: "A well-known ECN broker with ultra-low spreads, favored by professiona
 foundedYear: 2007
 minDeposit: "$200"
 spreadFrom: "0.0 pips"
+maxLeverage: "1:500"
+instantWithdrawal: false
+category:
+  - "ecn"
+  - "scalping"
+badge: "Best for Scalping"
 regulation:
   - "ASIC (Australia)"
   - "CySEC (Cyprus)"

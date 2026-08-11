@@ -25,10 +25,27 @@ collections:
       - { label: "Năm thành lập", name: "foundedYear", widget: "number", required: false }
       - { label: "Nạp tối thiểu", name: "minDeposit", widget: "string", required: false }
       - { label: "Spread từ", name: "spreadFrom", widget: "string", required: false }
+      - { label: "Đòn bẩy tối đa", name: "maxLeverage", widget: "string", required: false, hint: "vd: 1:2000" }
+      - { label: "Rút tiền nhanh", name: "instantWithdrawal", widget: "boolean", default: false }
       - { label: "Quản lý bởi", name: "regulation", widget: "list", default: [] }
       - { label: "Nền tảng giao dịch", name: "platforms", widget: "list", default: [] }
       - { label: "Ưu điểm", name: "pros", widget: "list", default: [] }
       - { label: "Nhược điểm", name: "cons", widget: "list", default: [] }
+      - {
+          label: "Nhóm phù hợp",
+          name: "category",
+          widget: "select",
+          multiple: true,
+          default: [],
+          options:
+            [
+              { label: "Scalping", value: "scalping" },
+              { label: "Người mới", value: "beginners" },
+              { label: "ECN/Raw", value: "ecn" },
+              { label: "Nạp thấp", value: "low-deposit" },
+            ],
+        }
+      - { label: "Badge nổi bật", name: "badge", widget: "string", required: false, hint: 'vd: "Tốt nhất tổng thể"' }
       - { label: "Link affiliate", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
       - { label: "Nổi bật (featured)", name: "featured", widget: "boolean", default: false }
       - { label: "Ngày cập nhật", name: "updatedDate", widget: "datetime" }
@@ -50,10 +67,27 @@ collections:
       - { label: "Founded year", name: "foundedYear", widget: "number", required: false }
       - { label: "Min deposit", name: "minDeposit", widget: "string", required: false }
       - { label: "Spread from", name: "spreadFrom", widget: "string", required: false }
+      - { label: "Max leverage", name: "maxLeverage", widget: "string", required: false, hint: "e.g. 1:2000" }
+      - { label: "Instant withdrawal", name: "instantWithdrawal", widget: "boolean", default: false }
       - { label: "Regulated by", name: "regulation", widget: "list", default: [] }
       - { label: "Trading platforms", name: "platforms", widget: "list", default: [] }
       - { label: "Pros", name: "pros", widget: "list", default: [] }
       - { label: "Cons", name: "cons", widget: "list", default: [] }
+      - {
+          label: "Best for",
+          name: "category",
+          widget: "select",
+          multiple: true,
+          default: [],
+          options:
+            [
+              { label: "Scalping", value: "scalping" },
+              { label: "Beginners", value: "beginners" },
+              { label: "ECN/Raw", value: "ecn" },
+              { label: "Low Deposit", value: "low-deposit" },
+            ],
+        }
+      - { label: "Badge", name: "badge", widget: "string", required: false, hint: 'e.g. "Best Overall"' }
       - { label: "Affiliate link", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
       - { label: "Featured", name: "featured", widget: "boolean", default: false }
       - { label: "Updated date", name: "updatedDate", widget: "datetime" }

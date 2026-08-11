@@ -1,0 +1,102 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	broker: CollectionEntry<'brokers'>;
+	lang: 'vi' | 'en';
+}
+
+const { broker, lang } = Astro.props;
+const { name, logo, rating, summary, minDeposit, spreadFrom, maxLeverage, platforms, pros, badge } = broker.data;
+const slug = broker.id.split('/').slice(1).join('/');
+
+const t = {
+	vi: {
+		minDeposit: 'Nạp tối thiểu',
+		spread: 'Spread',
+		leverage: 'Đòn bẩy',
+		platforms: 'Nền tảng',
+		readReview: 'Xem đánh giá',
+		open: 'Mở tài khoản'
+	},
+	en: {
+		minDeposit: 'Min deposit',
+		spread: 'Spread',
+		leverage: 'Leverage',
+		platforms: 'Platforms',
+		readReview: 'Read Review',
+		open: 'Open Account'
+	}
+}[lang];
+
+const highlights = pros.slice(0, 3);
+---
+
+<div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+	<div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+		<div class="flex items-start gap-4">
+			<img src={logo} alt={`${name} logo`} width="56" height="56" class="h-14 w-14 shrink-0 rounded border border-slate-100 object-contain p-1" />
+			<div>
+				<div class="flex flex-wrap items-center gap-2">
+					<h3 class="text-lg font-bold text-brand-navy">{name}</h3>
+					{badge && (
+						<span class="rounded-full bg-brand-blue-light px-2.5 py-0.5 text-xs font-semibold text-brand-blue">
+							{badge}
+						</span>
+					)}
+				</div>
+				<p class="mt-1 text-sm text-amber-500" aria-hidden="true">
+					{'★'.repeat(Math.round(rating))}{'☆'.repeat(5 - Math.round(rating))}
+					<span class="ml-1 text-slate-500">{rating.toFixed(1)}</span>
+				</p>
+				<p class="mt-2 max-w-xl text-sm text-slate-600">{summary}</p>
+			</div>
+		</div>
+		<div class="flex shrink-0 gap-2 sm:flex-col">
+			<a
+				href={`/${lang}/reviews/${slug}/`}
+				class="rounded-md border border-slate-300 px-4 py-2 text-center text-sm font-medium text-brand-navy hover:bg-slate-50"
+			>
+				{t.readReview}
+			</a>
+			<a
+				href={`/go/${slug}/`}
+				target="_blank"
+				rel="nofollow sponsored noopener"
+				class="rounded-md bg-brand-blue px-4 py-2 text-center text-sm font-semibold text-white hover:bg-brand-blue-dark"
+			>
+				{t.open}
+			</a>
+		</div>
+	</div>
+
+	<div class="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+		<div class="rounded-lg bg-slate-50 px-3 py-2">
+			<p class="text-xs text-slate-500">{t.minDeposit}</p>
+			<p class="text-sm font-semibold text-brand-navy">{minDeposit ?? '—'}</p>
+		</div>
+		<div class="rounded-lg bg-slate-50 px-3 py-2">
+			<p class="text-xs text-slate-500">{t.spread}</p>
+			<p class="text-sm font-semibold text-brand-navy">{spreadFrom ?? '—'}</p>
+		</div>
+		<div class="rounded-lg bg-slate-50 px-3 py-2">
+			<p class="text-xs text-slate-500">{t.leverage}</p>
+			<p class="text-sm font-semibold text-brand-navy">{maxLeverage ?? '—'}</p>
+		</div>
+		<div class="rounded-lg bg-slate-50 px-3 py-2">
+			<p class="text-xs text-slate-500">{t.platforms}</p>
+			<p class="truncate text-sm font-semibold text-brand-navy">{platforms.join(', ') || '—'}</p>
+		</div>
+	</div>
+
+	{highlights.length > 0 && (
+		<ul class="mt-5 grid gap-2 sm:grid-cols-3">
+			{highlights.map((h) => (
+				<li class="flex items-start gap-2 text-sm text-slate-700">
+					<span class="mt-0.5 text-brand-blue">✓</span>
+					{h}
+				</li>
+			))}
+		</ul>
+	)}
+</div>

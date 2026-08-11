@@ -1,19 +1,57 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import BrokerCard from '../../components/BrokerCard.astro';
+import BrokerTable from '../../components/BrokerTable.astro';
+import InDepthCard from '../../components/InDepthCard.astro';
 
-const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('vi/'))).sort(
-	(a, b) => b.data.rating - a.data.rating
-);
+const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('vi/'));
+const featured = brokers.filter((b) => b.data.featured).sort((a, b) => b.data.rating - a.data.rating);
+
+const badges = [
+	`${brokers.length} sàn đã kiểm định`,
+	'Dùng tài khoản thật',
+	'Cập nhật hàng tháng',
+	'Đánh giá độc lập'
+];
 ---
 
-<Layout lang="vi" title="Pip24h — Đánh giá sàn Forex & Crypto uy tín" description="So sánh và đánh giá các sàn giao dịch forex, crypto phổ biến: phí giao dịch, nền tảng, độ uy tín.">
-	<h1 class="text-2xl font-bold">Đánh giá & so sánh sàn Forex, Crypto</h1>
-	<p class="mt-2 text-slate-600">Xếp hạng dựa trên phí giao dịch, độ uy tín, nền tảng và trải nghiệm người dùng thực tế.</p>
+<Layout lang="vi" title="Pip24h — Top sàn Forex & Crypto 2026, xếp hạng & đánh giá" description="So sánh và đánh giá các sàn giao dịch forex, crypto phổ biến: phí giao dịch, nền tảng, độ uy tín, được kiểm định bằng tài khoản thật.">
+	<section class="py-10 text-center sm:py-14">
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl">
+			Sàn Forex &amp; Crypto tốt nhất 2026 — Xếp hạng &amp; Đánh giá chi tiết
+		</h1>
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
+			Chúng tôi kiểm tra spread, tốc độ rút tiền, mức độ quản lý và nền tảng giao dịch trên nhiều sàn để bạn không phải tự mình thử nghiệm.
+		</p>
+		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy">
+			{badges.map((b) => (
+				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">{b}</span>
+			))}
+		</div>
+	</section>
 
-	<div class="mt-8 flex flex-col gap-4">
-		{brokers.length === 0 && <p class="text-slate-500">Chưa có sàn nào được thêm.</p>}
-		{brokers.map((broker) => <BrokerCard broker={broker} lang="vi" />)}
-	</div>
+	<section>
+		<h2 class="text-xl font-bold text-brand-navy">Bảng so sánh nhanh</h2>
+		<div class="mt-4">
+			<BrokerTable brokers={brokers} lang="vi" />
+		</div>
+	</section>
+
+	{featured.length > 0 && (
+		<section class="mt-14">
+			<h2 class="text-xl font-bold text-brand-navy">Đánh giá chi tiết</h2>
+			<div class="mt-4 flex flex-col gap-5">
+				{featured.map((broker) => <InDepthCard broker={broker} lang="vi" />)}
+			</div>
+		</section>
+	)}
+
+	<section class="mt-14 text-center">
+		<a
+			href="/vi/reviews/"
+			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white"
+		>
+			Xem tất cả {brokers.length} sàn đã đánh giá
+		</a>
+	</section>
 </Layout>

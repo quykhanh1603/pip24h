@@ -7,6 +7,12 @@ summary: "Sàn forex uy tín từ Úc, nổi bật với dịch vụ khách hàn
 foundedYear: 2010
 minDeposit: "$0"
 spreadFrom: "0.0 pip"
+maxLeverage: "1:500"
+instantWithdrawal: false
+category:
+  - "beginners"
+  - "ecn"
+badge: "Tốt nhất tổng thể"
 regulation:
   - "ASIC (Úc)"
   - "FCA (Anh)"
@@ -24,7 +30,7 @@ cons:
   - "Không có tài khoản Islamic swap-free trên mọi loại tài khoản"
   - "Một số công cụ CFD ít hơn so với đối thủ"
 affiliateUrl: "AFF_LINK_PLACEHOLDER_PEPPERSTONE"
-featured: false
+featured: true
 updatedDate: 2026-08-11
 ---
 
