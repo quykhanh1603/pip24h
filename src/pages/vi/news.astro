@@ -74,6 +74,7 @@ import Layout from '../../layouts/Layout.astro';
 		}
 
 		root.innerHTML = [...groups.entries()]
+			.reverse()
 			.map(([day, events]) => {
 				const rows = events
 					.map((ev) => {
