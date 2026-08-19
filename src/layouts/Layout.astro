@@ -89,6 +89,9 @@ const topBrokers = [...brokers]
 		<meta name="description" content={description} />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+		<link rel="alternate" hreflang={lang} href={new URL(currentPath, Astro.site)} />
+		<link rel="alternate" hreflang={otherLang} href={new URL(switchedPath, Astro.site)} />
+		<link rel="alternate" hreflang="x-default" href={new URL(lang === 'en' ? currentPath : switchedPath, Astro.site)} />
 		<title>{title}</title>
 		<script is:inline>
 			const storedTheme = localStorage.getItem('theme');
