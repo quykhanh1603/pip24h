@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Đăng bài — Pip24h</title>
+<style>
+	:root {
+		--navy: #0284c7;
+		--blue: #0ea5e9;
+		--blue-light: #e0f2fe;
+		--ink: #0f172a;
+		--muted: #64748b;
+		--border: #e2e8f0;
+		--bg: #f8fafc;
+	}
+	* { box-sizing: border-box; }
+	body {
+		margin: 0;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+		background: var(--bg);
+		color: var(--ink);
+	}
+	header {
+		background: var(--navy);
+		color: white;
+		padding: 20px 16px;
+		text-align: center;
+	}
+	header h1 { margin: 0; font-size: 1.3rem; }
+	header p { margin: 4px 0 0; opacity: 0.9; font-size: 0.85rem; }
+	main {
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 20px 16px 60px;
+	}
+	.card {
+		background: white;
+		border: 1px solid var(--border);
+		border-radius: 12px;
+		padding: 18px;
+		margin-bottom: 16px;
+	}
+	.card h2 {
+		font-size: 1rem;
+		margin: 0 0 14px;
+		color: var(--navy);
+	}
+	label {
+		display: block;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin: 12px 0 4px;
+	}
+	label.optional::after {
+		content: " (không bắt buộc)";
+		font-weight: 400;
+		color: var(--muted);
+	}
+	input[type="text"],
+	input[type="number"],
+	input[type="password"],
+	input[type="url"],
+	select,
+	textarea {
+		width: 100%;
+		padding: 10px 12px;
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		font-size: 0.95rem;
+		font-family: inherit;
+		background: white;
+	}
+	textarea { resize: vertical; min-height: 70px; }
+	textarea.tall { min-height: 180px; }
+	.hint { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+	.row { display: flex; gap: 10px; }
+	.row > div { flex: 1; }
+	.checks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+	.checks label {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-weight: 400;
+		margin: 0;
+		background: var(--blue-light);
+		padding: 6px 10px;
+		border-radius: 999px;
+		font-size: 0.85rem;
+	}
+	.checks input { width: auto; }
+	.toggle-row {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-top: 12px;
+	}
+	.toggle-row label { margin: 0; font-weight: 400; }
+	button#submitBtn {
+		width: 100%;
+		padding: 14px;
+		background: var(--navy);
+		color: white;
+		border: none;
+		border-radius: 10px;
+		font-size: 1rem;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	button#submitBtn:disabled { opacity: 0.6; cursor: default; }
+	button#submitBtn:hover:not(:disabled) { background: #026696; }
+	#status {
+		margin-top: 14px;
+		padding: 12px 14px;
+		border-radius: 8px;
+		font-size: 0.9rem;
+		display: none;
+	}
+	#status.ok { display: block; background: #dcfce7; color: #166534; }
+	#status.err { display: block; background: #fee2e2; color: #991b1b; white-space: pre-wrap; }
+	.lang-toggle { display: flex; gap: 8px; }
+	.lang-toggle label {
+		flex: 1;
+		text-align: center;
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		padding: 10px;
+		cursor: pointer;
+		font-weight: 600;
+		margin: 0;
+	}
+	.lang-toggle input { display: none; }
+	.lang-toggle input:checked + span { color: var(--navy); }
+	.lang-toggle label:has(input:checked) {
+		border-color: var(--navy);
+		background: var(--blue-light);
+	}
+	.slug-preview { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+	.slug-preview code { background: var(--blue-light); padding: 1px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+	<h1>Đăng bài đánh giá sàn</h1>
+	<p>pip24h.com — form đăng nhanh, không cần vào /admin</p>
+</header>
+
+<main>
+	<form id="publishForm">
+
+		<div class="card">
+			<h2>Mật khẩu đăng bài</h2>
+			<input type="password" id="secret" placeholder="Nhập mật khẩu" required />
+			<div class="hint"><label style="display:inline;font-weight:400;margin:0;"><input type="checkbox" id="rememberSecret" style="width:auto;" /> Ghi nhớ trên thiết bị này</label></div>
+		</div>
+
+		<div class="card">
+			<h2>Ngôn ngữ bài viết</h2>
+			<div class="lang-toggle">
+				<label><input type="radio" name="lang" value="vi" checked /><span>🇻🇳 Tiếng Việt</span></label>
+				<label><input type="radio" name="lang" value="en" /><span>🇬🇧 English</span></label>
+			</div>
+		</div>
+
+		<div class="card">
+			<h2>Thông tin cơ bản</h2>
+
+			<label>Tên sàn</label>
+			<input type="text" id="name" required placeholder="VD: Exness" />
+			<div class="slug-preview">Đường dẫn bài viết: <code id="slugPreview">/reviews/...</code></div>
+
+			<label class="optional">Logo (ảnh vuông, nền trong suốt càng tốt)</label>
+			<input type="file" id="logo" accept="image/*" />
+
+			<label>Loại sàn</label>
+			<select id="assetType">
+				<option value="forex">Forex</option>
+				<option value="crypto">Crypto</option>
+				<option value="both" selected>Cả hai</option>
+			</select>
+
+			<label>Điểm đánh giá (0 - 5)</label>
+			<input type="number" id="rating" min="0" max="5" step="0.1" value="4.5" required />
+
+			<label>Mô tả ngắn (1-2 câu, hiện ở trang danh sách)</label>
+			<textarea id="summary" required></textarea>
+		</div>
+
+		<div class="card">
+			<h2>Chi tiết giao dịch</h2>
+			<div class="row">
+				<div>
+					<label class="optional">Năm thành lập</label>
+					<input type="number" id="foundedYear" placeholder="VD: 2008" />
+				</div>
+				<div>
+					<label class="optional">Nạp tối thiểu</label>
+					<input type="text" id="minDeposit" placeholder="VD: $1" />
+				</div>
+			</div>
+			<div class="row">
+				<div>
+					<label class="optional">Spread từ</label>
+					<input type="text" id="spreadFrom" placeholder="VD: 0.0 pip" />
+				</div>
+				<div>
+					<label class="optional">Đòn bẩy tối đa</label>
+					<input type="text" id="maxLeverage" placeholder="VD: 1:2000" />
+				</div>
+			</div>
+			<div class="toggle-row">
+				<input type="checkbox" id="instantWithdrawal" style="width:auto;" />
+				<label for="instantWithdrawal">Rút tiền nhanh / tức thời</label>
+			</div>
+
+			<label>Nhóm phù hợp</label>
+			<div class="checks">
+				<label><input type="checkbox" value="scalping" class="category" /> Scalping</label>
+				<label><input type="checkbox" value="beginners" class="category" /> Người mới</label>
+				<label><input type="checkbox" value="ecn" class="category" /> ECN/Raw</label>
+				<label><input type="checkbox" value="low-deposit" class="category" /> Nạp thấp</label>
+			</div>
+
+			<label class="optional">Badge nổi bật</label>
+			<input type="text" id="badge" placeholder='VD: "Rút tiền nhanh nhất"' />
+
+			<label class="optional">Quản lý bởi (mỗi dòng 1 cơ quan)</label>
+			<textarea id="regulation" placeholder="FCA (Anh)&#10;CySEC (Síp)"></textarea>
+
+			<label class="optional">Nền tảng giao dịch (mỗi dòng 1 nền tảng)</label>
+			<textarea id="platforms" placeholder="MetaTrader 4&#10;MetaTrader 5"></textarea>
+		</div>
+
+		<div class="card">
+			<h2>Ưu / nhược điểm</h2>
+			<label>Ưu điểm (mỗi dòng 1 ý)</label>
+			<textarea id="pros" required placeholder="Rút tiền tức thời&#10;Nạp tối thiểu thấp"></textarea>
+
+			<label>Nhược điểm (mỗi dòng 1 ý)</label>
+			<textarea id="cons" required placeholder="Đòn bẩy cao không phù hợp người mới"></textarea>
+		</div>
+
+		<div class="card">
+			<h2>Nội dung chi tiết</h2>
+			<div class="hint" style="margin-bottom:6px;">Dùng <code>## Tiêu đề</code> để tạo heading, để dòng trống giữa các đoạn.</div>
+			<textarea id="body" class="tall" required placeholder="Giới thiệu chung về sàn...&#10;&#10;## Phí giao dịch&#10;...&#10;&#10;## Có nên giao dịch tại đây?&#10;..."></textarea>
+		</div>
+
+		<div class="card">
+			<h2>Affiliate</h2>
+			<label class="optional">Link affiliate (để trống nếu chưa có)</label>
+			<input type="text" id="affiliateUrl" placeholder="https://..." />
+			<div class="toggle-row">
+				<input type="checkbox" id="featured" style="width:auto;" />
+				<label for="featured">Hiện nổi bật ở trang chủ (featured)</label>
+			</div>
+		</div>
+
+		<button type="submit" id="submitBtn">Đăng bài</button>
+		<div id="status"></div>
+	</form>
+</main>
+
+<script>
+	const WORKER_URL = 'https://pip24h-publish.quykhanh1603-haiduong.workers.dev';
+
+	const nameInput = document.getElementById('name');
+	const slugPreview = document.getElementById('slugPreview');
+
+	function slugify(name) {
+		return name
+			.toLowerCase()
+			.replace(/đ/g, 'd')
+			.normalize('NFD')
+			.replace(/[̀-ͯ]/g, '')
+			.replace(/[^a-z0-9]+/g, '')
+			.trim();
+	}
+
+	function updateSlugPreview() {
+		const slug = slugify(nameInput.value || '');
+		slugPreview.textContent = slug ? `/reviews/${slug}/` : '/reviews/...';
+	}
+	nameInput.addEventListener('input', updateSlugPreview);
+
+	const secretInput = document.getElementById('secret');
+	const rememberBox = document.getElementById('rememberSecret');
+	const savedSecret = localStorage.getItem('pip24h_publish_secret');
+	if (savedSecret) {
+		secretInput.value = savedSecret;
+		rememberBox.checked = true;
+	}
+
+	function fileToBase64(file) {
+		return new Promise((resolve, reject) => {
+			const reader = new FileReader();
+			reader.onload = () => resolve(reader.result.split(',')[1]);
+			reader.onerror = reject;
+			reader.readAsDataURL(file);
+		});
+	}
+
+	function linesToList(text) {
+		return text
+			.split('\n')
+			.map((s) => s.trim())
+			.filter(Boolean);
+	}
+
+	const form = document.getElementById('publishForm');
+	const statusEl = document.getElementById('status');
+	const submitBtn = document.getElementById('submitBtn');
+
+	form.addEventListener('submit', async (e) => {
+		e.preventDefault();
+		statusEl.className = '';
+		statusEl.textContent = '';
+		submitBtn.disabled = true;
+		submitBtn.textContent = 'Đang đăng...';
+
+		try {
+			if (rememberBox.checked) {
+				localStorage.setItem('pip24h_publish_secret', secretInput.value);
+			} else {
+				localStorage.removeItem('pip24h_publish_secret');
+			}
+
+			const logoFile = document.getElementById('logo').files[0];
+			let logoBase64 = null;
+			let logoExt = null;
+			if (logoFile) {
+				logoBase64 = await fileToBase64(logoFile);
+				logoExt = (logoFile.name.split('.').pop() || 'png').toLowerCase();
+			}
+
+			const payload = {
+				lang: document.querySelector('input[name="lang"]:checked').value,
+				name: nameInput.value.trim(),
+				assetType: document.getElementById('assetType').value,
+				rating: parseFloat(document.getElementById('rating').value),
+				summary: document.getElementById('summary').value.trim(),
+				foundedYear: document.getElementById('foundedYear').value ? parseInt(document.getElementById('foundedYear').value, 10) : undefined,
+				minDeposit: document.getElementById('minDeposit').value.trim() || undefined,
+				spreadFrom: document.getElementById('spreadFrom').value.trim() || undefined,
+				maxLeverage: document.getElementById('maxLeverage').value.trim() || undefined,
+				instantWithdrawal: document.getElementById('instantWithdrawal').checked,
+				category: Array.from(document.querySelectorAll('.category:checked')).map((c) => c.value),
+				badge: document.getElementById('badge').value.trim() || undefined,
+				regulation: linesToList(document.getElementById('regulation').value),
+				platforms: linesToList(document.getElementById('platforms').value),
+				pros: linesToList(document.getElementById('pros').value),
+				cons: linesToList(document.getElementById('cons').value),
+				body: document.getElementById('body').value.trim(),
+				affiliateUrl: document.getElementById('affiliateUrl').value.trim() || undefined,
+				featured: document.getElementById('featured').checked,
+				logoBase64,
+				logoExt
+			};
+
+			const res = await fetch(WORKER_URL, {
+				method: 'POST',
+				headers: {
+					'content-type': 'application/json',
+					'x-publish-secret': secretInput.value
+				},
+				body: JSON.stringify(payload)
+			});
+			const result = await res.json();
+
+			if (!res.ok || !result.success) {
+				throw new Error(result.error || `Lỗi không xác định (HTTP ${res.status})`);
+			}
+
+			statusEl.className = 'ok';
+			statusEl.textContent = `Đã đăng thành công! Site sẽ cập nhật trong 1-2 phút tại pip24h.com/${payload.lang}/reviews/${result.slug}/`;
+			form.reset();
+			updateSlugPreview();
+		} catch (err) {
+			statusEl.className = 'err';
+			statusEl.textContent = 'Đăng thất bại: ' + err.message;
+		} finally {
+			submitBtn.disabled = false;
+			submitBtn.textContent = 'Đăng bài';
+		}
+	});
+</script>
+
+</body>
+</html>

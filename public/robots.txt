@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /go/
+Disallow: /publish/
 
 Sitemap: https://pip24h.com/sitemap-index.xml
