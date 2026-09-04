@@ -1,6 +1,6 @@
 ---
 name: "Axi"
-logo: "/images/brokers/axi/logo.webp"
+logo: "/images/brokers/axi/logo.png"
 assetType: "forex"
 rating: 4.4
 summary: "Sàn của Úc không yêu cầu nạp tối thiểu, có giá ECN thực sự trên tài khoản Pro."
@@ -25,9 +25,9 @@ pros:
 cons:
   - "Chỉ hỗ trợ MetaTrader 4, không có MetaTrader 5 hay cTrader"
   - "Đòn bẩy tối đa thấp hơn nhiều sàn được quản lý offshore"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_AXI"
+affiliateUrl: "https://www.axi.com/int/live-account?promocode=4719010"
 featured: false
-updatedDate: 2026-08-11
+updatedDate: 2026-09-04
 ---
 
 Axi (trước đây là AxiTrader) là sàn được quản lý tại Úc, nổi bật nhờ kết hợp rào cản gia nhập thấp với mức giá ECN thực sự chặt chẽ trên tài khoản Pro.

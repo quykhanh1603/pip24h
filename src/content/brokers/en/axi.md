@@ -1,6 +1,6 @@
 ---
 name: "Axi"
-logo: "/images/brokers/axi/logo.webp"
+logo: "/images/brokers/axi/logo.png"
 assetType: "forex"
 rating: 4.4
 summary: "An Australian broker with no minimum deposit requirement and genuine ECN pricing on its Pro account."
@@ -25,9 +25,9 @@ pros:
 cons:
   - "MetaTrader 4 only, no MetaTrader 5 or cTrader option"
   - "Maximum leverage is lower than many offshore-regulated brokers"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_AXI"
+affiliateUrl: "https://www.axi.com/int/live-account?promocode=4719010"
 featured: false
-updatedDate: 2026-08-11
+updatedDate: 2026-09-04
 ---
 
 Axi (formerly AxiTrader) is an Australian-regulated broker known for combining a low barrier to entry with genuinely tight ECN pricing on its Pro account tier.
