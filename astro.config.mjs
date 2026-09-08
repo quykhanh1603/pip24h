@@ -10,7 +10,7 @@ export default defineConfig({
   site: 'https://pip24h.com',
 
   i18n: {
-    locales: ['en', 'vi'],
+    locales: ['en', 'ja'],
     defaultLocale: 'en',
     routing: {
       prefixDefaultLocale: true

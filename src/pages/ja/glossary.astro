@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const terms = [
+	{ term: 'Altcoin（アルトコイン）', def: 'ビットコイン以外の暗号資産の総称。イーサリアム、ソラナ、XRPなどが含まれます。' },
+	{ term: 'Ask Price（アスク／買値）', def: 'その銘柄を買うことができる価格。常にビッド価格よりわずかに高くなります。' },
+	{ term: 'Balance（残高）', def: '取引口座にある現金の総額。保有中ポジションの評価損益は含みません。' },
+	{ term: 'Bid Price（ビッド／売値）', def: 'その銘柄を売ることができる価格。常にアスク価格よりわずかに低くなります。' },
+	{ term: 'Blockchain（ブロックチェーン）', def: '多数のコンピューター上に取引記録を分散して保持する、改ざんが困難な分散型台帳。ビットコインをはじめとする多くの暗号資産を支える基盤技術です。' },
+	{ term: 'CFD（差金決済取引）', def: '原資産を保有することなく、その価格変動を取引できるデリバティブ契約。損益は建値と決済値の差額で計算されます。' },
+	{ term: 'Cold Wallet（コールドウォレット）', def: 'インターネットに接続せずオフラインで暗号資産を保管するウォレット（ハードウェア機器など）。攻撃を受けにくく、長期保管に向いています。' },
+	{ term: 'Drawdown（ドローダウン）', def: '有効証拠金の直近の最高値から、その後の最安値までの下落幅。通常はパーセントで表し、リスクの大きさを測る重要な指標です。' },
+	{ term: 'ECN（電子取引ネットワーク）', def: '市場参加者の注文を直接付け合わせる方式。スプレッドは狭くなる傾向がありますが、別途取引手数料がかかります。' },
+	{ term: 'Equity（有効証拠金）', def: '口座残高に、保有中ポジションの評価損益を加減した金額。' },
+	{ term: 'Fill（約定）', def: '特定の価格で注文が成立すること。注文が全数量執行された時点で「約定した」といいます。' },
+	{ term: 'FOMC（連邦公開市場委員会）', def: '米連邦準備制度において政策金利を決定する委員会。その会合はFX市場で最も注目されるイベントのひとつです。' },
+	{ term: 'Fundamental Analysis（ファンダメンタルズ分析）', def: 'チャートの形状ではなく、経済指標、金利、地政学的な出来事にもとづいて通貨の価値を評価する手法。' },
+	{ term: 'Gap（窓）', def: '途中の価格帯で取引が成立しないまま価格が飛ぶこと。週末や祝日明けの市場再開時によく見られます。' },
+	{ term: 'Grid Trading（グリッドトレード）', def: '現在値の上下に一定間隔で買い注文と売り注文を並べ、通常の値動きから利益を狙う手法。' },
+	{ term: 'Hedging（ヘッジ）', def: '保有中のポジションのリスクを相殺するために別のポジションを持つこと。同一通貨ペアで買いと売りを同時に保有する例などがあります。' },
+	{ term: 'Hot Wallet（ホットウォレット）', def: 'インターネットに接続された暗号資産ウォレット。頻繁な取引には便利ですが、コールドウォレットより攻撃を受けやすくなります。' },
+	{ term: 'Inflation（インフレ）', def: 'モノやサービスの全般的な価格水準が時間とともに上昇し、購買力が低下すること。中央銀行の金利決定を左右する重要な要素です。' },
+	{ term: 'Interbank Market（インターバンク市場）', def: '銀行同士が卸売価格で直接通貨を売買するネットワーク。より広いFX市場の土台となっています。' },
+	{ term: 'Jobless Claims（新規失業保険申請件数）', def: '米国で毎週発表される新規失業保険申請件数。月次の雇用統計の合間に労働市場の状況を早期に把握する手がかりとして使われます。' },
+	{ term: 'KYC（本人確認）', def: 'ブローカーが顧客の入出金を認める前に完了させる必要がある、法令にもとづく本人確認手続き。' },
+	{ term: 'Leverage（レバレッジ）', def: 'ブローカーから資金を借りる形で、入金額より大きなポジションを扱える仕組み。レバレッジ1:100なら100ドルで1万ドル相当を動かせます。利益だけでなく損失も同じだけ拡大します。' },
+	{ term: 'Limit Order（指値注文）', def: '現在の市場価格ではなく、指定した価格またはそれより有利な価格でのみ約定する注文。' },
+	{ term: 'Liquidity（流動性）', def: '価格を大きく動かさずに売買できる度合い。主要通貨ペアのように流動性が高い市場ほど、スプレッドは狭くなる傾向があります。' },
+	{ term: 'Lot（ロット）', def: '取引数量の標準単位。1標準ロットは基軸通貨10万通貨、1ミニロットは1万通貨、1マイクロロットは1,000通貨です。' },
+	{ term: 'Margin（証拠金）', def: 'レバレッジを効かせたポジションを建て、維持するために、ブローカーが担保として拘束するご自身の資金。' },
+	{ term: 'Margin Call（マージンコール）', def: '口座の有効証拠金が必要証拠金の水準に近づいた際にブローカーから出される警告。ストップアウトを避けるには追加入金かポジションの縮小が必要になります。' },
+	{ term: 'Market Maker（マーケットメイカー）', def: '顧客の注文を外部の流動性提供者に流さず、社内で対当させるブローカーの方式。' },
+	{ term: 'Market Order（成行注文）', def: '現在の市場価格で即時に約定させる売買注文。' },
+	{ term: 'MetaTrader（MT4/MT5）', def: '個人向けFXで最も普及しているサードパーティ製の取引プラットフォーム。チャート機能と自動売買（EA）に対応し、ブローカーが変わっても同じ操作感で使えます。' },
+	{ term: 'Net Position（ネットポジション）', def: '同一銘柄の保有ポジションについて、買いと売りを相殺した後の数量と方向。' },
+	{ term: 'NFP（米雇用統計・非農業部門雇用者数）', def: '農業部門を除く米国の雇用者数の増減を示す月次統計。市場への影響が最も大きい経済イベントのひとつとされています。' },
+	{ term: 'OTC（相対取引）', def: '中央集権的な取引所を介さず、当事者同士が直接行う取引。FX取引の大半はこの形式で行われています。' },
+	{ term: 'Order Book（板情報）', def: 'ある銘柄について、各価格帯で待機している買い注文と売り注文の一覧。' },
+	{ term: 'Pip（ピップス）', def: '通貨ペアの標準化された最小の値動き単位。通常は小数第4位、円が絡むペアでは小数第2位を指します。' },
+	{ term: 'Quantitative Easing（量的緩和）', def: '中央銀行が資産を買い入れて経済に資金を供給する政策。金利を押し下げ、景気を刺激する目的で行われます。' },
+	{ term: 'Quote Currency（決済通貨）', def: '通貨ペアの2番目の通貨。基軸通貨1単位を買うのに必要な金額を表します。' },
+	{ term: 'Regulator（金融規制当局）', def: 'FCA、ASIC、CySECなど、ブローカーに免許を与えて監督する政府機関や独立機関。顧客資金の保護と透明性の確保を目的としています。' },
+	{ term: 'Scalping（スキャルピング）', def: '小さな値動きから利益を狙う超短期の取引スタイル。数秒から数分でポジションを決済し、1日に何度も売買します。' },
+	{ term: 'Slippage（スリッページ）', def: '約定を期待した価格と、実際に約定した価格との差。相場が急変したときや流動性が低いときに発生しやすくなります。' },
+	{ term: 'Spread（スプレッド）', def: 'ビッド価格とアスク価格の差。ブローカーが取引コストを徴収する主な方法のひとつです。' },
+	{ term: 'Stablecoin（ステーブルコイン）', def: '価値を安定させるよう設計された暗号資産。USDTやUSDCのように、米ドルなどの法定通貨と1対1で連動させるものが一般的です。' },
+	{ term: 'Staking（ステーキング）', def: 'プルーフ・オブ・ステーク方式のネットワークの安全性を支えるために暗号資産をロックし、その対価として同じ通貨で報酬を受け取る仕組み。' },
+	{ term: 'Stop Loss（損切り注文）', def: '価格が指定した水準に達した時点でポジションを自動的に決済し、損失を一定の範囲に抑える注文。' },
+	{ term: 'Stop Out Level（ストップアウト水準）', def: '口座残高がマイナスになるのを防ぐため、ブローカーが保有ポジションを強制的に決済し始める証拠金の水準。' },
+	{ term: 'STP（ストレート・スルー・プロセッシング）', def: 'ディーリングデスクを介さず、顧客の注文をそのまま外部の流動性提供者へ流すブローカーの方式。' },
+	{ term: 'Swap（スワップポイント／ロールオーバー）', def: 'レバレッジポジションを日々の取引終了時刻をまたいで保有した際に発生する費用または受取金。2通貨間の金利差を反映します。' },
+	{ term: 'Take Profit（利食い注文）', def: 'あらかじめ設定した目標価格に達した時点でポジションを自動的に決済する注文。' },
+	{ term: 'Unrealized P&L（評価損益）', def: 'まだ保有中のポジションの含み益・含み損。決済して初めて「実現」損益となります。' },
+	{ term: 'Uptrend（上昇トレンド）', def: '高値と安値がともに切り上がり続ける、価格の上昇局面。' },
+	{ term: 'Volatility（ボラティリティ）', def: '一定期間における資産価格の変動の大きさと速さ。高いほど値動きが激しく、速くなります。' },
+	{ term: 'Volume（出来高）', def: '一定期間に取引された数量の合計。市場の関心度や流動性を測る指標として使われます。' },
+	{ term: 'Weighted Average（加重平均）', def: '一部の値に他より大きな重みを与えて求める平均。直近の価格をより重視する移動平均などが例です。' },
+	{ term: 'Whipsaw（往復ビンタ）', def: '価格が激しく反転を繰り返す不安定な相場状況。値動きの上下両側で損切り注文が次々と発動されがちです。' },
+	{ term: 'XAU/USD（金／米ドル）', def: '米ドル建ての金を表す銘柄コード。多くのFXブローカーが通貨ペアと並べて提供しています。' },
+	{ term: 'Yield（利回り）', def: '資産を保有することで得られる収益。受け取る金利などを指し、キャリートレードにおける通貨の強さを左右する主要因です。' },
+	{ term: 'YoY（前年同期比）', def: 'ある指標を1年前の同じ時期と比較する方法。経済データから季節要因を取り除く目的で使われます。' },
+	{ term: 'Zero-Sum Game（ゼロサムゲーム）', def: 'あるトレーダーの利益が別のトレーダーの損失とちょうど一致する状況。レバレッジをかけたデリバティブ取引を説明する際によく使われます。' }
+];
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const grouped = new Map<string, typeof terms>();
+for (const item of [...terms].sort((a, b) => a.term.localeCompare(b.term))) {
+	const letter = item.term[0].toUpperCase();
+	if (!grouped.has(letter)) grouped.set(letter, []);
+	grouped.get(letter)!.push(item);
+}
+---
+
+<Layout lang="ja" title="FX &amp; 暗号資産 用語集 — Pip24h" description="pips、スプレッド、レバレッジ、証拠金など、FX・暗号資産の取引でよく使われる用語をわかりやすく解説します。">
+	<article class="prose prose-slate dark:prose-invert max-w-none">
+		<h1>FX &amp; 暗号資産 用語集</h1>
+		<p>
+			ブローカーの公式サイトや当サイトのレビューでよく目にする取引用語を、
+			短く分かりやすい言葉で解説しています。
+		</p>
+	</article>
+
+	<div class="sticky top-16 z-10 -mx-4 mt-6 flex flex-wrap gap-1.5 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-lg sm:border sm:px-3 dark:border-slate-800 dark:bg-slate-950/95">
+		{alphabet.map((letter) =>
+			grouped.has(letter) ? (
+				<a
+					href={`#letter-${letter}`}
+					class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-300 text-sm font-semibold text-brand-navy hover:border-brand-blue hover:bg-brand-blue-light dark:border-slate-700 dark:text-slate-200 dark:hover:bg-brand-blue/10"
+				>
+					{letter}
+				</a>
+			) : (
+				<span class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-100 text-sm text-slate-300 dark:border-slate-800 dark:text-slate-700">
+					{letter}
+				</span>
+			)
+		)}
+	</div>
+
+	<div class="mt-8 space-y-10">
+		{[...grouped.entries()].map(([letter, items]) => (
+			<section id={`letter-${letter}`} class="scroll-mt-24">
+				<h2 class="text-xl font-bold text-brand-blue">{letter}</h2>
+				<div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{items.map(({ term, def }) => (
+						<div class="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+							<h3 class="font-semibold text-brand-navy dark:text-white">{term}</h3>
+							<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{def}</p>
+						</div>
+					))}
+				</div>
+			</section>
+		))}
+	</div>
+</Layout>

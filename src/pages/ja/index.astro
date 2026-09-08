@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import BrokerTable from '../../components/BrokerTable.astro';
+import InDepthCard from '../../components/InDepthCard.astro';
+
+const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('ja/'));
+const featured = brokers.filter((b) => b.data.featured).sort((a, b) => b.data.rating - a.data.rating);
+
+const badges = [
+	`検証済みブローカー${brokers.length}社`,
+	'実口座でテスト',
+	'毎月更新',
+	'独立したレビュー'
+];
+---
+
+<Layout lang="ja" title="Pip24h — 2026年 おすすめFX・暗号資産ブローカー ランキング＆レビュー" description="主要なFX・暗号資産ブローカーを実口座で検証し、取引コスト、プラットフォーム、信頼性を比較・評価しています。">
+	<section class="relative overflow-hidden py-10 text-center sm:py-14">
+		<div
+			class="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden h-72 dark:block"
+			style="background: radial-gradient(circle at 30% 20%, rgba(45,212,191,0.16), transparent 45%), radial-gradient(circle at 75% 10%, rgba(168,85,247,0.16), transparent 45%);"
+		>
+		</div>
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl dark:bg-gradient-to-r dark:from-teal-300 dark:via-sky-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent">
+			2026年 おすすめFX &amp; 暗号資産ブローカー — ランキングと詳細レビュー
+		</h1>
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
+			スプレッド、出金スピード、金融ライセンス、取引プラットフォームを各社で実際に検証しています。ご自身で一社ずつ試す必要はありません。
+		</p>
+		<div class="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3 text-xs font-medium text-brand-navy dark:text-slate-300">
+			{badges.map((b) => (
+				<span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm dark:border-slate-700 dark:bg-slate-900">{b}</span>
+			))}
+		</div>
+	</section>
+
+	<section id="comparison" class="scroll-mt-6">
+		<h2 class="text-xl font-bold text-brand-navy dark:text-white">かんたん比較表</h2>
+		<div class="mt-4">
+			<BrokerTable brokers={brokers} lang="ja" />
+		</div>
+	</section>
+
+	{featured.length > 0 && (
+		<section class="mt-14">
+			<h2 class="text-xl font-bold text-brand-navy dark:text-white">詳細レビュー</h2>
+			<div class="mt-4 flex flex-col gap-5">
+				{featured.map((broker) => <InDepthCard broker={broker} lang="ja" />)}
+			</div>
+		</section>
+	)}
+
+	<section class="mt-14 text-center">
+		<a
+			href="/ja/reviews/"
+			class="inline-block rounded-md border border-brand-navy px-6 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-navy hover:text-white dark:border-brand-blue dark:text-brand-blue-light dark:hover:bg-brand-blue dark:hover:text-white"
+		>
+			レビュー済みの{brokers.length}社をすべて見る
+		</a>
+	</section>
+</Layout>

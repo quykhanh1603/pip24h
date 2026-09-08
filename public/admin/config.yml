@@ -9,47 +9,47 @@ media_folder: "public/images/brokers"
 public_folder: "/images/brokers"
 
 collections:
-  - name: "brokers_vi"
-    label: "Sàn (Tiếng Việt)"
-    folder: "src/content/brokers/vi"
+  - name: "brokers_ja"
+    label: "ブローカー（日本語）"
+    folder: "src/content/brokers/ja"
     create: true
     slug: "{{slug}}"
     media_folder: "../../../../public/images/brokers/{{slug}}"
     public_folder: "/images/brokers/{{slug}}"
     fields:
-      - { label: "Tên sàn", name: "name", widget: "string" }
-      - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "Loại sàn", name: "assetType", widget: "select", options: ["forex", "crypto", "both"] }
-      - { label: "Điểm đánh giá (0-5)", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
-      - { label: "Mô tả ngắn", name: "summary", widget: "text" }
-      - { label: "Năm thành lập", name: "foundedYear", widget: "number", required: false }
-      - { label: "Nạp tối thiểu", name: "minDeposit", widget: "string", required: false }
-      - { label: "Spread từ", name: "spreadFrom", widget: "string", required: false }
-      - { label: "Đòn bẩy tối đa", name: "maxLeverage", widget: "string", required: false, hint: "vd: 1:2000" }
-      - { label: "Rút tiền nhanh", name: "instantWithdrawal", widget: "boolean", default: false }
-      - { label: "Quản lý bởi", name: "regulation", widget: "list", default: [] }
-      - { label: "Nền tảng giao dịch", name: "platforms", widget: "list", default: [] }
-      - { label: "Ưu điểm", name: "pros", widget: "list", default: [] }
-      - { label: "Nhược điểm", name: "cons", widget: "list", default: [] }
+      - { label: "ブローカー名", name: "name", widget: "string" }
+      - { label: "ロゴ", name: "logo", widget: "image" }
+      - { label: "取扱商品", name: "assetType", widget: "select", options: ["forex", "crypto", "both"] }
+      - { label: "評価（0-5）", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
+      - { label: "概要", name: "summary", widget: "text" }
+      - { label: "設立年", name: "foundedYear", widget: "number", required: false }
+      - { label: "最低入金額", name: "minDeposit", widget: "string", required: false }
+      - { label: "最小スプレッド", name: "spreadFrom", widget: "string", required: false }
+      - { label: "最大レバレッジ", name: "maxLeverage", widget: "string", required: false, hint: "例: 1:2000" }
+      - { label: "即時出金", name: "instantWithdrawal", widget: "boolean", default: false }
+      - { label: "金融ライセンス", name: "regulation", widget: "list", default: [] }
+      - { label: "取引プラットフォーム", name: "platforms", widget: "list", default: [] }
+      - { label: "メリット", name: "pros", widget: "list", default: [] }
+      - { label: "デメリット", name: "cons", widget: "list", default: [] }
       - {
-          label: "Nhóm phù hợp",
+          label: "おすすめの用途",
           name: "category",
           widget: "select",
           multiple: true,
           default: [],
           options:
             [
-              { label: "Scalping", value: "scalping" },
-              { label: "Người mới", value: "beginners" },
+              { label: "スキャルピング", value: "scalping" },
+              { label: "初心者向け", value: "beginners" },
               { label: "ECN/Raw", value: "ecn" },
-              { label: "Nạp thấp", value: "low-deposit" },
+              { label: "低額入金", value: "low-deposit" },
             ],
         }
-      - { label: "Badge nổi bật", name: "badge", widget: "string", required: false, hint: 'vd: "Tốt nhất tổng thể"' }
-      - { label: "Link affiliate", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
-      - { label: "Nổi bật (featured)", name: "featured", widget: "boolean", default: false }
-      - { label: "Ngày cập nhật", name: "updatedDate", widget: "datetime" }
-      - { label: "Nội dung chi tiết", name: "body", widget: "markdown" }
+      - { label: "バッジ", name: "badge", widget: "string", required: false, hint: '例: "総合No.1"' }
+      - { label: "アフィリエイトリンク", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
+      - { label: "注目（featured）", name: "featured", widget: "boolean", default: false }
+      - { label: "更新日", name: "updatedDate", widget: "datetime" }
+      - { label: "本文", name: "body", widget: "markdown" }
 
   - name: "brokers_en"
     label: "Broker (English)"

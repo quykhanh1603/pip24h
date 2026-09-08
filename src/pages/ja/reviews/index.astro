@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import BrokerCard from '../../../components/BrokerCard.astro';
+
+const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('ja/'))).sort(
+	(a, b) => b.data.rating - a.data.rating
+);
+---
+
+<Layout lang="ja" title="ブローカーレビュー一覧 — Pip24h" description="Pip24hがレビューしたFX・暗号資産ブローカーの一覧です。">
+	<h1 class="text-2xl font-bold text-brand-navy dark:text-white">ブローカーレビュー一覧</h1>
+	<div class="mt-8 flex flex-col gap-4">
+		{brokers.length === 0 && <p class="text-slate-500 dark:text-slate-400">まだブローカーが登録されていません。</p>}
+		{brokers.map((broker) => <BrokerCard broker={broker} lang="ja" />)}
+	</div>
+</Layout>

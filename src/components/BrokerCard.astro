@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
 	broker: CollectionEntry<'brokers'>;
-	lang: 'vi' | 'en';
+	lang: 'ja' | 'en';
 }
 
 const { broker, lang } = Astro.props;
@@ -11,10 +11,9 @@ const { name, logo, rating, summary, assetType, minDeposit, spreadFrom } = broke
 const slug = broker.id.split('/').slice(1).join('/');
 
 const assetTypeLabel = {
-	forex: lang === 'vi' ? 'Forex' : 'Forex',
-	crypto: lang === 'vi' ? 'Crypto' : 'Crypto',
-	both: lang === 'vi' ? 'Forex & Crypto' : 'Forex & Crypto'
-}[assetType];
+	ja: { forex: 'FX', crypto: '暗号資産', both: 'FX・暗号資産' },
+	en: { forex: 'Forex', crypto: 'Crypto', both: 'Forex & Crypto' }
+}[lang][assetType];
 ---
 
 <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center dark:border-slate-800 dark:bg-slate-900">
@@ -29,7 +28,7 @@ const assetTypeLabel = {
 		<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{summary}</p>
 		<div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
 			<span>⭐ {rating.toFixed(1)}/5</span>
-			{minDeposit && <span>{lang === 'vi' ? 'Nạp tối thiểu' : 'Min deposit'}: {minDeposit}</span>}
+			{minDeposit && <span>{lang === 'ja' ? '最低入金額' : 'Min deposit'}: {minDeposit}</span>}
 			{spreadFrom && <span>Spread: {spreadFrom}</span>}
 		</div>
 	</div>
@@ -38,7 +37,7 @@ const assetTypeLabel = {
 			href={`/${lang}/reviews/${slug}/`}
 			class="rounded-md border border-slate-300 px-3 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
 		>
-			{lang === 'vi' ? 'Xem đánh giá' : 'Read review'}
+			{lang === 'ja' ? 'レビューを見る' : 'Read review'}
 		</a>
 		<a
 			href={`/go/${slug}/`}
@@ -46,7 +45,7 @@ const assetTypeLabel = {
 			rel="nofollow sponsored noopener"
 			class="rounded-md bg-brand-blue px-3 py-2 text-center text-sm font-semibold text-white hover:bg-brand-blue-dark"
 		>
-			{lang === 'vi' ? 'Mở tài khoản' : 'Open account'}
+			{lang === 'ja' ? '口座開設' : 'Open account'}
 		</a>
 	</div>
 </div>

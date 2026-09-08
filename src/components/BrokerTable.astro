@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
 	brokers: CollectionEntry<'brokers'>[];
-	lang: 'vi' | 'en';
+	lang: 'ja' | 'en';
 }
 
 const { brokers, lang } = Astro.props;
@@ -11,21 +11,21 @@ const { brokers, lang } = Astro.props;
 const sorted = [...brokers].sort((a, b) => b.data.rating - a.data.rating);
 
 const t = {
-	vi: {
-		all: 'Tất cả',
-		scalping: 'Scalping',
-		beginners: 'Người mới',
+	ja: {
+		all: 'すべて',
+		scalping: 'スキャルピング',
+		beginners: '初心者向け',
 		ecn: 'ECN/Raw',
-		lowDeposit: 'Nạp thấp',
-		rank: 'Hạng',
-		broker: 'Sàn',
-		score: 'Điểm',
-		minSpread: 'Spread tối thiểu',
-		minDeposit: 'Nạp tối thiểu',
-		maxLeverage: 'Đòn bẩy tối đa',
-		regulation: 'Quản lý bởi',
-		instantWithdrawal: 'Rút nhanh',
-		open: 'Mở tài khoản'
+		lowDeposit: '低額入金',
+		rank: '順位',
+		broker: 'ブローカー',
+		score: '評価',
+		minSpread: '最小スプレッド',
+		minDeposit: '最低入金額',
+		maxLeverage: '最大レバレッジ',
+		regulation: '金融ライセンス',
+		instantWithdrawal: '即時出金',
+		open: '口座開設'
 	},
 	en: {
 		all: 'All Brokers',

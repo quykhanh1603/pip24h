@@ -132,7 +132,7 @@ export default {
 		}
 
 		const { lang, name, logoBase64, logoExt } = payload;
-		if (lang !== 'vi' && lang !== 'en') {
+		if (lang !== 'ja' && lang !== 'en') {
 			return json({ success: false, error: 'Ngôn ngữ không hợp lệ' }, 400);
 		}
 		if (!name || !payload.summary || payload.rating === undefined) {

@@ -1,16 +1,16 @@
 ---
 interface Props {
-	lang: 'vi' | 'en';
+	lang: 'ja' | 'en';
 	title: string;
 }
 
 const { lang, title } = Astro.props;
 
 const t = {
-	vi: {
-		badge: 'Sắp ra mắt',
-		body: 'Chúng tôi đang xây dựng nội dung cho mục này. Quay lại sau nhé!',
-		cta: 'Xem đánh giá sàn'
+	ja: {
+		badge: '近日公開',
+		body: 'このセクションのコンテンツは現在準備中です。もうしばらくお待ちください。',
+		cta: 'ブローカーレビューを見る'
 	},
 	en: {
 		badge: 'Coming Soon',

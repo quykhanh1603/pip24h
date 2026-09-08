@@ -5,22 +5,22 @@ import { getCollection } from 'astro:content';
 interface Props {
 	title: string;
 	description?: string;
-	lang: 'vi' | 'en';
+	lang: 'ja' | 'en';
 }
 
 const { title, description = '', lang } = Astro.props;
-const otherLang = lang === 'vi' ? 'en' : 'vi';
-const switchedPath = Astro.url.pathname.replace(/^\/(vi|en)/, `/${otherLang}`);
+const otherLang = lang === 'ja' ? 'en' : 'ja';
+const switchedPath = Astro.url.pathname.replace(/^\/(ja|en)/, `/${otherLang}`);
 
 const navText = {
-	vi: {
-		topBrokers: 'Sàn hàng đầu',
-		news: 'Tin tức',
-		guides: 'Hướng dẫn',
-		glossary: 'Từ điển',
-		compare: 'So sánh',
-		about: 'Giới thiệu',
-		reviews: 'Đánh giá sàn'
+	ja: {
+		topBrokers: 'トップブローカー',
+		news: 'ニュース',
+		guides: 'ガイド',
+		glossary: '用語集',
+		compare: '比較',
+		about: '当サイトについて',
+		reviews: 'ブローカーレビュー'
 	},
 	en: {
 		topBrokers: 'Top Brokers',
@@ -45,17 +45,17 @@ const navItems = [
 const currentPath = Astro.url.pathname;
 
 const footerText = {
-	vi: {
-		mission: 'Pip24h giúp trader Việt Nam chọn sàn forex, crypto uy tín thông qua đánh giá độc lập, kiểm tra bằng tài khoản thật.',
-		quickLinks: 'Liên kết nhanh',
-		topBrokers: 'Sàn nổi bật',
-		legal: 'Pháp lý',
-		privacy: 'Chính sách bảo mật',
-		terms: 'Điều khoản & Cảnh báo rủi ro',
-		disclosure: 'Công bố Affiliate',
-		risk: 'Giao dịch forex/crypto tiềm ẩn rủi ro cao. Nội dung mang tính tham khảo, không phải lời khuyên đầu tư.',
-		affiliate: 'Một số liên kết trên trang là liên kết affiliate — chúng tôi có thể nhận hoa hồng khi bạn đăng ký qua các liên kết này.',
-		rights: 'Bảo lưu mọi quyền.'
+	ja: {
+		mission: 'Pip24hは、実口座での検証にもとづく独立したレビューを通じて、信頼できるFX・暗号資産ブローカー選びをサポートします。',
+		quickLinks: 'クイックリンク',
+		topBrokers: 'トップブローカー',
+		legal: '法的情報',
+		privacy: 'プライバシーポリシー',
+		terms: '利用規約・リスク開示',
+		disclosure: 'アフィリエイト開示',
+		risk: 'FX・暗号資産の取引には大きなリスクが伴います。本サイトの内容は情報提供を目的としたものであり、投資助言ではありません。',
+		affiliate: '当サイトの一部のリンクはアフィリエイトリンクです。これらのリンクを経由してご登録いただいた場合、当サイトが報酬を受け取ることがあります。',
+		rights: '無断転載を禁じます。'
 	},
 	en: {
 		mission: 'Pip24h helps traders choose trustworthy forex and crypto brokers through independent, real-account-tested reviews.',
@@ -140,7 +140,7 @@ const topBrokers = [...brokers]
 						href={switchedPath}
 						class="rounded-full border border-slate-500 px-3 py-1 text-xs font-semibold text-slate-200 hover:border-white hover:text-white"
 					>
-						{lang === 'vi' ? 'VI' : 'EN'} <span class="text-slate-500">/</span> {lang === 'vi' ? 'EN' : 'VI'}
+						{lang === 'ja' ? 'JA' : 'EN'} <span class="text-slate-500">/</span> {lang === 'ja' ? 'EN' : 'JA'}
 					</a>
 				</div>
 			</div>

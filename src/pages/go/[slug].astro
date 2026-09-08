@@ -8,7 +8,7 @@ export async function getStaticPaths() {
 	for (const broker of brokers) {
 		const [locale, ...rest] = broker.id.split('/');
 		const slug = rest.join('/');
-		if (!bySlug.has(slug) || locale === 'vi') {
+		if (!bySlug.has(slug) || locale === 'en') {
 			bySlug.set(slug, broker.data.affiliateUrl);
 		}
 	}

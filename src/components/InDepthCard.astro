@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
 	broker: CollectionEntry<'brokers'>;
-	lang: 'vi' | 'en';
+	lang: 'ja' | 'en';
 }
 
 const { broker, lang } = Astro.props;
@@ -11,13 +11,13 @@ const { name, logo, rating, summary, minDeposit, spreadFrom, maxLeverage, platfo
 const slug = broker.id.split('/').slice(1).join('/');
 
 const t = {
-	vi: {
-		minDeposit: 'Nạp tối thiểu',
-		spread: 'Spread',
-		leverage: 'Đòn bẩy',
-		platforms: 'Nền tảng',
-		readReview: 'Xem đánh giá',
-		open: 'Mở tài khoản'
+	ja: {
+		minDeposit: '最低入金額',
+		spread: 'スプレッド',
+		leverage: 'レバレッジ',
+		platforms: 'プラットフォーム',
+		readReview: 'レビューを見る',
+		open: '口座開設'
 	},
 	en: {
 		minDeposit: 'Min deposit',
