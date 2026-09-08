@@ -92,3 +92,53 @@ collections:
       - { label: "Featured", name: "featured", widget: "boolean", default: false }
       - { label: "Updated date", name: "updatedDate", widget: "datetime" }
       - { label: "Body content", name: "body", widget: "markdown" }
+
+  - name: "guides_ja"
+    label: "ガイド（日本語）"
+    folder: "src/content/guides/ja"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "タイトル", name: "title", widget: "string" }
+      - { label: "概要", name: "summary", widget: "text", hint: "一覧カードに表示される1〜2文の説明" }
+      - {
+          label: "カテゴリー",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              { label: "基礎知識", value: "basics" },
+              { label: "リスク管理", value: "risk-management" },
+              { label: "テクニカル分析", value: "technical-analysis" },
+              { label: "チャートパターン", value: "chart-patterns" },
+              { label: "トレード心理", value: "psychology" },
+              { label: "ファンダメンタルズ分析", value: "fundamentals" },
+            ],
+        }
+      - { label: "更新日", name: "updatedDate", widget: "datetime" }
+      - { label: "本文", name: "body", widget: "markdown" }
+
+  - name: "guides_en"
+    label: "Guides (English)"
+    folder: "src/content/guides/en"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text", hint: "1-2 sentences shown on the listing card" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              { label: "Basics", value: "basics" },
+              { label: "Risk Management", value: "risk-management" },
+              { label: "Technical Analysis", value: "technical-analysis" },
+              { label: "Chart Patterns", value: "chart-patterns" },
+              { label: "Psychology", value: "psychology" },
+              { label: "Fundamentals", value: "fundamentals" },
+            ],
+        }
+      - { label: "Updated date", name: "updatedDate", widget: "datetime" }
+      - { label: "Body content", name: "body", widget: "markdown" }
