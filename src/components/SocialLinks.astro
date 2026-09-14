@@ -1,0 +1,49 @@
+---
+import { socialLinks } from '../data/social';
+
+interface Props {
+	variant?: 'icons' | 'buttons';
+}
+
+const { variant = 'icons' } = Astro.props;
+---
+
+{
+	variant === 'icons' ? (
+		<ul class="mt-4 flex items-center gap-2">
+			{socialLinks.map((s) => (
+				<li>
+					<a
+						href={s.href}
+						target="_blank"
+						rel="me noopener"
+						aria-label={s.label}
+						title={s.label}
+						style={`--social:${s.color}`}
+						class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-[var(--social)] hover:text-[var(--social)] dark:border-slate-700 dark:text-slate-400"
+					>
+						<svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+							<path d={s.icon} />
+						</svg>
+					</a>
+				</li>
+			))}
+		</ul>
+	) : (
+		<div class="not-prose mt-4 flex flex-wrap gap-3">
+			{socialLinks.map((s) => (
+				<a
+					href={s.href}
+					target="_blank"
+					rel="me noopener"
+					class="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-brand-blue hover:text-brand-blue dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+				>
+					<svg viewBox="0 0 24 24" fill={s.color} class="h-5 w-5" aria-hidden="true">
+						<path d={s.icon} />
+					</svg>
+					{s.label}
+				</a>
+			))}
+		</div>
+	)
+}
