@@ -25,9 +25,7 @@ function readingTime(body: string) {
 
 <Layout lang="ja" title="取引ガイド — Pip24h" description="FXの基礎知識、リスク管理、テクニカル分析、チャートパターンをやさしく解説したガイド集です。">
 	<h1 class="text-2xl font-bold text-brand-navy dark:text-white">取引ガイド</h1>
-	<p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-		<span class="font-semibold text-brand-navy dark:text-white">{guides.length}</span>件のガイドを掲載しています
-	</p>
+	<p class="mt-2 text-sm text-slate-500 dark:text-slate-400"><span class="font-semibold text-brand-navy dark:text-white">{guides.length}</span>件のガイドを掲載しています</p>
 
 	<div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 		{guides.map((guide) => (
@@ -40,9 +38,7 @@ function readingTime(body: string) {
 				</span>
 				<h2 class="mt-3 line-clamp-2 font-bold text-brand-navy dark:text-white">{guide.data.title}</h2>
 				<p class="mt-2 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">{guide.data.summary}</p>
-				<p class="mt-4 text-xs text-slate-400 dark:text-slate-500">
-					{dateFormatter.format(guide.data.updatedDate)} &middot; 約{readingTime(guide.body ?? '')}分
-				</p>
+				<p class="mt-4 text-xs text-slate-400 dark:text-slate-500">{dateFormatter.format(guide.data.updatedDate)} &middot; 約{readingTime(guide.body ?? '')}分</p>
 			</a>
 		))}
 	</div>

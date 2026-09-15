@@ -4,9 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout lang="ja" title="経済カレンダー — Pip24h" description="今週の主要通貨の経済指標カレンダー。重要イベント、予想値、前回値をまとめて確認できます。">
 	<h1 class="text-2xl font-bold text-brand-navy dark:text-white">経済カレンダー</h1>
-	<p class="mt-2 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
-		今週の主要通貨に関する重要な経済イベントです。6時間ごとに更新され、時刻はお使いの端末のタイムゾーンで表示されます。
-	</p>
+	<p class="mt-2 max-w-2xl text-sm text-slate-500 dark:text-slate-400">今週の主要通貨に関する重要な経済イベントです。6時間ごとに更新され、時刻はお使いの端末のタイムゾーンで表示されます。</p>
 
 	<div id="impact-filters" class="mt-5 flex flex-wrap gap-2">
 		<button type="button" data-impact="all" class="rounded-full border px-3 py-1.5 text-xs font-medium cursor-pointer">すべて</button>
@@ -19,9 +17,7 @@ import Layout from '../../layouts/Layout.astro';
 		<p id="calendar-status" class="text-sm text-slate-500 dark:text-slate-400">経済カレンダーを読み込んでいます…</p>
 	</div>
 
-	<p class="mt-8 text-xs text-slate-400 dark:text-slate-500">
-		経済イベントのデータは第三者のデータソースから取得しており、反映が遅れたり、内容が不完全な場合があります。重要な指標については、取引前に必ずご利用のブローカーの経済カレンダーでご確認ください。
-	</p>
+	<p class="mt-8 text-xs text-slate-400 dark:text-slate-500">経済イベントのデータは第三者のデータソースから取得しており、反映が遅れたり、内容が不完全な場合があります。重要な指標については、取引前に必ずご利用のブローカーの経済カレンダーでご確認ください。</p>
 </Layout>
 
 <script>

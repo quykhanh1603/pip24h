@@ -63,9 +63,7 @@ const slug = broker.id.split('/').slice(1).join('/');
 	</dl>
 
 	{platforms.length > 0 && (
-		<p class="mt-4 text-sm text-slate-600 dark:text-slate-400">
-			<span class="font-medium text-slate-800 dark:text-slate-200">取引プラットフォーム：</span> {platforms.join(', ')}
-		</p>
+		<p class="mt-4 text-sm text-slate-600 dark:text-slate-400"><span class="font-medium text-slate-800 dark:text-slate-200">取引プラットフォーム：</span> {platforms.join(', ')}</p>
 	)}
 
 	{(pros.length > 0 || cons.length > 0) && (

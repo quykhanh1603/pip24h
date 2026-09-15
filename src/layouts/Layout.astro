@@ -124,7 +124,11 @@ const topBrokers = [...brokers]
 				</a>
 				<nav class="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-300">
 					{navItems.map((item) => {
-						const isActive = item.href === `/${lang}/` ? currentPath === `/${lang}/` : currentPath.startsWith(item.href.split('#')[0]);
+						const isActive = item.href.includes('#')
+							? false
+							: item.href === `/${lang}/`
+								? currentPath === `/${lang}/`
+								: currentPath.startsWith(item.href);
 						return (
 							<a
 								href={item.href}
