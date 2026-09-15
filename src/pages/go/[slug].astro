@@ -2,14 +2,25 @@
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-	const brokers = await getCollection('brokers');
+	const collections = {
+		brokers: await getCollection('brokers'),
+		propfirms: await getCollection('propfirms')
+	};
 	const bySlug = new Map<string, string>();
+	const owner = new Map<string, string>();
 
-	for (const broker of brokers) {
-		const [locale, ...rest] = broker.id.split('/');
-		const slug = rest.join('/');
-		if (!bySlug.has(slug) || locale === 'en') {
-			bySlug.set(slug, broker.data.affiliateUrl);
+	for (const [name, entries] of Object.entries(collections)) {
+		for (const entry of entries) {
+			const [locale, ...rest] = entry.id.split('/');
+			const slug = rest.join('/');
+			const prev = owner.get(slug);
+			if (prev && prev !== name) {
+				throw new Error(`/go/${slug}/ is claimed by both "${prev}" and "${name}" — rename one slug.`);
+			}
+			owner.set(slug, name);
+			if (!bySlug.has(slug) || locale === 'en') {
+				bySlug.set(slug, entry.data.affiliateUrl);
+			}
 		}
 	}
 

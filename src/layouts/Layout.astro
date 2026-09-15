@@ -17,6 +17,7 @@ const switchedPath = Astro.url.pathname.replace(/^\/(ja|en)/, `/${otherLang}`);
 const navText = {
 	ja: {
 		topBrokers: 'トップブローカー',
+		propFirms: 'プロップファーム',
 		news: 'ニュース',
 		guides: 'ガイド',
 		glossary: '用語集',
@@ -26,6 +27,7 @@ const navText = {
 	},
 	en: {
 		topBrokers: 'Top Brokers',
+		propFirms: 'Prop Firms',
 		news: 'News',
 		guides: 'Guides',
 		glossary: 'Glossary',
@@ -37,6 +39,7 @@ const navText = {
 
 const navItems = [
 	{ key: 'topBrokers', href: `/${lang}/` },
+	{ key: 'propFirms', href: `/${lang}/prop-firms/` },
 	{ key: 'news', href: `/${lang}/news/` },
 	{ key: 'guides', href: `/${lang}/guides/` },
 	{ key: 'glossary', href: `/${lang}/glossary/` },
@@ -175,6 +178,7 @@ const topBrokers = [...brokers]
 					<ul class="mt-3 space-y-2 text-sm text-slate-500 dark:text-slate-400">
 						<li><a href={`/${lang}/`} class="hover:text-brand-blue">{navText.topBrokers}</a></li>
 						<li><a href={`/${lang}/reviews/`} class="hover:text-brand-blue">{navText.reviews}</a></li>
+						<li><a href={`/${lang}/prop-firms/`} class="hover:text-brand-blue">{navText.propFirms}</a></li>
 						<li><a href={`/${lang}/guides/`} class="hover:text-brand-blue">{navText.guides}</a></li>
 						<li><a href={`/${lang}/glossary/`} class="hover:text-brand-blue">{navText.glossary}</a></li>
 						<li><a href={`/${lang}/about/`} class="hover:text-brand-blue">{navText.about}</a></li>

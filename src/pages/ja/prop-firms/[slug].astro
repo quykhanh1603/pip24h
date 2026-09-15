@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import PropFirmReview from '../../../components/PropFirmReview.astro';
+import { slugOf } from '../../../data/propfirm-i18n';
+
+export async function getStaticPaths() {
+	const firms = await getCollection('propfirms', (e) => e.id.startsWith('ja/'));
+	return firms.map((firm) => ({ params: { slug: slugOf(firm) }, props: { firm } }));
+}
+
+const { firm } = Astro.props;
+---
+
+<PropFirmReview firm={firm} lang="ja" />

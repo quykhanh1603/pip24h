@@ -1,0 +1,17 @@
+---
+import { propText, type Lang } from '../data/propfirm-i18n';
+
+interface Props {
+	lang: Lang;
+}
+
+const t = propText[Astro.props.lang];
+---
+
+<aside class="flex gap-3 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm dark:border-amber-800 dark:bg-amber-950/30">
+	<span class="text-lg leading-none" aria-hidden="true">⚠️</span>
+	<div>
+		<p class="font-semibold text-amber-900 dark:text-amber-200">{t.noticeTitle}</p>
+		<p class="mt-1 text-amber-900/90 dark:text-amber-100/80">{t.notice}</p>
+	</div>
+</aside>

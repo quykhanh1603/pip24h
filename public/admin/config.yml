@@ -142,3 +142,99 @@ collections:
         }
       - { label: "Updated date", name: "updatedDate", widget: "datetime" }
       - { label: "Body content", name: "body", widget: "markdown" }
+
+  - name: "propfirms_ja"
+    label: "プロップファーム（日本語）"
+    folder: "src/content/propfirms/ja"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../../../public/images/propfirms/{{slug}}"
+    public_folder: "/images/propfirms/{{slug}}"
+    fields:
+      - { label: "ファーム名", name: "name", widget: "string" }
+      - { label: "ロゴ", name: "logo", widget: "image" }
+      - { label: "Market", name: "market", widget: "select", options: ["forex-cfd", "futures"], default: "forex-cfd" }
+      - { label: "評価（0-5）", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
+      - { label: "概要", name: "summary", widget: "text" }
+      - { label: "バッジ", name: "badge", widget: "string", required: false }
+      - { label: "設立年", name: "foundedYear", widget: "number", required: false }
+      - { label: "本社", name: "headquarters", widget: "string", required: false }
+      - { label: "口座サイズ", name: "accountSizes", widget: "string", hint: "$10K – $200K" }
+      - { label: "最大資金", name: "maxFunding", widget: "string", required: false }
+      - { label: "スケーリング上限", name: "scalingUpTo", widget: "string", required: false }
+      - { label: "参加費（最安）", name: "feeFrom", widget: "string" }
+      - { label: "利益配分", name: "profitSplit", widget: "string" }
+      - { label: "報酬の支払い", name: "payoutFrequency", widget: "string", required: false }
+      - { label: "プラットフォーム", name: "platforms", widget: "list", default: [] }
+      - { label: "指標発表時の取引", name: "newsTrading", widget: "select", options: ["allowed", "restricted", "not-allowed"], default: "allowed" }
+      - { label: "週末の持ち越し", name: "weekendHolding", widget: "select", options: ["allowed", "restricted", "not-allowed"], default: "allowed" }
+      - { label: "EA", name: "eaAllowed", widget: "boolean", default: true }
+      - { label: "Trustpilot", name: "trustpilotScore", widget: "number", required: false, min: 0, max: 5, step: 0.1 }
+      - label: "評価プログラム"
+        name: "programs"
+        widget: "list"
+        fields:
+          - { label: "プログラム名", name: "name", widget: "string" }
+          - { label: "Type", name: "type", widget: "select", options: ["1-step", "2-step", "3-step", "instant"] }
+          - { label: "利益目標（段階ごと%）", name: "profitTargets", widget: "list", field: { label: "%", name: "target", widget: "number", value_type: "float" } }
+          - { label: "1日の損失上限（%）", name: "maxDailyLoss", widget: "number", required: false, value_type: "float" }
+          - { label: "最大損失（%）", name: "maxLoss", widget: "number", value_type: "float" }
+          - { label: "最大損失の方式", name: "maxLossType", widget: "select", options: ["static", "trailing"] }
+          - { label: "最低取引日数", name: "minTradingDays", widget: "number", default: 0 }
+          - { label: "利益配分", name: "profitSplit", widget: "string" }
+          - { label: "参加費の返金", name: "feeRefundable", widget: "boolean", default: false }
+          - { label: "補足", name: "note", widget: "string", required: false }
+      - { label: "メリット", name: "pros", widget: "list", default: [] }
+      - { label: "デメリット", name: "cons", widget: "list", default: [] }
+      - { label: "アフィリエイトリンク", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
+      - { label: "注目（featured）", name: "featured", widget: "boolean", default: false }
+      - { label: "更新日", name: "updatedDate", widget: "datetime" }
+      - { label: "本文", name: "body", widget: "markdown" }
+
+  - name: "propfirms_en"
+    label: "Prop Firms (English)"
+    folder: "src/content/propfirms/en"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../../../public/images/propfirms/{{slug}}"
+    public_folder: "/images/propfirms/{{slug}}"
+    fields:
+      - { label: "Firm name", name: "name", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Market", name: "market", widget: "select", options: ["forex-cfd", "futures"], default: "forex-cfd" }
+      - { label: "Rating (0-5)", name: "rating", widget: "number", min: 0, max: 5, step: 0.1 }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Badge", name: "badge", widget: "string", required: false }
+      - { label: "Founded year", name: "foundedYear", widget: "number", required: false }
+      - { label: "Headquarters", name: "headquarters", widget: "string", required: false }
+      - { label: "Account sizes", name: "accountSizes", widget: "string", hint: "$10K – $200K" }
+      - { label: "Max funding", name: "maxFunding", widget: "string", required: false }
+      - { label: "Scaling up to", name: "scalingUpTo", widget: "string", required: false }
+      - { label: "Fee from", name: "feeFrom", widget: "string" }
+      - { label: "Profit split", name: "profitSplit", widget: "string" }
+      - { label: "Payout frequency", name: "payoutFrequency", widget: "string", required: false }
+      - { label: "Platforms", name: "platforms", widget: "list", default: [] }
+      - { label: "News trading", name: "newsTrading", widget: "select", options: ["allowed", "restricted", "not-allowed"], default: "allowed" }
+      - { label: "Weekend holding", name: "weekendHolding", widget: "select", options: ["allowed", "restricted", "not-allowed"], default: "allowed" }
+      - { label: "EA", name: "eaAllowed", widget: "boolean", default: true }
+      - { label: "Trustpilot", name: "trustpilotScore", widget: "number", required: false, min: 0, max: 5, step: 0.1 }
+      - label: "Evaluation programs"
+        name: "programs"
+        widget: "list"
+        fields:
+          - { label: "Program name", name: "name", widget: "string" }
+          - { label: "Type", name: "type", widget: "select", options: ["1-step", "2-step", "3-step", "instant"] }
+          - { label: "Profit targets (% per phase)", name: "profitTargets", widget: "list", field: { label: "%", name: "target", widget: "number", value_type: "float" } }
+          - { label: "Max daily loss (%)", name: "maxDailyLoss", widget: "number", required: false, value_type: "float" }
+          - { label: "Max loss (%)", name: "maxLoss", widget: "number", value_type: "float" }
+          - { label: "Max loss type", name: "maxLossType", widget: "select", options: ["static", "trailing"] }
+          - { label: "Min trading days", name: "minTradingDays", widget: "number", default: 0 }
+          - { label: "Profit split", name: "profitSplit", widget: "string" }
+          - { label: "Fee refundable", name: "feeRefundable", widget: "boolean", default: false }
+          - { label: "Note", name: "note", widget: "string", required: false }
+      - { label: "Pros", name: "pros", widget: "list", default: [] }
+      - { label: "Cons", name: "cons", widget: "list", default: [] }
+      - { label: "Affiliate link", name: "affiliateUrl", widget: "string", default: "AFF_LINK_PLACEHOLDER" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Updated date", name: "updatedDate", widget: "datetime" }
+      - { label: "Body content", name: "body", widget: "markdown" }

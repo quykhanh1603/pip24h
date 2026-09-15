@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import PropFirmTable from './PropFirmTable.astro';
+import PropFirmCard from './PropFirmCard.astro';
+import PropRiskNotice from './PropRiskNotice.astro';
+import { propText, type Lang } from '../data/propfirm-i18n';
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = propText[lang];
+const firms = await getCollection('propfirms', (e) => e.id.startsWith(`${lang}/`) && e.data.market === 'forex-cfd');
+const featured = firms.filter((f) => f.data.featured).sort((a, b) => b.data.rating - a.data.rating);
+
+const meta = {
+	en: {
+		title: 'Best Forex & CFD Prop Firms 2026 — Ranked & Compared | Pip24h',
+		description: 'Compare forex and CFD prop firms on drawdown rules, profit split, fees, refunds and payout record. Independent rankings, updated for 2026.'
+	},
+	ja: {
+		title: '2026年 おすすめFX・CFDプロップファーム ランキング＆比較 — Pip24h',
+		description: '損失上限ルール、利益配分、参加費、返金、支払い実績でFX・CFDプロップファームを比較。2026年最新の独自ランキングです。'
+	}
+}[lang];
+---
+
+<Layout lang={lang} title={meta.title} description={meta.description}>
+	<section class="py-8 text-center sm:py-10">
+		<h1 class="mx-auto max-w-3xl text-3xl font-extrabold text-brand-navy sm:text-4xl dark:text-white">{t.listTitle}</h1>
+		<p class="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">{t.listIntro}</p>
+	</section>
+
+	<PropRiskNotice lang={lang} />
+
+	<section id="comparison" class="mt-10 scroll-mt-20">
+		<h2 class="text-xl font-bold text-brand-navy dark:text-white">{t.tableTitle}</h2>
+		<div class="mt-4">
+			<PropFirmTable firms={firms} lang={lang} />
+		</div>
+	</section>
+
+	{featured.length > 0 && (
+		<section class="mt-14">
+			<h2 class="text-xl font-bold text-brand-navy dark:text-white">{t.featuredTitle}</h2>
+			<div class="mt-4 flex flex-col gap-5">
+				{featured.map((firm) => <PropFirmCard firm={firm} lang={lang} />)}
+			</div>
+		</section>
+	)}
+
+	<section class="mt-14">
+		<h2 class="text-xl font-bold text-brand-navy dark:text-white">{t.methodTitle}</h2>
+		<ol class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{t.method.map(([title, body], i) => (
+				<li class="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+					<p class="font-semibold text-brand-navy dark:text-white">
+						<span class="mr-1 text-brand-blue">{i + 1}.</span>
+						{title}
+					</p>
+					<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{body}</p>
+				</li>
+			))}
+		</ol>
+	</section>
+</Layout>

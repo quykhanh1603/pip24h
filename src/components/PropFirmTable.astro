@@ -1,0 +1,137 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { propText, percentRange, programTypes, slugOf, type Lang } from '../data/propfirm-i18n';
+
+interface Props {
+	firms: CollectionEntry<'propfirms'>[];
+	lang: Lang;
+}
+
+const { firms, lang } = Astro.props;
+const t = propText[lang];
+const sorted = [...firms].sort((a, b) => b.data.rating - a.data.rating);
+
+const tabs = [
+	{ key: 'all', label: t.all },
+	{ key: '1-step', label: t.type['1-step'] },
+	{ key: '2-step', label: t.type['2-step'] },
+	{ key: 'instant', label: t.type.instant },
+	{ key: 'refundable', label: t.refundable }
+];
+---
+
+<div class="propfirm-table">
+	<div class="propfirm-tabs flex flex-wrap gap-2">
+		{
+			tabs.map((tab, i) => (
+				<button
+					type="button"
+					data-filter={tab.key}
+					class:list={[
+						'cursor-pointer rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
+						i === 0
+							? 'border-brand-navy bg-brand-navy text-white'
+							: 'border-slate-300 bg-white text-brand-navy hover:border-brand-navy dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-brand-blue'
+					]}
+				>
+					{tab.label}
+				</button>
+			))
+		}
+	</div>
+
+	<div class="mt-4 overflow-x-auto rounded-lg border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
+		<table class="w-full min-w-[900px] text-left text-sm">
+			<thead class="bg-brand-navy text-white dark:bg-slate-950">
+				<tr>
+					<th class="px-4 py-3 font-semibold">{t.rank}</th>
+					<th class="px-4 py-3 font-semibold">{t.firm}</th>
+					<th class="px-4 py-3 font-semibold">{t.score}</th>
+					<th class="px-4 py-3 font-semibold">{t.evaluation}</th>
+					<th class="px-4 py-3 font-semibold">{t.feeFrom}</th>
+					<th class="px-4 py-3 font-semibold">{t.maxFunding}</th>
+					<th class="px-4 py-3 font-semibold">{t.dailyLoss}</th>
+					<th class="px-4 py-3 font-semibold">{t.maxLoss}</th>
+					<th class="px-4 py-3 font-semibold">{t.profitSplit}</th>
+					<th class="px-4 py-3 font-semibold"></th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					sorted.map((firm, index) => {
+						const { name, logo, rating, feeFrom, maxFunding, profitSplit, programs } = firm.data;
+						const slug = slugOf(firm);
+						const types = programTypes(programs);
+						const refundable = programs.some((p) => p.feeRefundable);
+						return (
+							<tr
+								data-types={types.join(' ')}
+								data-refundable={String(refundable)}
+								class="border-t border-slate-100 hover:bg-brand-blue-light/40 dark:border-slate-800 dark:hover:bg-slate-800/60"
+							>
+								<td class="px-4 py-3 font-semibold text-slate-500 dark:text-slate-400">#{index + 1}</td>
+								<td class="px-4 py-3">
+									<a href={`/${lang}/prop-firms/${slug}/`} class="flex items-center gap-2 font-semibold text-brand-navy hover:text-brand-blue dark:text-white">
+										<img src={logo} alt={`${name} logo`} width="28" height="28" class="h-7 w-7 shrink-0 rounded object-contain" />
+										{name}
+									</a>
+								</td>
+								<td class="px-4 py-3 font-semibold text-brand-blue">{rating.toFixed(1)}</td>
+								<td class="px-4 py-3">
+									<div class="flex flex-wrap gap-1">
+										{types.map((type) => (
+											<span class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-medium whitespace-nowrap text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+												{t.type[type]}
+											</span>
+										))}
+									</div>
+								</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{feeFrom}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{maxFunding ?? '—'}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{percentRange(programs.map((p) => p.maxDailyLoss), t.none)}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{percentRange(programs.map((p) => p.maxLoss), t.none)}</td>
+								<td class="px-4 py-3 text-slate-600 dark:text-slate-400">{profitSplit}</td>
+								<td class="px-4 py-3">
+									<a
+										href={`/go/${slug}/`}
+										target="_blank"
+										rel="nofollow sponsored noopener"
+										class="rounded-md bg-brand-blue px-3 py-1.5 text-xs font-semibold whitespace-nowrap text-white hover:bg-brand-blue-dark"
+									>
+										{t.start}
+									</a>
+								</td>
+							</tr>
+						);
+					})
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script>
+	const activeTab = ['bg-brand-navy', 'text-white', 'border-brand-navy'];
+	const inactiveTab = ['bg-white', 'text-brand-navy', 'border-slate-300', 'dark:bg-slate-900', 'dark:text-slate-300', 'dark:border-slate-700'];
+
+	document.querySelectorAll<HTMLElement>('.propfirm-table').forEach((root) => {
+		root.querySelector('.propfirm-tabs')?.addEventListener('click', (e) => {
+			const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-filter]');
+			if (!btn) return;
+			const filter = btn.dataset.filter!;
+
+			root.querySelectorAll<HTMLButtonElement>('button[data-filter]').forEach((b) => {
+				b.classList.remove(...activeTab, ...inactiveTab);
+				b.classList.add(...(b === btn ? activeTab : inactiveTab));
+			});
+
+			root.querySelectorAll<HTMLTableRowElement>('tr[data-types]').forEach((row) => {
+				const types = (row.dataset.types ?? '').split(' ');
+				const match =
+					filter === 'all' ||
+					(filter === 'refundable' ? row.dataset.refundable === 'true' : types.includes(filter));
+				row.style.display = match ? '' : 'none';
+			});
+		});
+	});
+</script>

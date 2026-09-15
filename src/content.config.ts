@@ -38,4 +38,51 @@ const guides = defineCollection({
     })
 });
 
-export const collections = { brokers, guides };
+const propfirms = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/propfirms' }),
+	schema: () =>
+		z.object({
+			name: z.string(),
+			logo: z.string(),
+			market: z.enum(['forex-cfd', 'futures']).default('forex-cfd'),
+			rating: z.number().min(0).max(5),
+			summary: z.string(),
+			badge: z.string().optional(),
+			foundedYear: z.number().optional(),
+			headquarters: z.string().optional(),
+			accountSizes: z.string(),
+			maxFunding: z.string().optional(),
+			scalingUpTo: z.string().optional(),
+			feeFrom: z.string(),
+			profitSplit: z.string(),
+			payoutFrequency: z.string().optional(),
+			platforms: z.array(z.string()).default([]),
+			newsTrading: z.enum(['allowed', 'restricted', 'not-allowed']).default('allowed'),
+			weekendHolding: z.enum(['allowed', 'restricted', 'not-allowed']).default('allowed'),
+			eaAllowed: z.boolean().default(true),
+			trustpilotScore: z.number().min(0).max(5).optional(),
+			programs: z
+				.array(
+					z.object({
+						name: z.string(),
+						type: z.enum(['1-step', '2-step', '3-step', 'instant']),
+						profitTargets: z.array(z.number()).default([]),
+						maxDailyLoss: z.number().optional(),
+						maxLoss: z.number(),
+						maxLossType: z.enum(['static', 'trailing']),
+						minTradingDays: z.number().default(0),
+						profitSplit: z.string(),
+						feeRefundable: z.boolean().default(false),
+						note: z.string().optional()
+					})
+				)
+				.min(1),
+			pros: z.array(z.string()).default([]),
+			cons: z.array(z.string()).default([]),
+			affiliateUrl: z.string().default('AFF_LINK_PLACEHOLDER'),
+			featured: z.boolean().default(false),
+			updatedDate: z.coerce.date()
+		})
+});
+
+export const collections = { brokers, guides, propfirms };
