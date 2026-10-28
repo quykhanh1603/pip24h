@@ -88,6 +88,7 @@ Finally commit only `src/content/brokers/`, `automation/` and push:
 ```sh
 git add src/content/brokers automation
 git commit -m "content: add broker profiles (YYYY-MM-DD)"
+git pull --rebase origin master   # the calendar workflow commits every 6 hours
 git push origin master
 ```
 
