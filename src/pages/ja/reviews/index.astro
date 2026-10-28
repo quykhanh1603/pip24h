@@ -1,11 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import BrokerCard from '../../../components/BrokerCard.astro';
+import { getBrokerScores, slugOf } from '../../../data/broker-score';
 
-const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('ja/'))).sort(
-	(a, b) => b.data.rating - a.data.rating
-);
+const scores = await getBrokerScores();
+const total = (b: CollectionEntry<'brokers'>) => scores.get(slugOf(b))?.score.total ?? 0;
+const brokers = (await getCollection('brokers', (entry) => entry.id.startsWith('ja/'))).sort((a, b) => total(b) - total(a));
 ---
 
 <Layout lang="ja" title="ブローカーレビュー一覧 — Pip24h" description="Pip24hがレビューしたFX・暗号資産ブローカーの一覧です。">

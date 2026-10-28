@@ -1,0 +1,37 @@
+{
+	"slug": "examplefx",
+	"queueUrl": "https://www.examplefx.com",
+	"status": "ok",
+	"name": "ExampleFX",
+	"website": "https://www.examplefx.com",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.4,
+	"foundedYear": 2015,
+	"minDeposit": "$50",
+	"spreadFrom": "0.1 pips",
+	"maxLeverage": "1:500",
+	"instantWithdrawal": false,
+	"category": ["ecn"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5"],
+	"licenses": [
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "123/45", "entity": "ExampleFX Ltd", "status": "verified", "verifiedDate": "2026-10-28" },
+		{ "regulator": "fsa-sc", "text": "FSA (Seychelles)", "number": "SD000", "status": "unverified" },
+		{ "regulator": null, "text": "FSC (Anjouan)", "status": "unverified" }
+	],
+	"sources": ["https://www.examplefx.com/legal", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/"],
+	"en": {
+		"summary": "One-sentence summary in English.",
+		"pros": ["..."],
+		"cons": ["..."],
+		"body": "## Regulation and safety\n\n...\n\n## Trading conditions\n\n...\n\n## Who is it for?\n\n..."
+	},
+	"ja": {
+		"summary": "日本語の概要（1文）。",
+		"minDeposit": "50ドル",
+		"maxLeverage": "最大500倍",
+		"pros": ["..."],
+		"cons": ["..."],
+		"body": "## 規制と安全性\n\n...\n\n## 取引条件\n\n...\n\n## どんな人に向いているか\n\n..."
+	}
+}

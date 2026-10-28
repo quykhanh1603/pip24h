@@ -1,0 +1,259 @@
+---
+import BrokerLogo from './BrokerLogo.astro';
+import { render, type CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ScoreBadge from './ScoreBadge.astro';
+import { brokerText, type Lang } from '../data/broker-i18n';
+import { getBrokerScores, slugOf, weights, type IndexKey } from '../data/broker-score';
+
+interface Props {
+	broker: CollectionEntry<'brokers'>;
+	lang: Lang;
+}
+
+const { broker, lang } = Astro.props;
+const t = brokerText[lang];
+const d = broker.data;
+const slug = slugOf(broker);
+const { Content } = await render(broker);
+const scored = (await getBrokerScores()).get(slug);
+if (!scored) throw new Error(`Broker "${slug}" has no en/ entry — scores and licences are read from English data.`);
+const { score } = scored;
+
+const facts = [
+	[t.facts.assetType, t.assetType[d.assetType]],
+	[t.facts.founded, d.foundedYear],
+	[t.facts.minDeposit, d.minDeposit],
+	[t.facts.spreadFrom, d.spreadFrom],
+	[t.facts.maxLeverage, d.maxLeverage],
+	[t.facts.instantWithdrawal, d.instantWithdrawal ? `✅ ${t.yes}` : t.no]
+].filter(([, v]) => v !== undefined && v !== '');
+
+const indexKeys = Object.keys(weights) as IndexKey[];
+const barColor = (v: number) => (v >= 8 ? 'bg-emerald-500' : v >= 6.5 ? 'bg-sky-500' : v >= 5 ? 'bg-amber-500' : 'bg-red-500');
+
+const statusStyle = {
+	verified: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300',
+	unverified: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300',
+	revoked: 'bg-red-50 text-red-700 dark:bg-red-950/50 dark:text-red-300',
+	'clone-warning': 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300'
+};
+const tierStyle = {
+	1: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300',
+	2: 'bg-sky-50 text-sky-700 dark:bg-sky-950/50 dark:text-sky-300',
+	3: 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300'
+};
+const formatDate = (date: Date) => date.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<Layout lang={lang} title={t.reviewTitle(d.name)} description={d.summary} noindex={d.noindex}>
+	<div class="flex flex-col gap-5 rounded-lg border border-slate-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800 dark:bg-slate-900">
+		<div class="flex items-center gap-4">
+			<BrokerLogo name={d.name} logo={d.logo} width={140} height={70} class="max-h-16 w-auto object-contain" />
+			<div>
+				<div class="flex flex-wrap items-center gap-2">
+					<h1 class="text-2xl font-bold text-brand-navy dark:text-white">{d.name}</h1>
+					{d.badge && (
+						<span class="rounded-full bg-brand-blue-light px-2.5 py-0.5 text-xs font-semibold text-brand-blue dark:bg-brand-blue/10 dark:text-sky-300">{d.badge}</span>
+					)}
+				</div>
+				<p class="text-sm text-slate-500 dark:text-slate-400">{t.editorialRating}: ⭐ {d.rating.toFixed(1)}/5</p>
+			</div>
+		</div>
+		<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+			<ScoreBadge total={score.total} lang={lang} size="lg" />
+			<a
+				href={`/go/${slug}/`}
+				target="_blank"
+				rel="nofollow sponsored noopener"
+				class="rounded-md bg-brand-blue px-5 py-3 text-center text-sm font-semibold text-white hover:bg-brand-blue-dark"
+			>
+				{t.open(d.name)}
+			</a>
+		</div>
+	</div>
+
+	{d.profileType === 'profile' && (
+		<p class="mt-4 rounded-md border border-sky-200 bg-sky-50 px-4 py-3 text-sm text-sky-900 dark:border-sky-900 dark:bg-sky-950/40 dark:text-sky-200">ℹ️ {t.profileNotice}</p>
+	)}
+
+	{score.warnings.length > 0 && (
+		<div class="mt-4 flex flex-col gap-2">
+			{score.warnings.map((w) => (
+				<p
+					class:list={[
+						'rounded-md border px-4 py-3 text-sm',
+						w === 'offshore-only' || w === 'unrecognized'
+							? 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-200'
+							: 'border-red-200 bg-red-50 text-red-900 dark:border-red-900 dark:bg-red-950/40 dark:text-red-200'
+					]}
+				>
+					⚠️ {t.warnings[w]}
+				</p>
+			))}
+		</div>
+	)}
+
+	<div class="mt-6 grid gap-6 lg:grid-cols-2">
+		<section class="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+			<div class="flex items-baseline justify-between gap-2">
+				<h2 class="text-lg font-bold text-brand-navy dark:text-white">{t.score}</h2>
+				<a href={`/${lang}/methodology/`} class="text-xs text-brand-blue hover:underline">{t.howScored} →</a>
+			</div>
+			<ul class="mt-4 space-y-3">
+				{indexKeys.map((k) => (
+					<li>
+						<div class="flex justify-between text-sm">
+							<span class="text-slate-700 dark:text-slate-300">
+								{t.indexes[k]} <span class="text-xs text-slate-400">· {Math.round(weights[k] * 100)}%</span>
+							</span>
+							<span class="font-semibold tabular-nums">{score.indexes[k].toFixed(1)}</span>
+						</div>
+						<div class="mt-1 h-2 rounded-full bg-slate-100 dark:bg-slate-800">
+							<div class:list={['h-2 rounded-full', barColor(score.indexes[k])]} style={`width: ${score.indexes[k] * 10}%`}></div>
+						</div>
+					</li>
+				))}
+			</ul>
+		</section>
+
+		<section class="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+			<dl class="grid grid-cols-2 gap-4">
+				{facts.map(([label, value]) => (
+					<div>
+						<dt class="text-xs text-slate-500 dark:text-slate-400">{label}</dt>
+						<dd class="font-medium">{value}</dd>
+					</div>
+				))}
+			</dl>
+			{d.platforms.length > 0 && (
+				<div class="mt-4 border-t border-slate-100 pt-4 dark:border-slate-800">
+					<p class="text-xs text-slate-500 dark:text-slate-400">{t.platforms}</p>
+					<div class="mt-2 flex flex-wrap gap-2">
+						{d.platforms.map((p) => (
+							<span class="rounded-md border border-slate-200 px-2 py-1 text-xs dark:border-slate-700">{p}</span>
+						))}
+					</div>
+				</div>
+			)}
+		</section>
+	</div>
+
+	<section class="mt-8">
+		<h2 class="text-lg font-bold text-brand-navy dark:text-white">{t.licensesTitle}</h2>
+		<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{t.licensesIntro}</p>
+		{score.licenses.length === 0 ? (
+			<p class="mt-3 text-sm text-slate-500">{t.noLicenses}</p>
+		) : (
+			<div class="mt-3 overflow-x-auto rounded-lg border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
+				<table class="w-full min-w-[640px] text-left text-sm">
+					<thead class="bg-slate-50 text-slate-700 dark:bg-slate-950 dark:text-slate-300">
+						<tr>
+							<th class="px-4 py-3 font-semibold">{t.regulator}</th>
+							<th class="px-4 py-3 font-semibold">{t.tierLabel}</th>
+							<th class="px-4 py-3 font-semibold">{t.licenseNo}</th>
+							<th class="px-4 py-3 font-semibold">{t.status}</th>
+							<th class="px-4 py-3"></th>
+						</tr>
+					</thead>
+					<tbody>
+						{score.licenses.map((l) => (
+							<tr class="border-t border-slate-100 align-top dark:border-slate-800">
+								<td class="px-4 py-3">
+									{l.regulator ? (
+										<>
+											<p class="font-semibold text-slate-800 dark:text-slate-100">{l.regulator.abbr}</p>
+											<p class="text-xs text-slate-500 dark:text-slate-400">
+												{l.regulator.name[lang]} · {l.regulator.country[lang]}
+											</p>
+										</>
+									) : (
+										<>
+											<p class="font-medium text-slate-800 dark:text-slate-100">{l.label}</p>
+											<p class="text-xs text-slate-500 dark:text-slate-400">{t.unknownRegulator}</p>
+										</>
+									)}
+									{l.entity && <p class="mt-1 text-xs text-slate-500 dark:text-slate-400">{t.entity}: {l.entity}</p>}
+								</td>
+								<td class="px-4 py-3">
+									{l.regulator && (
+										<span class:list={['rounded px-2 py-0.5 text-xs font-medium whitespace-nowrap', tierStyle[l.regulator.tier]]}>
+											{t.tier[l.regulator.tier]}
+										</span>
+									)}
+								</td>
+								<td class="px-4 py-3 font-mono text-xs">{l.number ?? '—'}</td>
+								<td class="px-4 py-3">
+									<span class:list={['rounded px-2 py-0.5 text-xs font-medium whitespace-nowrap', statusStyle[l.status]]} title={t.statusHint[l.status]}>
+										{t.statusLabel[l.status]}
+									</span>
+									{l.verifiedDate && <p class="mt-1 text-[11px] text-slate-400">{formatDate(l.verifiedDate)}</p>}
+								</td>
+								<td class="px-4 py-3 text-right">
+									{l.regulator && (
+										<a href={l.regulator.website} target="_blank" rel="noopener nofollow" class="text-xs whitespace-nowrap text-brand-blue hover:underline">
+											{t.checkRegister} ↗
+										</a>
+									)}
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		)}
+		<ul class="mt-2 space-y-0.5 text-xs text-slate-500 dark:text-slate-400">
+			{(['verified', 'unverified'] as const).map((s) => (
+				<li><span class="font-medium">{t.statusLabel[s]}</span>: {t.statusHint[s]}</li>
+			))}
+		</ul>
+	</section>
+
+	{(d.pros.length > 0 || d.cons.length > 0) && (
+		<div class="mt-8 grid gap-4 sm:grid-cols-2">
+			<div class="rounded-lg border border-green-200 bg-green-50 p-4 dark:border-green-900 dark:bg-green-950/40">
+				<h2 class="font-semibold text-green-800 dark:text-green-300">{t.pros}</h2>
+				<ul class="mt-2 list-inside list-disc text-sm text-green-900 dark:text-green-200">
+					{d.pros.map((p) => <li>{p}</li>)}
+				</ul>
+			</div>
+			<div class="rounded-lg border border-red-200 bg-red-50 p-4 dark:border-red-900 dark:bg-red-950/40">
+				<h2 class="font-semibold text-red-800 dark:text-red-300">{t.cons}</h2>
+				<ul class="mt-2 list-inside list-disc text-sm text-red-900 dark:text-red-200">
+					{d.cons.map((c) => <li>{c}</li>)}
+				</ul>
+			</div>
+		</div>
+	)}
+
+	<article class="prose prose-slate dark:prose-invert mt-8 max-w-none">
+		<Content />
+	</article>
+
+	{(d.website || d.sources.length > 0) && (
+		<section class="mt-8 text-xs text-slate-500 dark:text-slate-400">
+			{d.website && (
+				<p>
+					{t.website}: <a href={d.website} target="_blank" rel="noopener nofollow" class="text-brand-blue hover:underline">{d.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>
+				</p>
+			)}
+			{d.sources.length > 0 && (
+				<>
+					<p class="mt-2 font-medium">{t.sources}</p>
+					<ul class="mt-1 list-inside list-disc break-all">
+						{d.sources.map((s) => (
+							<li><a href={s} target="_blank" rel="noopener nofollow" class="hover:underline">{s}</a></li>
+						))}
+					</ul>
+				</>
+			)}
+		</section>
+	)}
+
+	<p class="mt-8 text-xs text-slate-500 dark:text-slate-400">{t.updated}: {formatDate(d.updatedDate)}</p>
+	<p class="mt-4 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400">{t.risk}</p>
+
+	<p class="mt-8 text-sm">
+		<a href={`/${lang}/reviews/`} class="text-brand-blue hover:underline">{t.back}</a>
+	</p>
+</Layout>

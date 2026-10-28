@@ -1,12 +1,21 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { regulatorKeys } from './data/regulators';
 
 const brokers = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/brokers' }),
   schema: () =>
     z.object({
       name: z.string(),
-      logo: z.string(),
+      // Empty = no logo yet; components fall back to an initials tile.
+      logo: z.string().default(''),
+      // "review" = hands-on editorial review; "profile" = data profile compiled from public sources
+      // (added by the daily automation in automation/). Profiles stay off the homepage.
+      profileType: z.enum(['review', 'profile']).default('review'),
+      website: z.string().optional(),
+      sources: z.array(z.string()).default([]),
+      // Thin profiles are kept out of search engines and the sitemap until they are filled in.
+      noindex: z.boolean().default(false),
       assetType: z.enum(['forex', 'crypto', 'both']),
       rating: z.number().min(0).max(5),
       summary: z.string(),
@@ -16,6 +25,29 @@ const brokers = defineCollection({
       maxLeverage: z.string().optional(),
       instantWithdrawal: z.boolean().default(false),
       regulation: z.array(z.string()).default([]),
+      // Structured licences. When omitted, they are derived from `regulation` as "unverified".
+      // Only needed on the `en/` entry — scores and licences are always read from English data.
+      licenses: z
+        .array(
+          z.object({
+            regulator: z.enum(regulatorKeys),
+            number: z.string().optional(),
+            entity: z.string().optional(),
+            status: z.enum(['verified', 'unverified', 'revoked', 'clone-warning']).default('unverified'),
+            verifiedDate: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date().optional())
+          })
+        )
+        .optional(),
+      // Manual 0–10 overrides for individual Pip24h Score indexes (see src/data/broker-score.ts).
+      scoreOverrides: z
+        .object({
+          regulation: z.number().min(0).max(10).optional(),
+          business: z.number().min(0).max(10).optional(),
+          costs: z.number().min(0).max(10).optional(),
+          platforms: z.number().min(0).max(10).optional(),
+          editorial: z.number().min(0).max(10).optional()
+        })
+        .optional(),
       platforms: z.array(z.string()).default([]),
       pros: z.array(z.string()).default([]),
       cons: z.array(z.string()).default([]),

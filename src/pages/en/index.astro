@@ -4,7 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import BrokerTable from '../../components/BrokerTable.astro';
 import InDepthCard from '../../components/InDepthCard.astro';
 
-const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('en/'));
+// Homepage shows hands-on reviews only; auto-added data profiles live on /en/reviews/.
+const brokers = await getCollection('brokers', (entry) => entry.id.startsWith('en/') && entry.data.profileType === 'review');
 const featured = brokers.filter((b) => b.data.featured).sort((a, b) => b.data.rating - a.data.rating);
 
 const badges = [

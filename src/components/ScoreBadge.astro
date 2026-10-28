@@ -1,0 +1,54 @@
+---
+import { scoreBand } from '../data/broker-score';
+import { brokerText, type Lang } from '../data/broker-i18n';
+
+interface Props {
+	total: number;
+	lang: Lang;
+	size?: 'sm' | 'lg';
+}
+
+const { total, lang, size = 'sm' } = Astro.props;
+const t = brokerText[lang];
+const band = scoreBand(total);
+const color = {
+	excellent: 'text-emerald-500',
+	good: 'text-sky-500',
+	average: 'text-amber-500',
+	weak: 'text-red-500'
+}[band];
+const r = 26;
+const circumference = 2 * Math.PI * r;
+---
+
+{size === 'lg' ? (
+	<div class="flex items-center gap-3" title={`${t.score}: ${total.toFixed(1)}/10`}>
+		<div class="relative h-20 w-20 shrink-0">
+		<svg viewBox="0 0 64 64" class:list={['absolute inset-0 h-20 w-20 -rotate-90', color]} aria-hidden="true">
+			<circle cx="32" cy="32" r={r} fill="none" stroke="currentColor" stroke-width="6" class="opacity-15" />
+			<circle
+				cx="32"
+				cy="32"
+				r={r}
+				fill="none"
+				stroke="currentColor"
+				stroke-width="6"
+				stroke-linecap="round"
+				stroke-dasharray={`${(circumference * total) / 10} ${circumference}`}
+			/>
+		</svg>
+		<div class="absolute inset-0 flex flex-col items-center justify-center leading-none">
+			<span class="text-2xl font-extrabold text-slate-900 dark:text-white">{total.toFixed(1)}</span>
+			<span class="mt-0.5 text-[10px] text-slate-500 dark:text-slate-400">/ 10</span>
+		</div>
+		</div>
+		<div>
+			<p class="text-xs text-slate-500 dark:text-slate-400">{t.score}</p>
+			<p class:list={['font-semibold', color]}>{t.band[band]}</p>
+		</div>
+	</div>
+) : (
+	<span class:list={['inline-flex items-baseline gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-sm font-bold dark:bg-slate-800', color]} title={t.score}>
+		{total.toFixed(1)}<span class="text-[10px] font-medium text-slate-500 dark:text-slate-400">/10</span>
+	</span>
+)}

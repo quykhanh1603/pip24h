@@ -1,5 +1,8 @@
 ---
+import BrokerLogo from './BrokerLogo.astro';
 import type { CollectionEntry } from 'astro:content';
+import ScoreBadge from './ScoreBadge.astro';
+import { getBrokerScores } from '../data/broker-score';
 
 interface Props {
 	broker: CollectionEntry<'brokers'>;
@@ -9,6 +12,7 @@ interface Props {
 const { broker, lang } = Astro.props;
 const { name, logo, rating, summary, assetType, minDeposit, spreadFrom } = broker.data;
 const slug = broker.id.split('/').slice(1).join('/');
+const score = (await getBrokerScores()).get(slug)?.score;
 
 const assetTypeLabel = {
 	ja: { forex: 'FX', crypto: '暗号資産', both: 'FX・暗号資産' },
@@ -18,12 +22,13 @@ const assetTypeLabel = {
 
 <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center dark:border-slate-800 dark:bg-slate-900">
 	<div class="flex shrink-0 items-center justify-center">
-		<img src={logo} alt={`${name} logo`} width="120" height="60" class="max-h-14 w-auto object-contain" loading="lazy" />
+		<BrokerLogo name={name} logo={logo} width={120} height={60} class="max-h-14 w-auto object-contain" loading="lazy" />
 	</div>
 	<div class="flex-1">
 		<div class="flex items-center gap-2">
 			<h3 class="text-lg font-semibold text-brand-navy dark:text-white">{name}</h3>
 			<span class="rounded bg-brand-blue-light px-2 py-0.5 text-xs font-medium text-brand-blue dark:bg-brand-blue/10 dark:text-sky-300">{assetTypeLabel}</span>
+			{score && <ScoreBadge total={score.total} lang={lang} />}
 		</div>
 		<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{summary}</p>
 		<div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">

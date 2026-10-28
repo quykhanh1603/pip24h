@@ -1,0 +1,33 @@
+---
+// Broker logo, or an initials tile when the broker has no logo yet (common for auto-added data profiles).
+interface Props {
+	name: string;
+	logo: string;
+	width: number;
+	height: number;
+	class: string;
+	loading?: 'lazy' | 'eager';
+}
+
+const { name, logo, width, height, class: className, loading } = Astro.props;
+const initials = name
+	.replace(/[^\p{L}\p{N} ]/gu, ' ')
+	.split(/\s+/)
+	.filter(Boolean)
+	.slice(0, 2)
+	.map((w) => w[0].toUpperCase())
+	.join('');
+---
+
+{logo ? (
+	<img src={logo} alt={`${name} logo`} width={width} height={height} class={className} loading={loading} />
+) : (
+	<span
+		role="img"
+		aria-label={`${name} logo`}
+		class:list={[className, 'inline-flex items-center justify-center rounded bg-brand-blue-light font-bold text-brand-blue dark:bg-brand-blue/10 dark:text-sky-300']}
+		style={`width: ${width}px; height: ${height}px; font-size: ${Math.round(Math.min(width, height) * 0.4)}px;`}
+	>
+		{initials}
+	</span>
+)}

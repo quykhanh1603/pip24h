@@ -70,6 +70,18 @@ collections:
       - { label: "Max leverage", name: "maxLeverage", widget: "string", required: false, hint: "e.g. 1:2000" }
       - { label: "Instant withdrawal", name: "instantWithdrawal", widget: "boolean", default: false }
       - { label: "Regulated by", name: "regulation", widget: "list", default: [] }
+      - label: "Licences (structured)"
+        name: "licenses"
+        widget: "list"
+        required: false
+        hint: "Optional. When filled, replaces 'Regulated by' for the licence table and Pip24h Score. Set status to verified only after checking the regulator's register."
+        summary: "{{fields.regulator}} {{fields.number}} — {{fields.status}}"
+        fields:
+          - { label: "Regulator", name: "regulator", widget: "select", options: ["fca", "asic", "nfa", "jfsa", "bafin", "cbi", "mas", "finma", "cysec", "dfsa", "mfsa", "knf", "fsca", "fsc-mu", "fsa-sc", "ifsc", "vfsc", "svgfsa", "misa", "bvifsc", "labuan", "cima"] }
+          - { label: "Licence number", name: "number", widget: "string", required: false }
+          - { label: "Licensed entity", name: "entity", widget: "string", required: false }
+          - { label: "Status", name: "status", widget: "select", options: ["verified", "unverified", "revoked", "clone-warning"], default: "unverified" }
+          - { label: "Verified on", name: "verifiedDate", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false }
       - { label: "Trading platforms", name: "platforms", widget: "list", default: [] }
       - { label: "Pros", name: "pros", widget: "list", default: [] }
       - { label: "Cons", name: "cons", widget: "list", default: [] }
