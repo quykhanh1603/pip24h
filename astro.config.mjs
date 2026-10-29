@@ -32,7 +32,9 @@ function affiliateRedirects() {
           // Astro escapes `&` in attributes; `_redirects` needs the raw URL.
           const target = match?.[1]?.trim().replace(/&amp;/g, '&');
           if (!target || !/^https?:\/\//i.test(target)) continue;
-          rules.push(`/go/${entry.name}/  ${target}  302`);
+          // Both forms so a backlink without the trailing slash is a single hop
+          // instead of 308 → 302.
+          rules.push(`/go/${entry.name}  ${target}  302`, `/go/${entry.name}/  ${target}  302`);
         }
         if (rules.length === 0) return;
 

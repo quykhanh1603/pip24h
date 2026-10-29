@@ -6,7 +6,7 @@ export async function getStaticPaths() {
 		brokers: await getCollection('brokers'),
 		propfirms: await getCollection('propfirms')
 	};
-	const bySlug = new Map<string, string>();
+	const bySlug = new Map<string, { affiliateUrl: string; reviewPath: string }>();
 	const owner = new Map<string, string>();
 
 	for (const [name, entries] of Object.entries(collections)) {
@@ -19,34 +19,63 @@ export async function getStaticPaths() {
 			}
 			owner.set(slug, name);
 			if (!bySlug.has(slug) || locale === 'en') {
-				bySlug.set(slug, entry.data.affiliateUrl);
+				bySlug.set(slug, {
+					affiliateUrl: entry.data.affiliateUrl,
+					reviewPath: name === 'brokers' ? `/${locale}/reviews/${slug}/` : `/${locale}/prop-firms/${slug}/`
+				});
 			}
 		}
 	}
 
-	return [...bySlug.entries()].map(([slug, affiliateUrl]) => ({
-		params: { slug },
-		props: { affiliateUrl }
-	}));
+	return [...bySlug.entries()].map(([slug, props]) => ({ params: { slug }, props }));
 }
 
-const { affiliateUrl } = Astro.props;
+const { affiliateUrl, reviewPath } = Astro.props;
+
+// Entries still on the AFF_LINK_PLACEHOLDER_* value have no affiliate URL yet. Redirecting to
+// that string sends the visitor to a 404, so those slugs get a short "not available" page that
+// links back to the review. (Cloudflare Pages also skips them in the generated `_redirects`.)
+const target = affiliateUrl.trim();
+const hasTarget = /^https?:\/\//i.test(target);
+const pageStyle = 'margin:0;min-height:100vh;display:grid;place-items:center;font:16px/1.6 system-ui,sans-serif;color:#0f172a;background:#fff';
 ---
 
+{/* `doctype` must stay outside the conditional or the page falls into quirks mode. */}
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="robots" content="noindex,nofollow" />
-		{/* Navigation starts before first paint; the meta refresh below is the no-JS fallback.
-		    On Cloudflare Pages the `_redirects` 302 (generated in astro.config.mjs) means this
-		    document is normally never served at all. */}
-		<script is:inline define:vars={{ affiliateUrl }}>location.replace(affiliateUrl);</script>
-		<meta http-equiv="refresh" content={`0;url=${affiliateUrl}`} />
-		<link rel="canonical" href={affiliateUrl} />
-		<title>Redirecting…</title>
+		{
+			hasTarget ? (
+				<>
+					{/* Navigation starts before first paint; the meta refresh below is the no-JS fallback.
+					    On Cloudflare Pages the `_redirects` 302 (generated in astro.config.mjs) means
+					    this document is normally never served at all. */}
+					<script is:inline define:vars={{ target }}>location.replace(target);</script>
+					<meta http-equiv="refresh" content={`0;url=${target}`} />
+					<link rel="canonical" href={target} />
+					<title>Redirecting…</title>
+				</>
+			) : (
+				<>
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<title>Link not available yet</title>
+				</>
+			)
+		}
 	</head>
-	<body>
-		<p>Redirecting to <a href={affiliateUrl}>{affiliateUrl}</a>…</p>
+	<body style={pageStyle}>
+		{
+			hasTarget ? (
+				<p>Redirecting to <a href={target}>{target}</a>…</p>
+			) : (
+				<main style="max-width:32rem;padding:2rem;text-align:center">
+					<p><strong>The partner link is not available yet.</strong></p>
+					<p style="color:#475569">パートナーリンクは準備中です。</p>
+					<p><a href={reviewPath} style="color:#1d4ed8">Read the review / レビューを読む</a></p>
+				</main>
+			)
+		}
 	</body>
 </html>
