@@ -52,3 +52,41 @@ const GA_SRC = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}
 	loader.src = GA_SRC;
 	document.head.appendChild(loader);
 </script>
+
+<script is:inline>
+	// Affiliate click measurement.
+	//
+	// `/go/<slug>/` is answered by a 302 generated in astro.config.mjs, so that document is never
+	// rendered and Cloudflare's beacon can never see it. Counting the click here — on the page that
+	// holds the link — is the only client-side way to learn which reviews drive partner traffic.
+	// `transport_type: 'beacon'` matters: the browser starts navigating to the partner as soon as
+	// this handler returns, and only a beacon survives that navigation.
+	document.addEventListener(
+		'click',
+		function (event) {
+			var target = event.target;
+			var link = target && target.closest ? target.closest('a[href]') : null;
+			if (!link) return;
+
+			var url;
+			try {
+				url = new URL(link.getAttribute('href'), location.href);
+			} catch (error) {
+				return;
+			}
+			// External links are already covered by GA4's enhanced measurement.
+			if (url.origin !== location.origin) return;
+
+			var slug = url.pathname.match(/^\/go\/([^/]+)\/?$/);
+			if (!slug) return;
+
+			window.gtag('event', 'affiliate_click', {
+				affiliate_slug: decodeURIComponent(slug[1]),
+				source_page: location.pathname,
+				link_text: (link.textContent || '').trim().slice(0, 100),
+				transport_type: 'beacon'
+			});
+		},
+		true
+	);
+</script>

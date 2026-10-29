@@ -27,6 +27,8 @@ const TOKEN = /"token"\s*:\s*"([0-9a-f]{16,})"/i;
 const GA_LOADER = /googletagmanager\.com\/gtag\/js\?id=(G-[A-Za-z0-9]+)/i;
 // Matches both `gtag('consent', 'default', …)` and the layout's `window.gtag('consent', 'default', …)`.
 const GA_CONSENT_DEFAULT = /['"]consent['"]\s*,\s*['"]default['"]/i;
+// The `affiliate_click` event that GoogleAnalytics.astro fires when a visitor leaves for a partner.
+const GA_AFFILIATE_EVENT = /['"]affiliate_click['"]/i;
 
 const args = process.argv.slice(2);
 const live = args.includes('--live');
@@ -81,7 +83,11 @@ function reportGa(label, html) {
 		console.log(`WARN ${label}  GA loads before the Consent Mode v2 defaults`);
 		return false;
 	}
-	console.log(`OK   GA ${label}  (${loader[1]}, consent defaults before loader)`);
+	if (!GA_AFFILIATE_EVENT.test(html)) {
+		console.log(`WARN ${label}  no affiliate_click listener — partner clicks stay unmeasured`);
+		return false;
+	}
+	console.log(`OK   GA ${label}  (${loader[1]}, consent defaults before loader, affiliate_click)`);
 	return true;
 }
 
@@ -135,6 +141,13 @@ if (live) {
 		const unsafe = gaPages.filter((file) => !consentBeforeLoader(readFileSync(file, 'utf8')));
 		if (unsafe.length > 0) {
 			console.log(`WARN  ${unsafe.length} page(s) load GA before the Consent Mode v2 defaults.`);
+			ok = false;
+		}
+		// Partner clicks leave through `/go/<slug>/`, which the edge answers with a 302 — the click
+		// has to be counted on the page that holds the link, so every GA page needs the listener.
+		const noClicks = gaPages.filter((file) => !GA_AFFILIATE_EVENT.test(readFileSync(file, 'utf8')));
+		if (noClicks.length > 0) {
+			console.log(`WARN  ${noClicks.length} page(s) do not measure affiliate clicks.`);
 			ok = false;
 		}
 		if (gaPages.length !== contentPages.length) {
