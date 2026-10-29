@@ -38,10 +38,14 @@ function htmlFiles(dir) {
 }
 
 function report(label, html) {
-	const has = BEACON.test(html);
+	const count = [...html.matchAll(new RegExp(BEACON.source, 'gi'))].length;
 	const token = html.match(TOKEN)?.[1];
+	const has = count > 0;
 	console.log(`${has ? 'OK  ' : 'MISS'} ${label}${token ? `  (token ${token})` : ''}`);
-	return has;
+	// Exactly one snippet per page: a manual copy in Layout.astro *plus* edge injection would
+	// double-count every pageview.
+	if (count > 1) console.log(`WARN ${label}  beacon present ${count}× — remove the manual snippet from the layout`);
+	return has && count === 1;
 }
 
 let ok = true;
