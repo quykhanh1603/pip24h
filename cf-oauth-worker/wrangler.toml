@@ -1,3 +1,10 @@
 name = "pip24h-cms-auth"
 main = "worker.js"
 compatibility_date = "2026-08-11"
+
+# Origins allowed to receive the GitHub token from /callback.
+# Add the Pages preview origin (e.g. https://<project>.pages.dev) if you log in
+# to the CMS from a preview deployment.
+[vars]
+ALLOWED_ORIGINS = "https://pip24h.com,https://www.pip24h.com"
+OAUTH_SCOPE = "repo,user"

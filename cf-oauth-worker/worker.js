@@ -7,7 +7,23 @@
  * Required secrets (set via `wrangler secret put`):
  *   GITHUB_CLIENT_ID
  *   GITHUB_CLIENT_SECRET
+ *
+ * Optional vars (wrangler.toml [vars] or dashboard):
+ *   ALLOWED_ORIGINS  comma separated origins allowed to receive the token
+ *                    (default: https://pip24h.com, https://www.pip24h.com)
+ *   OAUTH_SCOPE      defaults to "repo,user"
  */
+
+const DEFAULT_ALLOWED_ORIGINS = ['https://pip24h.com', 'https://www.pip24h.com'];
+
+function getAllowedOrigins(env) {
+	const raw = typeof env.ALLOWED_ORIGINS === 'string' ? env.ALLOWED_ORIGINS : '';
+	const list = raw
+		.split(',')
+		.map((origin) => origin.trim())
+		.filter((origin) => origin.length > 0);
+	return list.length > 0 ? list : DEFAULT_ALLOWED_ORIGINS;
+}
 
 export default {
 	async fetch(request, env) {
@@ -28,7 +44,7 @@ async function handleAuth(url, env) {
 	const params = new URLSearchParams({
 		client_id: env.GITHUB_CLIENT_ID,
 		redirect_uri: `${url.origin}/callback`,
-		scope: 'repo,user',
+		scope: env.OAUTH_SCOPE || 'repo,user',
 		state
 	});
 
@@ -73,13 +89,19 @@ async function handleCallback(url, request, env) {
 	}
 
 	const payload = JSON.stringify({ token: tokenData.access_token, provider: 'github' });
+	const allowedOrigins = JSON.stringify(getAllowedOrigins(env));
 
 	const html = `<!doctype html>
 <html>
 	<body>
 		<script>
 			(function () {
+				var ALLOWED_ORIGINS = ${allowedOrigins};
+
 				function receiveMessage(e) {
+					// Never hand the GitHub token to an origin we do not own.
+					if (ALLOWED_ORIGINS.indexOf(e.origin) === -1) return;
+
 					window.opener.postMessage(
 						'authorization:github:success:${payload}',
 						e.origin
@@ -87,13 +109,23 @@ async function handleCallback(url, request, env) {
 					window.removeEventListener('message', receiveMessage, false);
 				}
 				window.addEventListener('message', receiveMessage, false);
-				window.opener.postMessage('authorizing:github', '*');
+				if (!window.opener) return;
+				// Announce ourselves only to the origins we trust (no more postMessage to '*').
+				for (var i = 0; i < ALLOWED_ORIGINS.length; i++) {
+					try {
+						window.opener.postMessage('authorizing:github', ALLOWED_ORIGINS[i]);
+					} catch (err) {}
+				}
 			})();
 		</script>
 	</body>
 </html>`;
 
 	return new Response(html, {
-		headers: { 'Content-Type': 'text/html; charset=utf-8' }
+		headers: {
+			'Content-Type': 'text/html; charset=utf-8',
+			'Cache-Control': 'no-store',
+			'Referrer-Policy': 'no-referrer'
+		}
 	});
 }

@@ -1,3 +1,7 @@
 name = "pip24h-publish"
 main = "worker.js"
 compatibility_date = "2026-08-19"
+
+# Origins allowed to call this worker from a browser (no more CORS '*').
+[vars]
+ALLOWED_ORIGINS = "https://pip24h.com,https://www.pip24h.com"

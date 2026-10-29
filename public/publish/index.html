@@ -153,7 +153,8 @@
 		<div class="card">
 			<h2>Mật khẩu đăng bài</h2>
 			<input type="password" id="secret" placeholder="Nhập mật khẩu" required />
-			<div class="hint"><label style="display:inline;font-weight:400;margin:0;"><input type="checkbox" id="rememberSecret" style="width:auto;" /> Ghi nhớ trên thiết bị này</label></div>
+			<div class="hint"><label style="display:inline;font-weight:400;margin:0;"><input type="checkbox" id="rememberSecret" style="width:auto;" /> Ghi nhớ trong tab này (tự xoá khi đóng tab)</label></div>
+			<div class="hint">Mật khẩu chỉ giữ trong phiên làm việc, không lưu lâu dài trên máy. Dùng máy lạ thì đừng bật ô này.</div>
 		</div>
 
 		<div class="card">
@@ -287,7 +288,17 @@
 
 	const secretInput = document.getElementById('secret');
 	const rememberBox = document.getElementById('rememberSecret');
-	const savedSecret = localStorage.getItem('pip24h_publish_secret');
+	// Older versions of this page stored the password in localStorage, where it
+	// survived reboots, browser sync and profile copies. Purge that value and keep
+	// the password in sessionStorage at most (cleared when the tab closes).
+	const SECRET_KEY = 'pip24h_publish_secret';
+	try {
+		localStorage.removeItem(SECRET_KEY);
+	} catch {}
+	let savedSecret = null;
+	try {
+		savedSecret = sessionStorage.getItem(SECRET_KEY);
+	} catch {}
 	if (savedSecret) {
 		secretInput.value = savedSecret;
 		rememberBox.checked = true;
@@ -322,9 +333,9 @@
 
 		try {
 			if (rememberBox.checked) {
-				localStorage.setItem('pip24h_publish_secret', secretInput.value);
+				try { sessionStorage.setItem(SECRET_KEY, secretInput.value); } catch {}
 			} else {
-				localStorage.removeItem('pip24h_publish_secret');
+				try { sessionStorage.removeItem(SECRET_KEY); } catch {}
 			}
 
 			const logoFile = document.getElementById('logo').files[0];
