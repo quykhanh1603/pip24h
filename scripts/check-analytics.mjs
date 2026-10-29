@@ -24,7 +24,7 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DIST = join(ROOT, 'dist');
 const BEACON = /static\.cloudflareinsights\.com\/beacon(?:\.min)?\.js/i;
 const TOKEN = /"token"\s*:\s*"([0-9a-f]{16,})"/i;
-const GA_LOADER = /googletagmanager\.com\/gtag\/js\?id=(G-[A-Za-z0-9]+)/i;
+const GA_LOADER = /googletagmanager\.com\/gtag\/js\?id=((?:GT|G)-[A-Za-z0-9]+)/i;
 // Matches both `gtag('consent', 'default', …)` and the layout's `window.gtag('consent', 'default', …)`.
 const GA_CONSENT_DEFAULT = /['"]consent['"]\s*,\s*['"]default['"]/i;
 // The `affiliate_click` event that GoogleAnalytics.astro fires when a visitor leaves for a partner.
