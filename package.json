@@ -10,6 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check:analytics": "node scripts/check-analytics.mjs",
+    "check:404": "node scripts/check-404.mjs",
+    "check:all": "npm run check:analytics && npm run check:404",
     "astro": "astro"
   },
   "dependencies": {
