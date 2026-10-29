@@ -28,7 +28,7 @@ pros:
 cons:
   - "ECN・生スプレッド専業の業者よりスプレッドは広め"
   - "一定期間取引がないと口座管理手数料が発生する"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_AVATRADE"
+affiliateUrl: "https://www.avatrade.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

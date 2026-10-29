@@ -29,7 +29,7 @@ pros:
 cons:
   - "Islamic swap-free accounts not available on every account type"
   - "Fewer CFD instruments than some competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_PEPPERSTONE"
+affiliateUrl: "https://pepperstone.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

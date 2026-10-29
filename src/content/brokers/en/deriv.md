@@ -28,7 +28,7 @@ pros:
 cons:
   - "Synthetic indices are a complex product that requires separate understanding"
   - "Regulation is spread across several offshore-leaning entities depending on region"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_DERIV"
+affiliateUrl: "https://deriv.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

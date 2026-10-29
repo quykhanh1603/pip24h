@@ -28,7 +28,7 @@ pros:
 cons:
   - "Higher minimum deposit than many low-cost competitors"
   - "Standard account spreads are wider than the Raw+ account"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXPRO"
+affiliateUrl: "https://www.fxpro.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

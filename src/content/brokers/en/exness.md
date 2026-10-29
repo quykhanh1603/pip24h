@@ -28,7 +28,7 @@ pros:
 cons:
   - "Some account types unsuitable for beginners due to high leverage"
   - "Spreads can widen during major news events"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_EXNESS"
+affiliateUrl: "https://www.exness.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

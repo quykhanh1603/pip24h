@@ -26,7 +26,7 @@ pros:
 cons:
   - "Higher minimum deposit than many low-cost competitors"
   - "Spreads are wider than dedicated ECN/raw-spread brokers"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_HYCM"
+affiliateUrl: "https://www.hycm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

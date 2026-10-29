@@ -27,7 +27,7 @@ pros:
 cons:
   - "オフショア規制のみで、主要当局のライセンスはない"
   - "非常に高いレバレッジは初心者にとって大きなリスクとなる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ROBOFOREX"
+affiliateUrl: "https://www.roboforex.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

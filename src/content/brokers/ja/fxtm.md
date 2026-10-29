@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard口座のスプレッドはECN口座より広い"
   - "一部のキャンペーン内容は地域によって大きく異なる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXTM"
+affiliateUrl: "https://www.fxtm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

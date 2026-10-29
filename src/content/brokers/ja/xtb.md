@@ -26,7 +26,7 @@ pros:
 cons:
   - "cTraderとMetaTrader 5には対応していない"
   - "長期間取引がないと口座管理手数料が発生する"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_XTB"
+affiliateUrl: "https://www.xtb.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

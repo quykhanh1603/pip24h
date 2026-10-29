@@ -25,7 +25,7 @@ pros:
 cons:
   - "現在の運営法人はオフショア規制のみで運営されている"
   - "Standard口座のスプレッドはECN専業の競合より広い"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ALPARI"
+affiliateUrl: "https://www.alpari.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

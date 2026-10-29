@@ -25,7 +25,7 @@ pros:
 cons:
   - "Offshore-only regulation, without a major-jurisdiction license"
   - "Heavy use of bonus promotions, which typically carry withdrawal conditions"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_INSTAFOREX"
+affiliateUrl: "https://www.instaforex.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

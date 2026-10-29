@@ -28,7 +28,7 @@ pros:
 cons:
   - "Zero-spread Premium account requires a much higher deposit"
   - "Full instrument range varies by regulated entity/region"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_HFM"
+affiliateUrl: "https://www.hfm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

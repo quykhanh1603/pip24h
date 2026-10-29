@@ -26,7 +26,7 @@ pros:
 cons:
   - "Offshore-only regulation, without a major-jurisdiction license"
   - "Fewer educational resources than some larger competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_LITEFINANCE"
+affiliateUrl: "https://www.litefinance.org/"
 featured: false
 updatedDate: 2026-08-11
 ---

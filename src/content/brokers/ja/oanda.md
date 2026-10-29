@@ -28,7 +28,7 @@ pros:
 cons:
   - "他の多くのオフショア業者より最大レバレッジが低い"
   - "ECN重視の業者に比べて口座タイプが少ない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_OANDA"
+affiliateUrl: "https://www.oanda.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

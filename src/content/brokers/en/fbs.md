@@ -26,7 +26,7 @@ pros:
 cons:
   - "Very high leverage increases risk for inexperienced traders"
   - "Standard account spreads are wider than ECN-focused competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FBS"
+affiliateUrl: "https://fbs.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

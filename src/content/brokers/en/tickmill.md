@@ -27,7 +27,7 @@ pros:
 cons:
   - "Limited platform choice — MT4/MT5 only, no cTrader"
   - "Fewer tradable instruments than some multi-asset brokers"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_TICKMILL"
+affiliateUrl: "https://www.tickmill.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

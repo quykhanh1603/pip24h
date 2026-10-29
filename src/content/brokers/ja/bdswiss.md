@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard口座のスプレッドはRaw口座よりかなり広い"
   - "主たる規制はオフショアで、主要当局のライセンスではない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_BDSWISS"
+affiliateUrl: "https://www.bdswiss.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

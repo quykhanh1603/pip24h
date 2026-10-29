@@ -28,7 +28,7 @@ pros:
 cons:
   - "Standard account spreads are wider than the RAW account"
   - "Educational content is less developed than some competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_VANTAGE"
+affiliateUrl: "https://www.vantagefx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

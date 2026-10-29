@@ -28,7 +28,7 @@ pros:
 cons:
   - "Spreads are wider than dedicated ECN/raw-spread brokers"
   - "Inactivity fees apply after a period of no trading"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_AVATRADE"
+affiliateUrl: "https://www.avatrade.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

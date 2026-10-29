@@ -24,7 +24,7 @@ pros:
 cons:
   - "標準スプレッドはECN・生スプレッド専業の業者より広い"
   - "口座グレードが多く、初心者には比較が分かりにくい"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_IRONFX"
+affiliateUrl: "https://www.ironfx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

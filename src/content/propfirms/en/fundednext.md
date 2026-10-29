@@ -55,7 +55,7 @@ cons:
   - "On the funded account only 40% of the profit counts if a trade is opened or closed within 5 minutes of listed high-impact news"
   - "The fee refund moved to the third payout for accounts purchased from 12 January 2026"
   - "cTrader and Match-Trader add a $25 platform fee that is never refunded"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FUNDEDNEXT"
+affiliateUrl: "https://fundednext.com/"
 featured: true
 updatedDate: 2026-09-16
 ---

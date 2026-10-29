@@ -28,7 +28,7 @@ pros:
 cons:
   - "Higher minimum deposit than some competitors ($200)"
   - "Basic account interface with few extra features"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ICMARKETS"
+affiliateUrl: "https://www.icmarkets.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

@@ -25,7 +25,7 @@ pros:
 cons:
   - "FCAやASICのような伝統的な金融当局の規制は受けていない"
   - "取扱銘柄が非常に多く、流動性の低いハイリスクなコインも含まれる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_MEXC"
+affiliateUrl: "https://www.mexc.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

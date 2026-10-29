@@ -26,7 +26,7 @@ pros:
 cons:
   - "レバレッジが高すぎるため、経験の浅いトレーダーはリスクが増す"
   - "Standard口座のスプレッドはECN重視の競合より広い"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FBS"
+affiliateUrl: "https://fbs.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

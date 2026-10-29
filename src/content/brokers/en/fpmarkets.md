@@ -29,7 +29,7 @@ pros:
 cons:
   - "Raw account requires a higher minimum deposit than the Standard account"
   - "Educational resources are less extensive than some competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FPMARKETS"
+affiliateUrl: "https://www.fpmarkets.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

@@ -28,7 +28,7 @@ pros:
 cons:
   - "Lower maximum leverage than many offshore brokers"
   - "Fewer account type options compared to ECN-focused brokers"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_OANDA"
+affiliateUrl: "https://www.oanda.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

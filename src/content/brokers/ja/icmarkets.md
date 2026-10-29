@@ -28,7 +28,7 @@ pros:
 cons:
   - "最低入金額が他社よりやや高い（$200）"
   - "口座画面はシンプルで、付加機能は多くない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ICMARKETS"
+affiliateUrl: "https://www.icmarkets.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

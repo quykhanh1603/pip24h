@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard口座のスプレッドはECN口座より広い"
   - "暗号資産CFDの取扱いは規制法人によって異なる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXOPEN"
+affiliateUrl: "https://www.fxopen.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

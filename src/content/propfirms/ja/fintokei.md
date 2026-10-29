@@ -52,7 +52,7 @@ cons:
   - "SwiftTraderは1日3%、最大6%と損失の許容幅が狭いです"
   - "自作または完全に所有しているEAしか使えず、購入したロボットやシグナル、ブラックボックス型は禁止です"
   - "米国・インド・ロシア・中国の居住者は利用できません"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FINTOKEI"
+affiliateUrl: "https://www.fintokei.com/"
 featured: false
 updatedDate: 2026-09-16
 ---

@@ -53,7 +53,7 @@ cons:
   - "1ステップは1日の損失上限が3%と厳しく、最大損失はトレーリング式で、参加費も返金されない"
   - "通常の参加費€155は、新興の競合より高め"
   - "スケーリング前は、1トレーダー・1戦略あたり$400Kが上限"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FTMO"
+affiliateUrl: "https://www.ftmo.com/"
 featured: true
 updatedDate: 2026-09-15
 ---

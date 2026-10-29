@@ -25,7 +25,7 @@ pros:
 cons:
   - "Not regulated as a traditional financial broker like FCA/ASIC-licensed forex brokers"
   - "High leverage on derivatives carries substantial risk for beginners"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_BYBIT"
+affiliateUrl: "https://www.bybit.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

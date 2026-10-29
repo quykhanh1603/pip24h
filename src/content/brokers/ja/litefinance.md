@@ -26,7 +26,7 @@ pros:
 cons:
   - "オフショア規制のみで、主要当局のライセンスはない"
   - "学習コンテンツは大手の一部競合より少ない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_LITEFINANCE"
+affiliateUrl: "https://www.litefinance.org/"
 featured: false
 updatedDate: 2026-08-11
 ---

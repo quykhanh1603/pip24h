@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard account spreads are wider than dedicated ECN brokers"
   - "High leverage increases risk for inexperienced traders"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_XM"
+affiliateUrl: "https://www.xm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

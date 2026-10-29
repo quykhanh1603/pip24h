@@ -28,7 +28,7 @@ pros:
 cons:
   - "スプレッド0.0pipsのPremium口座はかなり高い入金額が必要"
   - "取扱銘柄の範囲は規制法人・地域によって異なる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_HFM"
+affiliateUrl: "https://www.hfm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

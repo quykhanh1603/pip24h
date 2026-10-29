@@ -24,7 +24,7 @@ pros:
 cons:
   - "Not regulated as a traditional financial broker like FCA/ASIC-licensed forex brokers"
   - "Product range can feel overwhelming for beginners"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_OKX"
+affiliateUrl: "https://www.okx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

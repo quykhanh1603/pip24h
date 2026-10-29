@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard account spreads are wider than the ECN account"
   - "Crypto CFD availability varies by regulated entity"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXOPEN"
+affiliateUrl: "https://www.fxopen.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

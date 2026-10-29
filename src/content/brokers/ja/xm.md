@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard口座のスプレッドはECN専業の業者より広い"
   - "高いレバレッジは経験の浅いトレーダーのリスクを高める"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_XM"
+affiliateUrl: "https://www.xm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

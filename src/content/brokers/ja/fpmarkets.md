@@ -29,7 +29,7 @@ pros:
 cons:
   - "Raw口座はStandard口座より高い最低入金額が必要"
   - "学習コンテンツは一部の競合ほど充実していない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FPMARKETS"
+affiliateUrl: "https://www.fpmarkets.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

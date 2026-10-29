@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard account spreads are wider than the ECN account"
   - "Some promotional offers vary significantly by region"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXTM"
+affiliateUrl: "https://www.fxtm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

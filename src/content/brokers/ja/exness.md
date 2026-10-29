@@ -28,7 +28,7 @@ pros:
 cons:
   - "レバレッジが高いため、一部の口座タイプは初心者向きではない"
   - "重要指標の発表時間帯にはスプレッドが拡大することがある"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_EXNESS"
+affiliateUrl: "https://www.exness.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

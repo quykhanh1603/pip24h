@@ -26,7 +26,7 @@ pros:
 cons:
   - "低コスト系の競合より最低入金額が高い"
   - "ECN・生スプレッド専業の業者よりスプレッドは広め"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_HYCM"
+affiliateUrl: "https://www.hycm.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

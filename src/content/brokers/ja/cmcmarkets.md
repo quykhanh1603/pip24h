@@ -26,7 +26,7 @@ pros:
 cons:
   - "ECN・生スプレッド専業の業者よりスプレッドは広め"
   - "長期間取引がないと口座管理手数料が発生する"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_CMCMARKETS"
+affiliateUrl: "https://www.cmcmarkets.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

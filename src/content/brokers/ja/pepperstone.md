@@ -29,7 +29,7 @@ pros:
 cons:
   - "すべての口座タイプでスワップフリーのイスラム口座を利用できるわけではない"
   - "一部のCFD銘柄は競合より取扱数が少ない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_PEPPERSTONE"
+affiliateUrl: "https://pepperstone.com/"
 featured: true
 updatedDate: 2026-08-11
 ---

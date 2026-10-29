@@ -26,7 +26,7 @@ pros:
 cons:
   - "cTrader and MetaTrader 5 are not offered"
   - "Inactivity fees apply after an extended period without trading"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_XTB"
+affiliateUrl: "https://www.xtb.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

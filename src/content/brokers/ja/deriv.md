@@ -28,7 +28,7 @@ pros:
 cons:
   - "合成指数は複雑な商品で、別途学習が必要"
   - "地域により、規制がオフショア寄りの複数法人に分かれている"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_DERIV"
+affiliateUrl: "https://deriv.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

@@ -25,7 +25,7 @@ pros:
 cons:
   - "Not regulated as a traditional financial broker like FCA/ASIC-licensed forex brokers"
   - "Very large token selection includes higher-risk, low-liquidity coins"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_MEXC"
+affiliateUrl: "https://www.mexc.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

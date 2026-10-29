@@ -24,7 +24,7 @@ pros:
 cons:
   - "Standard spreads are wider than dedicated ECN/raw-spread brokers"
   - "The multi-tier account structure can be confusing for beginners to compare"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_IRONFX"
+affiliateUrl: "https://www.ironfx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

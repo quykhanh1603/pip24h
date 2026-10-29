@@ -25,7 +25,7 @@ pros:
 cons:
   - "オフショア規制のみで、主要当局のライセンスはない"
   - "ボーナス施策が多く、出金前に取引量の条件が課されることが多い"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_INSTAFOREX"
+affiliateUrl: "https://www.instaforex.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

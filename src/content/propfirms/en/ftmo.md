@@ -53,7 +53,7 @@ cons:
   - "1-Step has a tighter 3% daily loss, a trailing max loss and a non-refundable fee"
   - "Regular €155 entry fee is higher than several newer rivals"
   - "$400K allocation cap per trader or strategy before scaling"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FTMO"
+affiliateUrl: "https://www.ftmo.com/"
 featured: true
 updatedDate: 2026-09-15
 ---

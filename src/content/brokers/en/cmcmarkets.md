@@ -26,7 +26,7 @@ pros:
 cons:
   - "Spreads are wider than dedicated ECN/raw-spread brokers"
   - "Inactivity fees apply after an extended period without trading"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_CMCMARKETS"
+affiliateUrl: "https://www.cmcmarkets.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

@@ -27,7 +27,7 @@ pros:
 cons:
   - "Standard account spreads are noticeably wider than the Raw account"
   - "Primary regulation is offshore rather than a major-jurisdiction license"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_BDSWISS"
+affiliateUrl: "https://www.bdswiss.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

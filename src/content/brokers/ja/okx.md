@@ -24,7 +24,7 @@ pros:
 cons:
   - "FCAやASICのような伝統的な金融当局の規制は受けていない"
   - "商品の幅が広く、初心者には情報量が多すぎると感じられることがある"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_OKX"
+affiliateUrl: "https://www.okx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

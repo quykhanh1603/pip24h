@@ -28,7 +28,7 @@ pros:
 cons:
   - "Standard口座のスプレッドはRAW口座より広い"
   - "学習コンテンツは一部の競合ほど充実していない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_VANTAGE"
+affiliateUrl: "https://www.vantagefx.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

@@ -28,7 +28,7 @@ pros:
 cons:
   - "低コスト系の競合より最低入金額が高い"
   - "Standard口座のスプレッドはRaw+口座より広い"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FXPRO"
+affiliateUrl: "https://www.fxpro.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

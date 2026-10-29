@@ -25,7 +25,7 @@ pros:
 cons:
   - "FCAやASICのような伝統的な金融当局の規制は受けていない"
   - "デリバティブの高いレバレッジは初心者にとって大きなリスクとなる"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_BYBIT"
+affiliateUrl: "https://www.bybit.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

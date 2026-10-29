@@ -25,7 +25,7 @@ pros:
 cons:
   - "Current entity operates under offshore-only regulation"
   - "Standard account spreads are wider than dedicated ECN competitors"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ALPARI"
+affiliateUrl: "https://www.alpari.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

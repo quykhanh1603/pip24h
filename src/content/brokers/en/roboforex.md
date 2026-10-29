@@ -27,7 +27,7 @@ pros:
 cons:
   - "Offshore-only regulation, without a major-jurisdiction license"
   - "Very high leverage tiers carry meaningful risk for new traders"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_ROBOFOREX"
+affiliateUrl: "https://www.roboforex.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

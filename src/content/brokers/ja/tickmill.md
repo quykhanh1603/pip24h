@@ -27,7 +27,7 @@ pros:
 cons:
   - "プラットフォームの選択肢が少なく、MT4/MT5のみでcTraderはない"
   - "取扱銘柄数は他のマルチアセット業者より少ない"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_TICKMILL"
+affiliateUrl: "https://www.tickmill.com/"
 featured: false
 updatedDate: 2026-08-11
 ---

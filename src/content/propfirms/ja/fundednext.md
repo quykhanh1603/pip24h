@@ -55,7 +55,7 @@ cons:
   - "資金提供後は、重要指標の発表前後5分に建てた、または決済した取引の利益が40%しか反映されません"
   - "2026年1月12日以降に購入した口座は、参加費の返金が3回目の報酬時に後ろ倒しされました"
   - "cTraderとMatch-Traderには、返金されないプラットフォーム利用料$25がかかります"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FUNDEDNEXT"
+affiliateUrl: "https://fundednext.com/"
 featured: true
 updatedDate: 2026-09-16
 ---
