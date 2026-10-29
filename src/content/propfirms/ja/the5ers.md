@@ -51,7 +51,7 @@ cons:
   - "FTMOやFintokeiと違い、合格しても参加費は返ってきません"
   - "重要指標の発表前2分から発表後2分までは新規発注ができません"
   - "対応はMT5とcTraderのみで、MT4もTradingViewもありません"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_THE5ERS"
+affiliateUrl: "https://www.the5ers.com/?afmc=1fuv"
 featured: true
 updatedDate: 2026-09-16
 ---

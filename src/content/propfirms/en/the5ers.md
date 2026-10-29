@@ -51,7 +51,7 @@ cons:
   - "No fee refund on passing, unlike FTMO or Fintokei"
   - "Orders may not be executed from 2 minutes before to 2 minutes after high-impact news"
   - "MT5 and cTrader only — no MT4, no TradingView"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_THE5ERS"
+affiliateUrl: "https://www.the5ers.com/?afmc=1fuv"
 featured: true
 updatedDate: 2026-09-16
 ---

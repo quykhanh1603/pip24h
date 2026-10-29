@@ -51,7 +51,7 @@ cons:
   - "報酬には0.5%以上の「利益が出た日」が7日と、1日の利益が全体の35%を超えないという一貫性スコアが必要です"
   - "資金提供口座では重要指標の前後5分、要人発言の前後10分が制限されます"
   - "設立年も本社所在地も公式には公表されていません"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FUNDINGPIPS"
+affiliateUrl: "https://app.fundingpips.com/register?referral_code=89D172E4"
 featured: false
 updatedDate: 2026-09-16
 ---

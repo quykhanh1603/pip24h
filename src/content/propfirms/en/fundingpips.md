@@ -51,7 +51,7 @@ cons:
   - "Rewards need 7 profitable days of at least 0.5% and a 35% consistency score — no single day may be over 35% of total profit"
   - "Restricted window of 5 minutes either side of high-impact news on the master account, and 10 minutes around speeches"
   - "The firm does not publish a founding year or a head office address"
-affiliateUrl: "AFF_LINK_PLACEHOLDER_FUNDINGPIPS"
+affiliateUrl: "https://app.fundingpips.com/register?referral_code=89D172E4"
 featured: false
 updatedDate: 2026-09-16
 ---
