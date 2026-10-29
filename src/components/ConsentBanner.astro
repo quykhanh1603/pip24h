@@ -1,0 +1,122 @@
+---
+// Minimal cookie-consent banner for Google Analytics (Consent Mode v2).
+//
+// Only rendered when PUBLIC_GA_ID is configured — see src/config/analytics.ts — because GA4
+// is the only cookie-setting script on the site. The choice is stored in localStorage
+// (`pip24h-consent`) and replayed by GoogleAnalytics.astro on the next page load.
+//
+// No dependencies, no CSS framework additions: everything sits on top of Tailwind utilities
+// already used by the layout.
+import { gaEnabled } from '../config/analytics';
+
+interface Props {
+	lang: 'ja' | 'en';
+}
+
+const { lang } = Astro.props;
+
+if (!gaEnabled) return;
+
+const text = {
+	ja: {
+		label: 'Cookieの同意',
+		body: '当サイトでは、利用状況を把握して改善するためにGoogleアナリティクス（Cookie）を使用しています。拒否した場合も、Cookieを使用しない簡易計測のみ行われます。',
+		privacy: 'プライバシーポリシー',
+		accept: '同意する',
+		reject: '拒否する'
+	},
+	en: {
+		label: 'Cookie consent',
+		body: 'We use Google Analytics cookies to understand how the site is used. If you decline, we only collect cookieless measurements.',
+		privacy: 'Privacy Policy',
+		accept: 'Accept',
+		reject: 'Decline'
+	}
+}[lang];
+---
+
+<div
+	id="consent-banner"
+	role="dialog"
+	aria-live="polite"
+	aria-label={text.label}
+	style="display:none"
+	class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 py-4 shadow-[0_-6px_20px_rgba(15,23,42,0.12)] backdrop-blur dark:border-slate-800 dark:bg-slate-900/95"
+>
+	<div class="mx-auto flex max-w-6xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+		<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+			{text.body}
+			<a href={`/${lang}/privacy/`} class="underline decoration-slate-400 underline-offset-2 hover:text-brand-blue">
+				{text.privacy}
+			</a>
+		</p>
+		<div class="flex flex-shrink-0 gap-2">
+			<button
+				type="button"
+				data-consent="denied"
+				class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-slate-400 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800"
+			>
+				{text.reject}
+			</button>
+			<button
+				type="button"
+				data-consent="granted"
+				class="rounded-lg bg-brand-blue px-4 py-2 text-sm font-semibold text-white hover:bg-brand-navy"
+			>
+				{text.accept}
+			</button>
+		</div>
+	</div>
+</div>
+
+<script is:inline>
+	(function () {
+		var KEY = 'pip24h-consent';
+		var banner = document.getElementById('consent-banner');
+		if (!banner) return;
+
+		function read() {
+			try {
+				return localStorage.getItem(KEY);
+			} catch (error) {
+				return null;
+			}
+		}
+
+		function save(value) {
+			try {
+				localStorage.setItem(KEY, value);
+			} catch (error) {
+				/* storage blocked — the choice only applies to this page view */
+			}
+			if (typeof window.gtag === 'function') {
+				window.gtag('consent', 'update', {
+					analytics_storage: value === 'granted' ? 'granted' : 'denied'
+				});
+			}
+			banner.style.display = 'none';
+		}
+
+		if (!read()) banner.style.display = 'block';
+
+		Array.prototype.forEach.call(banner.querySelectorAll('[data-consent]'), function (button) {
+			button.addEventListener('click', function () {
+				save(button.getAttribute('data-consent'));
+			});
+		});
+
+		// Footer "Cookie settings" link re-opens the banner so the choice can be changed.
+		var reopen = document.getElementById('consent-settings');
+		if (reopen) {
+			reopen.addEventListener('click', function (event) {
+				event.preventDefault();
+				try {
+					localStorage.removeItem(KEY);
+				} catch (error) {
+					/* ignore */
+				}
+				banner.style.display = 'block';
+			});
+		}
+	})();
+</script>

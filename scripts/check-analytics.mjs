@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Verify that the Cloudflare Web Analytics (RUM) beacon is present.
+// Verify the analytics layers: the Cloudflare Web Analytics (RUM) beacon and Google Analytics 4.
 //
 //   node scripts/check-analytics.mjs                 Check the local build (dist/) — runs after `npm run build`.
 //   node scripts/check-analytics.mjs --live          Check https://pip24h.com/{en,ja}/ after a Pages deploy.
@@ -10,7 +10,11 @@
 // server-side counter. `dist/` therefore only confirms the site can be instrumented (no
 // `Cache-Control: no-transform` header blocking the injection).
 //
-// Exit code 1 when the beacon is missing, so this can gate a deploy check.
+// Google Analytics is the opposite: it comes from `src/components/GoogleAnalytics.astro` and is
+// only emitted when PUBLIC_GA_ID is set at build time, so an absent tag is reported as INFO
+// (not a failure) — what fails is a tag that loads *before* the Consent Mode v2 defaults.
+//
+// Exit code 1 when the beacon is missing, injected twice, or GA violates consent ordering.
 
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -20,6 +24,9 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DIST = join(ROOT, 'dist');
 const BEACON = /static\.cloudflareinsights\.com\/beacon(?:\.min)?\.js/i;
 const TOKEN = /"token"\s*:\s*"([0-9a-f]{16,})"/i;
+const GA_LOADER = /googletagmanager\.com\/gtag\/js\?id=(G-[A-Za-z0-9]+)/i;
+// Matches both `gtag('consent', 'default', …)` and the layout's `window.gtag('consent', 'default', …)`.
+const GA_CONSENT_DEFAULT = /['"]consent['"]\s*,\s*['"]default['"]/i;
 
 const args = process.argv.slice(2);
 const live = args.includes('--live');
@@ -48,6 +55,36 @@ function report(label, html) {
 	return has && count === 1;
 }
 
+/**
+ * Consent defaults must be pushed before the tag is fetched. Our layout injects the loader
+ * dynamically (`createElement('script')` after the commands are queued), so the only ordering
+ * that can still be violated is a hand-written static `<script src="…gtag/js">` placed earlier.
+ */
+function consentBeforeLoader(html) {
+	const consentAt = html.search(GA_CONSENT_DEFAULT);
+	if (consentAt === -1) return false;
+	const staticAt = html.search(/<script[^>]+src=["'][^"']*googletagmanager\.com\/gtag\/js/i);
+	return staticAt === -1 || consentAt < staticAt;
+}
+
+/**
+ * Google Analytics: `INFO` when the tag is simply not configured, `WARN`/failure when it is
+ * fetched before the Consent Mode v2 defaults (that would set `_ga` without permission).
+ */
+function reportGa(label, html) {
+	const loader = html.match(GA_LOADER);
+	if (!loader) {
+		console.log(`INFO GA not configured: ${label}`);
+		return true;
+	}
+	if (!consentBeforeLoader(html)) {
+		console.log(`WARN ${label}  GA loads before the Consent Mode v2 defaults`);
+		return false;
+	}
+	console.log(`OK   GA ${label}  (${loader[1]}, consent defaults before loader)`);
+	return true;
+}
+
 let ok = true;
 
 if (live) {
@@ -61,6 +98,7 @@ if (live) {
 			}
 			const html = await res.text();
 			ok = report(url, html) && ok;
+			ok = reportGa(url, html) && ok;
 			// A page served with `public, no-transform` can never receive the injected beacon.
 			const cc = res.headers.get('cache-control');
 			if (cc?.includes('no-transform')) console.log(`WARN ${url}  Cache-Control: ${cc} blocks beacon injection`);
@@ -84,6 +122,27 @@ if (live) {
 		for (const file of hits.slice(0, 5)) console.log(`      ${file.replace(ROOT, '.')}`);
 		if (hits.length > 5) console.log(`      … and ${hits.length - 5} more`);
 	}
+	// Google Analytics is baked in by Astro, so an unset PUBLIC_GA_ID shows up right here.
+	// `/go/`, `/admin/`, `/publish/` and the root redirect are out of scope on purpose: they are
+	// not content pages, and `/go/` never even reaches the browser (`_redirects` answers first).
+	const contentPages = files.filter((file) => /[\\/](en|ja)[\\/]/.test(file));
+	const gaPages = contentPages.filter((file) => GA_LOADER.test(readFileSync(file, 'utf8')));
+	if (gaPages.length === 0) {
+		console.log('dist/: no Google Analytics tag (PUBLIC_GA_ID was empty for this build).');
+	} else {
+		const id = readFileSync(gaPages[0], 'utf8').match(GA_LOADER)[1];
+		console.log(`dist/: ${gaPages.length}/${contentPages.length} content page(s) with GA (${id}).`);
+		const unsafe = gaPages.filter((file) => !consentBeforeLoader(readFileSync(file, 'utf8')));
+		if (unsafe.length > 0) {
+			console.log(`WARN  ${unsafe.length} page(s) load GA before the Consent Mode v2 defaults.`);
+			ok = false;
+		}
+		if (gaPages.length !== contentPages.length) {
+			console.log('WARN  Some content pages carry no GA tag — they do not render through Layout.astro.');
+			ok = false;
+		}
+	}
+
 	// `public, no-transform` prevents Cloudflare from modifying the response, so the beacon
 	// is never injected — the only build artifact that can break this layer.
 	const headers = join(DIST, '_headers');

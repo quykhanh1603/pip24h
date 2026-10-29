@@ -2,6 +2,9 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import SocialLinks from '../components/SocialLinks.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import { gaEnabled } from '../config/analytics';
 import { socialLinks } from '../data/social';
 
 interface Props {
@@ -61,6 +64,7 @@ const footerText = {
 		topBrokers: 'トップブローカー',
 		legal: '法的情報',
 		privacy: 'プライバシーポリシー',
+		cookieSettings: 'Cookie設定',
 		terms: '利用規約・リスク開示',
 		disclosure: 'アフィリエイト開示',
 		risk: 'FX・暗号資産の取引には大きなリスクが伴います。本サイトの内容は情報提供を目的としたものであり、投資助言ではありません。',
@@ -73,6 +77,7 @@ const footerText = {
 		topBrokers: 'Top Brokers',
 		legal: 'Legal',
 		privacy: 'Privacy Policy',
+		cookieSettings: 'Cookie settings',
 		terms: 'Terms & Risk Disclaimer',
 		disclosure: 'Affiliate Disclosure',
 		risk: 'Trading forex/crypto carries significant risk. Content is for informational purposes only, not investment advice.',
@@ -121,6 +126,7 @@ const topBrokers = [...brokers]
 				document.documentElement.classList.add('dark');
 			}
 		</script>
+		<GoogleAnalytics />
 	</head>
 	<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
 		<header class="sticky top-0 z-40 bg-brand-navy dark:border-b dark:border-slate-800 dark:bg-slate-950">
@@ -212,6 +218,13 @@ const topBrokers = [...brokers]
 					<h3 class="text-sm font-semibold text-brand-navy dark:text-white">{footerText.legal}</h3>
 					<ul class="mt-3 space-y-2 text-sm text-slate-500 dark:text-slate-400">
 						<li><a href={`/${lang}/privacy/`} class="hover:text-brand-blue">{footerText.privacy}</a></li>
+						{gaEnabled && (
+							<li>
+								<button type="button" id="consent-settings" class="hover:text-brand-blue">
+									{footerText.cookieSettings}
+								</button>
+							</li>
+						)}
 						<li><a href={`/${lang}/terms/`} class="hover:text-brand-blue">{footerText.terms}</a></li>
 						<li><a href={`/${lang}/affiliate-disclosure/`} class="hover:text-brand-blue">{footerText.disclosure}</a></li>
 					</ul>
@@ -229,5 +242,6 @@ const topBrokers = [...brokers]
 				localStorage.setItem('theme', isDark ? 'dark' : 'light');
 			});
 		</script>
+		<ConsentBanner lang={lang} />
 	</body>
 </html>
