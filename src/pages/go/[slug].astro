@@ -38,6 +38,10 @@ const { affiliateUrl } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<meta name="robots" content="noindex,nofollow" />
+		{/* Navigation starts before first paint; the meta refresh below is the no-JS fallback.
+		    On Cloudflare Pages the `_redirects` 302 (generated in astro.config.mjs) means this
+		    document is normally never served at all. */}
+		<script is:inline define:vars={{ affiliateUrl }}>location.replace(affiliateUrl);</script>
 		<meta http-equiv="refresh" content={`0;url=${affiliateUrl}`} />
 		<link rel="canonical" href={affiliateUrl} />
 		<title>Redirecting…</title>
