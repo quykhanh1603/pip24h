@@ -16,10 +16,28 @@ finished: stop without committing anything.
 
 ## 2. Research each broker
 
-Use web search and page fetches. Prefer, in order:
-1. The broker's own site: legal/regulation page and footer, account types, platforms, deposit page.
-2. The regulator's own register (links in `src/data/regulators.ts`) to confirm licence numbers and entities.
-3. Reputable secondary sources only to fill gaps, and cite them.
+Work **one broker at a time** and finish it (JSON written) before starting the next. Budget roughly
+3–5 minutes and 6–12 fetches/searches per broker; a whole run finishing in a few minutes means corners were cut.
+Do not batch-generate all brokers from search snippets in one script.
+
+For each broker, in this order:
+1. **Open the queue URL (the homepage) first.** Never guess deep URLs like `/legal-information/` — read the
+   homepage and follow the actual links in its footer/menu ("Legal", "Regulation", "Licences", "About us",
+   "Account types", "Platforms"). The footer risk/regulatory disclaimer usually names each entity, regulator
+   and licence number — use it.
+2. If the site returns 403/blocks fetching, run a web search restricted to the broker's own domain
+   (e.g. `site:etoro.com regulation licence`) and fetch the pages it finds.
+3. **Check every licence on the regulator's own register** (links in `src/data/regulators.ts`; FCA register,
+   ASIC Connect, CySEC entity list, etc.) or via a search restricted to the regulator's domain. Mark it
+   `verified` only when the register page itself shows the firm/number.
+4. Founding year: the broker's "About" page, or Wikipedia when it has an article on the company.
+5. Reputable secondary sources only to fill remaining gaps, and cite them. Aggregator/review sites
+   (FastBull, broker-review blogs, affiliate comparison sites) are never the sole source for licences.
+
+**Thin result → skip, don't publish.** If after this research you still lack confirmed licence information
+or have fewer than 3 of {founding year, min deposit, spread, max leverage, platforms}, set
+`"status": "skip"` with `skipReason: "insufficient verifiable data: <what is missing>"`. Better 6 solid
+profiles than 10 thin ones.
 
 Rules:
 - **No invented data.** If a figure is not stated by a source you actually read, omit the field.
