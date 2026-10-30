@@ -9,16 +9,16 @@ https://www.vantagemarkets.com,,vantagemarkets,skipped,2026-10-30,same company a
 https://capital.com/,,capital,done,2026-10-30,
 https://iqoption.com/,,iqoption,done,2026-10-30,
 https://www.gcmyatirim.com.tr/,,gcmyatirim,done,2026-10-30,
-https://www.forex.com/,,forex,pending,,
-https://tastytrade.com/,,tastytrade,pending,,
-https://www.tradestation.com/,,tradestation,pending,,
-https://www.nagmarkets.com/,,nagmarkets,pending,,
-ziraatyatirim.com.tr,,ziraatyatirim,pending,,
-https://freedom24.com/,,freedom24,pending,,
-https://www.puprime.com/,,puprime,pending,,
-https://www.vtmarkets.com/,,vtmarkets,pending,,
-https://bookmap.com,,bookmap,pending,,
-https://justmarkets.com/,,justmarkets,pending,,
+https://www.forex.com/,,forex,skipped,2026-10-30,insufficient verifiable data: licences not confirmed on registers (NFA BASIC and FCA entries could not be matched to the site entity); min deposit and max leverage not published
+https://tastytrade.com/,,tastytrade,done,2026-10-30,
+https://www.tradestation.com/,,tradestation,skipped,2026-10-30,"insufficient verifiable data: site blocks fetching; licences, founding year and trading specs not confirmed"
+https://www.nagmarkets.com/,,nagmarkets,skipped,2026-10-30,"insufficient verifiable data: licences (VFSC, FSA Seychelles) not confirmed on any register; site unreachable (HTTP 521)"
+ziraatyatirim.com.tr,,ziraatyatirim,skipped,2026-10-30,"insufficient verifiable data: SPK licence number, founding year and trading specs not found"
+https://freedom24.com/,,freedom24,skipped,2026-10-30,"insufficient verifiable data: CySEC licence 275/15 confirmed but founding year, min deposit, spread/leverage and platforms not confirmed"
+https://www.puprime.com/,,puprime,done,2026-10-30,
+https://www.vtmarkets.com/,,vtmarkets,skipped,2026-10-30,insufficient verifiable data: ASIC/FSCA/FSC licences not confirmed on registers (ASIC register page blocked); min deposit figures conflict
+https://bookmap.com,,bookmap,skipped,2026-10-30,not a retail broker: trading software vendor
+https://justmarkets.com/,,justmarkets,done,2026-10-30,
 https://fusionmarkets.com,,fusionmarkets,pending,,
 https://hmarkets.com/,,hmarkets,pending,,
 https://hw.online/,,hw,pending,,

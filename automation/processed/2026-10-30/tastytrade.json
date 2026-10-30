@@ -1,0 +1,34 @@
+{
+	"slug": "tastytrade",
+	"queueUrl": "https://tastytrade.com/",
+	"status": "ok",
+	"name": "tastytrade",
+	"website": "https://tastytrade.com/",
+	"logo": "",
+	"assetType": "both",
+	"rating": 4.0,
+	"foundedYear": 2015,
+	"minDeposit": "$0 (margin privileges require $2,000 equity)",
+	"maxLeverage": "2x (standard margin accounts)",
+	"instantWithdrawal": false,
+	"category": [],
+	"platforms": ["tastytrade desktop", "tastytrade web", "tastytrade mobile app", "API"],
+	"licenses": [
+		{ "regulator": "finra", "text": "SEC / FINRA (United States)", "number": "CRD 277027 / SEC 8-69649", "entity": "tastytrade, Inc.", "status": "verified", "verifiedDate": "2026-10-30" }
+	],
+	"sources": ["https://tastytrade.com/", "https://files.brokercheck.finra.org/firm/firm_277027.pdf", "https://tastytrade.com/learn/accounts/account-resources/margin-trading/"],
+	"en": {
+		"summary": "tastytrade is a US options-, futures- and stock-focused online broker whose broker-dealer, tastytrade, Inc., appears on FINRA BrokerCheck.",
+		"pros": ["tastytrade, Inc. is listed on FINRA BrokerCheck (CRD 277027) and clears through Apex Clearing", "$0 commission on stocks and ETFs; options $1.00 per contract to open and $0 to close", "No minimum to open an account", "Wide product range: options, futures, crypto and forex, with a backtesting tool and an API"],
+		"cons": ["FINRA BrokerCheck records an $850,000 fine and censure dated 07/21/2026 over best-execution reviews, and a $30,000 fine in 2024 over complaint reporting", "Futures accounts are not SIPC-protected and crypto is offered through Zero Hash without FDIC or SIPC cover", "Margin privileges require $2,000 of account equity", "Aimed at US clients; not a typical retail forex/CFD broker"],
+		"body": "## Regulation and safety\n\ntastytrade, Inc. is a US broker-dealer. FINRA BrokerCheck lists it under CRD 277027 (SEC file number 8-69649), formed in Delaware on 22 June 2015 and approved by FINRA in March 2016. Customer accounts are introduced to Apex Clearing Corporation on a fully disclosed basis. The firm describes itself as a member of FINRA, SIPC and NFA; futures accounts are segregated at Apex but are not SIPC-protected.\n\nBrokerCheck also records disciplinary matters: a censure and $850,000 fine in a FINRA settlement dated 21 July 2026 concerning best-execution reviews of equity orders, and a $30,000 fine in November 2024 over inaccurate complaint reporting.\n\n## Trading conditions\n\nPer the website, stocks and ETFs carry $0 commission. Stock and ETF options cost $1.00 per contract to open (capped at $10 per leg) and $0 to close. Futures and futures options cost $1.00 and $1.25 per contract to open and close, and micro futures $0.75. Other fees apply. There is no minimum to open an account, but margin privileges require $2,000 of equity, and standard margin accounts offer 2x leverage. Accounts under $25,000 are subject to pattern day trader rules.\n\n## Platforms\n\nDesktop, web and mobile apps are offered, with a strategy builder, order-chain tracking for multi-leg trades, options backtesting and an API.\n\n## Who is it for?\n\nUS-based options and futures traders who want low per-contract costs and analytical tools. Traders looking for MetaTrader-style forex or CFD trading will find a different product here.\n\nTrading involves risk, including loss of capital."
+	},
+	"ja": {
+		"summary": "tastytradeは、オプション・先物・株式に強い米国のオンライン証券会社で、運営会社tastytrade, Inc.はFINRA BrokerCheckに登録が確認できます。",
+		"minDeposit": "0ドル（証拠金取引には純資産2,000ドルが必要）",
+		"maxLeverage": "2倍（標準的な証拠金口座）",
+		"pros": ["tastytrade, Inc.はFINRA BrokerCheckに掲載（CRD 277027）され、Apex Clearingを通じて清算", "株式・ETFの手数料は0ドル、オプションは建て時1契約1ドル・決済時0ドル", "口座開設に最低入金額なし", "オプション、先物、暗号資産、FXなど幅広い商品とバックテストツール・APIを提供"],
+		"cons": ["FINRA BrokerCheckには、2026年7月21日付の最良執行審査に関する譴責と85万ドルの制裁金、2024年の苦情報告に関する3万ドルの制裁金が記録されている", "先物口座はSIPC保護の対象外で、暗号資産はZero Hash経由でFDIC・SIPCの保護がない", "証拠金取引には2,000ドルの純資産が必要", "米国居住者向けで、一般的なFX/CFDブローカーとは異なる"],
+		"body": "## 規制と安全性\n\ntastytrade, Inc.は米国の証券会社です。FINRA BrokerCheckではCRD 277027（SECファイル番号8-69649）として掲載され、2015年6月22日にデラウェア州で設立、2016年3月にFINRAの承認を受けています。顧客口座はApex Clearing Corporationに完全開示ベースで紹介されます。同社はFINRA、SIPC、NFAの会員であるとしており、先物口座はApexで分別管理されますがSIPCの保護対象ではありません。\n\nBrokerCheckには処分歴も記録されています。2026年7月21日付のFINRAとの和解で、株式注文の最良執行審査に関し譴責と85万ドルの制裁金、2024年11月には苦情報告の不備で3万ドルの制裁金が科されています。\n\n## 取引条件\n\n公式サイトによると、株式・ETFの手数料は0ドルです。株式・ETFオプションは建て時に1契約1.00ドル（1レッグ上限10ドル）、決済時は0ドル。先物・先物オプションは建て・決済ともに1契約1.00ドル／1.25ドル、マイクロ先物は0.75ドルです。その他の手数料がかかる場合があります。口座開設に最低入金額はありませんが、証拠金取引には2,000ドルの純資産が必要で、標準的な証拠金口座のレバレッジは2倍です。残高が25,000ドル未満の口座にはパターン・デイトレーダー規則が適用されます。\n\n## 取引プラットフォーム\n\nデスクトップ、ウェブ、モバイルアプリのほか、ストラテジービルダー、複数レグ注文の管理、オプションのバックテスト、APIが用意されています。\n\n## どんな人に向いているか\n\n低い契約単位のコストと分析ツールを求める、米国在住のオプション・先物トレーダー向けです。MetaTrader型のFXやCFD取引を求める方には、異なる商品設計です。\n\n取引には元本を失うリスクがあります。"
+	}
+}
