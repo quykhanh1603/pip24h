@@ -1,0 +1,35 @@
+{
+	"slug": "ig",
+	"queueUrl": "https://www.ig.com/",
+	"status": "ok",
+	"name": "IG",
+	"website": "https://www.ig.com/",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.75,
+	"foundedYear": 1974,
+	"minDeposit": "£250 (UK); varies by entity",
+	"platforms": ["IG web platform", "IG mobile apps", "TradingView", "MetaTrader 4", "MetaTrader 5", "ProRealTime"],
+	"licenses": [
+		{ "regulator": "fca", "text": "FCA (United Kingdom)", "number": "195355", "entity": "IG Markets Limited", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "bafin", "text": "BaFin (Germany)", "entity": "IG Europe GmbH", "status": "unverified" },
+		{ "regulator": "asic", "text": "ASIC (Australia)", "entity": "IG Australia Pty Ltd", "status": "unverified" },
+		{ "regulator": "mas", "text": "MAS (Singapore)", "entity": "IG Asia Pte Ltd", "status": "unverified" },
+		{ "regulator": "finma", "text": "FINMA (Switzerland)", "status": "unverified" },
+		{ "regulator": "dfsa", "text": "DFSA (Dubai)", "status": "unverified" }
+	],
+	"sources": ["https://ig.com/uk/compare-our-leveraged-trading", "https://register.fca.org.uk/servlet/servlet.FileDownload?file=0150X000006gbb6", "https://en.wikipedia.org/wiki/IG_Group"],
+	"en": {
+		"summary": "IG is a London-listed broker founded in 1974 that offers CFDs and spread betting through entities regulated in the UK, Europe, Australia, Singapore and other regions.",
+		"pros": ["FCA-authorised IG Markets Limited (FRN 195355) confirmed on the FCA register data", "Parent IG Group is listed on the London Stock Exchange and has operated since 1974", "Offers third-party platforms such as TradingView, MetaTrader 4/5 and ProRealTime to UK clients", "Regulated in many jurisdictions, with FSCS cover of up to £85,000 for UK clients"],
+		"cons": ["Minimum deposits are comparatively high for some regions (for example £250 in the UK, CHF 2,500 in Switzerland)", "Protections depend on the IG entity; several regions have no compensation scheme", "An Australian court found its 'manifest error' clause unfair in 2025, and class actions filed in 2023 allege misleading conduct (allegations, not findings), per Wikipedia"],
+		"body": "## Regulation and safety\n\nIG Markets Limited appears on the FCA's investment firms register under reference 195355. IG's own comparison page says its UK entities are FCA-authorised, with FSCS protection up to £85,000, and that IG Europe GmbH is authorised by BaFin and the Deutsche Bundesbank. It also names ASIC, FINMA, FSCA, MAS, FMA, DFSA, JFSA, CFTC/NFA and BMA oversight for other regions; we did not check those on their registers. The parent, IG Group, has been listed on the London Stock Exchange since 2000.\n\n## Trading conditions\n\nMinimum deposits depend on the entity: £250 in the UK, €300 in Europe, $450 in Australia and Singapore, and $50 by card for IG International. We did not find a spread table on the pages we read, so check IG's current pricing and leverage limits for your region.\n\n## Platforms\n\nClients can use IG's own web and mobile platforms. UK clients can also connect third-party platforms including TradingView, MetaTrader 4 and 5, and ProRealTime.\n\n## Who is it for?\n\nIG suits traders who prioritise a long-established, listed and widely regulated provider and who can meet the higher deposit levels in some regions. CFDs are complex instruments and you can lose money rapidly due to leverage."
+	},
+	"ja": {
+		"summary": "IGは1974年創業のロンドン上場ブローカーで、英国・欧州・豪州・シンガポールなど各地域で規制を受けた法人を通じてCFDやスプレッドベッティングを提供しています。",
+		"minDeposit": "250ポンド（英国。法人により異なる）",
+		"pros": ["IG Markets Limited（FRN 195355）がFCAの登録データで確認できる", "親会社IG Groupはロンドン証券取引所に上場し、1974年から事業を継続", "英国顧客向けにTradingView、MT4/MT5、ProRealTimeなど外部プラットフォームも提供", "多くの地域で規制を受け、英国顧客はFSCSで最大8万5,000ポンドまで保護"],
+		"cons": ["地域によって最低入金額が比較的高い（英国250ポンド、スイス2,500スイスフランなど）", "保護内容はIGの法人ごとに異なり、補償制度がない地域もある", "Wikipediaによると、2025年に豪州の裁判所が同社の「明白な誤り」条項を不当と判断し、2023年提起の集団訴訟では誤解を招く行為が主張されている（主張であり判断ではない）"],
+		"body": "## 規制と安全性\n\nIG Markets LimitedはFCAの投資会社登録簿に参照番号195355で掲載されています。IG自身の比較ページでは、英国の各法人はFCAの認可を受け、FSCSにより最大8万5,000ポンドまで保護されること、IG Europe GmbHはBaFinとドイツ連邦銀行の認可を受けていることが示されています。そのほかの地域ではASIC、FINMA、FSCA、MAS、FMA、DFSA、JFSA、CFTC/NFA、BMAの監督が挙げられていますが、各登録簿では確認していません。親会社のIG Groupは2000年からロンドン証券取引所に上場しています。\n\n## 取引条件\n\n最低入金額は法人により異なり、英国250ポンド、欧州300ユーロ、豪州・シンガポール450ドル、IG Internationalはカードで50ドルです。確認したページにスプレッド表はなかったため、お住まいの地域の最新の価格設定とレバレッジ上限をIGの公式サイトでご確認ください。\n\n## 取引プラットフォーム\n\nIG独自のウェブ・モバイルプラットフォームを利用できます。英国の顧客はTradingView、MetaTrader 4/5、ProRealTimeなどの外部プラットフォームも利用できます。\n\n## どんな人に向いているか\n\n歴史が長く、上場しており、幅広く規制を受けた業者を重視し、地域によっては高めの入金額を許容できるトレーダーに向いています。CFDは複雑な商品であり、レバレッジにより短期間で資金を失う可能性があります。"
+	}
+}

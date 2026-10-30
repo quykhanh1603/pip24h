@@ -1,0 +1,1 @@
+{ "slug": "questrade", "queueUrl": "https://www.questrade.com/", "status": "skip", "skipReason": "insufficient verifiable data: Canadian stock broker; homepage blocked fetching; only founding year (1999) and platform names confirmed, no min deposit/spread/leverage; CIRO not a tracked regulator" }

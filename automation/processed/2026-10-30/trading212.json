@@ -1,0 +1,33 @@
+{
+	"slug": "trading212",
+	"queueUrl": "https://www.trading212.com/",
+	"status": "ok",
+	"name": "Trading 212",
+	"website": "https://www.trading212.com/",
+	"logo": "",
+	"assetType": "both",
+	"rating": 3.75,
+	"foundedYear": 2004,
+	"maxLeverage": "1:30 (EU/UK retail forex majors)",
+	"platforms": ["Trading 212 web platform", "Trading 212 mobile app"],
+	"licenses": [
+		{ "regulator": "fca", "text": "FCA (United Kingdom)", "number": "609146", "entity": "Trading 212 UK Ltd", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "398/21", "entity": "Trading 212 Markets Ltd", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "bafin", "text": "BaFin (Germany)", "number": "10109603", "entity": "Trading 212 EU GmbH", "status": "unverified" },
+		{ "regulator": "asic", "text": "ASIC (Australia) AFSL 541122", "number": "541122", "entity": "Trading 212 AU Pty Ltd", "status": "unverified" }
+	],
+	"sources": ["https://helpcentre.trading212.com/hc/en-us/articles/360007315078-Who-regulates-Trading-212", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/89835/", "https://register.fca.org.uk/s/unauthorised-firm?id=0014G000030evAdQAI", "https://helpcentre.trading212.com/hc/en-us/articles/11471872562461-What-are-the-fees-in-the-CFD-account", "https://en.wikipedia.org/wiki/Trading_212"],
+	"en": {
+		"summary": "Trading 212 is a commission-free investing and CFD platform founded in 2004, with entities authorised by the FCA and CySEC.",
+		"pros": ["Trading 212 UK Ltd (FCA 609146) and Trading 212 Markets Ltd (CySEC 398/21) both found on their regulators' registers", "No commission on trades; CFD accounts have no opening or inactivity fees, per its help centre", "Operating since 2004", "Simple web and mobile apps with stocks, ETFs, CFDs and forex"],
+		"cons": ["A 0.5% FX fee applies when an instrument's currency differs from the account currency", "Leverage, minimum deposit and products depend on region and entity", "The Financial Times reported it offered UK retail customers crypto ETNs before it had the required FCA permission (per Wikipedia)"],
+		"body": "## Regulation and safety\n\nTrading 212's help centre lists Trading 212 UK Ltd as FCA-authorised (reference 609146) and Trading 212 Markets Ltd as CySEC-licensed (398/21). The FCA register shows the UK firm, and the CySEC register shows licence 398/21 dated 1 March 2021. The help centre also lists Trading 212 EU GmbH (BaFin) and Trading 212 AU Pty Ltd (ASIC); we did not check those registers. Wikipedia reports that the company allowed UK retail customers to buy crypto exchange-traded notes between October 2025 and January 2026 before the FCA permission was in place.\n\n## Trading conditions\n\nTrading 212 describes itself as commission-free. For CFDs, costs come from variable spreads, overnight interest and a 0.5% FX fee on closed positions when currencies differ. The company's learning pages say CySEC rules cap retail leverage at 30:1 on major forex pairs. The minimum deposit varies by region and account type.\n\n## Platforms\n\nClients trade through Trading 212's own web platform and mobile app, covering listed shares, ETFs, CFDs and forex.\n\n## Who is it for?\n\nIt suits beginners and long-term investors who want a low-cost app, plus CFD traders happy with a proprietary platform. Those who need MetaTrader or advanced order tools may look elsewhere. CFDs carry a high risk of losing money."
+	},
+	"ja": {
+		"summary": "Trading 212は2004年創業の手数料無料の投資・CFDプラットフォームで、FCAおよびCySECの認可を受けた法人を持ちます。",
+		"maxLeverage": "最大30倍（EU/英国の個人向けFX主要通貨ペア）",
+		"pros": ["Trading 212 UK Ltd（FCA 609146）とTrading 212 Markets Ltd（CySEC 398/21）を各規制当局の登録簿で確認", "取引手数料は無料。ヘルプセンターによるとCFD口座には口座開設料・休眠手数料なし", "2004年から事業を継続", "株式、ETF、CFD、FXを扱うシンプルなウェブ／モバイルアプリ"],
+		"cons": ["銘柄の通貨と口座通貨が異なる場合は0.5%の為替手数料がかかる", "レバレッジ、最低入金額、商品内容は地域や法人により異なる", "Wikipediaによると、フィナンシャル・タイムズは同社が必要なFCA許可の取得前に英国の個人客に暗号資産ETNを提供していたと報じた"],
+		"body": "## 規制と安全性\n\nTrading 212のヘルプセンターは、Trading 212 UK LtdをFCA認可（参照番号609146）、Trading 212 Markets LtdをCySEC認可（398/21）としています。FCA登録簿で英国法人を、CySEC登録簿で2021年3月1日付のライセンス398/21を確認しました。ヘルプセンターにはTrading 212 EU GmbH（BaFin）とTrading 212 AU Pty Ltd（ASIC）も掲載されていますが、これらの登録簿は確認していません。Wikipediaによると、2025年10月から2026年1月にかけて、FCAの許可が整う前に英国の個人客が暗号資産ETNを購入できる状態でした。\n\n## 取引条件\n\n同社は手数料無料をうたっています。CFDのコストは変動スプレッド、オーバーナイト金利、通貨が異なる場合の決済損益に対する0.5%の為替手数料です。同社の解説ページでは、CySECの規則により個人向けレバレッジはFX主要通貨ペアで30倍までとされています。最低入金額は地域とアカウントの種類により異なります。\n\n## 取引プラットフォーム\n\n独自のウェブプラットフォームとモバイルアプリで、上場株式、ETF、CFD、FXを取引できます。\n\n## どんな人に向いているか\n\n低コストのアプリを求める初心者や長期投資家、独自プラットフォームで問題のないCFDトレーダーに向いています。MetaTraderや高度な注文機能が必要な方には不向きな場合があります。CFD取引は資金を失う高いリスクを伴います。"
+	}
+}

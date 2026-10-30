@@ -1,0 +1,35 @@
+{
+	"slug": "plus500",
+	"queueUrl": "https://www.plus500.com/",
+	"status": "ok",
+	"name": "Plus500",
+	"website": "https://www.plus500.com/",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.75,
+	"foundedYear": 2008,
+	"maxLeverage": "1:30 (forex, EU retail)",
+	"platforms": ["Plus500 web platform", "Plus500 mobile apps"],
+	"licenses": [
+		{ "regulator": "fca", "text": "FCA (United Kingdom)", "number": "509909", "entity": "Plus500UK Ltd", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "250/14", "entity": "Plus500CY Ltd", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "asic", "text": "ASIC (Australia) AFSL 417727", "number": "417727", "entity": "Plus500AU Pty Ltd", "status": "unverified" },
+		{ "regulator": "mas", "text": "MAS (Singapore) CMS100648", "number": "CMS100648", "entity": "Plus500SG Pte Ltd", "status": "unverified" },
+		{ "regulator": null, "text": "FSA (Seychelles) SD039", "number": "SD039", "status": "unverified" },
+		{ "regulator": "dfsa", "text": "DFSA (Dubai) F005651", "number": "F005651", "status": "unverified" }
+	],
+	"sources": ["https://www.plus500.com/en/tradingacademy/faq/regulators/ThroughWhichSubsDoYouOperate", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/40631/", "https://register.fca.org.uk/servlet/servlet.FileDownload?file=0150X000006gbb6", "https://en.wikipedia.org/wiki/Plus500"],
+	"en": {
+		"summary": "Plus500 is a London-listed CFD provider founded in 2008 that offers its own trading platform through FCA, CySEC, ASIC and MAS-licensed entities.",
+		"pros": ["Plus500UK Ltd (FCA 509909) and Plus500CY Ltd (CySEC 250/14) confirmed on regulator records", "Listed on the London Stock Exchange and a FTSE 250 constituent, per Wikipedia", "Spread is built into quoted prices, with no separate commission on most CFDs", "Operating since 2008"],
+		"cons": ["Proprietary platform only; MetaTrader is not offered", "Plus500 itself discloses that 76-77% of retail CFD accounts lose money", "Past sanctions include a £205,128 FSA fine (2012) and a €550,000 FSMA payment (2017), per Wikipedia"],
+		"body": "## Regulation and safety\n\nPlus500UK Ltd appears in the FCA's investment firms register under reference 509909, and Plus500CY Ltd is on CySEC's register with licence 250/14 (dated 10 October 2014). Plus500's own FAQ also lists ASIC (AFSL 417727), MAS (CMS100648), DFSA, the Seychelles FSA and others, which we did not check on those registers. The parent is listed on the London Stock Exchange. Wikipedia records earlier sanctions: a 2012 FSA fine, a 2015 voluntary restriction agreed with the FCA over anti-money-laundering controls and a 2017 payment to Belgium's FSMA.\n\n## Trading conditions\n\nPlus500 earns mainly through the spread, which is built into its quoted prices. Its FAQ cites a EUR/USD example of 0.6 pips, and details are shown per instrument on the platform. EU forex leverage is capped at 1:30, with lower caps of 1:5 on shares and ETFs. There is no single minimum deposit: it depends on the payment method and region.\n\n## Platforms\n\nPlus500 uses its own platform on web, iOS and Android; it also runs Plus500 Invest for share dealing and futures apps for US clients.\n\n## Who is it for?\n\nIt suits traders who prefer a simple proprietary platform and a listed provider. Those wanting MetaTrader, copy trading or very low raw spreads should compare alternatives. CFD trading carries a high risk of loss."
+	},
+	"ja": {
+		"summary": "Plus500は2008年創業のロンドン上場CFDプロバイダーで、FCA・CySEC・ASIC・MASなどの認可法人を通じて独自プラットフォームを提供しています。",
+		"maxLeverage": "最大30倍（FX、EU個人向け）",
+		"pros": ["Plus500UK Ltd（FCA 509909）とPlus500CY Ltd（CySEC 250/14）を規制当局の記録で確認", "Wikipediaによると、ロンドン証券取引所に上場しFTSE 250構成銘柄", "スプレッドは提示価格に含まれ、多くのCFDで別途手数料なし", "2008年から運営"],
+		"cons": ["独自プラットフォームのみでMetaTraderは非対応", "同社自身が個人CFD口座の76〜77%が損失を出していると開示", "Wikipediaによると、過去に2012年のFSAによる205,128ポンドの罰金や2017年のFSMAへの55万ユーロの支払いがある"],
+		"body": "## 規制と安全性\n\nPlus500UK LtdはFCAの投資会社登録簿に参照番号509909で、Plus500CY LtdはCySECの登録簿にライセンス250/14（2014年10月10日付）で掲載されています。Plus500のFAQにはASIC（AFSL 417727）、MAS（CMS100648）、DFSA、セーシェルFSAなども挙げられていますが、これらの登録簿は確認していません。親会社はロンドン証券取引所に上場しています。Wikipediaには、2012年のFSAによる罰金、2015年にマネーロンダリング対策を巡りFCAと合意した自主的制限、2017年のベルギーFSMAへの支払いが記録されています。\n\n## 取引条件\n\nPlus500は主にスプレッドで収益を得ており、スプレッドは提示価格に含まれます。FAQにはEUR/USDで0.6pipsの例が示されており、詳細は各銘柄ごとにプラットフォーム上で確認できます。EUのFXレバレッジは30倍が上限で、株式とETFは5倍とより低くなっています。最低入金額は一律ではなく、決済方法や地域によって異なります。\n\n## 取引プラットフォーム\n\nウェブ、iOS、Androidの独自プラットフォームを使用します。株式取引向けのPlus500 Investや、米国顧客向けの先物アプリも運営しています。\n\n## どんな人に向いているか\n\nシンプルな独自プラットフォームと上場企業のプロバイダーを好むトレーダーに向いています。MetaTrader、コピートレード、非常に狭いローススプレッドを求める方は他社との比較をおすすめします。CFD取引は損失リスクが高い点にご注意ください。"
+	}
+}

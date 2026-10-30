@@ -1,0 +1,35 @@
+{
+	"slug": "etoro",
+	"queueUrl": "https://www.etoro.com/",
+	"status": "ok",
+	"name": "eToro",
+	"website": "https://www.etoro.com/",
+	"logo": "",
+	"assetType": "both",
+	"rating": 3.75,
+	"foundedYear": 2007,
+	"minDeposit": "$50 (varies by region)",
+	"platforms": ["eToro web platform", "eToro mobile app", "CopyTrader"],
+	"licenses": [
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "109/10", "entity": "eToro (Europe) Ltd", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "fca", "text": "FCA (United Kingdom)", "number": "583263", "entity": "eToro (UK) Ltd", "status": "unverified" },
+		{ "regulator": "asic", "text": "ASIC (Australia) AFSL 491139", "number": "491139", "entity": "eToro AUS Capital Limited", "status": "unverified" },
+		{ "regulator": "mas", "text": "MAS (Singapore) CMSL CMS101824", "number": "CMS101824", "entity": "eToro Singapore Pte. Ltd.", "status": "unverified" },
+		{ "regulator": null, "text": "ADGM FSRA (UAE), permission 220073", "number": "220073", "entity": "eToro (ME) Limited", "status": "unverified" },
+		{ "regulator": null, "text": "SEC/FINRA (United States), eToro USA Securities Inc.", "number": "8-70212", "status": "unverified" }
+	],
+	"sources": ["https://www.etoro.com/customer-service/regulation-license/", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37683/", "https://www.fca.org.uk/news/warnings/etoro-sb-limited-clone-fca-authorised-firm", "https://en.wikipedia.org/wiki/EToro"],
+	"en": {
+		"summary": "eToro is a multi-asset social trading platform best known for CopyTrader, operating through separately regulated entities in the UK, EU, Australia, Singapore, UAE and US.",
+		"pros": ["Operates regulated entities under FCA, CySEC, ASIC, MAS and US SEC/FINRA registrations, per its regulation page", "CopyTrader lets users mirror other traders", "Founded in 2007, so a long operating history", "Demo account available"],
+		"cons": ["Services, fees and minimum deposit differ by region and entity", "Has been fined by several regulators over the years, including CySEC (2013), the OSC (2018), Italy's competition authority (2023) and the US SEC (2024), per Wikipedia", "Not a MetaTrader broker; trading is limited to eToro's own platform"],
+		"body": "## Regulation and safety\n\neToro's regulation page lists several group entities. eToro (Europe) Ltd holds CySEC licence 109/10, which we confirmed on the CySEC register. eToro (UK) Ltd is listed under FCA reference 583263; the FCA's own clone-firm warning names it as the genuine authorised firm. The same page also lists ASIC (AFSL 491139), MAS (CMS101824), ADGM FSRA (permission 220073) and US SEC/FINRA-registered entities, which we did not check on those registers. Which entity serves you depends on where you live, and so do the compensation scheme and protections.\n\n## Trading conditions\n\neToro offers real stocks and ETFs, crypto and CFDs. The homepage mentions investing from as little as $10 and a $50 start, but the minimum deposit varies by region. CFD costs are made up of spreads and overnight fees; check the current fee schedule for your jurisdiction.\n\n## Platforms\n\nTrading takes place on eToro's own web platform and mobile apps. CopyTrader and Smart Portfolios let users copy other traders or follow themed portfolios, and a demo account is available.\n\n## Who is it for?\n\neToro suits beginners and investors who want social and copy trading in one app. Traders who need MetaTrader or very tight raw spreads may prefer a dedicated forex broker. Trading CFDs and crypto carries a high risk of loss."
+	},
+	"ja": {
+		"summary": "eToroはCopyTraderで知られるマルチアセットのソーシャルトレーディングプラットフォームで、英国・EU・豪州・シンガポール・UAE・米国で別々の規制対象法人を通じて運営されています。",
+		"minDeposit": "50ドル（地域により異なる）",
+		"pros": ["規制ページによると、FCA、CySEC、ASIC、MAS、米SEC/FINRAなどの規制下にある法人を運営", "CopyTraderで他のトレーダーの取引をコピーできる", "2007年創業で運営実績が長い", "デモ口座あり"],
+		"cons": ["提供サービス・手数料・最低入金額は地域や法人により異なる", "Wikipediaによると、CySEC（2013年）、OSC（2018年）、イタリア競争当局（2023年）、米SEC（2024年）などから罰金を科された経緯がある", "MetaTraderには対応せず、独自プラットフォームのみ"],
+		"body": "## 規制と安全性\n\neToroの規制ページには複数のグループ法人が掲載されています。eToro (Europe) LtdはCySECライセンス109/10を保有しており、CySECの登録簿で確認しました。eToro (UK) LtdはFCA登録番号583263で、FCAの類似詐欺警告ページでも正規の認可業者として示されています。ほかにASIC（AFSL 491139）、MAS（CMS101824）、ADGM FSRA（許可番号220073）、米SEC/FINRA登録法人も掲載されていますが、これらは各登録簿では確認していません。どの法人が対応するかは居住地によって決まり、補償制度などの保護内容も異なります。\n\n## 取引条件\n\n株式・ETFの現物、暗号資産、CFDを取り扱っています。公式サイトでは10ドルからの投資や50ドルでの開始が案内されていますが、最低入金額は地域により異なります。CFDのコストはスプレッドとオーバーナイト手数料で構成されるため、居住地域の最新の手数料表をご確認ください。\n\n## 取引プラットフォーム\n\n取引は独自のウェブプラットフォームとモバイルアプリで行います。CopyTraderやSmart Portfoliosにより、他のトレーダーのコピーやテーマ型ポートフォリオの運用ができ、デモ口座も利用できます。\n\n## どんな人に向いているか\n\nソーシャル／コピートレードを一つのアプリで利用したい初心者や投資家に向いています。MetaTraderや非常に狭いロースプレッドを求める方は、専業のFXブローカーの方が適している場合があります。CFDや暗号資産取引は損失リスクが高い点にご注意ください。"
+	}
+}

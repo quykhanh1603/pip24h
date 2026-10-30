@@ -1,0 +1,32 @@
+{
+	"slug": "interactivebrokers",
+	"queueUrl": "https://www.interactivebrokers.com/",
+	"status": "ok",
+	"name": "Interactive Brokers",
+	"website": "https://www.interactivebrokers.com/",
+	"logo": "",
+	"assetType": "both",
+	"rating": 4.0,
+	"foundedYear": 1978,
+	"minDeposit": "$0 (individual accounts)",
+	"platforms": ["Trader Workstation", "IBKR Mobile", "IBKR Desktop"],
+	"licenses": [
+		{ "regulator": "fca", "text": "FCA (United Kingdom)", "number": "208159", "entity": "Interactive Brokers (U.K.) Limited", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "cbi", "text": "Central Bank of Ireland", "number": "C423427", "entity": "Interactive Brokers Ireland Limited", "status": "verified", "verifiedDate": "2026-10-30" },
+		{ "regulator": "nfa", "text": "SEC / CFTC / FINRA (United States)", "entity": "Interactive Brokers LLC", "status": "unverified" }
+	],
+	"sources": ["https://www.interactivebrokers.co.uk/en/general/disclaimers.php", "https://registers.centralbank.ie/FirmDataPage.aspx?firmReferenceNumber=C423427", "https://register.fca.org.uk/s/firm?id=001b000000NMTYiAAP", "https://www.interactivebrokers.com/en/accounts/required-minimums.php", "https://en.wikipedia.org/wiki/Interactive_Brokers"],
+	"en": {
+		"summary": "Interactive Brokers is a Nasdaq-listed multi-asset broker with FCA and Central Bank of Ireland regulated entities, no minimum deposit for individual accounts and low published commissions.",
+		"pros": ["Interactive Brokers (U.K.) Limited (FCA 208159) and Interactive Brokers Ireland Limited (CBI C423427) both confirmed on their regulators' registers", "No account minimum for individual, joint and trust accounts", "Publicly listed on Nasdaq since 2007 with a history dating to 1978", "Published commission-based pricing, with forex commissions quoted in basis points of trade size"],
+		"cons": ["Has paid numerous regulatory penalties, including a £1.05m FCA fine in 2018 and an $11.8m OFAC settlement in 2025, per Wikipedia", "Trader Workstation is feature-heavy and can be complex for beginners", "Pricing and products differ between the entities that serve each region"],
+		"body": "## Regulation and safety\n\nInteractive Brokers (U.K.) Limited is on the FCA register under reference 208159, and Interactive Brokers Ireland Limited is on the Central Bank of Ireland register under C423427 (authorised 22 December 2020). In the United States, Interactive Brokers LLC is regulated by the SEC and CFTC and is a FINRA and SIPC member; we did not check those registers. The parent company has been listed on Nasdaq (IBKR) since 2007. Wikipedia records a number of regulatory penalties over the years, including FINRA, FCA, CFTC and OFAC matters.\n\n## Trading conditions\n\nIndividual, joint and trust accounts have no minimum deposit on IBKR Pro or IBKR Lite. IBKR's pages quote spot forex commissions in basis points of trade size, for example 0.08 to 0.20 basis points on its fact sheet. We did not find a leverage table, so check the margin rules for your region.\n\n## Platforms\n\nThe main platform is Trader Workstation, supported by mobile apps and the IBKR Desktop platform. The broker gives access to stocks, options, futures, forex and, in some regions, crypto.\n\n## Who is it for?\n\nInteractive Brokers suits active and experienced investors who want global market access and commission-based pricing. Beginners may find the platform complex. Leveraged trading carries a high risk of loss."
+	},
+	"ja": {
+		"summary": "Interactive Brokersはナスダック上場のマルチアセットブローカーで、FCAおよびアイルランド中央銀行の規制下にある法人を持ち、個人口座の最低入金額はなく、手数料も公開されています。",
+		"minDeposit": "0ドル（個人口座）",
+		"pros": ["Interactive Brokers (U.K.) Limited（FCA 208159）とInteractive Brokers Ireland Limited（CBI C423427）をそれぞれの規制当局の登録簿で確認", "個人・共同・信託口座の最低口座残高の要件なし", "2007年からナスダックに上場し、1978年にさかのぼる歴史", "手数料体系が公開され、FXは取引額に対するベーシスポイントで提示"],
+		"cons": ["Wikipediaによると、2018年のFCAによる約105万ポンドの罰金や2025年のOFACとの1,180万ドルの和解など、多数の規制上の制裁を受けている", "Trader Workstationは多機能で初心者には複雑", "地域ごとに担当法人が異なり、価格や商品も異なる"],
+		"body": "## 規制と安全性\n\nInteractive Brokers (U.K.) LimitedはFCA登録簿に参照番号208159で、Interactive Brokers Ireland Limitedはアイルランド中央銀行の登録簿にC423427（2020年12月22日認可）で掲載されています。米国ではInteractive Brokers LLCがSEC・CFTCの規制を受け、FINRAおよびSIPCの会員ですが、これらの登録簿は確認していません。親会社は2007年からナスダック（IBKR）に上場しています。Wikipediaには、FINRA、FCA、CFTC、OFACなどによる複数の制裁が記録されています。\n\n## 取引条件\n\n個人・共同・信託口座は、IBKR ProとIBKR Liteのどちらも最低入金額がありません。FXのスポット手数料は取引額に対するベーシスポイントで示されており、ファクトシートでは0.08〜0.20ベーシスポイントとされています。レバレッジ表は確認できなかったため、お住まいの地域の証拠金ルールをご確認ください。\n\n## 取引プラットフォーム\n\n主力はTrader Workstationで、モバイルアプリやIBKR Desktopも用意されています。株式、オプション、先物、FXのほか、地域によっては暗号資産も取引できます。\n\n## どんな人に向いているか\n\n世界の市場にアクセスし、手数料ベースの価格体系を求める積極的な投資家や経験者に向いています。初心者にはプラットフォームが複雑に感じられる場合があります。レバレッジ取引は損失リスクが高い点にご注意ください。"
+	}
+}
