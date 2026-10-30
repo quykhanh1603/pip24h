@@ -110,6 +110,15 @@ export const regulators: Regulator[] = [
 		aliases: [/^DFSA\b/i]
 	},
 	{
+		key: 'fsra',
+		abbr: 'FSRA',
+		name: { en: 'Financial Services Regulatory Authority (ADGM)', ja: 'アブダビ・グローバル・マーケット金融サービス規制庁' },
+		country: { en: 'United Arab Emirates (Abu Dhabi)', ja: 'アラブ首長国連邦（アブダビ）' },
+		tier: 2,
+		website: 'https://www.adgm.com/public-registers/fsra',
+		aliases: [/^(ADGM\b|FSRA\b)/i]
+	},
+	{
 		key: 'mfsa',
 		abbr: 'MFSA',
 		name: { en: 'Malta Financial Services Authority', ja: 'マルタ金融サービス庁' },
@@ -216,6 +225,168 @@ export const regulators: Regulator[] = [
 		tier: 3,
 		website: 'https://www.cima.ky/',
 		aliases: [/^CIMA\b/i]
+	},
+	{
+		key: 'ciro',
+		abbr: 'CIRO',
+		name: { en: 'Canadian Investment Regulatory Organization', ja: 'カナダ投資規制機構' },
+		country: { en: 'Canada', ja: 'カナダ' },
+		tier: 1,
+		website: 'https://www.ciro.ca/',
+		aliases: [/^(CIRO|IIROC)\b/i]
+	},
+	{
+		key: 'finra',
+		abbr: 'SEC/FINRA',
+		name: { en: 'Securities and Exchange Commission / Financial Industry Regulatory Authority', ja: '米証券取引委員会／米金融取引業規制機構' },
+		country: { en: 'United States', ja: 'アメリカ' },
+		tier: 1,
+		website: 'https://brokercheck.finra.org/',
+		aliases: [/^(FINRA\b|SEC\b[^(]*FINRA|SEC \((USA|US|United States|アメリカ|米国))/i]
+	},
+	{
+		key: 'sfc',
+		abbr: 'SFC',
+		name: { en: 'Securities and Futures Commission', ja: '香港証券先物委員会' },
+		country: { en: 'Hong Kong', ja: '香港' },
+		tier: 1,
+		website: 'https://apps.sfc.hk/publicregWeb/',
+		aliases: [/^SFC \((Hong Kong|HK|香港)/i]
+	},
+	{
+		key: 'consob',
+		abbr: 'CONSOB',
+		name: { en: 'Commissione Nazionale per le Società e la Borsa', ja: 'イタリア証券取引委員会' },
+		country: { en: 'Italy', ja: 'イタリア' },
+		tier: 2,
+		website: 'https://www.consob.it/',
+		aliases: [/^CONSOB\b/i]
+	},
+	{
+		key: 'amf',
+		abbr: 'AMF',
+		name: { en: 'Autorité des marchés financiers', ja: 'フランス金融市場庁' },
+		country: { en: 'France', ja: 'フランス' },
+		tier: 2,
+		website: 'https://www.amf-france.org/',
+		aliases: [/^AMF \((France|フランス)/i]
+	},
+	{
+		key: 'cnmv',
+		abbr: 'CNMV',
+		name: { en: 'Comisión Nacional del Mercado de Valores', ja: 'スペイン証券市場委員会' },
+		country: { en: 'Spain', ja: 'スペイン' },
+		tier: 2,
+		website: 'https://www.cnmv.es/',
+		aliases: [/^CNMV\b/i]
+	},
+	{
+		key: 'afm',
+		abbr: 'AFM',
+		name: { en: 'Authority for the Financial Markets', ja: 'オランダ金融市場庁' },
+		country: { en: 'Netherlands', ja: 'オランダ' },
+		tier: 2,
+		website: 'https://www.afm.nl/en/sector/registers',
+		aliases: [/^AFM\b/i]
+	},
+	{
+		key: 'spk',
+		abbr: 'SPK (CMB)',
+		name: { en: 'Capital Markets Board of Türkiye', ja: 'トルコ資本市場委員会' },
+		country: { en: 'Türkiye', ja: 'トルコ' },
+		tier: 2,
+		website: 'https://spk.gov.tr/',
+		aliases: [/^(SPK|CMB)\b/i]
+	},
+	{
+		key: 'fma-nz',
+		abbr: 'FMA',
+		name: { en: 'Financial Markets Authority (New Zealand)', ja: 'ニュージーランド金融市場庁' },
+		country: { en: 'New Zealand', ja: 'ニュージーランド' },
+		tier: 2,
+		website: 'https://www.fma.govt.nz/',
+		aliases: [/^FMA \((New Zealand|NZ|ニュージーランド)/i]
+	},
+	{
+		key: 'sca',
+		abbr: 'SCA',
+		name: { en: 'Securities and Commodities Authority', ja: 'UAE証券商品庁' },
+		country: { en: 'United Arab Emirates', ja: 'アラブ首長国連邦' },
+		tier: 2,
+		website: 'https://www.sca.gov.ae/',
+		aliases: [/^SCA\b/i]
+	},
+	{
+		key: 'bappebti',
+		abbr: 'Bappebti',
+		name: { en: 'Commodity Futures Trading Regulatory Agency', ja: 'インドネシア商品先物取引監督庁' },
+		country: { en: 'Indonesia', ja: 'インドネシア' },
+		tier: 2,
+		website: 'https://bappebti.go.id/',
+		aliases: [/^Bappebti\b/i]
+	},
+	{
+		key: 'ojk',
+		abbr: 'OJK',
+		name: { en: 'Financial Services Authority (Indonesia)', ja: 'インドネシア金融庁' },
+		country: { en: 'Indonesia', ja: 'インドネシア' },
+		tier: 2,
+		website: 'https://www.ojk.go.id/',
+		aliases: [/^OJK\b/i]
+	},
+	{
+		key: 'cma-ke',
+		abbr: 'CMA',
+		name: { en: 'Capital Markets Authority (Kenya)', ja: 'ケニア資本市場庁' },
+		country: { en: 'Kenya', ja: 'ケニア' },
+		tier: 2,
+		website: 'https://www.cma.or.ke/',
+		aliases: [/^CMA \((Kenya|ケニア)/i]
+	},
+	{
+		key: 'cvm',
+		abbr: 'CVM',
+		name: { en: 'Securities and Exchange Commission of Brazil', ja: 'ブラジル証券取引委員会' },
+		country: { en: 'Brazil', ja: 'ブラジル' },
+		tier: 2,
+		website: 'https://www.gov.br/cvm/',
+		aliases: [/^CVM\b/i]
+	},
+	{
+		key: 'cnbv',
+		abbr: 'CNBV',
+		name: { en: 'National Banking and Securities Commission', ja: 'メキシコ銀行証券委員会' },
+		country: { en: 'Mexico', ja: 'メキシコ' },
+		tier: 2,
+		website: 'https://www.gob.mx/cnbv',
+		aliases: [/^CNBV\b/i]
+	},
+	{
+		key: 'scb',
+		abbr: 'SCB',
+		name: { en: 'Securities Commission of The Bahamas', ja: 'バハマ証券委員会' },
+		country: { en: 'Bahamas', ja: 'バハマ' },
+		tier: 3,
+		website: 'https://www.scb.gov.bs/',
+		aliases: [/^(SCB\b|Securities Commission of (The )?Bahamas)/i]
+	},
+	{
+		key: 'cbcs',
+		abbr: 'CBCS',
+		name: { en: 'Central Bank of Curaçao and Sint Maarten', ja: 'キュラソー・シントマールテン中央銀行' },
+		country: { en: 'Curaçao', ja: 'キュラソー' },
+		tier: 3,
+		website: 'https://www.centralbank.cw/',
+		aliases: [/^(CBCS\b|Central Bank of Cura)/i]
+	},
+	{
+		key: 'bma',
+		abbr: 'BMA',
+		name: { en: 'Bermuda Monetary Authority', ja: 'バミューダ金融庁' },
+		country: { en: 'Bermuda', ja: 'バミューダ' },
+		tier: 3,
+		website: 'https://www.bma.bm/',
+		aliases: [/^BMA\b/i]
 	}
 ];
 

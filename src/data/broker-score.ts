@@ -57,14 +57,15 @@ export function getLicenses(broker: Broker): License[] {
 	}));
 	// An empty list (Decap CMS saves one by default) falls back to `regulation` too.
 	if (!licenses?.length) return declared;
-	// Structured licences replace the recognised `regulation` entries; registrations with bodies
-	// outside our directory can only live in `regulation`, so those are kept.
+	// Structured licences replace `regulation` entries for the same regulator. Entries for any other
+	// body (outside our directory, or added to it after the structured list was written) are kept.
+	const structuredKeys = new Set(licenses.map((l) => l.regulator));
 	return [
 		...licenses.map((l) => {
 			const regulator = getRegulator(l.regulator);
 			return { ...l, regulator, label: regulator?.abbr ?? l.regulator };
 		}),
-		...declared.filter((l) => !l.regulator)
+		...declared.filter((l) => !l.regulator || !structuredKeys.has(l.regulator.key))
 	];
 }
 
