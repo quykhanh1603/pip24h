@@ -1,0 +1,32 @@
+{
+	"slug": "alfaforex",
+	"queueUrl": "https://alfaforex.ru/",
+	"status": "ok",
+	"name": "Alfa-Forex",
+	"website": "https://alfaforex.ru/",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.0,
+	"minDeposit": "3,000 RUB",
+	"maxLeverage": "1:40",
+	"instantWithdrawal": false,
+	"platforms": ["MetaTrader 5"],
+	"licenses": [
+		{ "regulator": null, "text": "Bank of Russia (forex dealer licence)", "number": "045-14070-020000", "entity": "OOO Alfa-Forex", "status": "unverified" }
+	],
+	"sources": ["https://alfaforex.ru/", "https://alfaforex.ru/faq/o-kompanii"],
+	"en": {
+		"summary": "Russian forex dealer founded by Alfa-Bank that states it holds a Bank of Russia forex-dealer licence and offers MetaTrader 5 with leverage capped at 1:40.",
+		"pros": ["States a Bank of Russia forex-dealer licence (No. 045-14070-020000, issued 20 December 2018)", "Founded by Alfa-Bank and a member of the Russian self-regulatory Forex Dealers Association", "Low entry point of about 3,000 RUB (or the USD/EUR equivalent)"],
+		"cons": ["The licence was not confirmed on the Bank of Russia register in this review", "Leverage is capped at 1:40 under Russian rules", "No numeric spreads are published on the pages reviewed", "Aimed at Russian-speaking clients; the website is in Russian"],
+		"body": "## Regulation and safety\n\nThe site footer names the operator as OOO Alfa-Forex (Moscow) and states that it holds professional securities-market participant licence No. 045-14070-020000, issued by the Bank of Russia on 20 December 2018 for forex-dealer activity. It also says the company is on the Bank of Russia's forex-dealer register and is a member of the self-regulatory Forex Dealers Association (register no. 009). We could not open the Bank of Russia register itself, so the licence is marked unverified. The company says it was established by Alfa-Bank.\n\n## Trading conditions\n\nThe website states a minimum deposit of 3,000 rubles or the equivalent in US dollars or euros. According to the site's FAQ, maximum leverage is 1:40, in line with Russian law. Spreads are described as low, but no figures are published on the pages we read. Products are described as high risk that can lead to loss of the entire deposit.\n\n## Platforms\n\nTrading is offered on MetaTrader 5 for desktop, iOS, Android and in the browser (MT-Web). The site also mentions accounts of an MT4 type.\n\n## Who is it for?\n\nRussian-speaking residents who want a domestically licensed forex dealer with conservative leverage. International traders will find a Russian-language service with limited public cost data.\n\nTrading forex involves a high risk of loss."
+	},
+	"ja": {
+		"summary": "アルファ銀行が設立したロシアのFXディーラーで、ロシア中央銀行のFXディーラーライセンスを保有すると表示し、MT5を提供、レバレッジは最大1:40です。",
+		"minDeposit": "3,000ルーブル",
+		"maxLeverage": "最大40倍",
+		"pros": ["ロシア中央銀行のFXディーラーライセンス（No.045-14070-020000、2018年12月20日付）を保有と表示", "アルファ銀行が設立し、ロシアのFXディーラー協会（自主規制団体）に加盟", "約3,000ルーブル（または同等のドル・ユーロ）から開始可能"],
+		"cons": ["ライセンスはロシア中央銀行の登録簿では確認できていない", "ロシアの規制によりレバレッジは最大1:40", "確認したページにスプレッドの数値の記載なし", "サイトはロシア語で、ロシア語圏の顧客向け"],
+		"body": "## 規制と安全性\n\n公式サイトのフッターでは、運営会社はモスクワのOOO Alfa-Forexで、ロシア中央銀行が2018年12月20日にFXディーラー業務に対して発行した証券市場専門参加者ライセンスNo.045-14070-020000を保有すると記載されています。また、中央銀行のFXディーラー登録簿に掲載され、自主規制団体「FXディーラー協会」（会員番号009）に加盟しているとしています。中央銀行の登録簿自体は確認できなかったため、ライセンスは「未確認」としています。同社はアルファ銀行によって設立されたと説明しています。\n\n## 取引条件\n\n最低入金額は3,000ルーブル、またはそれに相当する米ドル・ユーロと記載されています。FAQによれば、最大レバレッジはロシアの法律に沿って1:40です。スプレッドは「低い」と説明されていますが、確認したページに数値はありません。商品は高リスクで、預けた資金を全額失う可能性があると明記されています。\n\n## 取引プラットフォーム\n\nMetaTrader 5をデスクトップ、iOS、Android、ブラウザ版（MT-Web）で利用できます。MT4タイプの口座にも言及があります。\n\n## どんな人に向いているか\n\n国内でライセンスを受けたFXディーラーを求めるロシア語圏の居住者向けです。海外のトレーダーにとっては、ロシア語中心で公開されているコスト情報が限られたサービスです。\n\nFX取引は損失リスクが高い取引です。"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"slug": "valetax",
+	"queueUrl": "https://valetax.com/",
+	"status": "ok",
+	"name": "Valetax",
+	"website": "https://valetax.com/",
+	"logo": "/images/brokers/valetax/logo.jpg",
+	"assetType": "forex",
+	"rating": 2.75,
+	"minDeposit": "$8",
+	"spreadFrom": "0.0 pips",
+	"maxLeverage": "1:2000",
+	"instantWithdrawal": false,
+	"category": ["low-deposit"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "Valetax mobile app"],
+	"licenses": [
+		{ "regulator": "fsc-mu", "text": "FSC (Mauritius) Investment Dealer", "number": "GB21026312", "entity": "Valetax International Limited", "status": "unverified" },
+		{ "regulator": null, "text": "Valetax Global Limited (St. Vincent and the Grenadines), registration only, no regulator named", "number": "23398", "status": "unverified" }
+	],
+	"sources": ["https://valetax.com/", "https://valetax.com/legal-documents/"],
+	"en": {
+		"summary": "Offshore forex broker with an $8 minimum deposit, leverage up to 1:2000 and several account types, operating through a Mauritius-licensed entity and an SVG-registered company.",
+		"pros": ["Very low $8 minimum deposit", "ECN account with spreads from 0.0 pips; Standard and Cent accounts advertised at 1.2 pips", "MT4 and MT5 on desktop, web and mobile plus its own app"],
+		"cons": ["Licensing is offshore: a Mauritius FSC investment dealer licence and an entity registered in St. Vincent and the Grenadines", "Licence not confirmed on the FSC Mauritius register in this review", "Leverage of 1:2000 carries very high risk of rapid losses", "Applicable entity depends on onboarding, and documents are only provided afterwards"],
+		"body": "## Regulation and safety\n\nValetax's footer lists three companies. Valetax International Limited (Mauritius, registration C180644) is said to hold Investment Dealer licence GB21026312 from the Financial Services Commission of Mauritius. Valetax Global Limited (St. Vincent and the Grenadines, No. 23398) is shown with no named regulator, and Valetax Processing Ltd (Cyprus) is a payment agent. We could not locate the Mauritius licence on the regulator's register, so it is marked unverified. The site notes that the entity serving you depends on onboarding, and that only that entity's documents are provided afterwards.\n\n## Trading conditions\n\nThe broker advertises a minimum deposit of $8, maximum leverage of 1:2000 and spreads from 0.0 pips. By account, it lists 1.2 pips (Cent and Standard), 0.0 (ECN), 2.0 (Booster and Bonus) and 0.6 (PRO).\n\n## Platforms\n\nMT4 and MT5 are available as desktop, web and mobile versions, along with a Valetax mobile app.\n\n## Who is it for?\n\nSmall-budget traders comfortable with offshore regulation. Extremely high leverage and limited investor protection mean strict risk management is essential.\n\nTrading leveraged products involves a high risk of loss."
+	},
+	"ja": {
+		"summary": "最低入金額8ドル、最大レバレッジ1:2000、複数の口座タイプを提供するオフショアFXブローカーで、モーリシャスのライセンス法人とSVG登録法人を通じて運営されています。",
+		"minDeposit": "8ドル",
+		"maxLeverage": "最大2000倍",
+		"pros": ["最低入金額が8ドルと非常に低い", "ECN口座はスプレッド0.0pipsから、StandardとCentは1.2pipsと案内", "MT4・MT5（デスクトップ・Web・モバイル）と独自アプリに対応"],
+		"cons": ["ライセンスはオフショアで、モーリシャスFSCのインベストメントディーラーとSVG登録法人", "モーリシャスFSCの登録簿ではライセンスを確認できていない", "レバレッジ2000倍は急速な損失のリスクが非常に高い", "どの法人が適用されるかは口座開設時に決まり、書類は開設後に提供される"],
+		"body": "## 規制と安全性\n\nValetaxのフッターには3社が記載されています。Valetax International Limited（モーリシャス、登録番号C180644）は、モーリシャス金融サービス委員会のインベストメントディーラーライセンスGB21026312を保有するとされています。Valetax Global Limited（セントビンセント・グレナディーン、No.23398）には規制当局の記載がなく、Valetax Processing Ltd（キプロス）は決済代行会社です。モーリシャスのライセンスは規制当局の登録簿で見つけられなかったため「未確認」としています。サイトによれば、適用される法人は口座開設時に決まり、その法人の書類のみが開設後に提供されます。\n\n## 取引条件\n\n最低入金額8ドル、最大レバレッジ1:2000、スプレッド0.0pipsからと案内されています。口座別では、CentとStandardが1.2pips、ECNが0.0、BoosterとBonusが2.0、PROが0.6です。\n\n## 取引プラットフォーム\n\nMT4とMT5をデスクトップ、Web、モバイル版で利用でき、Valetaxのモバイルアプリもあります。\n\n## どんな人に向いているか\n\nオフショア規制を理解した少額から始めたいトレーダー向けです。極めて高いレバレッジと限定的な投資家保護のため、厳格なリスク管理が欠かせません。\n\nレバレッジ取引は損失リスクが高い取引です。"
+	}
+}

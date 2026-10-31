@@ -1,0 +1,6 @@
+{
+ "slug": "darwinex",
+ "queueUrl": "https://www.darwinex.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: main site not fetchable, FCA register not confirmed, no primary min deposit/spread/leverage"
+}

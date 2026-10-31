@@ -19,16 +19,16 @@ https://www.puprime.com/,,puprime,done,2026-10-30,
 https://www.vtmarkets.com/,,vtmarkets,skipped,2026-10-30,insufficient verifiable data: ASIC/FSCA/FSC licences not confirmed on registers (ASIC register page blocked); min deposit figures conflict
 https://bookmap.com,,bookmap,skipped,2026-10-30,not a retail broker: trading software vendor
 https://justmarkets.com/,,justmarkets,done,2026-10-30,
-https://fusionmarkets.com,,fusionmarkets,pending,,
-https://hmarkets.com/,,hmarkets,pending,,
-https://hw.online/,,hw,pending,,
-https://alfaforex.ru/,,alfaforex,pending,,
-https://www.darwinex.com/,,darwinex,pending,,
-https://primexbt.com/,,primexbt,pending,,
-https://valetax.com/,,valetax,pending,,
-isyatirim.com.tr,,isyatirim,pending,,
-https://www.startrader.com/,,startrader,pending,,
-https://www.ifcmarkets.com/,,ifcmarkets,pending,,
+https://fusionmarkets.com,,fusionmarkets,done,2026-10-31,
+https://hmarkets.com/,,hmarkets,skipped,2026-10-31,"insufficient verifiable data: site blocks fetching and no primary-source licence, spread, leverage or deposit data found"
+https://hw.online/,,hw,skipped,2026-10-31,insufficient verifiable data: site blocks fetching; only third-party sources found
+https://alfaforex.ru/,,alfaforex,done,2026-10-31,
+https://www.darwinex.com/,,darwinex,skipped,2026-10-31,"insufficient verifiable data: main site not fetchable, FCA register not confirmed, no primary min deposit/spread/leverage"
+https://primexbt.com/,,primexbt,done,2026-10-31,
+https://valetax.com/,,valetax,done,2026-10-31,
+isyatirim.com.tr,,isyatirim,skipped,2026-10-31,"insufficient verifiable data: SPK authorisation not found, no min deposit, spread or leverage published"
+https://www.startrader.com/,,startrader,skipped,2026-10-31,"insufficient verifiable data: site blocks fetching; no primary min deposit, spread, leverage or platform data"
+https://www.ifcmarkets.com/,,ifcmarkets,done,2026-10-31,
 bossa.pl,,bossa,pending,,
 https://finex.co.id/,,finex,pending,,
 https://blackbull.com/,,blackbull,pending,,

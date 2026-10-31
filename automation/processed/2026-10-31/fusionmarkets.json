@@ -1,0 +1,34 @@
+{
+	"slug": "fusionmarkets",
+	"queueUrl": "https://fusionmarkets.com",
+	"status": "ok",
+	"name": "Fusion Markets",
+	"website": "https://fusionmarkets.com",
+	"logo": "/images/brokers/fusion/logo.jpg",
+	"assetType": "forex",
+	"rating": 3.75,
+	"minDeposit": "No minimum stated",
+	"spreadFrom": "0.0 pips",
+	"instantWithdrawal": false,
+	"category": ["ecn", "low-deposit"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "cTrader", "TradingView"],
+	"licenses": [
+		{ "regulator": "asic", "text": "ASIC (Australia)", "number": "385620", "entity": "FMGP Trading Group Pty Ltd", "status": "verified", "verifiedDate": "2026-10-31" },
+		{ "regulator": "fsa-sc", "text": "FSA (Seychelles)", "number": "SD096", "entity": "Fusion Markets International Ltd", "status": "unverified" },
+		{ "regulator": "vfsc", "text": "VFSC (Vanuatu)", "number": "40256", "entity": "Gleneagle Securities Pty Limited", "status": "unverified" }
+	],
+	"sources": ["https://fusionmarkets.com/About-us/Regulations", "https://fusionmarkets.com", "https://service.asic.gov.au/search/EntityDetail?LicenceNumber=385620&PermissionType=Australian+financial+services+licensees&licenceName=FMGP+TRADING+GROUP+PTY+LTD"],
+	"en": {
+		"summary": "Melbourne-based forex and CFD broker offering raw-spread accounts with a per-side commission, an ASIC licence for Australian clients and offshore entities for everyone else.",
+		"pros": ["Australian entity FMGP Trading Group holds ASIC AFSL 385620, listed as current on the ASIC register", "Advertises average spreads of 0.0 on major pairs with a $2.25 per side commission", "Four platforms: MetaTrader 4/5, cTrader and TradingView, plus copy trading", "States no minimum account size and no deposit fees"],
+		"cons": ["Clients outside Australia are served by Seychelles and Vanuatu entities, which carry lighter investor protection", "Seychelles and Vanuatu licences were not confirmed on the regulators' own registers in this review", "Maximum leverage is not stated on the pages reviewed"],
+		"body": "## Regulation and safety\n\nFusion Markets is a trading name used by several entities. FMGP Trading Group Pty Ltd (ABN 74 146 086 017) holds Australian Financial Services Licence 385620; the ASIC professional register lists it as current, and the licence covers foreign exchange contracts and derivatives. According to Fusion's regulation page, this entity serves Australian clients only. Fusion Markets International Ltd states it is a securities dealer licensed by the Financial Services Authority of Seychelles (SD096), and Gleneagle Securities Pty Limited states it is a Vanuatu company (number 40256) regulated by the VFSC. We could not confirm those two on the regulators' registers, so they are marked unverified. The broker says client money is held in segregated trust accounts.\n\n## Trading conditions\n\nThe website offers Zero and Classic accounts, plus swap-free and a premium programme. It advertises average spreads of 0.0 on forex majors with a $2.25 per side commission, and says there is no minimum account size and no deposit fees. Maximum leverage varies by entity and is not published on the pages we read; Australian retail clients are subject to ASIC's leverage limits.\n\n## Platforms\n\nClients can trade on MetaTrader 4, MetaTrader 5, cTrader and TradingView. Fusion+ copy trading, a multi-account manager and DupliTrade are also listed.\n\n## Who is it for?\n\nCost-focused traders who want raw pricing and a choice of platforms. Non-Australian clients should note they will usually be onboarded to an offshore entity and weigh the reduced protection accordingly.\n\nTrading CFDs involves a high risk of loss."
+	},
+	"ja": {
+		"summary": "メルボルンを拠点とするFX・CFDブローカーで、スプレッドの狭いロースプレッド口座と片道手数料型の料金体系を提供し、オーストラリア居住者向けにはASICライセンスを保有しています。",
+		"minDeposit": "最低入金額の記載なし",
+		"pros": ["オーストラリア法人FMGP Trading GroupがASICのAFSL 385620を保有し、ASIC登録簿で有効と確認", "主要通貨ペアの平均スプレッド0.0、片道2.25ドルの手数料と案内", "MT4/MT5、cTrader、TradingViewに加えコピートレードに対応", "最低口座残高なし・入金手数料なしと案内"],
+		"cons": ["オーストラリア以外の顧客はセーシェル・バヌアツ法人が対応し、投資家保護は弱め", "セーシェル・バヌアツのライセンスは規制当局の登録簿で確認できていない", "最大レバレッジは確認したページに記載なし"],
+		"body": "## 規制と安全性\n\nFusion Marketsは複数の法人が使用する取引名です。FMGP Trading Group Pty Ltd（ABN 74 146 086 017）はオーストラリア金融サービスライセンス385620を保有し、ASICの登録簿では有効と表示され、外国為替契約とデリバティブをカバーしています。同社の規制ページによれば、この法人の対象はオーストラリアの顧客のみです。Fusion Markets International Ltdはセーシェル金融サービス庁（SD096）の証券ディーラーであると、Gleneagle Securities Pty Limitedはバヌアツ法人（番号40256）でVFSCの規制下にあると表示していますが、いずれも規制当局の登録簿では確認できなかったため「未確認」としています。顧客資金は分別信託口座で管理されると案内されています。\n\n## 取引条件\n\n公式サイトにはZero口座とClassic口座、イスラム口座、プレミアムプログラムがあります。主要通貨ペアの平均スプレッド0.0、片道2.25ドルの手数料を掲げ、最低口座残高や入金手数料はないとしています。最大レバレッジは法人ごとに異なり、確認したページには記載がありません。オーストラリアの個人顧客にはASICのレバレッジ規制が適用されます。\n\n## 取引プラットフォーム\n\nMetaTrader 4、MetaTrader 5、cTrader、TradingViewが利用でき、Fusion+コピートレード、マルチアカウントマネージャー、DupliTradeも案内されています。\n\n## どんな人に向いているか\n\nロースプレッド環境と複数のプラットフォームを重視するコスト意識の高いトレーダー向けです。オーストラリア国外の顧客は主にオフショア法人での口座開設となり、保護水準が下がる点に注意が必要です。\n\nCFD取引は損失リスクが高い取引です。"
+	}
+}

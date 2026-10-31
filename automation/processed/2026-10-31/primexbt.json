@@ -1,0 +1,37 @@
+{
+	"slug": "primexbt",
+	"queueUrl": "https://primexbt.com/",
+	"status": "ok",
+	"name": "PrimeXBT",
+	"website": "https://primexbt.com/",
+	"logo": "/images/brokers/primexbt/logo.png",
+	"assetType": "both",
+	"rating": 3.25,
+	"foundedYear": 2018,
+	"minDeposit": "No minimum stated",
+	"spreadFrom": "0 (EUR/USD, advertised)",
+	"maxLeverage": "1:1000",
+	"instantWithdrawal": false,
+	"platforms": ["PXTrader 2.0", "MetaTrader 5"],
+	"licenses": [
+		{ "regulator": "fsca", "text": "FSCA (South Africa)", "number": "45697", "entity": "PrimeXBT (PTY) Ltd", "status": "unverified" },
+		{ "regulator": "fsa-sc", "text": "FSA (Seychelles)", "number": "SD162", "status": "unverified" },
+		{ "regulator": null, "text": "Comisión Nacional de Activos Digitales (El Salvador), PSAD-0045", "status": "unverified" },
+		{ "regulator": null, "text": "Saint Lucia FSRA (international incorporation) 2024-00343", "status": "unverified" }
+	],
+	"sources": ["https://primexbt.com/", "https://primexbt.com/es/regulations"],
+	"en": {
+		"summary": "Crypto futures and CFD platform operating since 2018 that offers up to 1000x leverage, MetaTrader 5 and its own PXTrader platform under licences that mostly sit offshore.",
+		"pros": ["Publishes headline conditions: leverage 1x–1000x, no minimum deposit stated, MetaTrader 5 plus proprietary PXTrader 2.0", "One account covers crypto futures and CFDs on forex, commodities, indices and shares", "Lists a South African FSCA licence (45697) on its website", "Free demo account with a $10,000 virtual balance"],
+		"cons": ["None of the licences listed on the site were confirmed on the regulators' registers in this review", "Main operating entity is registered in Saint Lucia, an offshore jurisdiction", "Very high leverage greatly increases the risk of rapid losses", "Trustpilot shows a mixed picture (about 3.5 from roughly 400 reviews), with complaints about withdrawals and disputes"],
+		"body": "## Regulation and safety\n\nPrimeXBT's website names PrimeXBT Trading Services Ltd, registered in Castries, Saint Lucia, as its legal entity and lists several authorisations: South Africa's FSCA (45697), a Seychelles FSA broker-dealer licence (SD162), two El Salvador digital-asset registrations and a Saint Lucia incorporation number. We could not confirm any of these on the regulators' own registers, so all are marked unverified. Which protections apply depends on the entity you are onboarded with.\n\n## Trading conditions\n\nThe broker advertises leverage from 1x to 1000x, no minimum deposit, and spreads \"from 0\" on EUR/USD. These are marketing figures and actual costs vary by instrument and market conditions. A free demo account with a $10,000 virtual balance is offered.\n\n## Platforms\n\nClients can trade on PXTrader 2.0, PrimeXBT's own platform for crypto futures and CFDs, or on MetaTrader 5. The company also offers a wallet and says assets are secured with Fireblocks.\n\n## Who is it for?\n\nExperienced traders who want crypto futures and CFDs in one account and accept offshore regulation. High leverage makes it unsuitable for beginners.\n\nTrading involves risk and you can lose all of your capital."
+	},
+	"ja": {
+		"summary": "2018年から運営される暗号資産先物・CFDプラットフォームで、最大1000倍のレバレッジ、MT5と独自のPXTraderを提供しますが、保有ライセンスの多くはオフショアです。",
+		"minDeposit": "最低入金額の記載なし",
+		"maxLeverage": "最大1000倍",
+		"pros": ["レバレッジ1〜1000倍、最低入金額の記載なし、MT5と独自のPXTrader 2.0と条件を公開", "1つの口座で暗号資産先物とFX・商品・株価指数・株式のCFDを取引可能", "公式サイトに南アフリカFSCAライセンス（45697）を記載", "仮想残高1万ドルの無料デモ口座あり"],
+		"cons": ["サイトに記載のライセンスはいずれも規制当局の登録簿で確認できていない", "主な運営法人はオフショアのセントルシア登録", "非常に高いレバレッジは急速な損失のリスクを高める", "Trustpilotの評価は約3.5（約400件）と賛否が分かれ、出金や紛争に関する苦情もある"],
+		"body": "## 規制と安全性\n\n公式サイトでは法人名をセントルシア（カストリーズ）登録のPrimeXBT Trading Services Ltdとし、南アフリカFSCA（45697）、セーシェルFSAのブローカーディーラーライセンス（SD162）、エルサルバドルのデジタル資産関連登録2件、セントルシアの法人登録番号を掲載しています。これらはいずれも規制当局の登録簿で確認できなかったため「未確認」としています。適用される保護は、口座開設時に割り当てられる法人によって異なります。\n\n## 取引条件\n\nレバレッジは1倍〜1000倍、最低入金額なし、EUR/USDのスプレッドは「0から」と案内されています。これらは宣伝上の数値で、実際のコストは銘柄や市況によって変わります。仮想残高1万ドルの無料デモ口座があります。\n\n## 取引プラットフォーム\n\n暗号資産先物・CFD向けの独自プラットフォームPXTrader 2.0、またはMetaTrader 5で取引できます。ウォレットも提供し、資産の保管にFireblocksを使用していると説明しています。\n\n## どんな人に向いているか\n\nオフショア規制を理解した上で、暗号資産先物とCFDを1つの口座で取引したい経験者向けです。高いレバレッジのため初心者には向きません。\n\n取引にはリスクがあり、投資資金をすべて失う可能性があります。"
+	}
+}

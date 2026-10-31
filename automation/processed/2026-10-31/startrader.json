@@ -1,0 +1,6 @@
+{
+ "slug": "startrader",
+ "queueUrl": "https://www.startrader.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching; no primary min deposit, spread, leverage or platform data"
+}

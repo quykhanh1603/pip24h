@@ -1,0 +1,6 @@
+{
+ "slug": "hmarkets",
+ "queueUrl": "https://hmarkets.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching and no primary-source licence, spread, leverage or deposit data found"
+}

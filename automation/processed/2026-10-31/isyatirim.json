@@ -1,0 +1,6 @@
+{
+ "slug": "isyatirim",
+ "queueUrl": "isyatirim.com.tr",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: SPK authorisation not found, no min deposit, spread or leverage published"
+}

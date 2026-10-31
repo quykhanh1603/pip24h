@@ -1,0 +1,6 @@
+{
+ "slug": "hw",
+ "queueUrl": "https://hw.online/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching; only third-party sources found"
+}
