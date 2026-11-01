@@ -1,0 +1,18 @@
+{
+"slug":"finex","queueUrl":"https://finex.co.id/","status":"ok","name":"Finex","website":"https://finex.co.id/","logo":"","assetType":"forex","rating":3.5,"foundedYear":2012,
+"minDeposit":"$10","spreadFrom":"0.5 pips","maxLeverage":"1:500","instantWithdrawal":false,
+"platforms":["MetaTrader 5","Finex Trading app"],
+"licenses":[
+{"regulator":"bappebti","text":"Bappebti (Indonesia)","number":"47/BAPPEBTI/SI/04/2013","entity":"PT Finex Bisnis Solusi Futures","status":"unverified"}
+],
+"sources":["https://finex.co.id/","https://bappebti.go.id/pialang_berjangka/detail/133"],
+"en":{"summary":"Finex is an Indonesian futures broker (PT Finex Bisnis Solusi Futures) offering forex and metals on MetaTrader 5 with a $10 minimum deposit.",
+"pros":["Bappebti-licensed futures broker per its own site, also listing JFX and KBI memberships","$10 minimum deposit","MetaTrader 5 on desktop, mobile and web","Spreads from 0.5 pips"],
+"cons":["Bappebti licence not confirmed on the regulator's register in this review","Mainly targets Indonesian clients","Only MT5 and its own app, with no MT4"],
+"body":"## Regulation and safety\n\nFinex's website states that PT Finex Bisnis Solusi Futures is an official futures broker in Indonesia under Bappebti licence 47/BAPPEBTI/SI/04/2013. It also lists Bank Indonesia, OJK, Jakarta Futures Exchange (SPAB-161/JFX/02/2013) and Kliring Berjangka Indonesia (03/AK-KBI/PN/II/2022) registrations. The site links to the broker's Bappebti record (bappebti.go.id/pialang_berjangka/detail/133), but that register was not matched in this review, so the licence is shown as unverified.\n\n## Trading conditions\n\nThe site says the company was established in 2012 (another section says 2013). The minimum deposit is $10 and spreads are floating from 0.5 pips. Maximum leverage is 1:500 for forex and metals, 1:200 for indices and energy, and 1:25 for stocks.\n\n## Platforms\n\nTrading is on MetaTrader 5 (Windows, Android, iOS and browser) and the Finex Trading app for Android.\n\n## Who is it for?\n\nIt mainly suits traders in Indonesia who want a locally registered broker with a low entry deposit. Trading leveraged products involves a high risk of loss."},
+"ja":{"summary":"Finexはインドネシアの先物ブローカー（PT Finex Bisnis Solusi Futures）で、最低入金額10ドルからMetaTrader 5でFXや金属を取引できます。",
+"minDeposit":"10ドル","maxLeverage":"最大500倍",
+"pros":["同社サイトによればBappebti認可の先物ブローカーで、JFXやKBIにも加盟","最低入金額10ドル","MT5をデスクトップ・モバイル・ウェブで利用可能","スプレッド0.5pips〜"],
+"cons":["Bappebtiのライセンスは本レビューでは当局の登録簿で未確認","主にインドネシアの顧客向け","MT4はなく、MT5と独自アプリのみ"],
+"body":"## 規制と安全性\n\nFinexの公式サイトでは、PT Finex Bisnis Solusi Futuresがインドネシアの公式な先物取引業者であり、Bappebtiライセンス47/BAPPEBTI/SI/04/2013を保有するとされています。また、インドネシア銀行、OJK、ジャカルタ先物取引所（SPAB-161/JFX/02/2013）、インドネシア先物清算機関（03/AK-KBI/PN/II/2022）への登録も記載されています。Bappebtiの登録情報へのリンクはありますが、本レビューでは照合できていないため「未確認」としています。\n\n## 取引条件\n\n同社サイトでは2012年設立とされています（別の箇所では2013年とも記載）。最低入金額は10ドル、スプレッドは変動制で0.5pips〜です。最大レバレッジはFXと金属が500倍、株価指数とエネルギーが200倍、株式が25倍です。\n\n## プラットフォーム\n\nMetaTrader 5（Windows、Android、iOS、ブラウザ）とAndroid向けのFinex Tradingアプリで取引できます。\n\n## どんな人に向いているか\n\n国内登録の業者を求めるインドネシアのトレーダーや、少額から始めたい人に向いています。レバレッジ取引には大きな損失リスクがあります。"}
+}

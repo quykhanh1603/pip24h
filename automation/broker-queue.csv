@@ -29,16 +29,16 @@ https://valetax.com/,,valetax,done,2026-10-31,
 isyatirim.com.tr,,isyatirim,skipped,2026-10-31,"insufficient verifiable data: SPK authorisation not found, no min deposit, spread or leverage published"
 https://www.startrader.com/,,startrader,skipped,2026-10-31,"insufficient verifiable data: site blocks fetching; no primary min deposit, spread, leverage or platform data"
 https://www.ifcmarkets.com/,,ifcmarkets,done,2026-10-31,
-bossa.pl,,bossa,pending,,
-https://finex.co.id/,,finex,pending,,
-https://blackbull.com/,,blackbull,pending,,
-https://www.ebc.com/,,ebc,pending,,
-https://www.fxclub.org/,,fxclub,pending,,
-https://www.mitrade.com/,,mitrade,pending,,
-https://www.weltrade.com/,,weltrade,pending,,
-http://xs.com/,,xs,pending,,
-halkyatirim.com.tr,,halkyatirim,pending,,
-https://hapi.trade,,hapi,pending,,
+bossa.pl,,bossa,skipped,2026-11-01,"insufficient verifiable data: founding year, min deposit, spread, leverage not stated; licence not checked on KNF register"
+https://finex.co.id/,,finex,done,2026-11-01,
+https://blackbull.com/,,blackbull,done,2026-11-01,
+https://www.ebc.com/,,ebc,skipped,2026-11-01,insufficient verifiable data: site blocks fetching; founding year and min deposit conflict across secondary sources
+https://www.fxclub.org/,,fxclub,skipped,2026-11-01,insufficient verifiable data: no regulator licence numbers on site; min deposit and leverage missing
+https://www.mitrade.com/,,mitrade,skipped,2026-11-01,"insufficient verifiable data: min deposit, spread and leverage figures not published; licences not confirmed on registers"
+https://www.weltrade.com/,,weltrade,skipped,2026-11-01,"insufficient verifiable data: no licence numbers published, founding year missing"
+http://xs.com/,,xs,done,2026-11-01,
+halkyatirim.com.tr,,halkyatirim,skipped,2026-11-01,"insufficient verifiable data: SPK licence number, founding year and trading specs not found"
+https://hapi.trade,,hapi,skipped,2026-11-01,"insufficient verifiable data: FINRA registration not confirmed on BrokerCheck; founding year, spread, leverage missing"
 https://admiralmarkets.com/,,admiralmarkets,pending,,
 https://libertex.org/,,libertex,pending,,
 https://www.spreadex.com/,,spreadex,pending,,
