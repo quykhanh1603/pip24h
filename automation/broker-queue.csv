@@ -39,16 +39,16 @@ https://www.weltrade.com/,,weltrade,skipped,2026-11-01,"insufficient verifiable 
 http://xs.com/,,xs,done,2026-11-01,
 halkyatirim.com.tr,,halkyatirim,skipped,2026-11-01,"insufficient verifiable data: SPK licence number, founding year and trading specs not found"
 https://hapi.trade,,hapi,skipped,2026-11-01,"insufficient verifiable data: FINRA registration not confirmed on BrokerCheck; founding year, spread, leverage missing"
-https://admiralmarkets.com/,,admiralmarkets,pending,,
-https://libertex.org/,,libertex,pending,,
-https://www.spreadex.com/,,spreadex,pending,,
-https://naga.com/,,naga,pending,,
-https://titanfx.com/,,titanfx,pending,,
-https://octabroker.com/,,octabroker,pending,,
-https://www.dooprime.com/,,dooprime,pending,,
-https://www.fortrade.com/,,fortrade,pending,,
-https://www.activtrades.com/en/,,activtrades,pending,,
-https://fxgt.com/,,fxgt,pending,,
+https://admiralmarkets.com/,,admiralmarkets,skipped,2026-11-02,"insufficient verifiable data: CySEC 201/13 verified, but founding year, minimum deposit and leverage not confirmed from sources read"
+https://libertex.org/,,libertex,skipped,2026-11-02,"insufficient verifiable data: site blocks fetching; licence numbers, founding year, minimum deposit, spread and leverage not confirmed from sources read"
+https://www.spreadex.com/,,spreadex,skipped,2026-11-02,"insufficient verifiable data: sports-betting/spread-betting operator; minimum deposit, spread and leverage not published"
+https://naga.com/,,naga,skipped,2026-11-02,"insufficient verifiable data: licences verified in part, but founding year, minimum deposit and leverage not confirmed"
+https://titanfx.com/,,titanfx,done,2026-11-02,
+https://octabroker.com/,,octabroker,skipped,2026-11-02,"insufficient verifiable data: no regulator, entity or licence number found on pages readable; founding year, deposit, spread and leverage not stated"
+https://www.dooprime.com/,,dooprime,done,2026-11-02,
+https://www.fortrade.com/,,fortrade,skipped,2026-11-02,"insufficient verifiable data: founding year, minimum deposit, spread and leverage not published on pages read"
+https://www.activtrades.com/en/,,activtrades,skipped,2026-11-02,insufficient verifiable data: FCA FRN 434413 seen only in FCA documents (live register entry not readable) and entity-to-licence mapping not published; minimum deposit and leverage not stated
+https://fxgt.com/,,fxgt,skipped,2026-11-02,insufficient verifiable data: site blocks fetching; licence entities and trading conditions could not be read from the broker's own pages
 https://tradenation.com/,,tradenation,pending,,
 https://www.eightcap.com/,,eightcap,pending,,
 https://www.xtrendspeed.com/,,xtrendspeed,pending,,
