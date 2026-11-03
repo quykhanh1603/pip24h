@@ -49,16 +49,16 @@ https://www.dooprime.com/,,dooprime,done,2026-11-02,
 https://www.fortrade.com/,,fortrade,skipped,2026-11-02,"insufficient verifiable data: founding year, minimum deposit, spread and leverage not published on pages read"
 https://www.activtrades.com/en/,,activtrades,skipped,2026-11-02,insufficient verifiable data: FCA FRN 434413 seen only in FCA documents (live register entry not readable) and entity-to-licence mapping not published; minimum deposit and leverage not stated
 https://fxgt.com/,,fxgt,skipped,2026-11-02,insufficient verifiable data: site blocks fetching; licence entities and trading conditions could not be read from the broker's own pages
-https://tradenation.com/,,tradenation,pending,,
-https://www.eightcap.com/,,eightcap,pending,,
-https://www.xtrendspeed.com/,,xtrendspeed,pending,,
-https://www.fxcm.com/,,fxcm,pending,,
-https://www.ultimamarkets.com,,ultimamarkets,pending,,
-https://inzo.co/,,inzo,pending,,
-https://www.thinkmarkets.com/,,thinkmarkets,pending,,
-https://bcs-forex.ru/,,bcs-forex,pending,,
-https://mifx.com/,,mifx,pending,,
-https://www.iux.com/,,iux,pending,,
+https://tradenation.com/,,tradenation,done,2026-11-03,
+https://www.eightcap.com/,,eightcap,done,2026-11-03,
+https://www.xtrendspeed.com/,,xtrendspeed,skipped,2026-11-03,"insufficient verifiable data: FSCA FSP 23497 (Rynat Capital) could not be confirmed on the FSCA register; only spread and platforms stated on the official site (no founding year, min deposit or leverage)"
+https://www.fxcm.com/,,fxcm,skipped,2026-11-03,"insufficient verifiable data: current min deposit, spread and leverage not stated on current official pages (only dated, entity-specific figures); FCA register shows Stratos Markets Ltd (217689) as 'applied to cancel' so UK entity status is changing"
+https://www.ultimamarkets.com,,ultimamarkets,done,2026-11-03,
+https://inzo.co/,,inzo,skipped,2026-11-03,"insufficient verifiable data: Comoros/Seychelles FSA licences claimed without numbers and not found on the Seychelles FSA register; no min deposit, spread or leverage stated"
+https://www.thinkmarkets.com/,,thinkmarkets,done,2026-11-03,
+https://bcs-forex.ru/,,bcs-forex,skipped,2026-11-03,"insufficient verifiable data: Bank of Russia forex-dealer licence 045-14117-020000 confirmed on cbr.ru, but founding year, platforms, spread and a consistent leverage/min deposit could not be confirmed (site blocks fetching; leverage figures conflict across pages)"
+https://mifx.com/,,mifx,done,2026-11-03,
+https://www.iux.com/,,iux,skipped,2026-11-03,"insufficient verifiable data: Mauritius FSC licence GB22200605 not found on FSC register, SVG entry is a registration not a licence, ASIC entity stated not to operate under this website; no founding year or platforms stated"
 https://www.tms.pl,,tms,pending,,
 https://www.trading.com/,,trading,pending,,
 https://hankotrade.com/,,hankotrade,pending,,

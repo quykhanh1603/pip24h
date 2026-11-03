@@ -1,0 +1,22 @@
+{
+ "slug":"eightcap","queueUrl":"https://www.eightcap.com/","status":"ok","name":"Eightcap","website":"https://www.eightcap.com/","logo":"",
+ "assetType":"forex","rating":3.5,"foundedYear":2015,
+ "minDeposit":"$100","spreadFrom":"0.0 pips (Raw, plus commission)",
+ "platforms":["MetaTrader 4","MetaTrader 5","TradingView","TradeLocker"],
+ "licenses":[
+  {"regulator":"fca","text":"FCA (United Kingdom)","number":"921296","entity":"Eightcap Group Ltd","status":"verified","verifiedDate":"2026-11-03"},
+  {"regulator":"scb","text":"SCB (Bahamas)","number":"SIA-F220","entity":"Eightcap Global Limited","status":"unverified"},
+  {"regulator":"fsa-sc","text":"FSA (Seychelles)","number":"SD100","entity":"Eightcap International Ltd","status":"unverified"},
+  {"regulator":"fsc-mu","text":"FSC (Mauritius)","number":"GB25204603","entity":"Eightcap International Trading","status":"unverified"}
+ ],
+ "sources":["https://www.eightcap.com/","https://www.eightcap.com/en/faqs/","https://www.eightcap.com/en/account-types/","https://www.fca.org.uk/consumers/fca-firm-checker/firm-10821-921296"],
+ "en":{"summary":"Eightcap is a Melbourne-founded CFD broker offering MetaTrader, TradingView and TradeLocker with a Raw account from 0.0 pips plus commission.",
+ "pros":["Eightcap Group Ltd is shown as FCA-authorised on the FCA register (checked 2026-11-03)","Raw account with spreads from 0.0 pips; commission quoted at $3.50 per lot per side","Wide platform choice: MT4, MT5, TradingView, TradeLocker","850+ instruments across forex, indices, commodities, shares and crypto"],
+ "cons":["Global clients are usually onboarded to offshore entities (Bahamas, Seychelles, Mauritius)","Maximum leverage depends on entity and client type and is not published on the FAQ","$100 minimum deposit","FCA has issued a clone warning (eightcap.vip), so check the domain"],
+ "body":"## Regulation and safety\n\nEightcap lists three non-UK entities on its homepage: Eightcap Global Limited (Securities Commission of The Bahamas, SIA-F220), Eightcap International Ltd (Seychelles FSA, SD100) and Eightcap International Trading (Mauritius FSC, GB25204603). The FCA firm checker shows Eightcap Group Ltd (FRN 921296) as authorised since 23 December 2020 (checked 2026-11-03). The broker's site also refers to ASIC and CySEC oversight, but we did not confirm those licences on their registers in this run. Which entity holds your account depends on your country, and protections differ by entity.\n\n## Trading conditions\n\nPer the broker's FAQ, Eightcap was founded in Melbourne in 2015 and requires a minimum deposit of $100 (or equivalent). The Raw account advertises spreads from 0.0 pips with a commission of $3.50 per lot per side; individual market pages show Raw minimums such as 0.2 pips on AUDUSD. Leverage depends on the entity and whether you are a retail or professional client.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5, TradingView and TradeLocker are offered, with more than 850 CFD instruments.\n\n## Who is it for?\n\nActive traders who want raw-spread pricing and a choice of platforms, and who understand that offshore entities offer weaker investor protection than FCA-regulated ones.\n\nCFDs are leveraged products and most retail accounts lose money."},
+ "ja":{"summary":"Eightcapはメルボルン発のCFDブローカーで、MetaTrader、TradingView、TradeLockerに対応し、Rawアカウントは0.0pipsからのスプレッド＋手数料です。",
+ "minDeposit":"100ドル","maxLeverage":"",
+ "pros":["Eightcap Group LtdはFCAの登録簿で認可済みと確認（2026-11-03）","Rawアカウントはスプレッド0.0pipsから、手数料は片道1ロットあたり3.50ドル","MT4、MT5、TradingView、TradeLockerと選択肢が豊富","為替・株価指数・コモディティ・株式・暗号資産など850銘柄以上"],
+ "cons":["海外居住者は通常オフショア法人（バハマ、セーシェル、モーリシャス）で口座開設","最大レバレッジは法人と顧客区分によって異なり、FAQには明記なし","最低入金額は100ドル","FCAがクローンサイト（eightcap.vip）を警告しておりドメイン確認が必要"],
+ "body":"## 規制と安全性\n\n公式トップページにはEightcap Global Limited（バハマSCB、SIA-F220）、Eightcap International Ltd（セーシェルFSA、SD100）、Eightcap International Trading（モーリシャスFSC、GB25204603）が記載されています。FCAのファームチェッカーではEightcap Group Ltd（登録番号921296）が2020年12月23日付で認可済みと確認しました（2026-11-03）。サイトはASICやCySECにも言及していますが、今回各登録簿では確認していません。口座の法人は居住国で決まり、法人により保護内容が異なります。\n\n## 取引条件\n\n公式FAQによると、2015年にメルボルンで設立され、最低入金額は100ドル（相当額）です。Rawアカウントはスプレッド0.0pipsから、手数料は片道1ロットあたり3.50ドル。通貨ペア別ページではAUDUSDで0.2pipsなどの最小値が示されています。レバレッジは法人とリテール／プロの区分により異なります。\n\n## プラットフォーム\n\nMetaTrader 4／5、TradingView、TradeLockerに対応し、CFDは850銘柄以上です。\n\n## どんな人に向いているか\n\nRawスプレッドと多様なプラットフォームを求めつつ、オフショア法人はFCA規制法人より投資家保護が弱い点を理解できる方に向きます。\n\nCFDはレバレッジ商品であり、多くのリテール口座は損失を出しています。"}
+}

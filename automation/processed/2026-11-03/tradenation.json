@@ -1,0 +1,24 @@
+{
+ "slug":"tradenation","queueUrl":"https://tradenation.com/","status":"ok","name":"Trade Nation","website":"https://tradenation.com/","logo":"",
+ "assetType":"forex","rating":3.75,"foundedYear":2014,
+ "maxLeverage":"1:30 (EU/UK/AU retail)",
+ "platforms":["Trade Nation platform","TradingView"],
+ "licenses":[
+  {"regulator":"fca","text":"FCA (United Kingdom)","number":"525164","entity":"Trade Nation Financial UK Ltd","status":"verified","verifiedDate":"2026-11-03"},
+  {"regulator":"asic","text":"ASIC (Australia)","number":"AFSL 422661","entity":"Trade Nation Australia Pty Ltd","status":"unverified"},
+  {"regulator":"fsca","text":"FSCA (South Africa)","number":"49846","entity":"Trade Nation Financial (Pty) Ltd","status":"unverified"},
+  {"regulator":"fsa-sc","text":"FSA (Seychelles)","number":"SD150","entity":"Trade Nation Financial Markets Ltd","status":"unverified"},
+  {"regulator":"scb","text":"SCB (Bahamas)","number":"SIA-F216","entity":"Trade Nation Ltd.","status":"unverified"},
+  {"regulator":null,"text":"CMVM (Portugal) licence 601 - Trade Nation Europe Empresa de Investimento, S.A.","status":"unverified"}
+ ],
+ "sources":["https://tradenation.com/","https://tradenation.com/en-eu/about-us/","https://www.fca.org.uk/consumers/fca-firm-checker/firm-10821-525164"],
+ "en":{"summary":"Trade Nation is a CFD broker operating through several regional entities, including an FCA-authorised UK firm, with fixed-spread pricing.",
+ "pros":["UK entity Trade Nation Financial UK Ltd is shown as authorised on the FCA register (checked 2026-11-03)","Multiple regulated entities across UK, Australia, South Africa and Portugal","Advertises fixed spreads, with variable spreads on commodities","TradingView integration and mobile apps"],
+ "cons":["Offshore entities (Seychelles, Bahamas) are also used for some clients","Minimum deposit and exact spread figures are not stated on the pages we read","Retail leverage is capped at 1:30 for EU/UK/AU clients","Trade Nation has been the subject of FCA clone-firm warnings, so check the URL"],
+ "body":"## Regulation and safety\n\nTrade Nation trades through several entities. Its footer lists Trade Nation Financial UK Ltd (FCA, firm reference 525164), Trade Nation Australia Pty Ltd (ASIC, AFSL 422661), Trade Nation Financial (Pty) Ltd (FSCA, licence 49846), Trade Nation Europe Empresa de Investimento, S.A. (CMVM, licence 601), plus Trade Nation Financial Markets Ltd (Seychelles FSA, SD150) and Trade Nation Ltd. (Bahamas SCB, SIA-F216). The FCA firm checker shows the UK entity as authorised (checked 2026-11-03). The other licences were taken from the broker's own disclosures and were not checked on their registers in this run.\n\nThe FCA has published a warning about clone websites using this firm's details, so confirm you are on the genuine domain.\n\n## Trading conditions\n\nThe broker advertises fixed spreads, including during volatile markets, with variable spreads on commodities. Its EU About page states leverage from 30:1 down to 2:1 depending on the asset. We did not find a minimum deposit or a headline spread figure on the official pages we read.\n\n## Platforms\n\nClients can trade on Trade Nation's own web and mobile platform, and the broker offers a TradingView integration.\n\n## Who is it for?\n\nTraders who prefer predictable fixed spreads and a client entity under a major regulator such as the FCA or ASIC. Check which entity you would be onboarded to, since protections differ by entity.\n\nTrading CFDs carries a high level of risk to your capital."},
+ "ja":{"summary":"Trade Nationは複数の地域法人を通じてCFDを提供するブローカーで、英国FCA認可法人を含み、固定スプレッドを特徴とします。",
+ "maxLeverage":"1:30（EU・英国・豪州のリテール）",
+ "pros":["英国法人Trade Nation Financial UK LtdはFCAの登録簿で認可済みと確認（2026-11-03）","英国・豪州・南アフリカ・ポルトガルなど複数の規制下の法人を持つ","固定スプレッドを提供（コモディティは変動）","TradingView連携とモバイルアプリに対応"],
+ "cons":["一部の顧客向けにセーシェル・バハマの法人も利用される","最低入金額や具体的なスプレッド数値は確認したページに記載なし","EU・英国・豪州のリテールのレバレッジは最大30倍","FCAからクローンサイトへの警告が出ているためURLの確認が必要"],
+ "body":"## 規制と安全性\n\nTrade Nationは複数の法人で運営しています。フッターには、Trade Nation Financial UK Ltd（FCA、登録番号525164）、Trade Nation Australia Pty Ltd（ASIC、AFSL 422661）、Trade Nation Financial (Pty) Ltd（FSCA、49846）、Trade Nation Europe（CMVM、601）、Trade Nation Financial Markets Ltd（セーシェルFSA、SD150）、Trade Nation Ltd.（バハマSCB、SIA-F216）が記載されています。英国法人はFCAのファームチェッカーで認可済みと確認しました（2026-11-03）。その他のライセンスは同社の開示に基づくもので、今回各登録簿では確認していません。\n\nFCAは同社の情報を悪用したクローンサイトについて警告しているため、正規ドメインかご確認ください。\n\n## 取引条件\n\n相場急変時も含め固定スプレッドを掲げ、コモディティは変動スプレッドです。EU向けページではレバレッジは資産に応じて30倍から2倍とされています。公式ページでは最低入金額や具体的なスプレッド値は確認できませんでした。\n\n## プラットフォーム\n\n独自のウェブ／モバイルプラットフォームを提供し、TradingView連携にも対応しています。\n\n## どんな人に向いているか\n\n予測しやすい固定スプレッドを好み、FCAやASICなど主要規制当局下の法人で取引したい方に向きます。法人ごとに保護内容が異なるため、口座開設先の法人を確認してください。\n\nCFD取引には高いリスクが伴います。"}
+}
