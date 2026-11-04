@@ -1,0 +1,6 @@
+{
+ "slug": "trading",
+ "queueUrl": "https://www.trading.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching (403); no first-hand figures for deposit, spread, leverage or platforms"
+}

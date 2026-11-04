@@ -1,0 +1,63 @@
+{
+ "slug": "iforex",
+ "queueUrl": "iforex.com",
+ "status": "ok",
+ "name": "iFOREX",
+ "website": "https://www.iforex.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.3,
+ "maxLeverage": "1:400",
+ "platforms": [
+  "iFOREX app"
+ ],
+ "licenses": [
+  {
+   "regulator": "cysec",
+   "text": "CySEC (Cyprus)",
+   "number": "143/11",
+   "entity": "ICFD Ltd (iFOREX Europe)",
+   "status": "verified",
+   "verifiedDate": "2026-11-04"
+  },
+  {
+   "regulator": "bvifsc",
+   "text": "BVI FSC (British Virgin Islands)",
+   "entity": "Formula Investment House Ltd",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://www.iforex.com/",
+  "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/"
+ ],
+ "en": {
+  "summary": "iFOREX is a long-running CFD broker with a CySEC-licensed European arm (ICFD Ltd) and a BVI-regulated entity for other clients.",
+  "pros": [
+   "European arm ICFD Ltd appears on the CySEC register (licence 143/11)",
+   "Operating since 1996 according to its own website",
+   "Advertises zero commissions"
+  ],
+  "cons": [
+   "Minimum deposit and spreads not stated on the homepage",
+   "Non-EU clients are served by a BVI entity (offshore, not independently verified)",
+   "Proprietary app; MetaTrader not listed on the homepage"
+  ],
+  "body": "## Regulation and safety\n\niFOREX is the brand of Formula Investment House Ltd, which is regulated by the British Virgin Islands Financial Services Commission according to the broker's website. We could not check that licence on the BVI register. European clients are served by ICFD Ltd, trading as iFOREX Europe. This entity appears on the CySEC register of Cypriot investment firms under licence 143/11, dated 23 May 2011 (checked 2026-11-04).\n\n## Trading conditions\n\nThe website states maximum leverage of up to 1:400 and advertises zero commissions, directing visitors to a pricing page for spreads. No minimum deposit figure is given on the homepage. Leverage for retail clients under the CySEC entity is capped by European rules and is lower than the headline figure.\n\n## Platforms\n\nTrading is offered through the proprietary iFOREX app, with tools such as live rates, an economic calendar and trading signals. MetaTrader is not listed on the homepage.\n\n## Who is it for?\n\nThe broker describes itself as active since 1996, which makes it one of the longer-established CFD providers. It may suit traders who prefer an all-in-one proprietary app, but anyone who needs MetaTrader or published spread tables should check the current trading conditions first. CFDs are complex instruments and carry a high risk of losing money."
+ },
+ "ja": {
+  "summary": "iFOREXは1996年から続くCFDブローカーで、欧州向けにはCySEC規制のICFD Ltdが、その他の地域にはBVI規制の法人が対応しています。",
+  "maxLeverage": "最大400倍",
+  "pros": [
+   "欧州法人ICFD LtdはCySEC登録簿に掲載（ライセンス143/11）",
+   "公式サイトによれば1996年から運営",
+   "取引手数料ゼロを掲載"
+  ],
+  "cons": [
+   "最低入金額とスプレッドはトップページに記載なし",
+   "欧州以外の顧客はBVI法人が対応（オフショアで未検証）",
+   "独自アプリが中心でMetaTraderの記載なし"
+  ],
+  "body": "## 規制と安全性\n\niFOREXはFormula Investment House Ltdのブランドで、公式サイトによれば英領ヴァージン諸島金融サービス委員会（BVI FSC）の規制下にあります。このライセンスはBVIの登録簿では確認できていません。欧州の顧客にはICFD Ltd（iFOREX Europe）が対応しており、キプロスの投資会社登録簿（CySEC）にライセンス番号143/11（2011年5月23日付）で掲載されています（2026-11-04確認）。\n\n## 取引条件\n\n公式サイトでは最大レバレッジ1:400、取引手数料ゼロと記載され、スプレッドは料金ページを参照する形です。最低入金額はトップページに記載がありません。CySEC法人の個人向けレバレッジは欧州の規制により、この数値より低く制限されます。\n\n## 取引プラットフォーム\n\n独自のiFOREXアプリで取引し、リアルタイムレート、経済指標カレンダー、取引シグナルなどのツールが利用できます。トップページにMetaTraderの記載はありません。\n\n## どんな人に向いているか\n\n1996年から営業しているとしており、歴史のあるCFD業者の一つです。独自アプリで完結したい人には向きますが、MetaTraderやスプレッド表が必要な場合は最新の取引条件を確認してください。CFDは複雑な商品で、資金を急速に失う高いリスクがあります。"
+ }
+}

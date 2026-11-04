@@ -1,0 +1,6 @@
+{
+ "slug": "atfx",
+ "queueUrl": "https://www.atfx.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: only platforms confirmed first-hand; founding year, min deposit, spread, leverage only from aggregators"
+}

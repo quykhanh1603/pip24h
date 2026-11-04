@@ -1,0 +1,6 @@
+{
+ "slug": "elev8",
+ "queueUrl": "https://www.elev8.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: licences unverified on registers; founding year, spread, leverage missing"
+}

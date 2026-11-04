@@ -1,0 +1,6 @@
+{
+ "slug": "tradersync",
+ "queueUrl": "https://tradersync.com",
+ "status": "skip",
+ "skipReason": "not a broker: trading journal software vendor"
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "hankotrade",
+ "queueUrl": "https://hankotrade.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no regulator or licence stated on site; founding year and min deposit missing"
+}

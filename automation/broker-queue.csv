@@ -59,16 +59,16 @@ https://www.thinkmarkets.com/,,thinkmarkets,done,2026-11-03,
 https://bcs-forex.ru/,,bcs-forex,skipped,2026-11-03,"insufficient verifiable data: Bank of Russia forex-dealer licence 045-14117-020000 confirmed on cbr.ru, but founding year, platforms, spread and a consistent leverage/min deposit could not be confirmed (site blocks fetching; leverage figures conflict across pages)"
 https://mifx.com/,,mifx,done,2026-11-03,
 https://www.iux.com/,,iux,skipped,2026-11-03,"insufficient verifiable data: Mauritius FSC licence GB22200605 not found on FSC register, SVG entry is a registration not a licence, ASIC entity stated not to operate under this website; no founding year or platforms stated"
-https://www.tms.pl,,tms,pending,,
-https://www.trading.com/,,trading,pending,,
-https://hankotrade.com/,,hankotrade,pending,,
-https://www.atfx.com/,,atfx,pending,,
+https://www.tms.pl,,tms,skipped,2026-11-04,"insufficient verifiable data: KNF register not reachable; min deposit, spread and leverage not stated by sources read"
+https://www.trading.com/,,trading,skipped,2026-11-04,"insufficient verifiable data: site blocks fetching (403); no first-hand figures for deposit, spread, leverage or platforms"
+https://hankotrade.com/,,hankotrade,skipped,2026-11-04,insufficient verifiable data: no regulator or licence stated on site; founding year and min deposit missing
+https://www.atfx.com/,,atfx,skipped,2026-11-04,"insufficient verifiable data: only platforms confirmed first-hand; founding year, min deposit, spread, leverage only from aggregators"
 https://nordfx.com/,,nordfx,pending,,
-https://tradewill.com/,,tradewill,pending,,
-https://www.elev8.com/,,elev8,pending,,
-iforex.com,,iforex,pending,,
-infoyatirim.com,,infoyatirim,pending,,
-https://tradersync.com,,tradersync,pending,,
+https://tradewill.com/,,tradewill,skipped,2026-11-04,"insufficient verifiable data: Seychelles FSA SD111 not verifiable on register; founding year, min deposit, leverage missing"
+https://www.elev8.com/,,elev8,skipped,2026-11-04,"insufficient verifiable data: licences unverified on registers; founding year, spread, leverage missing"
+iforex.com,,iforex,done,2026-11-04,noindex (thin)
+infoyatirim.com,,infoyatirim,skipped,2026-11-04,"insufficient verifiable data: SPK licence number not stated or verified; spread, leverage, min deposit missing"
+https://tradersync.com,,tradersync,skipped,2026-11-04,not a broker: trading journal software vendor
 https://margex.com,,margex,pending,,
 https://www.markets4you.com,,markets4you,pending,,
 https://www.liquidbrokers.com/,,liquidbrokers,pending,,

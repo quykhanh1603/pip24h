@@ -1,0 +1,6 @@
+{
+ "slug": "infoyatirim",
+ "queueUrl": "infoyatirim.com",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: SPK licence number not stated or verified; spread, leverage, min deposit missing"
+}

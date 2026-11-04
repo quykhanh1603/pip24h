@@ -1,0 +1,6 @@
+{
+ "slug": "tms",
+ "queueUrl": "https://www.tms.pl",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: KNF register not reachable; min deposit, spread and leverage not stated by sources read"
+}

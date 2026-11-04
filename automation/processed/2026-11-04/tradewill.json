@@ -1,0 +1,6 @@
+{
+ "slug": "tradewill",
+ "queueUrl": "https://tradewill.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: Seychelles FSA SD111 not verifiable on register; founding year, min deposit, leverage missing"
+}
