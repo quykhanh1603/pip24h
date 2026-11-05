@@ -63,21 +63,21 @@ https://www.tms.pl,,tms,skipped,2026-11-04,"insufficient verifiable data: KNF re
 https://www.trading.com/,,trading,skipped,2026-11-04,"insufficient verifiable data: site blocks fetching (403); no first-hand figures for deposit, spread, leverage or platforms"
 https://hankotrade.com/,,hankotrade,skipped,2026-11-04,insufficient verifiable data: no regulator or licence stated on site; founding year and min deposit missing
 https://www.atfx.com/,,atfx,skipped,2026-11-04,"insufficient verifiable data: only platforms confirmed first-hand; founding year, min deposit, spread, leverage only from aggregators"
-https://nordfx.com/,,nordfx,pending,,
+https://nordfx.com/,,nordfx,skipped,2026-11-05,insufficient verifiable data: Mauritius licence GB24204016 not found on FSC register; third-party alerts (IOSCO I-SCAN Ukraine 2024)
 https://tradewill.com/,,tradewill,skipped,2026-11-04,"insufficient verifiable data: Seychelles FSA SD111 not verifiable on register; founding year, min deposit, leverage missing"
 https://www.elev8.com/,,elev8,skipped,2026-11-04,"insufficient verifiable data: licences unverified on registers; founding year, spread, leverage missing"
 iforex.com,,iforex,done,2026-11-04,noindex (thin)
 infoyatirim.com,,infoyatirim,skipped,2026-11-04,"insufficient verifiable data: SPK licence number not stated or verified; spread, leverage, min deposit missing"
 https://tradersync.com,,tradersync,skipped,2026-11-04,not a broker: trading journal software vendor
-https://margex.com,,margex,pending,,
-https://www.markets4you.com,,markets4you,pending,,
-https://www.liquidbrokers.com/,,liquidbrokers,pending,,
-https://www.bullwaves.com/,,bullwaves,pending,,
-https://www.bigboss-financial.com/,,bigboss-financial,pending,,
-https://blueberrymarkets.com/,,blueberrymarkets,pending,,
-https://www.tmgm.com/,,tmgm,pending,,
-https://www.infinox.com/,,infinox,pending,,
-https://www.switchmarkets.com/,,switchmarkets,pending,,
+https://margex.com,,margex,skipped,2026-11-05,"insufficient verifiable data: no licence, no min deposit or fee figures"
+https://www.markets4you.com,,markets4you,skipped,2026-11-05,"insufficient verifiable data: site blocks fetching, licence not confirmable"
+https://www.liquidbrokers.com/,,liquidbrokers,skipped,2026-11-05,"insufficient verifiable data: only AFS representative claim, no trading specs"
+https://www.bullwaves.com/,,bullwaves,done,2026-11-05,
+https://www.bigboss-financial.com/,,bigboss-financial,skipped,2026-11-05,"insufficient verifiable data: no licence listed, no min deposit or spreads"
+https://blueberrymarkets.com/,,blueberrymarkets,skipped,2026-11-05,"insufficient verifiable data: licences not confirmable on registers, min deposit and leverage missing"
+https://www.tmgm.com/,,tmgm,done,2026-11-05,
+https://www.infinox.com/,,infinox,skipped,2026-11-05,"insufficient verifiable data: FSC Mauritius licence not confirmable, min deposit/spread/leverage missing"
+https://www.switchmarkets.com/,,switchmarkets,skipped,2026-11-05,insufficient verifiable data: VFSC licence number and register confirmation missing
 https://herofx.co/,,herofx,pending,,
 https://www.equiti.com/,,equiti,pending,,
 https://vaultmarkets.trade/,,vaultmarkets,pending,,

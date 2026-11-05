@@ -1,0 +1,32 @@
+{
+	"slug": "tmgm",
+	"queueUrl": "https://www.tmgm.com/",
+	"status": "ok",
+	"name": "TMGM",
+	"website": "https://www.tmgm.com/",
+	"logo": "/images/brokers/tmgm/logo.png",
+	"assetType": "forex",
+	"rating": 3.7,
+	"minDeposit": "$100",
+	"spreadFrom": "0.0 pips",
+	"maxLeverage": "1:30",
+	"platforms": ["MetaTrader 4", "MetaTrader 5"],
+	"licenses": [
+		{ "regulator": "asic", "text": "ASIC (Australia)", "number": "436416", "entity": "Trademax Australia Limited", "status": "unverified" }
+	],
+	"sources": ["https://www.tmgm.com/en-au/regulations", "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2024-releases/24-109mr-asic-issues-ddo-stop-orders-against-trademax-australia", "https://abr.business.gov.au/ABN/View/76162331311"],
+	"en": {
+		"summary": "TMGM is operated in Australia by ASIC-regulated Trademax Australia Limited and offers MT4/MT5 accounts from $100 with spreads from 0.0 pips.",
+		"pros": ["Australian entity states ASIC AFS licence 436416", "Client funds said to be held with National Australia Bank", "MT4 and MT5 on desktop, web and mobile"],
+		"cons": ["ASIC issued interim DDO stop orders against Trademax in 2024 (lifted 25 June 2024)", "Leverage on the Australian site is capped at 1:30", "Founding year not stated on the site"],
+		"body": "## Regulation and safety\n\nThe Australian TMGM site names Trademax Australia Limited (ABN 76 162 331 311) as the operating company and states AFS licence (AFSL) 436416 issued by ASIC. We could not open ASIC's register during this review, so the licence number is marked unverified; ASIC's own media release does identify Trademax Australia Limited as an Australian CFD and margin FX provider. In 2024 ASIC issued interim stop orders under the design and distribution obligations that stopped it opening new retail accounts; ASIC states the orders were lifted from 25 June 2024. The site says client funds are held with National Australia Bank and that professional indemnity insurance of up to AUD 10 million is in place.\n\n## Trading conditions\n\nThe minimum deposit is $100, with spreads advertised from 0.0 pips. Maximum leverage shown on the Australian site is 1:30, in line with ASIC's retail limits; other TMGM entities may offer different terms.\n\n## Platforms\n\nTMGM offers MetaTrader 4 and MetaTrader 5 on desktop, web, Android and iPhone.\n\n## Who is it for?\n\nTMGM suits traders who want an Australian-regulated provider with the standard MetaTrader platforms and low spreads. Those seeking high leverage will find the Australian site restrictive. CFD trading involves a high risk of losing money."
+	},
+	"ja": {
+		"summary": "TMGMはオーストラリアでASIC規制下のTrademax Australia Limitedが運営し、100ドルからMT4/MT5を利用でき、スプレッドは0.0pipsからです。",
+		"minDeposit": "100ドル",
+		"maxLeverage": "最大30倍（豪州サイト）",
+		"pros": ["豪州法人がASICのAFSL 436416を表示", "顧客資金はナショナル・オーストラリア銀行に保管されると記載", "MT4・MT5をデスクトップ、ウェブ、モバイルで利用可能"],
+		"cons": ["2024年にASICがTrademaxに対しDDOの暫定停止命令を出した（同年6月25日に解除）", "豪州サイトのレバレッジは最大30倍", "設立年が公式サイトに明記されていない"],
+		"body": "## 規制と安全性\n\nTMGMの豪州サイトは、運営会社をTrademax Australia Limited（ABN 76 162 331 311）とし、ASICが発行するAFSL 436416を保有すると記載しています。今回の調査ではASICの登録簿を開けなかったため、ライセンス番号は「未確認」としています。ただしASIC自身のプレスリリースは、同社をオーストラリアのCFD・証拠金FX提供業者として扱っています。2024年にASICは商品設計・販売義務（DDO）に基づき、個人向けの新規口座開設を停止する暫定命令を出しましたが、ASICによれば2024年6月25日に解除されています。顧客資金はナショナル・オーストラリア銀行に保管され、最大1,000万豪ドルの専門職賠償責任保険があると公式サイトに記載されています。\n\n## 取引条件\n\n最低入金額は100ドル、スプレッドは0.0pipsからと案内されています。豪州サイトの最大レバレッジはASICの個人向け規制に沿った30倍で、他のTMGM法人では条件が異なる場合があります。\n\n## 取引プラットフォーム\n\nMetaTrader 4とMetaTrader 5をデスクトップ、ウェブ、Android、iPhoneで利用できます。\n\n## どんな人に向いているか\n\n豪州の規制下にある業者で、標準的なMetaTraderと低スプレッドを求める方に向いています。高レバレッジを求める方には豪州サイトの条件は不向きです。CFD取引は損失を被る高いリスクを伴います。"
+	}
+}
