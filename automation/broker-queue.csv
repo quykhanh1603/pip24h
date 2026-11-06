@@ -78,16 +78,16 @@ https://blueberrymarkets.com/,,blueberrymarkets,skipped,2026-11-05,"insufficient
 https://www.tmgm.com/,,tmgm,done,2026-11-05,
 https://www.infinox.com/,,infinox,skipped,2026-11-05,"insufficient verifiable data: FSC Mauritius licence not confirmable, min deposit/spread/leverage missing"
 https://www.switchmarkets.com/,,switchmarkets,skipped,2026-11-05,insufficient verifiable data: VFSC licence number and register confirmation missing
-https://herofx.co/,,herofx,pending,,
-https://www.equiti.com/,,equiti,pending,,
-https://vaultmarkets.trade/,,vaultmarkets,pending,,
-https://www.axiory.com/,,axiory,pending,,
-https://www.cmtrading.com/,,cmtrading,pending,,
-gedik.com,,gedik,pending,,
-https://rcgmarkets.com,,rcgmarkets,pending,,
-https://cfifinancial.com/,,cfifinancial,pending,,
-https://www.cityindex.com/,,cityindex,pending,,
-https://www.foreximf.com/,,foreximf,pending,,
+https://herofx.co/,,herofx,skipped,2026-11-06,insufficient verifiable data: no regulator or licence stated on the site; only third-party sources on regulatory status
+https://www.equiti.com/,,equiti,skipped,2026-11-06,insufficient verifiable data: homepage returned 403 and licences/specs could only be sourced from third-party sites
+https://vaultmarkets.trade/,,vaultmarkets,skipped,2026-11-06,"insufficient verifiable data: FSCA licence not confirmable on register; no spread, leverage or min deposit published"
+https://www.axiory.com/,,axiory,skipped,2026-11-06,"insufficient verifiable data: no min deposit, leverage or founding year on primary pages; Mauritius/Belize licences not confirmed on registers"
+https://www.cmtrading.com/,,cmtrading,skipped,2026-11-06,"insufficient verifiable data: no spread, leverage or founding year stated; licences not confirmed on registers"
+gedik.com,,gedik,skipped,2026-11-06,"insufficient verifiable data: securities firm with forex as a side product; no SPK licence, deposit, spread or leverage details found"
+https://rcgmarkets.com,,rcgmarkets,skipped,2026-11-06,insufficient verifiable data: official site returned 503; only third-party sources
+https://cfifinancial.com/,,cfifinancial,skipped,2026-11-06,insufficient verifiable data: site redirects to cfi.trade which returned 403; no primary data
+https://www.cityindex.com/,,cityindex,skipped,2026-11-06,insufficient verifiable data: official site returned 403; only third-party sources
+https://www.foreximf.com/,,foreximf,done,2026-11-06,
 https://www.markets.com/,,markets,pending,,
 https://katoprime.com/,,katoprime,pending,,
 garantibbvayatirim.com.tr,,garantibbvayatirim,pending,,

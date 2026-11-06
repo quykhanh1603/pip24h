@@ -1,0 +1,34 @@
+{
+	"slug": "foreximf",
+	"queueUrl": "https://www.foreximf.com/",
+	"status": "ok",
+	"name": "FOREXimf (PT International Mitra Futures)",
+	"website": "https://www.foreximf.com/",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.3,
+	"foundedYear": 2004,
+	"minDeposit": "Rp 250,000",
+	"spreadFrom": "1.0 pips",
+	"maxLeverage": "1:500",
+	"instantWithdrawal": false,
+	"platforms": ["MetaTrader 4", "QuickPro app"],
+	"licenses": [
+		{ "regulator": null, "text": "BAPPEBTI (Indonesia) – Business licence No. 736/BAPPEBTI/SI/6/2005, as stated by the broker", "entity": "PT International Mitra Futures", "number": "736/BAPPEBTI/SI/6/2005", "status": "unverified" }
+	],
+	"sources": ["https://www.foreximf.com/", "https://www.foreximf.com/regulasi-foreximf"],
+	"en": {
+		"summary": "FOREXimf is an Indonesian futures broker (PT International Mitra Futures, Bandung) offering MT4 forex trading from Rp 250,000 under the stated supervision of BAPPEBTI.",
+		"pros": ["Operating since 2004, over 20 years according to its own site", "Low entry point: Classic account from Rp 250,000", "Publishes account minimums, spreads and leverage on its homepage", "Lists a BAPPEBTI business licence plus exchange and clearing memberships"],
+		"cons": ["Licence numbers are taken from the broker's own legal page and were not checked on the BAPPEBTI register", "The site says the brand is moving to QuickPro, so details may change", "Classic account spreads start at 2.5 pips, wider than ECN-style accounts"],
+		"body": "## Regulation and safety\n\nFOREXimf is the website of PT International Mitra Futures, based in Bandung, Indonesia. Its regulation page lists a BAPPEBTI business licence (No. 736/BAPPEBTI/SI/6/2005), membership of the Jakarta Futures Exchange (JFX), the Indonesia Commodity and Derivatives Exchange (ICDX), and the Indonesian clearing houses KBI and ICH. It also lists an OJK in-principle approval (S-227/PM.02/2025) and a Bank Indonesia permit dated August 2025. The page itself describes the OJK item as an in-principle approval rather than a final licence. These numbers are as stated by the broker; Pip24h has not confirmed them on the official registers.\n\n## Trading conditions\n\nThe homepage describes two accounts. The Classic account requires Rp 250,000 and quotes spreads from 2.5 pips. The Gold account requires Rp 5,000,000 and quotes XAUUSD spreads from 1.0 pips. Both list maximum leverage of 1:500. The broker states it has served clients since 2004.\n\n## Platforms\n\nTrading is offered on MetaTrader 4 and the QuickPro mobile app. The site notes that FOREXimf is transitioning to the QuickPro brand.\n\n## Who is it for?\n\nIt mainly suits Indonesian residents who want a locally based futures broker with a small starting deposit. Traders should check the current licence status with BAPPEBTI and read the risk disclosure before depositing. Leveraged trading carries a high risk of loss."
+	},
+	"ja": {
+		"summary": "FOREXimfはバンドン拠点のインドネシアの先物ブローカー（PT International Mitra Futures）で、25万ルピアからMT4でFX取引ができ、BAPPEBTIの監督下にあると自社サイトで説明している。",
+		"minDeposit": "25万ルピア",
+		"maxLeverage": "最大500倍",
+		"pros": ["自社サイトによると2004年から20年以上の運営実績", "Classic口座は25万ルピアからと少額で始められる", "口座の最低入金額・スプレッド・レバレッジをトップページで公開", "BAPPEBTIの事業許可に加え、取引所・清算機関の会員資格を掲載"],
+		"cons": ["許可番号は自社の法的情報ページの記載であり、BAPPEBTIの登録簿では未確認", "サイトによるとブランドはQuickProへ移行中で、情報が変わる可能性がある", "Classic口座のスプレッドは2.5pipsからで、ECN系口座より広い"],
+		"body": "## 規制と安全性\n\nFOREXimfは、インドネシア・バンドンに拠点を置くPT International Mitra Futuresのウェブサイトです。規制ページには、BAPPEBTIの事業許可（No. 736/BAPPEBTI/SI/6/2005）、ジャカルタ先物取引所（JFX）、インドネシア商品デリバティブ取引所（ICDX）、清算機関KBIおよびICHの会員資格が掲載されています。また、OJKの原則承認（S-227/PM.02/2025）と2025年8月付のインドネシア銀行の許可も記載されています。ただしOJKの項目は最終的な免許ではなく原則承認と説明されています。これらの番号は同社の記載に基づくもので、Pip24hは公式登録簿での確認を行っていません。\n\n## 取引条件\n\nトップページでは2種類の口座が紹介されています。Classic口座は25万ルピアから、スプレッドは2.5pipsからです。Gold口座は500万ルピアから、XAUUSDのスプレッドは1.0pipsからとされています。最大レバレッジはどちらも500倍です。同社は2004年からサービスを提供していると述べています。\n\n## 取引プラットフォーム\n\nMetaTrader 4とQuickProモバイルアプリで取引できます。サイトによれば、FOREXimfはQuickProブランドへ移行中です。\n\n## どんな人に向いているか\n\n少額から始めたい、国内拠点の先物ブローカーを望むインドネシア居住者向けです。入金前にBAPPEBTIで最新の許可状況を確認し、リスク開示を読んでください。レバレッジ取引は損失リスクが高い取引です。"
+	}
+}
