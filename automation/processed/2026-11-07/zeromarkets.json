@@ -1,0 +1,37 @@
+{
+	"slug": "zeromarkets",
+	"queueUrl": "https://www.zeromarkets.com/",
+	"status": "ok",
+	"name": "ZERO Markets",
+	"website": "https://www.zeromarkets.com/",
+	"logo": "",
+	"assetType": "forex",
+	"rating": 3.5,
+	"minDeposit": "$100",
+	"spreadFrom": "0.0 pips (Super ZERO, $2.5 commission per lot per side)",
+	"maxLeverage": "1:500",
+	"instantWithdrawal": false,
+	"category": ["ecn"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "WebTrader"],
+	"licenses": [
+		{ "regulator": "fma-nz", "text": "FMA (New Zealand)", "number": "569807", "entity": "Zero Markets (NZ) Limited", "status": "verified", "verifiedDate": "2026-11-07" },
+		{ "regulator": "asic", "text": "ASIC (Australia)", "number": "313016", "entity": "Zero Markets Australia Pty Ltd", "status": "unverified" },
+		{ "regulator": "fsc-mu", "text": "FSC (Mauritius)", "number": "GB21026308", "entity": "Zero Financial Ltd", "status": "unverified" }
+	],
+	"sources": ["https://www.zeromarkets.com/", "https://www.fma.govt.nz/business/licensed-providers/zero-markets-nz-limited/", "https://www.zeromarkets.com/support-center/"],
+	"en": {
+		"summary": "ZERO Markets is a forex and CFD broker with entities in New Zealand, Australia and Mauritius, offering raw-spread accounts on MetaTrader 4 and 5.",
+		"pros": ["Zero Markets (NZ) Limited is an active derivatives issuer on the FMA licensed-providers list", "Standard and raw-spread (Super ZERO) accounts both open from $100", "MT4, MT5 and WebTrader with copy and PAMM options", "Raw spreads from 0.0 pips on the Super ZERO account"],
+		"cons": ["The website is operated by Zero Markets LLC (St. Vincent and the Grenadines), which is not regulated by an EU authority", "Leverage information is inconsistent: 1:500 advertised on product pages versus 1:5-1:30 on the support centre", "Raw account charges $2.5 commission per lot per side", "ASIC and Mauritius licences were not confirmed on registers in this check"]
+	,
+		"body": "## Regulation and safety\n\nZERO Markets lists several entities in its footer: Zero Markets Australia Pty Ltd (ASIC, AFSL 313016), Zero Markets (NZ) Limited (FMA New Zealand, FSP 569807) and Zero Financial Ltd (Mauritius FSC, licence GB21026308). We confirmed Zero Markets (NZ) Limited on the FMA's licensed-providers page on 2026-11-07, where it appears as an active derivatives issuer licensed on 27 August 2018. The ASIC and Mauritius licences could not be confirmed on their registers during this check. The website itself is operated by Zero Markets LLC, incorporated in St. Vincent and the Grenadines, which the broker states is not regulated by an EU authority and offers no EU investor compensation.\n\n## Trading conditions\n\nThe Standard account offers spreads from 1.0 pip with no commission, and Super ZERO offers spreads from 0.0 pips with a $2.5 commission per lot per side; both have a $100 minimum opening balance. Product pages advertise leverage up to 1:500, although the support centre describes 1:5 to 1:30 depending on client and instrument, so leverage depends on the entity serving you.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5 and WebTrader are available, with copy trading, social trading and PAMM options.\n\n## Who is it for?\n\nIt suits active traders who want raw spreads on MetaTrader and are comfortable checking which entity and regulator applies to their account. Leveraged CFDs carry a high risk of loss."
+	},
+	"ja": {
+		"summary": "ZERO Marketsは、ニュージーランド・オーストラリア・モーリシャスに法人を持つFX・CFDブローカーで、MT4/MT5のロースプレッド口座を提供しています。",
+		"minDeposit": "100ドル",
+		"maxLeverage": "最大500倍",
+		"pros": ["Zero Markets (NZ) LimitedはFMAの認可事業者リストで有効なデリバティブ発行者として掲載", "スタンダード口座・ロースプレッド口座（Super ZERO）とも100ドルから開設可能", "MT4・MT5・WebTraderに加え、コピー取引やPAMMに対応", "Super ZERO口座でスプレッド0.0pipsから"],
+		"cons": ["サイトの運営元はEUの当局に規制されていないZero Markets LLC（セントビンセント・グレナディーン）", "レバレッジの記載が不統一（製品ページは500倍、サポートセンターは5〜30倍）", "ロースプレッド口座は片道1ロットあたり2.5ドルの手数料", "ASICとモーリシャスのライセンスは今回の確認では登録簿で確認できなかった"],
+		"body": "## 規制と安全性\n\nZERO Marketsはフッターで複数の法人を記載しています：Zero Markets Australia Pty Ltd（ASIC、AFSL 313016）、Zero Markets (NZ) Limited（ニュージーランドFMA、FSP 569807）、Zero Financial Ltd（モーリシャスFSC、GB21026308）。2026-11-07にFMAの認可事業者ページでZero Markets (NZ) Limitedを確認しました。2018年8月27日付の有効なデリバティブ発行者として掲載されています。ASICとモーリシャスのライセンスは今回、登録簿では確認できませんでした。なお、サイトの運営元はセントビンセント・グレナディーン法人のZero Markets LLCで、EUの当局の規制を受けず、EUの投資家補償もないと同社は明記しています。\n\n## 取引条件\n\nスタンダード口座はスプレッド1.0pipsから手数料なし、Super ZERO口座はスプレッド0.0pipsから片道1ロットあたり2.5ドルの手数料で、最低開設残高はどちらも100ドルです。製品ページでは最大500倍のレバレッジが表示されていますが、サポートセンターでは顧客や銘柄に応じて5〜30倍と説明されており、担当法人により異なります。\n\n## プラットフォーム\n\nMetaTrader 4、MetaTrader 5、WebTraderを提供し、コピー取引、ソーシャルトレード、PAMMにも対応します。\n\n## どんな人に向いているか\n\nMetaTraderでロースプレッドを求める積極的なトレーダーで、自分の口座に適用される法人と規制当局を確認できる人に向いています。レバレッジ型CFDは損失リスクが高い商品です。"
+	}
+}

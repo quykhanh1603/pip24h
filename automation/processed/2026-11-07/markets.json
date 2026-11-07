@@ -1,0 +1,36 @@
+{
+	"slug": "markets",
+	"queueUrl": "https://www.markets.com/",
+	"status": "ok",
+	"name": "Markets.com",
+	"website": "https://www.markets.com/",
+	"logo": "/images/brokers/markets/logo.png",
+	"assetType": "forex",
+	"rating": 3.5,
+	"foundedYear": 2008,
+	"minDeposit": "$100",
+	"spreadFrom": "0.6 pips",
+	"maxLeverage": "up to 1:1000 (selected instruments)",
+	"instantWithdrawal": false,
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "Markets Terminal (WebTrader)", "Mobile app"],
+	"licenses": [
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "092/08", "entity": "Safecap Investments Limited", "status": "verified", "verifiedDate": "2026-11-07" },
+		{ "regulator": "fsca", "text": "FSCA (South Africa)", "number": "46860", "entity": "Markets South Africa (Pty) Ltd", "status": "unverified" }
+	],
+	"sources": ["https://www.markets.com/", "https://www.markets.com/about/legal-trading-regulation/", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37601/", "https://www.markets.com/account-type-markets/"],
+	"en": {
+		"summary": "Markets.com is a CFD and forex broker operated by Safecap Investments, a CySEC-licensed firm in Cyprus, with entities in other regions.",
+		"pros": ["Safecap Investments Limited appears on the CySEC register (licence 092/08, issued 28 July 2008)", "Over 15 years of operating history", "Offers MetaTrader 4/5 alongside its own web platform and app", "Advertises EUR/USD spreads from 0.6 pips"],
+		"cons": ["Minimum deposit figures differ between pages and regions ($100 to $200)", "CySEC has published a board decision imposing an administrative fine on the firm", "Terms, leverage and available accounts depend on the regional entity"]
+	,
+		"body": "## Regulation and safety\n\nMarkets.com's site names two licensed entities. Safecap Investments Limited is authorised by CySEC under licence 092/08; we confirmed this entry on the CySEC register on 2026-11-07, where it shows a licence date of 28 July 2008 and the trade name \"SCAPFX MARKETS.COM\". Markets South Africa (Pty) Ltd is stated to hold FSCA licence 46860, but we could not confirm it on the FSCA search during this check. CySEC's website also lists a board decision imposing an administrative fine on Safecap; amounts and dates should be checked at the source.\n\n## Trading conditions\n\nThe broker advertises EUR/USD spreads from 0.6 pips, and its Classic account lists spreads from 0.7 pips with no commission. Minimum deposit is published as roughly $100 depending on country, though other help pages show higher figures. Leverage of up to 1:1000 is mentioned on selected instruments for non-EU entities; EU clients are subject to MiFID limits. Account tiers are tied to a \"marketsClub\" scheme based on deposit size.\n\n## Platforms\n\nClients can trade on MetaTrader 4, MetaTrader 5, the Markets web terminal and the mobile app.\n\n## Who is it for?\n\nIt suits traders who want a long-established CFD provider with a CySEC-regulated entity and a choice of MetaTrader or proprietary platforms. Check which entity serves your country, as protections and conditions differ. CFDs are high-risk products and most retail accounts lose money."
+	},
+	"ja": {
+		"summary": "Markets.comは、キプロスのCySEC認可企業Safecap Investmentsが運営するCFD・FXブローカーです。",
+		"minDeposit": "100ドル",
+		"maxLeverage": "最大1000倍（一部銘柄）",
+		"pros": ["Safecap Investments LimitedはCySEC登録簿に掲載（ライセンス092/08、2008年7月28日付）", "15年以上の運営実績", "MT4/MT5と独自のウェブプラットフォーム・アプリを提供", "EUR/USDスプレッドは0.6pipsからと表示"],
+		"cons": ["最低入金額が地域やページにより異なる（100〜200ドル）", "CySECが同社に対する行政罰金の決定を公表している", "規約・レバレッジ・口座は地域の運営会社により異なる"],
+		"body": "## 規制と安全性\n\nMarkets.comのサイトでは2つの認可法人が示されています。Safecap Investments LimitedはCySEC（ライセンス092/08）の認可を受けており、2026-11-07にCySEC登録簿で確認しました。ライセンス日は2008年7月28日、取引名は「SCAPFX MARKETS.COM」です。Markets South Africa (Pty) LtdはFSCAライセンス46860を保有すると記載されていますが、今回の確認ではFSCAの検索で確認できませんでした。またCySECはSafecapに対する行政罰金の理事会決定を公表しています。金額や日付は一次情報をご確認ください。\n\n## 取引条件\n\nEUR/USDのスプレッドは0.6pipsからと表示され、Classic口座は手数料なしで0.7pipsからです。最低入金額は国により約100ドルとされていますが、より高い金額を示すページもあります。EU域外の法人では一部銘柄で最大1000倍のレバレッジが記載されています（EU顧客はMiFIDの規制を受けます）。口座ランクは入金額に応じた「marketsClub」制度で決まります。\n\n## プラットフォーム\n\nMetaTrader 4、MetaTrader 5、独自ウェブ端末、モバイルアプリが利用できます。\n\n## どんな人に向いているか\n\n老舗のCFD業者で、CySEC規制法人とMetaTraderまたは独自プラットフォームの選択肢を求める人に向いています。国によって担当法人が異なり、保護や条件も変わるためご確認ください。CFDは高リスクであり、多くの個人口座が損失を出しています。"
+	}
+}

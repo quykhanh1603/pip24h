@@ -88,16 +88,16 @@ https://rcgmarkets.com,,rcgmarkets,skipped,2026-11-06,insufficient verifiable da
 https://cfifinancial.com/,,cfifinancial,skipped,2026-11-06,insufficient verifiable data: site redirects to cfi.trade which returned 403; no primary data
 https://www.cityindex.com/,,cityindex,skipped,2026-11-06,insufficient verifiable data: official site returned 403; only third-party sources
 https://www.foreximf.com/,,foreximf,done,2026-11-06,
-https://www.markets.com/,,markets,pending,,
-https://katoprime.com/,,katoprime,pending,,
-garantibbvayatirim.com.tr,,garantibbvayatirim,pending,,
-https://www.fisg.com/,,fisg,pending,,
-https://www.zeromarkets.com/,,zeromarkets,pending,,
-https://simplefx.com/,,simplefx,pending,,
-https://www.acy.com,,acy,pending,,
-https://skilling.com/,,skilling,pending,,
-https://www.captrader.com/,,captrader,pending,,
-https://longasiagroups.com/,,longasiagroups,pending,,
+https://www.markets.com/,,markets,done,2026-11-07,
+https://katoprime.com/,,katoprime,skipped,2026-11-07,insufficient verifiable data: homepage returns 404; no licence confirmed on a regulator register
+garantibbvayatirim.com.tr,,garantibbvayatirim,skipped,2026-11-07,"insufficient verifiable data: SPK licence not verified on register; founding year, min deposit, spread and leverage not stated"
+https://www.fisg.com/,,fisg,skipped,2026-11-07,"insufficient verifiable data: CySEC 166/12 confirmed but site states no founding year, min deposit, spread or leverage"
+https://www.zeromarkets.com/,,zeromarkets,done,2026-11-07,
+https://simplefx.com/,,simplefx,skipped,2026-11-07,insufficient verifiable data: Mauritius licence GB23201604 not confirmed on regulator register; spread and leverage not stated
+https://www.acy.com,,acy,skipped,2026-11-07,insufficient verifiable data: ASIC AFSL 403863 could not be confirmed on the ASIC register (blocked); conflicting founding year and leverage
+https://skilling.com/,,skilling,skipped,2026-11-07,insufficient verifiable data: CySEC 357/18 confirmed but founding year and spread not stated; site blocks fetching
+https://www.captrader.com/,,captrader,skipped,2026-11-07,not a retail broker: introducing broker/tied agent for Interactive Brokers
+https://longasiagroups.com/,,longasiagroups,skipped,2026-11-07,insufficient verifiable data: site unavailable (503); no licence confirmed on any register; third-party sources cite a regulator warning
 https://opofinance.com/,,opofinance,pending,,
 https://traders-trust.com/,,traders-trust,pending,,
 https://www.mexem.com/,,mexem,pending,,
