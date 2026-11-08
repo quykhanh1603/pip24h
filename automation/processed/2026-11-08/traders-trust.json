@@ -1,0 +1,6 @@
+{
+ "slug": "traders-trust",
+ "queueUrl": "https://traders-trust.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no licence information published, platforms and founding year missing"
+}

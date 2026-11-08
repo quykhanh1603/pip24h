@@ -1,0 +1,6 @@
+{
+ "slug": "opofinance",
+ "queueUrl": "https://opofinance.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no licence confirmed on any regulator register (ASIC/FSCA not reachable), founding year missing, entity names inconsistent across site pages"
+}

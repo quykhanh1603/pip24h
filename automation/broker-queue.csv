@@ -98,16 +98,16 @@ https://www.acy.com,,acy,skipped,2026-11-07,insufficient verifiable data: ASIC A
 https://skilling.com/,,skilling,skipped,2026-11-07,insufficient verifiable data: CySEC 357/18 confirmed but founding year and spread not stated; site blocks fetching
 https://www.captrader.com/,,captrader,skipped,2026-11-07,not a retail broker: introducing broker/tied agent for Interactive Brokers
 https://longasiagroups.com/,,longasiagroups,skipped,2026-11-07,insufficient verifiable data: site unavailable (503); no licence confirmed on any register; third-party sources cite a regulator warning
-https://opofinance.com/,,opofinance,pending,,
-https://traders-trust.com/,,traders-trust,pending,,
-https://www.mexem.com/,,mexem,pending,,
-https://gatesfx.com/,,gatesfx,pending,,
-https://www.zenstox.com/,,zenstox,pending,,
-https://ifxbrokers.com/,,ifxbrokers,pending,,
-https://www.adss.com/,,adss,pending,,
-https://itafx.com/,,itafx,pending,,
-https://www.evest.com/,,evest,pending,,
-https://is6.com/,,is6,pending,,
+https://opofinance.com/,,opofinance,skipped,2026-11-08,"insufficient verifiable data: no licence confirmed on any regulator register (ASIC/FSCA not reachable), founding year missing, entity names inconsistent across site pages"
+https://traders-trust.com/,,traders-trust,skipped,2026-11-08,"insufficient verifiable data: no licence information published, platforms and founding year missing"
+https://www.mexem.com/,,mexem,skipped,2026-11-08,"insufficient verifiable data: stock/ETF-focused introducing broker; founding year, min deposit, spread, leverage not stated; licences not confirmed on registers"
+https://gatesfx.com/,,gatesfx,done,2026-11-08,
+https://www.zenstox.com/,,zenstox,skipped,2026-11-08,"insufficient verifiable data: only Seychelles FSA number SD123 shown; founding year, min deposit, spread, leverage missing"
+https://ifxbrokers.com/,,ifxbrokers,done,2026-11-08,
+https://www.adss.com/,,adss,skipped,2026-11-08,insufficient verifiable data: site blocks fetching and secondary sources conflict on licence status (FCA vs UAE SCA)
+https://itafx.com/,,itafx,skipped,2026-11-08,"not a retail broker: simulated trading evaluation / prop-style service, states it is not a broker"
+https://www.evest.com/,,evest,skipped,2026-11-08,"insufficient verifiable data: licence details, founding year, min deposit, spread not visible on the site"
+https://is6.com/,,is6,skipped,2026-11-08,"insufficient verifiable data: no licence named (only SVG company registration), founding year missing"
 https://valbury.co.id/,,valbury,pending,,
 https://j2t.com/,,j2t,pending,,
 https://www.rock-west.com/,,rock-west,pending,,

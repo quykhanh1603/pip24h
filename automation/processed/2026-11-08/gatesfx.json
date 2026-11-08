@@ -1,0 +1,71 @@
+{
+ "slug": "gatesfx",
+ "queueUrl": "https://gatesfx.com/",
+ "status": "ok",
+ "name": "GatesFX",
+ "website": "https://gatesfx.com/",
+ "logo": "/images/brokers/gate/logo.png",
+ "assetType": "forex",
+ "rating": 3.0,
+ "foundedYear": 2014,
+ "minDeposit": "$10",
+ "spreadFrom": "0.0 pips",
+ "maxLeverage": "1:1000",
+ "instantWithdrawal": false,
+ "category": [
+  "low-deposit"
+ ],
+ "platforms": [
+  "MetaTrader 5",
+  "TradeLocker"
+ ],
+ "licenses": [
+  {
+   "regulator": "fsca",
+   "text": "FSCA (South Africa)",
+   "number": "FSP 46087",
+   "entity": "GATESFX PTY LTD",
+   "status": "unverified"
+  },
+  {
+   "regulator": null,
+   "text": "Saint Lucia company registration (not a financial licence), contracting entity GATESFX LTD, reg. 2024-00396",
+   "entity": "GATESFX LTD",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://gatesfx.com/",
+  "https://www.jse.co.za/verify-a-broker-or-fsp"
+ ],
+ "en": {
+  "summary": "GatesFX is a forex/CFD broker whose brand owner is FSCA-authorised in South Africa, while clients are onboarded by a separate Saint Lucia entity.",
+  "pros": [
+   "Low entry: $10 minimum on the bonus account",
+   "Raw spreads from 0.0 pips with $7/lot commission",
+   "MetaTrader 5 and TradeLocker offered"
+  ],
+  "cons": [
+   "Clients contract with GATESFX LTD (Saint Lucia), which the site says is not covered by the FSCA authorisation",
+   "FSCA licence not confirmed on the regulator's own register in this review",
+   "Leverage up to 1:1000 carries high risk"
+  ],
+  "body": "## Regulation and safety\n\nGatesFX is a brand of GATESFX PTY LTD, incorporated in South Africa in 2014 (registration 2014/148132/07), which states it is an FSCA-authorised financial services provider (FSP 46087). Importantly, the website says clients are onboarded by GATESFX LTD, registered in Saint Lucia (2024-00396), and that this entity does not hold FSP 46087 and is not covered by the FSCA authorisation. We could not check the FSP number on the FSCA's own register during this review, so it is shown as unverified. A JSE verification page lists GATESFX (PTY) LTD as authorised.\n\n## Trading conditions\n\nThe ECN Raw Spread account offers spreads from 0.0 pips with a $7 per lot commission and a $500 minimum deposit. The STP Standard account starts from 1.0 pips without commission, also at $500. A bonus account requires $10 and charges $15 per lot commission with spreads from 1.0 pips. Maximum leverage is 1:1000 on the ECN account, 1:500 on the others and 1:200 on stock CFDs.\n\n## Platforms\n\nMetaTrader 5 and TradeLocker are the listed platforms.\n\n## Who is it for?\n\nTraders comfortable with an offshore contracting entity who want low minimums and raw spreads. Those who prioritise onshore protection should note the entity split described above. Trading CFDs involves a high risk of losing money."
+ },
+ "ja": {
+  "summary": "GatesFXは、ブランド運営会社が南アフリカFSCAの認可を受ける一方、顧客はセントルシア法人と契約するFX/CFDブローカーです。",
+  "minDeposit": "10ドル",
+  "maxLeverage": "最大1000倍",
+  "pros": [
+   "ボーナス口座は最低入金10ドルと低額",
+   "ロースプレッド口座は0.0pipsから（1ロット7ドルの手数料）",
+   "MetaTrader 5とTradeLockerに対応"
+  ],
+  "cons": [
+   "顧客の契約先はセントルシアのGATESFX LTDで、サイトによればFSCAの認可の対象外",
+   "FSCAのライセンスは規制当局の公式登録簿では確認できていない",
+   "最大1000倍のレバレッジは高リスク"
+  ],
+  "body": "## 規制と安全性\n\nGatesFXは2014年に南アフリカで設立されたGATESFX PTY LTD（登録番号2014/148132/07）のブランドで、FSCA認可の金融サービス提供者（FSP 46087）であると表示しています。ただし、サイトによれば顧客を受け入れるのはセントルシア登録のGATESFX LTD（2024-00396）であり、この法人はFSP 46087を保有せず、FSCAの認可の対象外です。今回の調査ではFSCAの公式登録簿でFSP番号を確認できなかったため「未確認」としています。\n\n## 取引条件\n\nECNロースプレッド口座は0.0pipsから、1ロット7ドルの手数料、最低入金500ドルです。STPスタンダード口座は1.0pipsから手数料なし、最低入金500ドルです。ボーナス口座は最低入金10ドル、1.0pipsから、1ロット15ドルの手数料がかかります。最大レバレッジはECN口座で1000倍、その他500倍、株式CFDは200倍です。\n\n## 取引プラットフォーム\n\nMetaTrader 5とTradeLockerが利用できます。\n\n## どんな人に向いているか\n\n海外法人との契約を理解したうえで、低額入金やロースプレッドを求めるトレーダー向けです。CFD取引には元本を失う高いリスクがあります。"
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "zenstox",
+ "queueUrl": "https://www.zenstox.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: only Seychelles FSA number SD123 shown; founding year, min deposit, spread, leverage missing"
+}

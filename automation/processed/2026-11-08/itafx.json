@@ -1,0 +1,6 @@
+{
+ "slug": "itafx",
+ "queueUrl": "https://itafx.com/",
+ "status": "skip",
+ "skipReason": "not a retail broker: simulated trading evaluation / prop-style service, states it is not a broker"
+}

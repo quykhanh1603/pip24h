@@ -1,0 +1,6 @@
+{
+ "slug": "evest",
+ "queueUrl": "https://www.evest.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: licence details, founding year, min deposit, spread not visible on the site"
+}

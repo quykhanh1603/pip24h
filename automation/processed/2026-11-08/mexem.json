@@ -1,0 +1,6 @@
+{
+ "slug": "mexem",
+ "queueUrl": "https://www.mexem.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: stock/ETF-focused introducing broker; founding year, min deposit, spread, leverage not stated; licences not confirmed on registers"
+}

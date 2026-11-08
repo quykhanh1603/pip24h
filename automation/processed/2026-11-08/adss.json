@@ -1,0 +1,6 @@
+{
+ "slug": "adss",
+ "queueUrl": "https://www.adss.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching and secondary sources conflict on licence status (FCA vs UAE SCA)"
+}

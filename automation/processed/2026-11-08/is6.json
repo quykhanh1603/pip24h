@@ -1,0 +1,6 @@
+{
+ "slug": "is6",
+ "queueUrl": "https://is6.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no licence named (only SVG company registration), founding year missing"
+}
