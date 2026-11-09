@@ -108,16 +108,16 @@ https://www.adss.com/,,adss,skipped,2026-11-08,insufficient verifiable data: sit
 https://itafx.com/,,itafx,skipped,2026-11-08,"not a retail broker: simulated trading evaluation / prop-style service, states it is not a broker"
 https://www.evest.com/,,evest,skipped,2026-11-08,"insufficient verifiable data: licence details, founding year, min deposit, spread not visible on the site"
 https://is6.com/,,is6,skipped,2026-11-08,"insufficient verifiable data: no licence named (only SVG company registration), founding year missing"
-https://valbury.co.id/,,valbury,pending,,
-https://j2t.com/,,j2t,pending,,
-https://www.rock-west.com/,,rock-west,pending,,
-https://global.connextfx.com/,,connextfx,pending,,
-https://oxsecurities.com/,,oxsecurities,pending,,
-https://quomarkets.com/,,quomarkets,pending,,
-https://www.ecmarkets.com/,,ecmarkets,pending,,
-https://www.exclusivemarkets.com/,,exclusivemarkets,pending,,
-https://exante.eu/,,exante,pending,,
-https://www.dominionmarkets.com/,,dominionmarkets,pending,,
+https://valbury.co.id/,,valbury,skipped,2026-11-09,"insufficient verifiable data: no min deposit, spread or leverage published; Bappebti register not reachable"
+https://j2t.com/,,j2t,done,2026-11-09,
+https://www.rock-west.com/,,rock-west,skipped,2026-11-09,insufficient verifiable data: site not fetchable and no licence confirmable on the Seychelles FSA register; only aggregator sources
+https://global.connextfx.com/,,connextfx,skipped,2026-11-09,insufficient verifiable data: claimed Seychelles FSA licence not confirmable on the register; no founding year
+https://oxsecurities.com/,,oxsecurities,skipped,2026-11-09,"insufficient verifiable data: only an SVG FSA registration (which does not regulate forex), no confirmable licence"
+https://quomarkets.com/,,quomarkets,skipped,2026-11-09,"insufficient verifiable data: licences not confirmable on registers; no founding year, deposit, spread or leverage"
+https://www.ecmarkets.com/,,ecmarkets,skipped,2026-11-09,"insufficient verifiable data: FCA/ASIC/FSC licences not confirmable on registers; no founding year, deposit or spread"
+https://www.exclusivemarkets.com/,,exclusivemarkets,skipped,2026-11-09,insufficient verifiable data: site blocks fetching and no official pages found
+https://exante.eu/,,exante,skipped,2026-11-09,"insufficient verifiable data: no official min deposit, spread or leverage found; only founding year and platforms"
+https://www.dominionmarkets.com/,,dominionmarkets,skipped,2026-11-09,insufficient verifiable data: site content could not be retrieved
 https://qrsfx.com/,,qrsfx,pending,,
 https://www.monetamarkets.com/,,monetamarkets,pending,,
 https://www.gomarkets.com/,,gomarkets,pending,,
