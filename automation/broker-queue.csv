@@ -118,16 +118,16 @@ https://www.ecmarkets.com/,,ecmarkets,skipped,2026-11-09,"insufficient verifiabl
 https://www.exclusivemarkets.com/,,exclusivemarkets,skipped,2026-11-09,insufficient verifiable data: site blocks fetching and no official pages found
 https://exante.eu/,,exante,skipped,2026-11-09,"insufficient verifiable data: no official min deposit, spread or leverage found; only founding year and platforms"
 https://www.dominionmarkets.com/,,dominionmarkets,skipped,2026-11-09,insufficient verifiable data: site content could not be retrieved
-https://qrsfx.com/,,qrsfx,pending,,
-https://www.monetamarkets.com/,,monetamarkets,pending,,
-https://www.gomarkets.com/,,gomarkets,pending,,
-https://oxshare.com/,,oxshare,pending,,
-https://www.ictrading.com/,,ictrading,pending,,
-https://www.trade.com/,,trade,pending,,
-https://www.fxpesa.com/,,fxpesa,pending,,
-https://www.plexytrade.com/,,plexytrade,pending,,
-https://traze.com/,,traze,pending,,
-https://www.fxgiants.com/,,fxgiants,pending,,
+https://qrsfx.com/,,qrsfx,skipped,2026-11-12,"insufficient verifiable data: site did not resolve (network blocked); no licence, founding year, deposit, spread, leverage or platforms confirmed"
+https://www.monetamarkets.com/,,monetamarkets,done,2026-11-12,
+https://www.gomarkets.com/,,gomarkets,done,2026-11-12,
+https://oxshare.com/,,oxshare,skipped,2026-11-12,insufficient verifiable data: no financial regulator or licence found; only a Saint Lucia IBC registration
+https://www.ictrading.com/,,ictrading,skipped,2026-11-12,"insufficient verifiable data: homepage unreadable; Mauritius FSC licence GB21026834 named on help pages but entity name inconsistent, no register confirmation, founding year, deposit, leverage or spread not found"
+https://www.trade.com/,,tradecom,done,2026-11-12,
+https://www.fxpesa.com/,,fxpesa,skipped,2026-11-12,"insufficient verifiable data: CMA Kenya register lists EGM Securities (licence number conflicts: 107 vs 120) but founding year, min deposit and max leverage not found"
+https://www.plexytrade.com/,,plexytrade,skipped,2026-11-12,insufficient verifiable data: no financial regulator or licence found; only a Saint Lucia company registration
+https://traze.com/,,traze,done,2026-11-12,
+https://www.fxgiants.com/,,fxgiants,skipped,2026-11-12,"insufficient verifiable data: homepage returned 403; only BVI FSC licence claim from site search, no register confirmation, no founding year or reliable deposit"
 https://arongroups.co/,,arongroups,pending,,
 https://www.tvmarkets.com/,,tvmarkets,pending,,
 https://amana.app,,amana,pending,,
