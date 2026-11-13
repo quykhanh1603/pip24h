@@ -1,0 +1,67 @@
+{
+ "slug": "tpfx",
+ "queueUrl": "https://tpfx.co.id/",
+ "status": "ok",
+ "name": "TPFx (PT Trijaya Pratama Futures)",
+ "website": "https://www.tpfx.co.id/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.3,
+ "minDeposit": "$10",
+ "spreadFrom": "0 pips",
+ "maxLeverage": "1:400",
+ "instantWithdrawal": false,
+ "category": [
+  "low-deposit"
+ ],
+ "platforms": [
+  "MetaTrader 4",
+  "MetaTrader 5",
+  "TPFx Mobile App"
+ ],
+ "licenses": [
+  {
+   "regulator": "bappebti",
+   "text": "BAPPEBTI (Indonesia) - futures broker licence",
+   "number": "407/BAPPEBTI/SI/VII/2004",
+   "entity": "PT Trijaya Pratama Futures",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  }
+ ],
+ "sources": [
+  "https://www.tpfx.co.id/",
+  "https://www.tpfx.co.id/jenis-akun/",
+  "https://bappebti.go.id/pialang_berjangka/detail/062"
+ ],
+ "en": {
+  "summary": "TPFx is the brand of PT Trijaya Pratama Futures, an Indonesian futures broker licensed by BAPPEBTI, with accounts from $10 and MT4/MT5.",
+  "pros": [
+   "Licence listed on BAPPEBTI's own broker directory",
+   "Standard account from $10 and leverage up to 1:400",
+   "Indonesian futures-exchange memberships (JFX, KBI) and local complaint channel"
+  ],
+  "cons": [
+   "Regulated for Indonesian clients; protections differ from top-tier regimes",
+   "Commissions apply on all account types",
+   "Founding year not stated"
+  ],
+  "body": "## Regulation and safety\n\nTPFx is operated by PT Trijaya Pratama Futures, Jakarta. BAPPEBTI's broker directory lists the firm with business licence no. 407/BAPPEBTI/SI/VII/2004 (checked 2026-11-13). The company also lists membership of the Jakarta Futures Exchange (JFX), the futures clearing house KBI and the industry association ASPEBTINDO, and says it has more than 20 years of experience in Indonesian futures. It warns about impersonation sites and says it does not accept cash deposits.\n\n## Trading conditions\n\nPublished accounts: Standard (variable, $10 minimum, spread from 1.0 pip, $1 commission), Professional (from $2,500, 0.4 pip, $2 commission) and Zero ECN ($5,000, 0 pip, $5 commission), plus fixed-variable and Prime variants. Maximum leverage is 1:400 on all accounts.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5 (desktop, web, mobile) and the TPFx mobile app.\n\n## Who is it for?\n\nIndonesian-speaking traders who want a locally licensed futures broker with a low entry deposit. Leverage of 1:400 is high risk.\n\nTrading involves a high risk of loss."
+ },
+ "ja": {
+  "summary": "TPFxはBAPPEBTIの免許を持つインドネシアの先物ブローカーPT Trijaya Pratama Futuresのブランドで、10ドルからMT4/MT5を利用できます。",
+  "minDeposit": "10ドル",
+  "maxLeverage": "最大400倍",
+  "pros": [
+   "BAPPEBTI公式のブローカー一覧に免許が掲載されている",
+   "Standard口座は10ドルから、最大レバレッジ400倍",
+   "JFX・KBIなどインドネシアの取引所に加入し、現地の苦情窓口がある"
+  ],
+  "cons": [
+   "インドネシアの顧客向けの規制で、トップ階層の規制とは保護の水準が異なる",
+   "全口座で手数料がかかる",
+   "設立年の記載がない"
+  ],
+  "body": "## 規制と安全性\n\nTPFxはジャカルタのPT Trijaya Pratama Futuresが運営しています。BAPPEBTIのブローカー一覧に、事業免許番号407/BAPPEBTI/SI/VII/2004として掲載されています（確認日 2026-11-13）。同社はジャカルタ先物取引所（JFX）、清算機関KBI、業界団体ASPEBTINDOへの加入を掲げ、インドネシアの先物業界で20年以上の経験があるとしています。なりすましサイトへの注意喚起と、現金入金は受け付けない旨も表示しています。\n\n## 取引条件\n\n公表されている口座は、Standard（変動、最低10ドル、スプレッド1.0pipから、手数料1ドル）、Professional（2,500ドルから、0.4pip、手数料2ドル）、Zero ECN（5,000ドル、0pip、手数料5ドル）などで、固定・変動型やPrimeもあります。最大レバレッジはすべて400倍です。\n\n## プラットフォーム\n\nMetaTrader 4、MetaTrader 5（デスクトップ・ウェブ・モバイル）とTPFxモバイルアプリです。\n\n## どんな人に向いているか\n\nインドネシア語圏で、国内免許の先物ブローカーを少額から利用したい人向けです。400倍のレバレッジは高リスクです。\n\n取引には高い損失リスクがあります。"
+ }
+}

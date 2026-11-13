@@ -1,0 +1,6 @@
+{
+ "slug": "amana",
+ "queueUrl": "https://amana.app",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: min deposit, spreads and max leverage not stated for standard accounts; group entities spread across regulators"
+}

@@ -128,16 +128,16 @@ https://www.fxpesa.com/,,fxpesa,skipped,2026-11-12,"insufficient verifiable data
 https://www.plexytrade.com/,,plexytrade,skipped,2026-11-12,insufficient verifiable data: no financial regulator or licence found; only a Saint Lucia company registration
 https://traze.com/,,traze,done,2026-11-12,
 https://www.fxgiants.com/,,fxgiants,skipped,2026-11-12,"insufficient verifiable data: homepage returned 403; only BVI FSC licence claim from site search, no register confirmation, no founding year or reliable deposit"
-https://arongroups.co/,,arongroups,pending,,
-https://www.tvmarkets.com/,,tvmarkets,pending,,
-https://amana.app,,amana,pending,,
-https://windsorbrokers.com/,,windsorbrokers,pending,,
-https://alchemymarkets.com/,,alchemymarkets,pending,,
-https://eplanetbrokers.com/,,eplanetbrokers,pending,,
-https://www.t4trade.com/,,t4trade,pending,,
-https://centfx.com/,,centfx,pending,,
-https://tpfx.co.id/,,tpfx,pending,,
-https://www.multibankgroup.com/,,multibankgroup,pending,,
+https://arongroups.co/,,arongroups,skipped,2026-11-13,insufficient verifiable data: no regulator or licence number named (only a Marshall Islands company registration and an unnamed 'international license'); founding year and spreads not stated
+https://www.tvmarkets.com/,,tradeview,done,2026-11-13,
+https://amana.app,,amana,skipped,2026-11-13,"insufficient verifiable data: min deposit, spreads and max leverage not stated for standard accounts; group entities spread across regulators"
+https://windsorbrokers.com/,,windsorbrokers,done,2026-11-13,
+https://alchemymarkets.com/,,alchemymarkets,skipped,2026-11-13,"insufficient verifiable data: spreads, max leverage and founding year not stated; licence numbers not confirmed on registers"
+https://eplanetbrokers.com/,,eplanetbrokers,done,2026-11-13,
+https://www.t4trade.com/,,t4trade,skipped,2026-11-13,insufficient verifiable data: site could not be fetched in this run (host not reachable); licences not researched
+https://centfx.com/,,centfx,skipped,2026-11-13,insufficient verifiable data: licence unconfirmed: Anguilla company registration only; ASIC register shows CENTFX GLOBAL PTY LTD as an authorised representative that ceased 13/04/2023
+https://tpfx.co.id/,,tpfx,done,2026-11-13,
+https://www.multibankgroup.com/,,multibankgroup,done,2026-11-13,
 https://www.tradeeuglobal.net/,,tradeeuglobal,pending,,
 https://capex.com/,,capex,pending,,
 https://hugosway.com,,hugosway,pending,,

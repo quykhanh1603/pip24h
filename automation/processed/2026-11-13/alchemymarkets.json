@@ -1,0 +1,6 @@
+{
+ "slug": "alchemymarkets",
+ "queueUrl": "https://alchemymarkets.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: spreads, max leverage and founding year not stated; licence numbers not confirmed on registers"
+}

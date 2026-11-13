@@ -1,0 +1,87 @@
+{
+ "slug": "multibankgroup",
+ "queueUrl": "https://www.multibankgroup.com/",
+ "status": "ok",
+ "name": "MultiBank Group",
+ "website": "https://tradfi.multibankgroup.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 4.0,
+ "foundedYear": 2005,
+ "minDeposit": "$50",
+ "spreadFrom": "0.0 pips",
+ "maxLeverage": "1:500",
+ "instantWithdrawal": false,
+ "category": [],
+ "platforms": [
+  "MetaTrader 5",
+  "MetaTrader 4"
+ ],
+ "licenses": [
+  {
+   "regulator": "cysec",
+   "text": "CySEC (Cyprus)",
+   "number": "430/23",
+   "entity": "MEX Europe Ltd",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "mas",
+   "text": "MAS (Singapore) - Capital Markets Services",
+   "number": "CMS101174",
+   "entity": "MEX Global Markets Pte. Ltd.",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "asic",
+   "text": "ASIC (Australia)",
+   "number": "416279",
+   "entity": "MEX Australia Pty Ltd",
+   "status": "unverified"
+  },
+  {
+   "regulator": "bvifsc",
+   "text": "FSC (British Virgin Islands)",
+   "number": "SIBA/L/14/1068",
+   "entity": "MultiBank FX International Corporation",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://tradfi.multibankgroup.com/en/about/regulations",
+  "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/94970/",
+  "https://eservices.mas.gov.sg/fid/institution/detail/246801-MEX-GLOBAL-MARKETS-PTE-LTD"
+ ],
+ "en": {
+  "summary": "MultiBank Group is a multi-regulated CFD broker founded in 2005 with entities licensed by CySEC, MAS, BaFin and others, and accounts from $50.",
+  "pros": [
+   "Several tier 1 and 2 licences, including MAS and CySEC confirmed on registers",
+   "Operating since 2005 with large stated capital",
+   "Standard, Pro and ECN accounts with spreads from 0.0 pips"
+  ],
+  "cons": [
+   "Terms differ by entity; offshore BVI entity also in use",
+   "Leverage figures conflicted across pages (500:1 vs 1000:1)",
+   "ASIC and several other licences not confirmed on registers during this run"
+  ],
+  "body": "## Regulation and safety\n\nMultiBank Group says it is overseen by 18+ regulators through separate entities. We confirmed MEX Europe Ltd on the CySEC register (licence 430/23, dated 22 May 2023) and MEX Global Markets Pte. Ltd. in the MAS Financial Institutions Directory as a Capital Markets Services licensee (checked 2026-11-13). The group also lists MEX Australia Pty Ltd (ASIC AFSL 416279) and MultiBank FX International Corporation (BVI FSC, SIBA/L/14/1068), and licences with BaFin and others; we could not confirm these on registers, and the AFSL number returned another firm in a search, so treat them as unverified. Protections depend on which entity you contract with.\n\n## Trading conditions\n\nPublished MT5 accounts: Standard ($50 minimum, spreads from 1.5 pips), Pro ($1,000, from 0.8 pips) and ECN ($10,000, raw spreads from 0.0 pips). The group's own pages cite maximum leverage of both 1:500 and 1:1000, so confirm the figure for your entity and region.\n\n## Platforms\n\nMetaTrader 5 is the main platform, with MetaTrader 4 also offered.\n\n## Who is it for?\n\nTraders who want a large, multi-regulated broker and are located where a regulated entity serves them. Check the entity and leverage before opening an account.\n\nTrading CFDs involves a high risk of loss."
+ },
+ "ja": {
+  "summary": "MultiBank Groupは2005年設立の複数規制のCFDブローカーで、CySEC・MAS・BaFinなどのライセンス法人を持ち、50ドルから口座を開設できます。",
+  "minDeposit": "50ドル",
+  "maxLeverage": "最大500倍",
+  "pros": [
+   "MASやCySECなど上位階層のライセンスを持ち、登録簿で確認できたものもある",
+   "2005年から運営し、資本規模も大きい",
+   "Standard・Pro・ECN口座があり、スプレッドは0.0pipsから"
+  ],
+  "cons": [
+   "条件は法人ごとに異なり、BVIのオフショア法人も使われている",
+   "ページによりレバレッジ表記（500倍／1000倍）が食い違っている",
+   "ASICなど一部のライセンスは今回登録簿で確認できなかった"
+  ],
+  "body": "## 規制と安全性\n\nMultiBank Groupは、複数の法人を通じて18以上の規制当局の監督を受けているとしています。MEX Europe LtdはCySEC登録簿（ライセンス430/23、2023年5月22日付）で、MEX Global Markets Pte. Ltd.はMASの金融機関ディレクトリでキャピタル・マーケッツ・サービス・ライセンシーとして確認しました（確認日 2026-11-13）。MEX Australia Pty Ltd（ASIC AFSL 416279）、MultiBank FX International Corporation（BVI FSC、SIBA/L/14/1068）、BaFinなどのライセンスも掲載されていますが、登録簿では確認できず、AFSL番号は検索で別の会社が出たため、未確認として扱ってください。保護の内容は契約する法人によって異なります。\n\n## 取引条件\n\n公表されているMT5口座は、Standard（最低50ドル、スプレッド1.5pipsから）、Pro（1,000ドル、0.8pipsから）、ECN（10,000ドル、ローススプレッド0.0pipsから）です。最大レバレッジは同社のページで500倍と1000倍の両方が掲載されているため、法人・地域ごとに確認してください。\n\n## プラットフォーム\n\n主力はMetaTrader 5で、MetaTrader 4も提供されています。\n\n## どんな人に向いているか\n\n大手の複数規制ブローカーを求め、規制法人のサービス対象地域にいるトレーダー向けです。口座開設前に法人とレバレッジを確認してください。\n\nCFD取引には高い損失リスクがあります。"
+ }
+}

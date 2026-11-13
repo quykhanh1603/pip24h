@@ -1,0 +1,85 @@
+{
+ "slug": "windsorbrokers",
+ "queueUrl": "https://windsorbrokers.com/",
+ "status": "ok",
+ "name": "Windsor Brokers",
+ "website": "https://windsorbrokers.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.8,
+ "foundedYear": 1988,
+ "minDeposit": "$50",
+ "spreadFrom": "0.0 pips",
+ "maxLeverage": "1:2000",
+ "instantWithdrawal": false,
+ "category": [
+  "ecn"
+ ],
+ "platforms": [
+  "MetaTrader 4",
+  "MetaTrader 5",
+  "Windsor mobile app"
+ ],
+ "licenses": [
+  {
+   "regulator": "fsa-sc",
+   "text": "FSA (Seychelles)",
+   "entity": "Windsor Brokers International Ltd",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "cma-ke",
+   "text": "CMA (Kenya)",
+   "entity": "Windsor Markets (Kenya) Limited",
+   "status": "unverified"
+  },
+  {
+   "regulator": "bvifsc",
+   "text": "FSC (British Virgin Islands)",
+   "entity": "Windsor Global Markets Ltd",
+   "status": "unverified"
+  },
+  {
+   "regulator": null,
+   "text": "Jordan Securities Commission (JSC)",
+   "entity": "Seldon Investments Limited",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://windsorbrokers.com/",
+  "https://windsorbrokers.com/products/trading-with-wb/account-types/",
+  "https://fsaseychelles.sc/regulated-entities/capital-markets"
+ ],
+ "en": {
+  "summary": "Windsor Brokers says it has operated since 1988 and offers MT4/MT5 accounts from $50 through entities in Seychelles, Kenya, Jordan and the BVI.",
+  "pros": [
+   "Long operating history (since 1988, per the company)",
+   "Low $50 entry and zero-spread Zero account",
+   "Kenyan CMA-regulated entity (Tier 2) alongside offshore licences"
+  ],
+  "cons": [
+   "Most clients are served by offshore (Tier 3) entities",
+   "Dynamic leverage up to 1:2000 raises risk",
+   "Account page showed conflicting minimum deposit figures for the Zero account"
+  ],
+  "body": "## Regulation and safety\n\nWindsor Brokers lists four entities: Windsor Brokers International Ltd (Seychelles FSA), Windsor Markets (Kenya) Limited (Capital Markets Authority, Kenya), Windsor Global Markets Ltd (BVI FSC) and Seldon Investments Limited (Jordan Securities Commission, company no. 1265). The Seychelles FSA capital-markets register lists Windsor Brokers International Ltd (checked 2026-11-13), although the page we saw did not show a licence number and names a related \"Windsor Brokers (SC) Limited\" dealer. The Kenya, BVI and Jordan licences were not confirmed on regulator registers. The company states that it does not serve residents of the USA, UK or Europe and that 91.40% of retail accounts lose money.\n\n## Trading conditions\n\nThe Prime account starts at $50 with spreads from 1.0 pips and no commission. The Zero account offers spreads from 0.0 pips with a commission of about $7-8 per lot round turn (the page showed inconsistent figures, including a $1,000 minimum). VIP Zero has lower commissions on request. Maximum dynamic leverage is 1:2000, reduced to 1:400 for Kenyan clients and 1:100 for forex at the Jordan entity.\n\n## Platforms\n\nClients trade on MetaTrader 4, MetaTrader 5 and a mobile app. Crypto CFDs are unavailable to Jordanian and Kenyan entity clients.\n\n## Who is it for?\n\nTraders who value a long-established brand and low entry deposits, and who accept offshore regulation. Confirm which entity you will contract with.\n\nTrading CFDs involves a high risk of loss."
+ },
+ "ja": {
+  "summary": "Windsor Brokersは1988年から運営していると説明し、セーシェル、ケニア、ヨルダン、BVIの法人を通じて50ドルからMT4/MT5口座を提供しています。",
+  "minDeposit": "50ドル",
+  "maxLeverage": "最大2000倍（ダイナミック）",
+  "pros": [
+   "1988年からの長い運営実績（同社の説明）",
+   "50ドルからの低い入金額と、スプレッド0.0pipsのZero口座",
+   "オフショアに加え、ケニアCMA（ティア2）の法人がある"
+  ],
+  "cons": [
+   "大半の顧客はオフショア（ティア3）の法人が対応",
+   "最大2000倍のダイナミックレバレッジはリスクが高い",
+   "Zero口座の最低入金額の表記に食い違いがあった"
+  ],
+  "body": "## 規制と安全性\n\nWindsor Brokersは4つの法人を掲載しています。Windsor Brokers International Ltd（セーシェルFSA）、Windsor Markets (Kenya) Limited（ケニア資本市場庁）、Windsor Global Markets Ltd（BVI FSC）、Seldon Investments Limited（ヨルダン証券委員会、会社番号1265）です。セーシェルFSAの資本市場登録簿にWindsor Brokers International Ltdの掲載を確認しました（確認日 2026-11-13）が、確認したページにライセンス番号はなく、関連会社「Windsor Brokers (SC) Limited」がディーラーとして記載されていました。ケニア、BVI、ヨルダンのライセンスは規制当局の登録簿では確認できていません。同社は米国・英国・欧州の居住者にはサービスを提供しないとし、個人口座の91.40%が損失を出していると表示しています。\n\n## 取引条件\n\nPrime口座は50ドルから、スプレッド1.0pipsから、手数料なしです。Zero口座はスプレッド0.0pipsからで、1ロット往復約7〜8ドルの手数料がかかります（ページ上の数値に不一致があり、最低入金1,000ドルの表記もありました）。VIP Zeroは問い合わせにより手数料が下がります。最大ダイナミックレバレッジは2000倍で、ケニアの顧客は400倍、ヨルダン法人のFXは100倍です。\n\n## プラットフォーム\n\nMetaTrader 4、MetaTrader 5、モバイルアプリで取引できます。ヨルダン法人・ケニア法人の顧客は仮想通貨CFDを利用できません。\n\n## どんな人に向いているか\n\n老舗ブランドと低い入金額を重視し、オフショア規制を許容できるトレーダー向けです。契約する法人を必ず確認してください。\n\nCFD取引には高い損失リスクがあります。"
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "centfx",
+ "queueUrl": "https://centfx.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: licence unconfirmed: Anguilla company registration only; ASIC register shows CENTFX GLOBAL PTY LTD as an authorised representative that ceased 13/04/2023"
+}

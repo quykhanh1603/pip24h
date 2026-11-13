@@ -1,0 +1,94 @@
+{
+ "slug": "tradeview",
+ "queueUrl": "https://www.tvmarkets.com/",
+ "status": "ok",
+ "name": "Tradeview Markets",
+ "website": "https://www.tradeviewmarkets.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.5,
+ "foundedYear": 2004,
+ "minDeposit": "",
+ "spreadFrom": "0.0 pips",
+ "maxLeverage": "1:400",
+ "instantWithdrawal": false,
+ "category": [
+  "ecn"
+ ],
+ "platforms": [
+  "MetaTrader 4",
+  "MetaTrader 5",
+  "cTrader",
+  "Sterling",
+  "Takion",
+  "DAS",
+  "CQG",
+  "Multicharts"
+ ],
+ "licenses": [
+  {
+   "regulator": "cima",
+   "text": "CIMA (Cayman Islands) - securities investment business licence",
+   "number": "585163",
+   "entity": "Tradeview Ltd.",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "mfsa",
+   "text": "MFSA (Malta) - Class 2 Investment Services",
+   "entity": "Tradeview Europe Ltd.",
+   "status": "unverified"
+  },
+  {
+   "regulator": "fsc-mu",
+   "text": "FSC (Mauritius) - Investment Dealer",
+   "number": "GB20025800",
+   "entity": "iLC Brokers Ltd.",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "labuan",
+   "text": "Labuan FSA - Money Broker",
+   "number": "LL15870",
+   "entity": "TVM Global Ltd.",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://www.tradeviewmarkets.com/en/company/regulation/",
+  "https://www.tradeviewmarkets.com/en/company/about-us/",
+  "https://www.cima.ky/upimages/commonfiles/QuarterlyListofSecuritiesInvestmentBusinessLicensees-31December2025_1770039293.pdf",
+  "https://www.fscmauritius.org/en/supervision/register-of-licensees"
+ ],
+ "en": {
+  "summary": "Tradeview is an ECN-style forex and CFD broker operating since 2004 with entities licensed in the Cayman Islands, Mauritius, Labuan and Malta.",
+  "pros": [
+   "Operating since 2004 with several regulated entities",
+   "Spreads from 0.0 pips and a wide platform choice (MT4, MT5, cTrader and others)",
+   "Cayman licence confirmed on CIMA's published licensee list"
+  ],
+  "cons": [
+   "Core licences are offshore (Tier 3); the Malta entity serves a different client base",
+   "Minimum deposit is not stated on the pages reviewed",
+   "Not available to US persons"
+  ],
+  "body": "## Regulation and safety\n\nTradeview operates through several group entities. Its regulation page lists Tradeview Ltd. (Cayman Islands, CIMA securities investment business licence no. 585163), TVM Global Ltd. (Labuan FSA money broker), iLC Brokers Ltd. (Mauritius FSC) and Tradeview Europe Ltd. (Malta, MFSA Class 2 investment services). We confirmed the Cayman licence on CIMA's published licensee list (checked 2026-11-13) and found iLC Brokers Ltd. on the Mauritius FSC register of licensees. The Labuan and Malta licences were not confirmed on the regulators' registers. The Cayman and Mauritius licences are offshore (Tier 3), so client protection differs from EU or UK regimes. The company states that client funds are held in segregated accounts and that it does not accept US clients.\n\n## Trading conditions\n\nThe broker advertises spreads from 0.0 pips with a flat commission, leverage up to 1:400 and micro lots. It lists forex, CFDs, stocks, futures, commodities and indices. A minimum deposit was not stated on the pages we reviewed.\n\n## Platforms\n\nTradeview offers MetaTrader 4, MetaTrader 5 and cTrader, plus professional platforms such as Sterling, Takion, DAS, CQG and Multicharts. It says it is unrelated to the TradingView charting service.\n\n## Who is it for?\n\nExperienced traders who want raw-spread conditions and institutional-style platforms and accept offshore regulation. Check which entity you are onboarded to before depositing.\n\nTrading CFDs carries a high risk of loss."
+ },
+ "ja": {
+  "summary": "Tradeviewは2004年から運営されているECN型のFX・CFDブローカーで、ケイマン、モーリシャス、ラブアン、マルタのグループ企業がライセンスを保有しています。",
+  "maxLeverage": "最大400倍",
+  "pros": [
+   "2004年から運営し、複数の規制対象法人を持つ",
+   "スプレッド0.0pipsからで、MT4・MT5・cTraderなど選べるプラットフォームが豊富",
+   "ケイマンのライセンスがCIMAの公表リストで確認できた"
+  ],
+  "cons": [
+   "主要ライセンスはオフショア（ティア3）で、マルタ法人は別の顧客層向け",
+   "確認したページでは最低入金額の記載がなかった",
+   "米国居住者は利用不可"
+  ],
+  "body": "## 規制と安全性\n\nTradeviewは複数のグループ法人を通じて運営されています。規制ページには、Tradeview Ltd.（ケイマン諸島、CIMA証券投資業ライセンス番号585163）、TVM Global Ltd.（ラブアンFSAマネーブローカー）、iLC Brokers Ltd.（モーリシャスFSC）、Tradeview Europe Ltd.（マルタMFSA、クラス2投資サービス）が掲載されています。ケイマンのライセンスはCIMAの公表リストで確認し（確認日 2026-11-13）、iLC Brokers Ltd.はモーリシャスFSCの登録簿で確認しました。ラブアンとマルタのライセンスは規制当局の登録簿では確認できていません。ケイマンとモーリシャスはオフショア（ティア3）のため、EUや英国と比べて顧客保護の水準は異なります。同社は顧客資金を分別管理しており、米国居住者は受け付けないとしています。\n\n## 取引条件\n\nスプレッドは0.0pipsから、手数料は一律のコミッション制、最大レバレッジは400倍、マイクロロット対応とされています。取扱商品はFX、CFD、株式、先物、コモディティ、株価指数です。確認したページに最低入金額の記載はありませんでした。\n\n## プラットフォーム\n\nMetaTrader 4、MetaTrader 5、cTraderに加え、Sterling、Takion、DAS、CQG、Multichartsなどのプロ向けプラットフォームを提供しています。チャートサービスのTradingViewとは無関係と説明されています。\n\n## どんな人に向いているか\n\nローカット・スプレッドと機関投資家向けのプラットフォームを求め、オフショア規制を理解している経験者向けです。入金前に、どの法人で口座開設されるかを確認してください。\n\nCFD取引には大きな損失リスクがあります。"
+ }
+}

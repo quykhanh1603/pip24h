@@ -1,0 +1,71 @@
+{
+ "slug": "eplanetbrokers",
+ "queueUrl": "https://eplanetbrokers.com/",
+ "status": "ok",
+ "name": "Eplanet Brokers",
+ "website": "https://eplanetbrokers.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 2.8,
+ "minDeposit": "$30",
+ "spreadFrom": "0 pts (Gold/Elite)",
+ "maxLeverage": "1:500",
+ "instantWithdrawal": false,
+ "category": [],
+ "platforms": [
+  "MetaTrader 5",
+  "cTrader"
+ ],
+ "licenses": [
+  {
+   "regulator": "vfsc",
+   "text": "VFSC (Vanuatu) - financial dealer licence",
+   "number": "700819",
+   "entity": "Nebula Ventures Ltd",
+   "status": "verified",
+   "verifiedDate": "2026-11-13"
+  },
+  {
+   "regulator": "misa",
+   "text": "Mwali (Comoros) - international company registration",
+   "number": "HY00923038",
+   "entity": "Eplanet Brokers LTD",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://eplanetbrokers.com/regulations/",
+  "https://eplanetbrokers.com/accounts/",
+  "https://www.vfsc.vu/financial-dealers-licensee-list/"
+ ],
+ "en": {
+  "summary": "Eplanet Brokers is an offshore forex broker with a Vanuatu financial dealer licence, MT5 and cTrader, and accounts from $30.",
+  "pros": [
+   "Low $30 entry on the Zero account",
+   "Vanuatu licence confirmed on the VFSC licensee list",
+   "MT5 and cTrader available"
+  ],
+  "cons": [
+   "Only offshore (Tier 3) regulation; the Comoros entry is a company registration, not a financial licence",
+   "Founding year not disclosed",
+   "Maximum leverage of 1:500 carries high risk"
+  ],
+  "body": "## Regulation and safety\n\nEplanet Brokers LTD is incorporated in Mohéli, Comoros (IBC no. HY00923038), which is a company registration rather than a financial licence. Its group company Nebula Ventures Ltd (Vanuatu company no. 700819) is listed on the Vanuatu Financial Services Commission's financial dealers licensee list with classes A, B and C and active status (checked 2026-11-13). Vanuatu is an offshore (Tier 3) regime. The site states it does not serve EU residents or residents of sanctioned or FATF-listed jurisdictions.\n\n## Trading conditions\n\nFour accounts are published: Zero ($30 minimum, spread from 9 points), ECN ($300, from 6 points), Gold ($500, from 0 points) and Elite ($3,000, from 0 points). Maximum leverage is listed as 500 on all accounts and conditions may vary by region.\n\n## Platforms\n\nClients can trade on MetaTrader 5 and cTrader.\n\n## Who is it for?\n\nTraders seeking low entry deposits who understand and accept offshore regulation and high leverage. Beginners should be cautious.\n\nTrading CFDs involves a high risk of loss."
+ },
+ "ja": {
+  "summary": "Eplanet Brokersはバヌアツの金融ディーラーライセンスを持つオフショアのFXブローカーで、30ドルから口座開設でき、MT5とcTraderに対応しています。",
+  "minDeposit": "30ドル",
+  "maxLeverage": "最大500倍",
+  "pros": [
+   "Zero口座は30ドルからと低額",
+   "バヌアツのライセンスがVFSCのライセンシーリストで確認できた",
+   "MT5とcTraderに対応"
+  ],
+  "cons": [
+   "規制はオフショア（ティア3）のみで、コモロの記載は金融ライセンスではなく会社登録",
+   "設立年が非公開",
+   "最大500倍のレバレッジは高リスク"
+  ],
+  "body": "## 規制と安全性\n\nEplanet Brokers LTDはコモロのモヘリ島で設立（IBC番号HY00923038）されていますが、これは金融ライセンスではなく会社登録です。グループ会社のNebula Ventures Ltd（バヌアツ会社番号700819）は、バヌアツ金融サービス委員会の金融ディーラー・ライセンシーリストにクラスA・B・C、有効として掲載されています（確認日 2026-11-13）。バヌアツはオフショア（ティア3）の規制です。サイトはEU居住者および制裁対象・FATF指定地域の居住者にはサービスを提供しないとしています。\n\n## 取引条件\n\n4つの口座が公表されています。Zero（最低30ドル、スプレッド9ポイントから）、ECN（300ドル、6ポイントから）、Gold（500ドル、0ポイントから）、Elite（3,000ドル、0ポイントから）。最大レバレッジはすべて500とされ、地域により条件が異なる場合があります。\n\n## プラットフォーム\n\nMetaTrader 5とcTraderで取引できます。\n\n## どんな人に向いているか\n\n低額から始めたく、オフショア規制と高レバレッジのリスクを理解している人向けです。初心者は慎重に検討してください。\n\nCFD取引には高い損失リスクがあります。"
+ }
+}

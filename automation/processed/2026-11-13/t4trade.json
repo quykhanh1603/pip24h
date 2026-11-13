@@ -1,0 +1,6 @@
+{
+ "slug": "t4trade",
+ "queueUrl": "https://www.t4trade.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site could not be fetched in this run (host not reachable); licences not researched"
+}
