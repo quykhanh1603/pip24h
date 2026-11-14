@@ -1,0 +1,61 @@
+{
+ "slug": "purple-trading",
+ "queueUrl": "https://www.purple-trading.com/",
+ "status": "ok",
+ "name": "Purple Trading",
+ "website": "https://www.purple-trading.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.3,
+ "spreadFrom": "0.3 pips",
+ "maxLeverage": "1:30",
+ "platforms": [
+  "TradingView",
+  "cTrader",
+  "MetaTrader 4",
+  "MetaTrader 5"
+ ],
+ "licenses": [
+  {
+   "regulator": "cysec",
+   "text": "CySEC (Cyprus)",
+   "number": "271/15",
+   "entity": "L.F. Investment Limited",
+   "status": "verified",
+   "verifiedDate": "2026-11-14"
+  }
+ ],
+ "sources": [
+  "https://www.purple-trading.com/",
+  "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/72454/"
+ ],
+ "en": {
+  "summary": "Purple Trading is the brand of CySEC-licensed L.F. Investment Limited, offering ECN-style CFD trading to EEA clients on four platforms.",
+  "pros": [
+   "CySEC licence 271/15 for L.F. Investment Limited, confirmed on the CySEC register",
+   "Wide platform choice: TradingView, cTrader, MetaTrader 4 and MetaTrader 5",
+   "Spreads listed publicly, e.g. EUR/USD 0.3 and XAU/USD 0.07"
+  ],
+  "cons": [
+   "Accepts clients only from the EEA (not Belgium, Switzerland or the USA)",
+   "Retail leverage capped at 1:30 on forex pairs",
+   "Site states 74.37% of retail investors lose money trading CFDs with this provider"
+  ],
+  "body": "## Regulation and safety\n\nPurple Trading is operated by L.F. Investment Limited, a Cyprus Investment Firm in Limassol. The CySEC register lists the firm under licence 271/15 (dated 6 April 2015) and shows purple-trading.com among its approved domains (checked 2026-11-14). As a CySEC firm it falls under EU investor-protection rules, including an investor compensation policy.\n\nThe broker's own risk warning states that 74.37% of retail investor accounts lose money when trading CFDs with the provider.\n\n## Trading conditions\n\nThe website lists ECN spreads such as 0.3 for EUR/USD and GBP/USD, 0.5 for USD/CHF and GBP/JPY, 0.07 for gold, 0.6 for the DAX and 0.3 for the S&P 500, with BTC/USD at 3.29. Retail leverage follows EU limits: 1:30 on forex pairs, 1:20 on gold and indices, 1:10 on oil and 1:1 on BTC/USD. Founding year and minimum deposit are not stated on the homepage, and third-party sources disagree, so they are omitted here.\n\n## Platforms\n\nClients can trade on TradingView, cTrader, MetaTrader 4 and MetaTrader 5.\n\n## Who is it for?\n\nPurple Trading suits EEA-based traders who want a CySEC-regulated broker with ECN-style pricing and a choice of platforms. It does not accept clients from outside the EEA, and CFDs carry a high risk of loss."
+ },
+ "ja": {
+  "summary": "Purple Tradingは、CySEC認可のL.F. Investment Limitedが運営するブランドで、EEA居住者向けに4つのプラットフォームでECN型CFD取引を提供しています。",
+  "maxLeverage": "1:30",
+  "pros": [
+   "L.F. Investment LimitedはCySEC認可番号271/15を保有（CySEC登録簿で確認）",
+   "TradingView、cTrader、MT4、MT5と選べるプラットフォームが豊富",
+   "EUR/USD 0.3、XAU/USD 0.07など主要銘柄のスプレッドを公開"
+  ],
+  "cons": [
+   "顧客はEEA居住者に限られる（ベルギー、スイス、米国を除く）",
+   "外国為替のレバレッジは最大1:30に制限",
+   "公式サイトは、CFD取引で74.37%の個人投資家が損失を出していると表示"
+  ],
+  "body": "## 規制と安全性\n\nPurple Tradingは、リマソールに拠点を置くキプロス投資会社L.F. Investment Limitedが運営しています。CySEC登録簿には認可番号271/15（2015年4月6日付）で掲載され、purple-trading.comが承認ドメインとして記載されています（2026-11-14確認）。CySEC監督下の事業者として、EUの投資家保護ルールが適用されます。\n\n公式サイトのリスク警告では、同社でCFDを取引する個人投資家の74.37%が資金を失っているとされています。\n\n## 取引条件\n\n公式サイトでは、EUR/USDとGBP/USDが0.3、USD/CHFとGBP/JPYが0.5、金が0.07、DAXが0.6、S&P 500が0.3、BTC/USDが3.29といったECNスプレッドが掲載されています。個人向けレバレッジはEU規制に沿い、外国為替1:30、金・株価指数1:20、原油1:10、BTC/USD 1:1です。設立年と最低入金額はトップページに記載がなく、第三者情報も一致しないため掲載していません。\n\n## 取引プラットフォーム\n\nTradingView、cTrader、MetaTrader 4、MetaTrader 5が利用できます。\n\n## どんな人に向いているか\n\nCySEC規制下のブローカーで、ECN型の価格と複数のプラットフォームを求めるEEA居住のトレーダーに向いています。EEA外の居住者は利用できません。CFDには高い損失リスクがあります。"
+ }
+}

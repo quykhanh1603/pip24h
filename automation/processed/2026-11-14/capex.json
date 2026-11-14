@@ -1,0 +1,6 @@
+{
+ "slug": "capex",
+ "queueUrl": "https://capex.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: Seychelles FSA licence SD020 could not be confirmed on the register, spreads and min deposit not published on the site"
+}

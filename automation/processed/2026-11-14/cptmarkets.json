@@ -1,0 +1,6 @@
+{
+ "slug": "cptmarkets",
+ "queueUrl": "https://cptmarkets.com",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: licences not verifiable on registers (entity numbers conflict across sources), specs only from aggregators"
+}

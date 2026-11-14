@@ -1,0 +1,6 @@
+{
+ "slug": "tradeeuglobal",
+ "queueUrl": "https://www.tradeeuglobal.net/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: only a Mauritius FSC licence claim (not checked on the register), no founding year, min deposit, spread, leverage or named platforms"
+}

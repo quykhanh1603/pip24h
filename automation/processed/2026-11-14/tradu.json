@@ -1,0 +1,6 @@
+{
+ "slug": "tradu",
+ "queueUrl": "https://www.tradu.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: brand reported to have halted onboarding and be moving clients to FXCM; spreads, deposit and platforms only from aggregators"
+}

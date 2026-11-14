@@ -138,16 +138,16 @@ https://www.t4trade.com/,,t4trade,skipped,2026-11-13,insufficient verifiable dat
 https://centfx.com/,,centfx,skipped,2026-11-13,insufficient verifiable data: licence unconfirmed: Anguilla company registration only; ASIC register shows CENTFX GLOBAL PTY LTD as an authorised representative that ceased 13/04/2023
 https://tpfx.co.id/,,tpfx,done,2026-11-13,
 https://www.multibankgroup.com/,,multibankgroup,done,2026-11-13,
-https://www.tradeeuglobal.net/,,tradeeuglobal,pending,,
-https://capex.com/,,capex,pending,,
-https://hugosway.com,,hugosway,pending,,
-https://www.tradu.com/,,tradu,pending,,
-https://cptmarkets.com,,cptmarkets,pending,,
-https://winprofx.com/,,winprofx,pending,,
-https://fortuneprime.com/,,fortuneprime,pending,,
-denizyatirim.com,,denizyatirim,pending,,
-https://www.purple-trading.com/,,purple-trading,pending,,
-https://www.orbex.com/en,,orbex,pending,,
+https://www.tradeeuglobal.net/,,tradeeuglobal,skipped,2026-11-14,"insufficient verifiable data: only a Mauritius FSC licence claim (not checked on the register), no founding year, min deposit, spread, leverage or named platforms"
+https://capex.com/,,capex,skipped,2026-11-14,"insufficient verifiable data: Seychelles FSA licence SD020 could not be confirmed on the register, spreads and min deposit not published on the site"
+https://hugosway.com,,hugosway,skipped,2026-11-14,"insufficient verifiable data: no regulator or licence named on the site, no founding year or spread figures"
+https://www.tradu.com/,,tradu,skipped,2026-11-14,"insufficient verifiable data: brand reported to have halted onboarding and be moving clients to FXCM; spreads, deposit and platforms only from aggregators"
+https://cptmarkets.com,,cptmarkets,skipped,2026-11-14,"insufficient verifiable data: licences not verifiable on registers (entity numbers conflict across sources), specs only from aggregators"
+https://winprofx.com/,,winprofx,skipped,2026-11-14,"insufficient verifiable data: no regulator or licence named, no deposit, spread or leverage figures"
+https://fortuneprime.com/,,fortuneprime,skipped,2026-11-14,"insufficient verifiable data: Vanuatu and ASIC licences could not be confirmed on registers, no founding year, deposit, spread or leverage figures"
+denizyatirim.com,,denizyatirim,skipped,2026-11-14,"not a retail forex/CFD broker profile: Turkish bank-owned stock/VIOP brokerage, forex offered via separate Deniz FX brand; regulator and licence not stated"
+https://www.purple-trading.com/,,purple-trading,done,2026-11-14,
+https://www.orbex.com/en,,orbex,done,2026-11-14,
 https://www.threetrader.com/,,threetrader,pending,,
 https://www.radexmarkets.com/,,radexmarkets,pending,,
 https://tiomarkets.com/,,tiomarkets,pending,,
