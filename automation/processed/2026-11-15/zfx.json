@@ -1,0 +1,35 @@
+{
+	"slug": "zfx",
+	"queueUrl": "https://www.zfx.com/",
+	"status": "ok",
+	"name": "ZFX",
+	"website": "https://www.zfx.com/",
+	"logo": "/images/brokers/zfx/logo.jpg",
+	"assetType": "forex",
+	"rating": 2.8,
+	"foundedYear": 2017,
+	"minDeposit": "$50",
+	"spreadFrom": "0.2 pips (ECN account)",
+	"maxLeverage": "1:2000",
+	"instantWithdrawal": false,
+	"category": ["ecn"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "ZFX Mobile App", "ZFX WebTrader"],
+	"licenses": [
+		{ "regulator": "fsa-sc", "text": "FSA (Seychelles)", "number": "SD027", "entity": "Zeal Capital Market (Seychelles) Limited", "status": "verified", "verifiedDate": "2026-11-15" }
+	],
+	"sources": ["https://www.zfx.com/", "https://www.zfx.com/about-zfx/", "https://fsaseychelles.sc/regulated-entities/capital-markets", "https://en.wikipedia.org/wiki/ZFX_(brokerage)"],
+	"en": {
+		"summary": "A Seychelles-licensed forex and CFD broker with Mini, Standard and ECN accounts, MT4/MT5 and leverage up to 1:2000.",
+		"pros": ["Three account tiers starting from a $50 Mini account", "ECN account with spreads from 0.2 pips", "MT4, MT5, a mobile app, web trader and a MAM service"],
+		"cons": ["Licensed by the Seychelles FSA only for the main trading entity, an offshore regulator", "Leverage of up to 1:2000 greatly magnifies risk", "ECN account requires a $1,000 minimum deposit"],
+		"body": "## Regulation and safety\n\nZFX and Traze are approved trade names of Zeal Capital Market (Seychelles) Limited, which the broker says holds Securities Dealer licence SD027 from the Seychelles Financial Services Authority (company number 8422618-1). The FSA's capital markets list names the entity with its ZFX and TRAZE trade names; the list does not show licence numbers. The group also lists a UK company, Zeal Capital Market (UK) Limited, but the website gives no UK regulator or licence number for it, so we do not count it as a licence. Seychelles is an offshore jurisdiction with lighter investor protection than the UK, Australia or EU.\n\n## Trading conditions\n\nThe homepage lists three accounts: Mini (from $50, minimum FX spread 1.5), Standard (from $200, 1.3) and ECN (from $1,000, 0.2). Maximum leverage is shown as 1:2000 on all three. Wikipedia and several reviews date the ZFX brand to 2017, while the broker's help centre says 2016.\n\n## Platforms\n\nMT4 and MT5 are offered on Windows, Mac and mobile, alongside the ZFX Mobile App, ZFX WebTrader and a MAM (money-manager) service.\n\n## Who is it for?\n\nIt may suit experienced traders who accept offshore regulation and want high leverage and a range of account sizes. Very high leverage is unsuitable for most beginners. CFDs carry a high risk of losing money."
+	},
+	"ja": {
+		"summary": "セーシェルのライセンスを持つFX・CFDブローカー。Mini、Standard、ECNの3口座をMT4/MT5で提供し、最大レバレッジは2000倍です。",
+		"minDeposit": "50ドル",
+		"maxLeverage": "最大2000倍",
+		"pros": ["50ドルのMini口座から始められる3段階の口座", "ECN口座はスプレッド0.2pips〜", "MT4、MT5、モバイルアプリ、WebTrader、MAMサービスを提供"],
+		"cons": ["主要な取引法人の規制はオフショアのセーシェルFSAのみ", "最大2000倍のレバレッジはリスクを大きく拡大する", "ECN口座の最低入金額は1,000ドル"],
+		"body": "## 規制と安全性\n\nZFXとTrazeは、Zeal Capital Market (Seychelles) Limited（企業番号8422618-1）の承認された取引名で、同社はセーシェル金融サービス庁（FSA）のSecurities Dealerライセンス「SD027」を保有していると説明しています。FSAの資本市場一覧には、ZFXとTRAZEの取引名とともにこの法人名が掲載されていますが、一覧にライセンス番号は表示されません。グループには英国法人Zeal Capital Market (UK) Limitedもありますが、公式サイトに英国の規制当局やライセンス番号の記載がないため、ライセンスとしては扱っていません。セーシェルはオフショア管轄で、英国・豪州・EUと比べて投資家保護は限定的です。\n\n## 取引条件\n\nトップページには3つの口座が掲載されています。Mini（50ドル〜、最小FXスプレッド1.5）、Standard（200ドル〜、1.3）、ECN（1,000ドル〜、0.2）です。最大レバレッジはいずれも2000倍と表示されています。ZFXブランドの設立は、Wikipediaや複数のレビューでは2017年、公式ヘルプセンターでは2016年とされています。\n\n## 取引プラットフォーム\n\nMT4とMT5をWindows、Mac、モバイルで利用でき、ZFXモバイルアプリ、ZFX WebTrader、MAM（資金管理）サービスも提供されています。\n\n## どんな人に向いているか\n\nオフショア規制を理解したうえで、高レバレッジや多様な口座サイズを求める経験者向けです。極端に高いレバレッジは多くの初心者には適していません。CFD取引には元本を大きく失うリスクがあります。"
+	}
+}
