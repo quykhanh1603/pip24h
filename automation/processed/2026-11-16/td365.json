@@ -1,0 +1,6 @@
+{
+ "slug": "td365",
+ "queueUrl": "https://td365.com/",
+ "status": "skip",
+ "skipReason": "duplicate: TD365 is a brand of Trade Nation (already in src/content/brokers/en/tradenation.md) being merged into it; site not fetchable"
+}

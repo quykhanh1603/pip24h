@@ -1,0 +1,6 @@
+{
+ "slug": "xtrade",
+ "queueUrl": "https://www.xtrade.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no spread or leverage figures on the pages read, founding year inconsistent (2008 vs 2012), licences (Seychelles/Belize/Comoros/FSCA/Bulgaria) not verifiable on registers"
+}

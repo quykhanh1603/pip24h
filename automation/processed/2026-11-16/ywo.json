@@ -1,0 +1,76 @@
+{
+ "slug": "ywo",
+ "queueUrl": "https://ywo.com/",
+ "status": "ok",
+ "name": "YWO",
+ "website": "https://ywo.com/",
+ "logo": "/images/brokers/ywo/logo.png",
+ "assetType": "forex",
+ "rating": 3.0,
+ "spreadFrom": "0.0 pips (Zero Spread account, plus commission)",
+ "maxLeverage": "1:1000",
+ "instantWithdrawal": false,
+ "category": [
+  "ecn"
+ ],
+ "platforms": [
+  "MetaTrader 5"
+ ],
+ "licenses": [
+  {
+   "regulator": "fsca",
+   "text": "FSCA (South Africa)",
+   "number": "FSP 54357",
+   "entity": "YWO (PTY) Ltd",
+   "status": "unverified"
+  },
+  {
+   "regulator": "fsc-mu",
+   "text": "FSC (Mauritius)",
+   "number": "GB25205550",
+   "entity": "YWO (MU) Ltd",
+   "status": "unverified"
+  },
+  {
+   "regulator": "misa",
+   "text": "MISA (Comoros / Mwali)",
+   "number": "BFX2025026",
+   "entity": "YWO (CM) Ltd",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://ywo.com/company/licenses-and-regulations/",
+  "https://ywo.com/accounts/",
+  "https://ywo.com/company/about-us/"
+ ],
+ "en": {
+  "summary": "YWO is a new MetaTrader 5 broker operating through FSCA-, Mauritius FSC- and MISA-licensed entities, with zero-spread accounts and leverage up to 1:1000.",
+  "pros": [
+   "Lists licences with three regulators including South Africa's FSCA (tier 2)",
+   "Zero deposit and withdrawal fees and a $3.50 per side Zero Spread account",
+   "Cent, Standard and Zero Spread accounts with swap-free options"
+  ],
+  "cons": [
+   "Licences are taken from the broker's own page; the FSCA, FSC and MISA registers could not be retrieved, so all are unverified",
+   "Licences date from 2025–2026, so the firm has a short track record",
+   "South African entity excludes South African residents; leverage up to 1:1000 is high"
+  ],
+  "body": "## Regulation and safety\n\nYWO's Licenses & Regulations page names three entities: YWO (MU) Ltd, licensed by the Mauritius Financial Services Commission under GB25205550; YWO (PTY) Ltd, an authorised financial services provider with South Africa's FSCA under FSP 54357; and YWO (CM) Ltd, licensed by the Mwali International Services Authority of the Comoros under BFX2025026. Third-party sources corroborate the numbers and a press release reports the Mauritius licence was granted in early 2026. Pip24h could not open the FSCA, FSC or MISA registers during this research (the FSC site blocked access on 2026-11-16), so all three licences are marked unverified. None of the entities serves residents of the EU, UK, US, Canada or Australia, and the South African entity excludes South African residents.\n\n## Trading conditions\n\nThree account types are offered. Cent offers micro lots, spreads from 0.6 pips and leverage up to 1:200. Standard has no commission, spreads from 0.6 pips on majors and leverage up to 1:1000. Zero Spread offers spreads from 0.0 pips with a $3.50 per lot per side commission ($7 round turn) and leverage up to 1:1000. Deposits and withdrawals carry no fees, and swap-free trading is available. Instruments include forex, metals, energies, indices, stocks and crypto CFDs.\n\n## Platforms\n\nTrading is on MetaTrader 5. The broker also runs introducing-broker and revenue-share partner programmes.\n\n## Who is it for?\n\nYWO fits active traders in permitted regions who want raw-spread pricing and are comfortable with a young broker whose licences have yet to be independently verified."
+ },
+ "ja": {
+  "summary": "YWOは南アフリカFSCA、モーリシャスFSC、MISAのライセンスを持つ法人を通じて運営される新しいMT5ブローカーで、ゼロスプレッド口座と最大1:1000のレバレッジを提供します。",
+  "maxLeverage": "最大1000倍",
+  "pros": [
+   "南アフリカFSCA（ティア2）を含む3つの規制機関のライセンスを表示",
+   "入出金手数料無料、Zero Spread口座は片道1ロット3.50ドル",
+   "Cent・Standard・Zero Spreadの3口座、スワップフリーも選択可能"
+  ],
+  "cons": [
+   "ライセンスは自社ページの記載で、FSCA・FSC・MISAの登録簿を取得できず、いずれも未確認",
+   "ライセンス取得は2025〜2026年で実績が短い",
+   "南アフリカ法人は南アフリカ居住者を対象外とし、最大1:1000は高レバレッジ"
+  ],
+  "body": "## 規制と安全性\n\nYWOのライセンス・規制ページには3つの法人が記載されています。モーリシャス金融サービス委員会のライセンスGB25205550を持つYWO (MU) Ltd、南アフリカFSCAの認可金融サービス提供者（FSP 54357）であるYWO (PTY) Ltd、コモロのムワリ国際サービス庁のライセンスBFX2025026を持つYWO (CM) Ltdです。第三者の情報源も番号を裏付けており、モーリシャスのライセンスは2026年初めに付与されたとのプレスリリースがあります。調査時（2026-11-16）にFSCA、FSC、MISAの登録簿を開けなかったため、3件とも「未確認」としています。いずれの法人もEU、英国、米国、カナダ、オーストラリアの居住者は対象外で、南アフリカ法人は南アフリカ居住者も対象外です。\n\n## 取引条件\n\n口座は3種類です。Centはマイクロロット、スプレッド0.6pipsから、レバレッジ最大1:200。Standardは手数料なし、メジャー通貨で0.6pipsから、最大1:1000。Zero Spreadはスプレッド0.0pipsからで、片道1ロット3.50ドル（往復7ドル）、最大1:1000です。入出金手数料は無料で、スワップフリーも選べます。FX、金属、エネルギー、株価指数、株式、暗号資産のCFDを扱います。\n\n## 取引プラットフォーム\n\nMetaTrader 5で取引します。IB（紹介ブローカー）およびレベニューシェアのパートナープログラムもあります。\n\n## どんな人に向いているか\n\n対象地域に居住し、生のスプレッドで取引したいアクティブトレーダーで、ライセンスが独立して確認されていない新しいブローカーのリスクを理解できる人向けです。"
+ }
+}

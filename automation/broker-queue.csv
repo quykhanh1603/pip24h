@@ -154,18 +154,18 @@ https://tiomarkets.com/,,tiomarkets,done,2026-11-15,
 https://www.zfx.com/,,zfx,done,2026-11-15,
 https://mondfx.com/,,mondfx,skipped,2026-11-15,"insufficient verifiable data: no licence found (entity registered in Saint Lucia, no forex licence on any register); site also promotes yield plans and loss-recovery products"
 https://coinexx.com/,,coinexx,skipped,2026-11-15,insufficient verifiable data: broker site could not be read and no licence confirmed from any primary source; third-party reviews describe it as unregulated
-https://www.fxcess.com/,,fxcess,pending,,
+https://www.fxcess.com/,,fxcess,skipped,2026-11-16,"insufficient verifiable data: site did not resolve/open from the research environment, no licence or trading data could be read"
 https://www.globalprime.com/,,globalprime,done,2026-11-15,
 https://damanmarkets.com/,,damanmarkets,skipped,2026-11-15,insufficient verifiable data: SCA/CMA licence not confirmed on regulator register; sources give conflicting licence numbers
-https://td365.com/,,td365,pending,,
-https://www.hsb.co.id/,,hsb,pending,,
-https://mtrading.com/,,mtrading,pending,,
-https://xbtfx.com/,,xbtfx,pending,,
-https://versus.trade/,,versus,pending,,
-https://ywo.com/,,ywo,pending,,
-https://www.xtrade.com/,,xtrade,pending,,
-https://www.lhfx.com/,,lhfx,pending,,
-https://raisefx.com/,,raisefx,pending,,
+https://td365.com/,,td365,skipped,2026-11-16,duplicate: TD365 is a brand of Trade Nation (already in src/content/brokers/en/tradenation.md) being merged into it; site not fetchable
+https://www.hsb.co.id/,,hsb,done,2026-11-16,
+https://mtrading.com/,,mtrading,done,2026-11-16,
+https://xbtfx.com/,,xbtfx,done,2026-11-16,
+https://versus.trade/,,versus,done,2026-11-16,
+https://ywo.com/,,ywo,done,2026-11-16,
+https://www.xtrade.com/,,xtrade,skipped,2026-11-16,"insufficient verifiable data: no spread or leverage figures on the pages read, founding year inconsistent (2008 vs 2012), licences (Seychelles/Belize/Comoros/FSCA/Bulgaria) not verifiable on registers"
+https://www.lhfx.com/,,lhfx,done,2026-11-16,
+https://raisefx.com/,,raisefx,done,2026-11-16,
 https://m4markets.com/,,m4markets,pending,,
 https://www.lmax.com/,,lmax,pending,,
 https://keytomarkets.com/,,keytomarkets,pending,,

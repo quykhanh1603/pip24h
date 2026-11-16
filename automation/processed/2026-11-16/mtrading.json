@@ -1,0 +1,67 @@
+{
+ "slug": "mtrading",
+ "queueUrl": "https://mtrading.com/",
+ "status": "ok",
+ "name": "MTrading",
+ "website": "https://mtrading.com/",
+ "logo": "/images/brokers/mtrading/logo.png",
+ "assetType": "forex",
+ "rating": 2.5,
+ "foundedYear": 2012,
+ "minDeposit": "$10",
+ "spreadFrom": "0.0 pips (M.Pro account)",
+ "maxLeverage": "1:8888",
+ "instantWithdrawal": false,
+ "category": [
+  "low-deposit"
+ ],
+ "platforms": [
+  "MetaTrader 4",
+  "MetaTrader 5",
+  "WebTrader"
+ ],
+ "licenses": [
+  {
+   "regulator": null,
+   "text": "No financial services licence found – operated by ServiceComsvg LLC (Saint Vincent and the Grenadines); member of the Financial Commission (dispute-resolution body, not a regulator)",
+   "entity": "ServiceComsvg LLC",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://mtrading.com/",
+  "https://mtrading.com/start-trading/account-types",
+  "https://mtrading.com/margin-requirements",
+  "https://www.financemagnates.com/forex/regulation/financial-commission-terminates-membership-of-two-fx-brokers-mtrading-rejoins"
+ ],
+ "en": {
+  "summary": "MTrading is a bonus-focused offshore CFD broker run by a Saint Vincent and the Grenadines company, offering $10 accounts and leverage of up to 1:8888 without a financial licence we could find.",
+  "pros": [
+   "Low $10 minimum deposit on M.Premium and a zero-spread M.Pro account",
+   "MetaTrader 4 and 5 plus a web terminal",
+   "Says it belongs to the Financial Commission, which offers dispute handling and a compensation fund of up to €20,000 per claim"
+  ],
+  "cons": [
+   "No financial regulator licence is shown; the operator is a Saint Vincent and the Grenadines LLC",
+   "Extremely high leverage (up to 1:8888) and bonus-led marketing increase risk for retail clients",
+   "Financial Commission membership is not regulation and its current status was not confirmed on the Commission's own list"
+  ],
+  "body": "## Regulation and safety\n\nMTrading's website says clients are served by ServiceComsvg LLC, registered in Kingstown, Saint Vincent and the Grenadines (registration 1593 LLC 2021). The site does not display a licence from a financial regulator, and we found none. Instead it highlights membership of the Financial Commission, an external dispute-resolution body whose compensation fund covers up to €20,000 per claim. Finance Magnates has reported that MTrading joined the Commission, left, and later rejoined; we could not confirm the current status on the Commission's own list, and membership is not a substitute for regulation by a financial authority. The brand states it has operated since 2012.\n\n## Trading conditions\n\nThe M.Premium account needs a $10 minimum deposit and shows spreads from 1 pip with no commission, market execution, a 20% stop-out and floating leverage up to 1:8888. The M.Pro account is marketed as zero-spread. Margin tables reduce leverage as position size grows, for example 1:8888 on small FX majors positions down to 1:10 on very large ones. Instruments include 28 currency pairs, metals, energies, indices, over 70 stock CFDs and synthetic indices. Promotions, including deposit and floating bonuses, are central to the marketing.\n\n## Platforms\n\nClients trade on MetaTrader 4, MetaTrader 5 and a web terminal, with mobile apps and Expert Advisor support.\n\n## Who is it for?\n\nMTrading is aimed at experienced, risk-tolerant traders outside heavily regulated jurisdictions who accept offshore counterparty risk. Beginners should be cautious about extreme leverage and bonus conditions."
+ },
+ "ja": {
+  "summary": "MTradingはセントビンセント・グレナディーン法人が運営するボーナス重視のオフショアCFDブローカーで、10ドルから口座開設でき最大1:8888のレバレッジを提供しますが、金融ライセンスは確認できませんでした。",
+  "minDeposit": "10ドル",
+  "maxLeverage": "最大8888倍",
+  "pros": [
+   "M.Premiumは10ドルから、M.Proはゼロスプレッド口座",
+   "MT4・MT5・Webトレーダーに対応",
+   "金融委員会（Financial Commission）の会員と表示し、1請求あたり最大2万ユーロの補償基金を案内"
+  ],
+  "cons": [
+   "金融規制当局のライセンスは表示されておらず、運営会社はセントビンセント・グレナディーンのLLC",
+   "最大1:8888の超高レバレッジとボーナス中心の販促は個人投資家のリスクを高める",
+   "金融委員会の会員資格は規制ではなく、現在の加盟状況は同委員会の一覧で確認できていません"
+  ],
+  "body": "## 規制と安全性\n\nMTradingのサイトによると、顧客対応はセントビンセント・グレナディーンのキングスタウンに登録されたServiceComsvg LLC（登録番号1593 LLC 2021）が行います。金融規制当局のライセンスは表示されておらず、当サイトでも確認できませんでした。代わりに、外部の紛争解決機関である金融委員会（Financial Commission）の会員であることを強調しており、補償基金は1請求あたり最大2万ユーロです。Finance Magnatesは、MTradingが同委員会に加盟・脱退・再加盟したと報じていますが、現在の状況は同委員会の一覧で確認できておらず、会員資格は金融当局による規制の代わりにはなりません。ブランドは2012年から運営していると説明しています。\n\n## 取引条件\n\nM.Premium口座は最低入金額10ドル、スプレッド1pipsから、手数料なし、成行執行、ストップアウト20%、変動レバレッジ最大1:8888です。M.Pro口座はゼロスプレッドとして案内されています。証拠金表では建玉が大きくなるほどレバレッジが下がり、FXメジャーでは小口の1:8888から大口の1:10まで段階的に変わります。取扱銘柄は通貨ペア28種、金属、エネルギー、株価指数、70以上の株式CFD、合成指数などで、入金ボーナスなどのプロモーションが販促の中心です。\n\n## 取引プラットフォーム\n\nMetaTrader 4、MetaTrader 5、Webトレーダーに対応し、モバイルアプリとEA（自動売買）も利用できます。\n\n## どんな人に向いているか\n\n厳格な規制地域の外にいて、オフショアのカウンターパーティリスクを理解できる経験者向けです。初心者は超高レバレッジとボーナス条件に注意が必要です。"
+ }
+}

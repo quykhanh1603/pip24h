@@ -1,0 +1,64 @@
+{
+ "slug": "hsb",
+ "queueUrl": "https://www.hsb.co.id/",
+ "status": "ok",
+ "name": "HSB Investasi",
+ "website": "https://www.hsb.co.id/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 3.3,
+ "foundedYear": 2018,
+ "minDeposit": "Rp350,000 (Micro account)",
+ "spreadFrom": "0.01 pips",
+ "maxLeverage": "1:400",
+ "instantWithdrawal": false,
+ "platforms": [
+  "MetaTrader 5",
+  "HSB Trading App",
+  "HSB Web Trading"
+ ],
+ "licenses": [
+  {
+   "regulator": null,
+   "text": "BAPPEBTI (Indonesia) – futures broker licence 001/BAPPEBTI/SI/05/2018; also lists OJK, Bank Indonesia, ICDX and ICH registrations",
+   "number": "001/BAPPEBTI/SI/05/2018",
+   "entity": "PT Handal Semesta Berjangka",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://www.hsb.co.id/about",
+  "https://www.hsb.co.id/jenis-akun",
+  "https://www.hsb.co.id/komisi-dan-spread"
+ ],
+ "en": {
+  "summary": "HSB Investasi (PT Handal Semesta Berjangka) is an Indonesian futures broker that says it is supervised by BAPPEBTI and offers forex, gold, index and share CFDs from a Rp350,000 deposit.",
+  "pros": [
+   "States a BAPPEBTI futures-broker licence and ICDX/ICH memberships on its legal page",
+   "Low entry point: Micro account from Rp350,000 with 0.01 lot sizes",
+   "Client funds said to be held in segregated bank accounts approved by BAPPEBTI"
+  ],
+  "cons": [
+   "Licence numbers come from the broker's own website; the BAPPEBTI register page could not be retrieved to confirm them (checked 2026-11-16)",
+   "Standard and Premium accounts need Rp2.8 million and Rp70 million deposits",
+   "Aimed at Indonesian residents; product range is about 45 instruments"
+  ],
+  "body": "## Regulation and safety\n\nHSB Investasi is the trading name of PT Handal Semesta Berjangka, a Jakarta-based futures broker that says it started operating in 2018. Its legal page lists BAPPEBTI (Indonesia's commodity futures trading regulator) licence numbers including 001/BAPPEBTI/SI/05/2018, together with Bank Indonesia and OJK references and memberships of the ICDX exchange and the Indonesia Clearing House. The broker also states that client money sits in segregated accounts at banks approved by BAPPEBTI. These details come from the broker's own site; Pip24h could not retrieve the regulator's register to confirm them, so the licences are marked unverified.\n\n## Trading conditions\n\nThe site offers three account types. The Micro account needs Rp350,000 and offers spreads from 0.01 pips, a $3 per lot commission and leverage of 1:200 to 1:400. The Standard account needs Rp2.8 million and the Premium account Rp70 million, with a lower $1 per lot commission and leverage of 1:200. Spreads are floating and the site publishes average spreads per instrument. The broker lists more than 45 instruments across forex, gold and oil, indices and single stocks, and advertises a client-fund insurance programme of up to USD 1 million.\n\n## Platforms\n\nTrading is available on MetaTrader 5, the HSB Trading app (Android and iOS) and a web terminal; deposits and withdrawals are handled inside the app.\n\n## Who is it for?\n\nHSB suits Indonesian residents who want a locally registered futures broker with a small starting deposit and an app-based workflow. International traders should note the service is built around Indonesian regulation, and as with any leveraged product, losses can exceed expectations."
+ },
+ "ja": {
+  "summary": "HSB Investasi（PT Handal Semesta Berjangka）はインドネシアの先物ブローカーで、BAPPEBTIの監督下にあると表示しており、35万ルピアからFX・金・株価指数・個別株を取引できます。",
+  "minDeposit": "35万ルピア（マイクロ口座）",
+  "maxLeverage": "最大400倍",
+  "pros": [
+   "法的情報ページでBAPPEBTIの先物仲介ライセンスとICDX・ICH会員資格を明示",
+   "マイクロ口座は35万ルピアから、0.01ロットで取引可能",
+   "顧客資金はBAPPEBTI承認銀行の分別口座で管理と説明"
+  ],
+  "cons": [
+   "ライセンス番号は自社サイトの記載で、BAPPEBTIの登録簿は取得できず確認できていません（2026-11-16時点）",
+   "スタンダード口座は280万ルピア、プレミアム口座は7,000万ルピアの入金が必要",
+   "インドネシア居住者向けで、取扱銘柄は約45種類"
+  ],
+  "body": "## 規制と安全性\n\nHSB InvestasiはジャカルタのPT Handal Semesta Berjangkaの取引ブランドで、2018年に事業を開始したと説明しています。法的情報ページには、インドネシア商品先物取引監督庁（BAPPEBTI）のライセンス番号（001/BAPPEBTI/SI/05/2018など）、インドネシア銀行とOJKに関する記載、ICDX取引所およびインドネシア・クリアリング・ハウスの会員資格が掲載されています。顧客資金はBAPPEBTIが承認した銀行の分別口座で管理されるとしています。これらは同社サイトの記載であり、規制当局の登録簿は取得できなかったため、ライセンスは「未確認」としています。\n\n## 取引条件\n\n口座は3種類です。マイクロ口座は35万ルピアから、スプレッドは0.01pipsから、手数料は1ロットあたり3ドル、レバレッジは1:200〜1:400です。スタンダード口座は280万ルピア、プレミアム口座は7,000万ルピアが必要で、プレミアムは手数料が1ロット1ドルに下がり、レバレッジは1:200です。スプレッドは変動制で、銘柄ごとの平均スプレッドが公開されています。FX、金・原油、株価指数、個別株など45以上の銘柄を扱い、最大100万米ドルの顧客資金保険も案内しています。\n\n## 取引プラットフォーム\n\nMetaTrader 5、HSB取引アプリ（Android・iOS）、Webターミナルで取引でき、入出金もアプリ内で完結します。\n\n## どんな人に向いているか\n\n少額から始めたい、国内登録の先物ブローカーを使いたいインドネシア居住者に向いています。サービスはインドネシアの規制を前提としており、海外居住者は注意が必要です。レバレッジ取引では損失が大きくなる可能性があります。"
+ }
+}

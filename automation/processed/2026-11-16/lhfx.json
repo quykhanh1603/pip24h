@@ -1,0 +1,74 @@
+{
+ "slug": "lhfx",
+ "queueUrl": "https://www.lhfx.com/",
+ "status": "ok",
+ "name": "LHFX",
+ "website": "https://www.lhfx.com/",
+ "logo": "/images/brokers/lhfx/logo.png",
+ "assetType": "both",
+ "rating": 2.8,
+ "minDeposit": "$10 (crypto) / $20 (card)",
+ "spreadFrom": "0.0 pips (raw spreads, plus commission)",
+ "maxLeverage": "1:500",
+ "instantWithdrawal": false,
+ "category": [
+  "low-deposit",
+  "ecn",
+  "scalping"
+ ],
+ "platforms": [
+  "MetaTrader 5",
+  "LHFX WebTrader"
+ ],
+ "licenses": [
+  {
+   "regulator": "fsc-mu",
+   "text": "FSC (Mauritius)",
+   "number": "GB23202204",
+   "entity": "Longhorn Ltd",
+   "status": "unverified"
+  },
+  {
+   "regulator": "fsca",
+   "text": "FSCA (South Africa)",
+   "number": "FSP 52816",
+   "entity": "LHFX SA (PTY) Ltd – MT5 platform operator",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://www.lhfx.com/",
+  "https://www.lhfx.com/account-types",
+  "https://www.lhfx.com/spreads-and-fees"
+ ],
+ "en": {
+  "summary": "LHFX is an MT5 STP/ECN broker with $10 crypto deposits, raw spreads from 0.0 pips plus $3 per side commission and leverage up to 1:500.",
+  "pros": [
+   "Low minimum deposit: $10 in crypto or $20 by card",
+   "Raw spreads from 0.0 pips with a flat $3 per side commission on 151 instruments; scalping, hedging and EAs allowed",
+   "Zero deposit and withdrawal fees; the site reports 4.4/5 on Trustpilot from 127 reviews"
+  ],
+  "cons": [
+   "Website operator holds a Mauritius FSC licence (offshore); client accounts are opened with LHFX International Ltd, whose licence is not stated",
+   "The FSC and FSCA registers could not be checked, so licences are unverified",
+   "Only 151 markets on a single platform (MT5)"
+  ],
+  "body": "## Regulation and safety\n\nLHFX's homepage states that the website operator is Longhorn Ltd, holding a Mauritius FSC Investment Dealer licence (GB23202204), that the MetaTrader 5 platform operator is LHFX SA (PTY) Ltd under FSCA FSP 52816, and that client trading accounts are opened with LHFX International Ltd. The site does not name a licence for LHFX International Ltd, so it is unclear which regulator covers the client contract. The FSC and FSCA registers could not be retrieved during this research (the Mauritius register blocked access on 2026-11-16), so both licences are marked unverified. Mauritius is an offshore regulator without a compensation scheme.\n\n## Trading conditions\n\nThe minimum deposit is $10 in cryptocurrency or $20 by card, and there is no maximum. The standard account shows raw spreads from 0.0 pips with a $3 per side commission per lot ($6 round turn); Islamic accounts pay $3.50 per side with administration fees. Leverage goes up to 1:500, adjustable in the client portal. Scalping, hedging and Expert Advisors are unrestricted. Deposits and withdrawals are free, and the broker reports typical crypto withdrawals in under 20 minutes. 151 markets are offered across forex, crypto, stocks, indices and commodities. On Trustpilot, the site shows 4.4/5 from 127 reviews.\n\n## Platforms\n\nAll trading is on MetaTrader 5 (Windows, macOS, iOS, Android) and the LHFX WebTrader.\n\n## Who is it for?\n\nLHFX suits cost-conscious scalpers and EA users who want small minimums and fast crypto funding and accept offshore regulation."
+ },
+ "ja": {
+  "summary": "LHFXはSTP/ECN方式のMT5ブローカーで、暗号資産なら10ドルから入金でき、ローカンスプレッド0.0pipsから（片道3ドルの手数料）、最大1:500のレバレッジを提供します。",
+  "minDeposit": "10ドル（暗号資産）／20ドル（カード）",
+  "maxLeverage": "最大500倍",
+  "pros": [
+   "最低入金額は暗号資産10ドル、カード20ドルと低額",
+   "151銘柄で0.0pipsからのローカンスプレッド＋片道3ドルの一律手数料、スキャルピング・両建て・EAを許可",
+   "入出金手数料無料。Trustpilotは127件で4.4/5と表示"
+  ],
+  "cons": [
+   "サイト運営会社はモーリシャスFSCライセンス（オフショア）で、口座開設先のLHFX International Ltdのライセンスは明記されていない",
+   "FSC・FSCAの登録簿を確認できず、ライセンスは未確認",
+   "取扱いは151銘柄、プラットフォームはMT5のみ"
+  ],
+  "body": "## 規制と安全性\n\nLHFXのトップページには、サイト運営会社はモーリシャスFSCの投資ディーラーライセンス（GB23202204）を持つLonghorn Ltd、MetaTrader 5のプラットフォーム運営会社はFSCAのFSP 52816を持つLHFX SA (PTY) Ltd、顧客の取引口座はLHFX International Ltdで開設されると記載されています。LHFX International Ltdのライセンスは明記されておらず、顧客契約をどの規制当局が監督するかは不明です。調査時（2026-11-16）にFSCとFSCAの登録簿を取得できなかったため、両ライセンスとも「未確認」としています。モーリシャスはオフショアの規制で補償制度はありません。\n\n## 取引条件\n\n最低入金額は暗号資産で10ドル、カードで20ドルで、上限はありません。スタンダード口座はローカンスプレッド0.0pipsから、1ロット片道3ドル（往復6ドル）の手数料です。イスラム口座は片道3.50ドルに加え管理手数料がかかります。レバレッジは最大1:500で、クライアントポータルで変更できます。スキャルピング、両建て、EAに制限はありません。入出金手数料は無料で、暗号資産の出金は通常20分以内と案内されています。FX、暗号資産、株式、株価指数、コモディティの151銘柄を取引でき、Trustpilotは127件のレビューで4.4/5と表示されています。\n\n## 取引プラットフォーム\n\nMetaTrader 5（Windows、macOS、iOS、Android）とLHFX WebTraderで取引します。\n\n## どんな人に向いているか\n\n少額から始めたいコスト重視のスキャルパーやEA利用者で、オフショア規制を許容できる人向けです。"
+ }
+}

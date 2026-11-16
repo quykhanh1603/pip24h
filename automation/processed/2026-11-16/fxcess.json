@@ -1,0 +1,6 @@
+{
+ "slug": "fxcess",
+ "queueUrl": "https://www.fxcess.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site did not resolve/open from the research environment, no licence or trading data could be read"
+}
