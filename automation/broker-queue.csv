@@ -166,16 +166,16 @@ https://ywo.com/,,ywo,done,2026-11-16,
 https://www.xtrade.com/,,xtrade,skipped,2026-11-16,"insufficient verifiable data: no spread or leverage figures on the pages read, founding year inconsistent (2008 vs 2012), licences (Seychelles/Belize/Comoros/FSCA/Bulgaria) not verifiable on registers"
 https://www.lhfx.com/,,lhfx,done,2026-11-16,
 https://raisefx.com/,,raisefx,done,2026-11-16,
-https://m4markets.com/,,m4markets,pending,,
-https://www.lmax.com/,,lmax,pending,,
-https://keytomarkets.com/,,keytomarkets,pending,,
-https://www.gtcfx.com,,gtcfx,pending,,
-https://itbfx.com/,,itbfx,pending,,
-https://templerfx.com/,,templerfx,pending,,
-https://www.xlence.com/,,xlence,pending,,
-https://www.tegasfx.com/,,tegasfx,pending,,
-https://marketequity.com/,,marketequity,pending,,
-https://vcgmarkets.com/,,vcgmarkets,pending,,
+https://m4markets.com/,,m4markets,done,2026-11-17,
+https://www.lmax.com/,,lmax,done,2026-11-17,
+https://keytomarkets.com/,,keytomarkets,done,2026-11-17,
+https://www.gtcfx.com,,gtcfx,done,2026-11-17,
+https://itbfx.com/,,itbfx,skipped,2026-11-17,insufficient verifiable data: no financial regulator licence is claimed (Saint Lucia company registration only; regulation page says no licence is required); entity name and registration number inconsistent
+https://templerfx.com/,,templerfx,skipped,2026-11-17,"insufficient verifiable data: no regulator or licence disclosed (St Vincent and the Grenadines address only); no min deposit, spread or leverage stated"
+https://www.xlence.com/,,xlence,skipped,2026-11-17,insufficient verifiable data: site blocks fetching; trading conditions only available from aggregator sites; licence number not confirmed on register
+https://www.tegasfx.com/,,tegasfx,skipped,2026-11-17,insufficient verifiable data: site blocks fetching and no regulator register entry found; third-party sources conflict on regulation and terms
+https://marketequity.com/,,marketequity,skipped,2026-11-17,insufficient verifiable data: homepage returned no content; no licence confirmed on any regulator register
+https://vcgmarkets.com/,,vcgmarkets,skipped,2026-11-17,"insufficient verifiable data: Mauritius licence GB22200388 and Seychelles SD243 not found on regulator registers; founding year, min deposit, spread and leverage not published on pages read"
 https://www.dupoin.com/,,dupoin,pending,,
 https://www.whselfinvest.com/,,whselfinvest,pending,,
 https://lirunex.com/vi/,,lirunex,pending,,

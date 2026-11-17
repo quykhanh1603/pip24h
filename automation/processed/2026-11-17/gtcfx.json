@@ -1,0 +1,77 @@
+{
+	"slug": "gtcfx",
+	"queueUrl": "https://www.gtcfx.com",
+	"status": "ok",
+	"name": "GTCFX",
+	"website": "https://www.gtcfx.com",
+	"logo": "/images/brokers/gtcfx/logo.jpg",
+	"assetType": "forex",
+	"rating": 3,
+	"foundedYear": 2012,
+	"minDeposit": "No minimum (Standard); $3,000 (ECN)",
+	"spreadFrom": "0.0 pips (ECN, $5/lot commission)",
+	"maxLeverage": "1:2000",
+	"instantWithdrawal": false,
+	"platforms": [
+		"MetaTrader 4",
+		"MetaTrader 5",
+		"GTC Go"
+	],
+	"licenses": [
+		{
+			"regulator": "vfsc",
+			"text": "VFSC (Vanuatu)",
+			"entity": "GTC Global Trade Capital Co. Limited",
+			"status": "verified",
+			"verifiedDate": "2026-11-17"
+		},
+		{
+			"regulator": "fsc-mu",
+			"text": "FSC (Mauritius)",
+			"number": "GB22200292",
+			"entity": "GTC Global Ltd",
+			"status": "unverified"
+		},
+		{
+			"regulator": null,
+			"text": "Anjouan Offshore Finance Authority (Comoros)",
+			"number": "L16283/GTC",
+			"entity": "GTC Global Trading Ltd",
+			"status": "unverified"
+		}
+	],
+	"sources": [
+		"https://www.gtcfx.com/en-intl/company/about-us",
+		"https://www.vfsc.vu/financial-dealers-licensee-list/"
+	],
+	"en": {
+		"summary": "GTCFX is an offshore-licensed forex and CFD broker offering Standard accounts with no minimum deposit and leverage up to 1:2000.",
+		"pros": [
+			"GTC Global Trade Capital Co. Limited is listed as an active Class A, B and C financial dealer on the VFSC licensee list",
+			"Account specifications (spread, commission, minimum deposit, leverage) are clearly published",
+			"MT4, MT5 and the proprietary GTC Go app"
+		],
+		"cons": [
+			"All verifiable licences are offshore (Vanuatu); the Mauritius and Anjouan licences could not be confirmed on registers",
+			"The site cites six regulators but names licensed entities for only three jurisdictions",
+			"Not available to residents of the US, Japan or Australia; leverage up to 1:2000 raises risk"
+		],
+		"body": "## Regulation and safety\n\nGTCFX operates through separate legal entities, and the broker states that a licence held by one does not extend to the others. GTC Global Trade Capital Co. Limited (Vanuatu, company 40354) appears on the VFSC Financial Dealers licensee list as an active Class A, B, C licensee dated 2 June 2023 (checked 2026-11-17). GTC Global Ltd (Mauritius, licence GB22200292) and GTC Global Trading Ltd (Anjouan, licence L16283/GTC) are cited by the broker, but we could not confirm them on the regulators' registers. The about page also lists the FCA, ASIC, CMA and FSCA among regulators without naming licensed entities, so those claims are not relied on here. Vanuatu and Anjouan are offshore jurisdictions.\n\n## Trading conditions\n\nThe Standard account has spreads from 1.0 pips, no commission, no minimum deposit and leverage up to 1:2000. The ECN account offers spreads from 0.0 pips with a $5 per lot commission, a $3,000 minimum deposit and leverage up to 1:500.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5 and the GTC Go app (desktop, web and mobile) are offered. The broker says it has operated since 2012.\n\n## Who is it for?\n\nTraders comfortable with offshore regulation who want low entry requirements. Residents of the United States, Japan and Australia are excluded. CFD trading carries a high risk of losing money."
+	},
+	"ja": {
+		"summary": "GTCFXはオフショアのライセンスを持つFX・CFDブローカーで、スタンダード口座は最低入金額なし、最大レバレッジは2000倍です。",
+		"minDeposit": "スタンダード口座は最低入金額なし、ECN口座は3,000ドル",
+		"maxLeverage": "最大2000倍",
+		"pros": [
+			"GTC Global Trade Capital Co. LimitedはVFSCの金融ディーラー(クラスA・B・C)として有効と掲載",
+			"スプレッド、手数料、最低入金額、レバレッジが明確に公開",
+			"MT4、MT5、独自アプリGTC Goに対応"
+		],
+		"cons": [
+			"確認できたライセンスはオフショア(バヌアツ)のみで、モーリシャスとアンジュアンは登録簿で未確認",
+			"サイトは6つの規制当局を挙げるが、法人名が示されているのは3管轄のみ",
+			"米国・日本・オーストラリア居住者は利用不可。最大2000倍のレバレッジはリスクが高い"
+		],
+		"body": "## 規制と安全性\n\nGTCFXは複数の法人で運営され、1つの法人のライセンスは他の法人には及ばないと明記しています。GTC Global Trade Capital Co. Limited(バヌアツ、会社番号40354)は、VFSCの金融ディーラーライセンシー一覧に2023年6月2日付のクラスA・B・Cとして有効と掲載されています(2026-11-17確認)。GTC Global Ltd(モーリシャス、GB22200292)とGTC Global Trading Ltd(アンジュアン、L16283/GTC)は同社が記載していますが、規制当局の登録簿では確認できませんでした。会社概要ではFCA・ASIC・CMA・FSCAなども挙げられていますが、該当する法人名が示されていないため、ここでは根拠としていません。バヌアツとアンジュアンはオフショア管轄です。\n\n## 取引条件\n\nスタンダード口座はスプレッド1.0pipsから、手数料なし、最低入金額なし、最大レバレッジ2000倍です。ECN口座はスプレッド0.0pipsから、1ロットあたり5ドルの手数料、最低入金額3,000ドル、最大レバレッジ500倍です。\n\n## 取引プラットフォーム\n\nMetaTrader 4、MetaTrader 5、GTC Goアプリ(デスクトップ・Web・モバイル)に対応します。同社は2012年から運営していると説明しています。\n\n## どんな人に向いているか\n\nオフショア規制を許容でき、少額から始めたい方向けです。米国、日本、オーストラリアの居住者は利用できません。CFD取引には資金を失う高いリスクがあります。"
+	}
+}

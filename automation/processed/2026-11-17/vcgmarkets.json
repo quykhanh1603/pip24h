@@ -1,0 +1,6 @@
+{
+	"slug": "vcgmarkets",
+	"queueUrl": "https://vcgmarkets.com/",
+	"status": "skip",
+	"skipReason": "insufficient verifiable data: Mauritius licence GB22200388 and Seychelles SD243 not found on regulator registers; founding year, min deposit, spread and leverage not published on pages read"
+}

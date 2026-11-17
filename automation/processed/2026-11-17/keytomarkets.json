@@ -1,0 +1,60 @@
+{
+	"slug": "keytomarkets",
+	"queueUrl": "https://keytomarkets.com/",
+	"status": "ok",
+	"name": "Key to Markets",
+	"website": "https://keytomarkets.com/",
+	"logo": "/images/brokers/keytomarkets/logo.jpeg",
+	"assetType": "forex",
+	"rating": 2.5,
+	"foundedYear": 2010,
+	"spreadFrom": "0.0 pips (ECN)",
+	"instantWithdrawal": false,
+	"platforms": [
+		"MetaTrader 4",
+		"MetaTrader 5",
+		"MT5 WebTerminal"
+	],
+	"licenses": [
+		{
+			"regulator": "fsc-mu",
+			"text": "FSC (Mauritius)",
+			"number": "GB19024503",
+			"entity": "Key to Markets International Limited",
+			"status": "verified",
+			"verifiedDate": "2026-11-17"
+		}
+	],
+	"sources": [
+		"https://keytomarkets.com/about/",
+		"https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name?alph=K&act2=&catname=&sort=Licensed_date&sortdir=DESC&page=3"
+	],
+	"en": {
+		"summary": "Key to Markets is a Mauritius-licensed ECN forex broker founded in 2010, offering MT4/MT5 and spreads from 0.0 pips.",
+		"pros": [
+			"Key to Markets International Limited appears on the Mauritius FSC register as an Investment Dealer (licensed 17 December 2019)",
+			"Operating since 2010 with ECN technology, copy trading and PAMM",
+			"MT4, MT5 and web terminal available"
+		],
+		"cons": [
+			"Mauritius is an offshore (tier 3) regulator with limited investor protection",
+			"Minimum deposit and maximum leverage are not stated on the pages reviewed",
+			"Services are not intended for UK or EU residents"
+		],
+		"body": "## Regulation and safety\n\nKey to Markets International Limited (Ebene, Mauritius, company number 169425) states that it is regulated by the Mauritius Financial Services Commission as an Investment Dealer, licence GB19024503. The FSC register lists the firm with licence type SEC-2.1B (Investment Dealer, full service dealer excluding underwriting) dated 17 December 2019 (checked 2026-11-17); the number itself is taken from the broker's site. K2M Ltd of Cyprus acts as its payment processing company and independent representative. Mauritius is an offshore jurisdiction, so investor protection is lighter than under the FCA, ASIC or CySEC.\n\n## Trading conditions\n\nThe broker advertises ECN spreads from 0.0 pips and Cent, Standard and Pro trading accounts, plus copy trading and PAMM. Minimum deposit and maximum leverage were not stated on the pages reviewed, so confirm them before funding an account.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5 and an MT5 web terminal are offered.\n\n## Who is it for?\n\nExperienced traders comfortable with an offshore-regulated broker and interested in copy trading or PAMM may consider it. Services are not offered to residents of the USA, Iran or North Korea and are not intended for UK or EU residents. CFD trading carries a high risk of losing money."
+	},
+	"ja": {
+		"summary": "Key to Marketsは2010年創業、モーリシャスのライセンスを持つECN型FXブローカーで、MT4/MT5と0.0pipsからのスプレッドを提供します。",
+		"pros": [
+			"Key to Markets International LimitedはモーリシャスFSC登録簿に投資ディーラーとして掲載(2019年12月17日付)",
+			"2010年から運営、ECN、コピートレード、PAMMを提供",
+			"MT4・MT5・Webターミナルに対応"
+		],
+		"cons": [
+			"モーリシャスはオフショア規制(ティア3)で投資家保護が限定的",
+			"確認したページでは最低入金額と最大レバレッジが明記されていない",
+			"英国・EU居住者向けのサービスではない"
+		],
+		"body": "## 規制と安全性\n\nKey to Markets International Limited(モーリシャス・エベーヌ、会社番号169425)は、モーリシャス金融サービス委員会(FSC)の投資ディーラーライセンス(GB19024503)を保有していると表示しています。FSC登録簿には、投資ディーラー(SEC-2.1B、引受を除くフルサービス)として2019年12月17日付で掲載されています(2026-11-17確認)。番号自体は同社サイトの記載です。キプロスのK2M Ltdが決済処理会社兼代理人です。モーリシャスはオフショア規制で、FCA・ASIC・CySECと比べ投資家保護は限定的です。\n\n## 取引条件\n\nECNスプレッドは0.0pipsから、Cent・Standard・Proの口座に加え、コピートレードやPAMMがあります。最低入金額と最大レバレッジは確認したページに記載がなかったため、入金前に確認してください。\n\n## 取引プラットフォーム\n\nMetaTrader 4、MetaTrader 5、MT5ウェブターミナルに対応しています。\n\n## どんな人に向いているか\n\nオフショア規制のブローカーを許容でき、コピートレードやPAMMに関心のある経験者向けです。米国、イラン、北朝鮮の居住者は利用できず、英国・EU居住者向けでもありません。CFD取引には資金を失う高いリスクがあります。"
+	}
+}

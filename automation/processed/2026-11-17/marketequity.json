@@ -1,0 +1,6 @@
+{
+	"slug": "marketequity",
+	"queueUrl": "https://marketequity.com/",
+	"status": "skip",
+	"skipReason": "insufficient verifiable data: homepage returned no content; no licence confirmed on any regulator register"
+}

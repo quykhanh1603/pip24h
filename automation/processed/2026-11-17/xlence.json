@@ -1,0 +1,6 @@
+{
+	"slug": "xlence",
+	"queueUrl": "https://www.xlence.com/",
+	"status": "skip",
+	"skipReason": "insufficient verifiable data: site blocks fetching; trading conditions only available from aggregator sites; licence number not confirmed on register"
+}

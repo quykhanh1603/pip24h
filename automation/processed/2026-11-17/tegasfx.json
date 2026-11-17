@@ -1,0 +1,6 @@
+{
+	"slug": "tegasfx",
+	"queueUrl": "https://www.tegasfx.com/",
+	"status": "skip",
+	"skipReason": "insufficient verifiable data: site blocks fetching and no regulator register entry found; third-party sources conflict on regulation and terms"
+}

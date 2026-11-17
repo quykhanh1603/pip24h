@@ -1,0 +1,6 @@
+{
+	"slug": "itbfx",
+	"queueUrl": "https://itbfx.com/",
+	"status": "skip",
+	"skipReason": "insufficient verifiable data: no financial regulator licence is claimed (Saint Lucia company registration only; regulation page says no licence is required); entity name and registration number inconsistent"
+}
