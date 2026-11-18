@@ -1,0 +1,35 @@
+{
+	"slug": "lirunex",
+	"queueUrl": "https://lirunex.com/vi/",
+	"status": "ok",
+	"name": "Lirunex",
+	"website": "https://lirunex.com/",
+	"logo": "/images/brokers/lirunex/logo.png",
+	"assetType": "forex",
+	"rating": 3.5,
+	"minDeposit": "$0 (Standard/Prime), $10,000 (Pro)",
+	"spreadFrom": "0.0 pips",
+	"maxLeverage": "1:1000",
+	"category": ["ecn", "low-deposit"],
+	"platforms": ["MetaTrader 4", "MetaTrader 5", "Lirunex App"],
+	"licenses": [
+		{ "regulator": "cysec", "text": "CySEC (Cyprus)", "number": "338/17", "entity": "Lirunex Ltd", "status": "verified", "verifiedDate": "2026-11-18" },
+		{ "regulator": "fsc-mu", "text": "FSC (Mauritius)", "number": "GB24203882", "entity": "Lirunex Limited", "status": "unverified" },
+		{ "regulator": null, "text": "CMA (UAE), Category 5 — advisory and introduction services only", "number": "20200000423", "entity": "Lirunex Financial Services L.L.C", "status": "unverified" }
+	],
+	"sources": ["https://lirunex.com/vi/regulations-and-licenses", "https://lirunex.com/vi/account-types", "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/"],
+	"en": {
+		"summary": "Lirunex is a forex and CFD broker with a CySEC-licensed Cyprus entity and a Mauritius entity, offering MT4/MT5 accounts with zero-pip raw spreads and leverage up to 1:1000.",
+		"pros": ["Lirunex Ltd appears on the CySEC register under licence 338/17 (checked 2026-11-18)", "Standard and Prime accounts have no minimum deposit", "Raw spreads from 0.0 pips on Prime and Pro accounts, with commission of $8 or $4 per lot", "MT4 and MT5 plus PAMM/MAM and copy trading on all accounts"],
+		"cons": ["Lirunex lists several group entities and does not say which one serves which clients; the Mauritius licence is offshore and was not verified on the FSC register", "Leverage up to 1:1000 on FX and metals greatly increases risk", "The site does not mention an investor compensation scheme and does not state a founding year", "Services are not offered to residents of the US, Japan, Singapore, Malaysia and several other countries"],
+		"body": "## Regulation and safety\n\nLirunex operates through several group companies. **Lirunex Ltd** (Cyprus) is listed on the CySEC register of Cypriot investment firms under licence 338/17, dated 25 September 2017, with the trade name LX Prime (checked 2026-11-18). **Lirunex Limited** (Mauritius) states it holds FSC licence GB24203882; this was not found on the FSC register during our check, so it is shown as unverified. A Dubai entity, Lirunex Financial Services L.L.C, holds a UAE CMA Category 5 licence that, according to the company, covers only financial advisory and introduction services, not trading or holding client funds. The website does not say which entity serves which clients, so check the entity named in your client agreement.\n\n## Trading conditions\n\nFour account types are offered: LX-Standard and LX-Standard Cent (spreads from 1.5, no commission), LX-Prime (raw spreads from 0.0 pips, $8 per lot) and LX-Pro (from 0.0 pips, $4 per lot, $10,000 minimum deposit). Standard and Prime have no stated minimum deposit. Maximum leverage is 1:1000 on FX and metals for balances up to $5,000, falling in tiers to 1:100 above $80,000; indices, energy and crypto are capped at 1:200 and stocks at 1:20. Margin call and stop-out levels are 50% and 25%. Swap-free accounts are available on all but the Pro account.\n\n## Platforms\n\nTrading is available on MetaTrader 4 and MetaTrader 5, a web terminal and the Lirunex mobile app. PAMM, MAM and copy trading are listed for all account types.\n\n## Who is it for?\n\nLirunex suits traders who want low entry cost and raw-spread pricing on MetaTrader. High leverage and the split of entities and licences mean traders should read the client agreement carefully. CFDs are complex leveraged products and you can lose your entire investment."
+	},
+	"ja": {
+		"summary": "Lirunexは、キプロスのCySEC認可法人とモーリシャス法人を持つFX・CFDブローカーで、MT4/MT5、0.0pipsからのロースプレッド、最大1:1000のレバレッジを提供しています。",
+		"minDeposit": "0ドル（スタンダード／プライム）、10,000ドル（プロ）",
+		"maxLeverage": "最大1000倍",
+		"pros": ["Lirunex LtdはCySEC登録簿に認可番号338/17で掲載（2026-11-18確認）", "スタンダードとプライム口座は最低入金額の設定なし", "プライム・プロ口座は0.0pipsからのロースプレッド（1ロット8ドル／4ドルの手数料）", "全口座でMT4・MT5に加え、PAMM/MAMとコピートレードに対応"],
+		"cons": ["複数のグループ法人が記載され、どの法人がどの顧客を担当するか明示されていない。モーリシャスの認可はオフショアで、FSC登録簿では確認できなかった", "FX・金属で最大1000倍のレバレッジはリスクを大きく高める", "投資家補償制度の記載や設立年の記載がない", "米国、日本、シンガポール、マレーシアなどの居住者にはサービスを提供していない"],
+		"body": "## 規制と安全性\n\nLirunexは複数のグループ会社を通じて運営されています。**Lirunex Ltd**（キプロス）は、CySEC（キプロス証券取引委員会）のキプロス投資会社登録簿に認可番号338/17（2017年9月25日付、商号LX Prime）で掲載されています（2026-11-18確認）。**Lirunex Limited**（モーリシャス）はFSCライセンスGB24203882を保有すると表明していますが、今回の確認ではFSC登録簿で見つからなかったため「未確認」としています。ドバイの**Lirunex Financial Services L.L.C**はUAE CMAカテゴリー5のライセンスを保有していますが、同社によれば対象は金融アドバイザリーと紹介業務のみで、取引の執行や顧客資金の保管は含まれません。どの法人がどの顧客を担当するかはサイトに明記されていないため、契約書に記載された法人を必ず確認してください。\n\n## 取引条件\n\n口座はスタンダード、スタンダードセント（スプレッド1.5から、手数料なし）、プライム（0.0pipsから、1ロット8ドル）、プロ（0.0pipsから、1ロット4ドル、最低入金額10,000ドル）の4種類です。スタンダードとプライムは最低入金額の記載がありません。FX・金属の最大レバレッジは残高5,000ドルまでで1:1000、残高に応じて段階的に下がり、80,000ドル超では1:100となります。指数・エネルギー・暗号資産は1:200、株式は1:20が上限です。マージンコール／ロスカットは50%／25%で、プロ以外の口座ではスワップフリーが利用できます。\n\n## 取引プラットフォーム\n\nMetaTrader 4、MetaTrader 5、Webターミナル、Lirunexモバイルアプリで取引できます。全口座でPAMM、MAM、コピートレードが利用可能とされています。\n\n## どんな人に向いているか\n\n低い参入コストとMetaTrader上のロースプレッドを求めるトレーダー向けですが、高レバレッジや法人・ライセンスの構成が複雑なため、契約内容をよく確認する必要があります。CFDは複雑なレバレッジ商品であり、投資資金の全額を失う可能性があります。"
+	}
+}

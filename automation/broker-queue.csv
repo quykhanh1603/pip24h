@@ -176,16 +176,16 @@ https://www.xlence.com/,,xlence,skipped,2026-11-17,insufficient verifiable data:
 https://www.tegasfx.com/,,tegasfx,skipped,2026-11-17,insufficient verifiable data: site blocks fetching and no regulator register entry found; third-party sources conflict on regulation and terms
 https://marketequity.com/,,marketequity,skipped,2026-11-17,insufficient verifiable data: homepage returned no content; no licence confirmed on any regulator register
 https://vcgmarkets.com/,,vcgmarkets,skipped,2026-11-17,"insufficient verifiable data: Mauritius licence GB22200388 and Seychelles SD243 not found on regulator registers; founding year, min deposit, spread and leverage not published on pages read"
-https://www.dupoin.com/,,dupoin,pending,,
-https://www.whselfinvest.com/,,whselfinvest,pending,,
-https://lirunex.com/vi/,,lirunex,pending,,
-https://gerchik.co/,,gerchik,pending,,
-https://www.trade245.com/,,trade245,pending,,
-https://www.trive.com/,,trive,pending,,
-https://www.amarkets.com/,,amarkets,pending,,
-https://fxtrendo.com/,,fxtrendo,pending,,
-https://1xtrade.com/,,1xtrade,pending,,
-https://www.godocm.com/,,godocm,pending,,
+https://www.dupoin.com/,,dupoin,skipped,2026-11-18,"insufficient verifiable data: homepage blocks fetching; no current licence confirmed on a register (FCA permissions reportedly cancelled), few trading specs found"
+https://www.whselfinvest.com/,,whselfinvest,skipped,2026-11-18,"insufficient verifiable data: CSSF licence not confirmed on the register; min deposit, spreads and leverage not published"
+https://lirunex.com/vi/,,lirunex,done,2026-11-18,
+https://gerchik.co/,,gerchik,skipped,2026-11-18,insufficient verifiable data: site content not retrievable and licence claims only from conflicting third-party sources
+https://www.trade245.com/,,trade245,skipped,2026-11-18,insufficient verifiable data: FSCA registration (Juristic Representative of FSP 46044) not confirmed on the FSCA register and conflicting third-party reports on the affiliation
+https://www.trive.com/,,trive,skipped,2026-11-18,"not published: MFSA reportedly ordered Trive Financial Services Europe to stop onboarding and halt client-account transactions (Sept 2026, per Finance Magnates); status could not be confirmed on the MFSA register"
+https://www.amarkets.com/,,amarkets,skipped,2026-11-18,"insufficient verifiable data: site blocks fetching and only offshore licences claimed by third parties, none confirmed on a register"
+https://fxtrendo.com/,,fxtrendo,skipped,2026-11-18,"insufficient verifiable data: redirects to trendo.com; only an FSC Mauritius licence (GB25205094) claimed, not confirmable on the FSC register"
+https://1xtrade.com/,,1xtrade,skipped,2026-11-18,insufficient verifiable data: no regulator or licence disclosed on the site
+https://www.godocm.com/,,godocm,skipped,2026-11-18,insufficient verifiable data: site content not retrievable and no licence information found
 https://www.fxprimus.com/,,fxprimus,pending,,
 https://scopemarkets.co.ke,,scopemarkets,pending,,
 https://www.deltastock.com/,,deltastock,pending,,
