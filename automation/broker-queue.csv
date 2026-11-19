@@ -186,16 +186,16 @@ https://www.amarkets.com/,,amarkets,skipped,2026-11-18,"insufficient verifiable 
 https://fxtrendo.com/,,fxtrendo,skipped,2026-11-18,"insufficient verifiable data: redirects to trendo.com; only an FSC Mauritius licence (GB25205094) claimed, not confirmable on the FSC register"
 https://1xtrade.com/,,1xtrade,skipped,2026-11-18,insufficient verifiable data: no regulator or licence disclosed on the site
 https://www.godocm.com/,,godocm,skipped,2026-11-18,insufficient verifiable data: site content not retrievable and no licence information found
-https://www.fxprimus.com/,,fxprimus,pending,,
-https://scopemarkets.co.ke,,scopemarkets,pending,,
-https://www.deltastock.com/,,deltastock,pending,,
-https://agrodana-futures.com/,,agrodana-futures,pending,,
-https://fiper.me/,,fiper,pending,,
-https://www.stptrading.io/,,stptrading,pending,,
-https://www.neex.com/,,neex,pending,,
-https://century.ae,,century,pending,,
-https://holaprimemarkets.com/,,holaprimemarkets,pending,,
-https://mhmarkets.com/,,mhmarkets,pending,,
+https://www.fxprimus.com/,,fxprimus,done,2026-11-19,
+https://scopemarkets.co.ke,,scopemarkets,skipped,2026-11-19,"insufficient verifiable data: site content not retrievable; CMA Kenya licence number not confirmed on the regulator register; no founding year, spread or leverage read"
+https://www.deltastock.com/,,deltastock,done,2026-11-19,
+https://agrodana-futures.com/,,agrodana-futures,skipped,2026-11-19,"insufficient verifiable data: Bappebti permit seen on register but no spread figures, platform name or minimum deposit stated on the official site (only founding year and 1:100 leverage)"
+https://fiper.me/,,fiper,skipped,2026-11-19,"insufficient verifiable data: Mauritius FSC licence could not be confirmed on the register; no founding year, minimum deposit or meaningful spread figure"
+https://www.stptrading.io/,,stptrading,skipped,2026-11-19,insufficient verifiable data: Mauritius FSC licence GB26206302 could not be confirmed on the regulator register
+https://www.neex.com/,,neex,skipped,2026-11-19,insufficient verifiable data: FSCA (FSP 49937) and Mauritius FSC (GB20025869) licences could not be confirmed on the registers; founding year not stated
+https://century.ae,,century,skipped,2026-11-19,insufficient verifiable data: official site returned 403 for all pages; CMA/SCA licences not confirmed on the regulator register
+https://holaprimemarkets.com/,,holaprimemarkets,skipped,2026-11-19,"insufficient verifiable data: licences (Mauritius FSC, Sao Tome NFSA) not confirmed on registers; no founding year, minimum deposit or platforms stated"
+https://mhmarkets.com/,,mhmarkets,skipped,2026-11-19,insufficient verifiable data: official site not retrievable (empty response); licences only from third-party aggregators
 https://www.tradetaurex.com,,tradetaurex,pending,,
 https://fxtrading.com,,fxtrading,pending,,
 https://www.forex4you.com,,forex4you,pending,,
