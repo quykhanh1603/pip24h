@@ -1,0 +1,20 @@
+{
+ "slug":"gbebrokers","queueUrl":"https://gbebrokers.com/","status":"ok","name":"GBE brokers","website":"https://gbebrokers.com/","logo":"/images/brokers/gbebrokers/logo.png",
+ "assetType":"forex","rating":3.5,"foundedYear":2014,"minDeposit":"$1,000","spreadFrom":"0.0 pips","maxLeverage":"",
+ "instantWithdrawal":false,
+ "platforms":["MetaTrader 4","MetaTrader 5","TradingView"],
+ "licenses":[
+  {"regulator":"cysec","text":"CySEC (Cyprus)","number":"240/14","entity":"GBE brokers Ltd","status":"unverified"},
+  {"regulator":"bafin","text":"BaFin (Germany) - Hamburg branch, BaFin-ID 10148129","entity":"GBE brokers Ltd","status":"unverified"}
+ ],
+ "sources":["https://gbebrokers.com/en/company/about-us","https://gbebrokers.com/documents/pillar/gbe_pillar_3_2023.pdf","https://www.fsma.be/en/party/gbe-brokers-ltd"],
+ "en":{"summary":"GBE brokers is a Limassol-based CFD broker founded in 2014, authorised by CySEC and operating a Hamburg branch registered with BaFin.",
+ "pros":["Operating since 2014 under a CySEC CIF licence (240/14) per its own disclosures","Hamburg branch is registered with BaFin","Published account tiers with minimum deposit, spreads and commission"],
+ "cons":["Entry deposit of $1,000 is high for the Classic account","Site states 79% of retail accounts lose money trading CFDs","Leverage ratios are not stated on the main page"],
+ "body":"## Regulation and safety\n\nGBE brokers Ltd (company HE324205, Limassol) states that it is regulated by CySEC under CIF licence 240/14, and that its Hamburg branch is registered with BaFin (BaFin-ID 10148129). GBE's own Pillar 3 disclosure confirms the licence date of 27 June 2014. We could not open the CySEC or BaFin registers in this review, so the licences are marked unverified. The site also advertises investor compensation insurance up to EUR 300,000 via Lloyd's and discloses that 79% of retail accounts lose money.\n\n## Trading conditions\n\nClassic ($1,000), Pro ($10,000) and VIP ($100,000) accounts show DAX spreads of 1.20, 1.10 and 1.00 with commissions on forex. Forex is advertised from 0 pips spread. Leverage ratios are on a separate page we did not read.\n\n## Platforms\n\nMetaTrader 4, MetaTrader 5 and TradingView.\n\n## Who is it for?\n\nTraders, particularly German-speaking, who prefer an EU-regulated CFD broker and can meet a larger initial deposit. CFDs are high risk."},
+ "ja":{"summary":"GBE brokersはキプロスのリマソールに拠点を置く2014年設立のCFDブローカーで、CySECの認可を受け、ハンブルク支店はBaFinに登録されています。",
+ "minDeposit":"1,000ドル","maxLeverage":"",
+ "pros":["自社開示によると2014年からCySECのCIFライセンス（240/14）で運営","ハンブルク支店はBaFinに登録","最低入金額・スプレッド・手数料が口座別に公開されている"],
+ "cons":["Classic口座の最低入金額1,000ドルは高め","サイトはCFD取引で個人口座の79%が損失を出していると開示","メインページにレバレッジ倍率の記載なし"],
+ "body":"## 規制と安全性\n\nGBE brokers Ltd（会社番号HE324205、リマソール）はCySECのCIFライセンス240/14で規制され、ハンブルク支店はBaFin（BaFin-ID 10148129）に登録されていると表示しています。同社のPillar 3開示でもライセンス付与日が2014年6月27日と確認できます。今回CySECとBaFinの登録簿は開けなかったため、ライセンスは「未確認」としています。ロイズ経由で最大30万ユーロの投資家補償保険を掲げ、個人口座の79%が損失を出していることも開示しています。\n\n## 取引条件\n\nClassic（1,000ドル）、Pro（10,000ドル）、VIP（100,000ドル）口座のDAXスプレッドはそれぞれ1.20、1.10、1.00で、FXは手数料がかかります。FXは0pipsからと記載されています。レバレッジは別ページに記載され、今回は確認していません。\n\n## 取引プラットフォーム\n\nMT4、MT5、TradingViewです。\n\n## どんな人に向いているか\n\nEU規制のCFDブローカーを望み、比較的大きな初回入金が可能なトレーダー向けです。CFDは高リスクです。"}
+}

@@ -1,0 +1,21 @@
+{
+ "slug":"fxview","queueUrl":"https://fxview.com","status":"ok","name":"Fxview","website":"https://fxview.com","logo":"",
+ "assetType":"forex","rating":3.5,"foundedYear":2020,"minDeposit":"$50","spreadFrom":"0.0 pips","maxLeverage":"1:1000","instantWithdrawal":false,
+ "category":["ecn"],
+ "platforms":["MetaTrader 5","ActTrader","ZuluTrade"],
+ "licenses":[
+  {"regulator":"cysec","text":"CySEC (Cyprus)","number":"367/18","entity":"Charlgate Ltd","status":"unverified"},
+  {"regulator":"fsca","text":"FSCA (South Africa)","number":"50410","entity":"Finvasia Capital South Africa (PTY) Ltd","status":"unverified"},
+  {"regulator":null,"text":"Union of Comoros-Anjouan, licence L16076/FCG","entity":"FC Global LTD","status":"unverified"}
+ ],
+ "sources":["https://fxview.com/global/about-us","https://www.financemagnates.com/forex/cysec-reaches-50k-settlement-with-fxview-operator-charlgate/"],
+ "en":{"summary":"Fxview is a multi-asset CFD broker from the Finvasia Group, operating through a CySEC-licensed Cyprus entity and several non-EU entities.",
+ "pros":["Cyprus entity Charlgate Ltd is a CySEC-licensed investment firm and ICF member, per the site","Raw ECN accounts from $50 with spreads from 0.0 pips","Offers MetaTrader 5, ActTrader and ZuluTrade social trading"],
+ "cons":["CySEC settled with Charlgate for EUR 50,000 over authorisation, client-fund protection and order execution matters, per press reports","Clients outside the EU are served by offshore (Comoros-Anjouan) entity","Leverage up to 1:1000 is available only outside EU rules"],
+ "body":"## Regulation and safety\n\nFxview is a brand of the Finvasia Group. The site lists Charlgate Ltd (CySEC licence 367/18, Investor Compensation Fund member), Finvasia Capital South Africa (PTY) Ltd (FSCA licence 50410), FC Global LTD (Comoros-Anjouan licence L16076/FCG, not serving EU, UK or US residents) and a UAE introducer licensed by the CMA. We could not open the regulators' own registers in this review, so the licences are marked unverified. Finance Magnates reports that CySEC reached a EUR 50,000 settlement with Charlgate covering the period from 2020 to mid-2023; this is a settlement, not a warning-list entry.\n\n## Trading conditions\n\nRAW ECN and Islamic accounts start at $50, Premium ECN at $5,000. Spreads start from 0.0 pips with commissions of $1 to $2 per 100k per side on ECN accounts, and the Zero Commission account has spreads from 0.6 pips. Leverage is listed up to 1:1000.\n\n## Platforms\n\nMetaTrader 5, ActTrader and ZuluTrade.\n\n## Who is it for?\n\nTraders wanting ECN pricing and a low entry deposit. The Group's history dates to 2009, while Fxview began serving European CFD clients in 2020. CFDs are high risk."},
+ "ja":{"summary":"FxviewはFinvasiaグループのマルチアセットCFDブローカーで、CySEC認可のキプロス法人と複数の非EU法人を通じて運営されています。",
+ "minDeposit":"50ドル","maxLeverage":"最大1000倍",
+ "pros":["キプロス法人Charlgate LtdはCySEC認可の投資会社で投資家補償基金（ICF）に加盟とサイトに記載","RAW ECN口座は50ドルから、スプレッド0.0pipsから","MT5、ActTrader、ZuluTradeのソーシャルトレードに対応"],
+ "cons":["報道によりCySECはCharlgateと認可要件・顧客資金保護・注文執行に関し5万ユーロで和解","EU圏外の顧客はオフショア（コモロ・アンジュアン）法人が対応","最大1000倍のレバレッジはEUの規制外でのみ提供"],
+ "body":"## 規制と安全性\n\nFxviewはFinvasiaグループのブランドです。サイトにはCharlgate Ltd（CySEC 367/18、投資家補償基金加盟）、Finvasia Capital South Africa (PTY) Ltd（FSCA 50410）、FC Global LTD（コモロ・アンジュアン L16076/FCG、EU・英国・米国居住者は対象外）、およびCMAのライセンスを持つUAEの紹介業者が掲載されています。今回は各規制当局の公式登録簿を開けなかったため、ライセンスは「未確認」としています。Finance Magnatesによると、CySECはCharlgateと2020年から2023年半ばまでを対象に5万ユーロで和解しました（和解であり、警告リストへの掲載ではありません）。\n\n## 取引条件\n\nRAW ECNとイスラム口座は50ドルから、Premium ECNは5,000ドルからです。スプレッドは0.0pipsから、ECN口座の手数料は片道10万通貨あたり1〜2ドルで、ゼロコミッション口座は0.6pipsからです。レバレッジは最大1000倍と記載されています。\n\n## 取引プラットフォーム\n\nMT5、ActTrader、ZuluTradeです。\n\n## どんな人に向いているか\n\nECN水準の価格と低い入金額を求める方向けです。グループの歴史は2009年に遡り、Fxviewは2020年に欧州向けCFDを開始しました。CFDは高リスクです。"}
+}

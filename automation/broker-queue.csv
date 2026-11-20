@@ -196,16 +196,16 @@ https://www.neex.com/,,neex,skipped,2026-11-19,insufficient verifiable data: FSC
 https://century.ae,,century,skipped,2026-11-19,insufficient verifiable data: official site returned 403 for all pages; CMA/SCA licences not confirmed on the regulator register
 https://holaprimemarkets.com/,,holaprimemarkets,skipped,2026-11-19,"insufficient verifiable data: licences (Mauritius FSC, Sao Tome NFSA) not confirmed on registers; no founding year, minimum deposit or platforms stated"
 https://mhmarkets.com/,,mhmarkets,skipped,2026-11-19,insufficient verifiable data: official site not retrievable (empty response); licences only from third-party aggregators
-https://www.tradetaurex.com,,tradetaurex,pending,,
-https://fxtrading.com,,fxtrading,pending,,
-https://www.forex4you.com,,forex4you,pending,,
-https://jpmarkets.co.za,,jpmarkets,pending,,
-https://tentrade.com/,,tentrade,pending,,
-https://onequity.com/,,onequity,pending,,
-https://zforex.com/,,zforex,pending,,
-https://fxview.com,,fxview,pending,,
-https://gbebrokers.com/,,gbebrokers,pending,,
-https://capitalxtend.com/,,capitalxtend,pending,,
+https://www.tradetaurex.com,,taurex,done,2026-11-20,
+https://fxtrading.com,,fxtrading,skipped,2026-11-20,insufficient verifiable data: site blocks fetching (403); ASIC/VFSC licences only from third-party reviews and not checked on registers
+https://www.forex4you.com,,forex4you,skipped,2026-11-20,insufficient verifiable data: site blocks fetching (403); licences only from aggregators and conflicting (BVI/Mauritius/Belize); rebranded to Markets4you per secondary sources
+https://jpmarkets.co.za,,jpmarkets,skipped,2026-11-20,insufficient verifiable data: FSCA register not reachable; FSP 46855 was provisionally suspended in 2020 and current status could not be confirmed; no spread/leverage/min deposit published
+https://tentrade.com/,,tentrade,done,2026-11-20,
+https://onequity.com/,,onequity,skipped,2026-11-20,"insufficient verifiable data: licences unverified on registers; founding year, min deposit and spreads not published on pages read; IOSCO I-SCAN alert listing could not be read"
+https://zforex.com/,,zforex,skipped,2026-11-20,"insufficient verifiable data: only MISA (offshore) licence from own site; founding year, min deposit, spread and leverage not stated"
+https://fxview.com,,fxview,done,2026-11-20,
+https://gbebrokers.com/,,gbebrokers,done,2026-11-20,
+https://capitalxtend.com/,,capitalxtend,skipped,2026-11-20,insufficient verifiable data: Mauritius FSC licence GB23201599 not confirmed on register; leverage claim unclear and live spreads not loaded
 https://www.phillipnova.com.sg/,,phillipnova,pending,,
 https://didimax.co.id/English,,didimax,pending,,
 akyatirim.com.tr,,akyatirim,pending,,
