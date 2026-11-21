@@ -206,16 +206,16 @@ https://zforex.com/,,zforex,skipped,2026-11-20,"insufficient verifiable data: on
 https://fxview.com,,fxview,done,2026-11-20,
 https://gbebrokers.com/,,gbebrokers,done,2026-11-20,
 https://capitalxtend.com/,,capitalxtend,skipped,2026-11-20,insufficient verifiable data: Mauritius FSC licence GB23201599 not confirmed on register; leverage claim unclear and live spreads not loaded
-https://www.phillipnova.com.sg/,,phillipnova,pending,,
-https://didimax.co.id/English,,didimax,pending,,
-akyatirim.com.tr,,akyatirim,pending,,
-https://errante.com/,,errante,pending,,
-https://www.hantec.com,,hantec,pending,,
-https://www.hfx.co.id/,,hfx,pending,,
-https://freshforex.com/,,freshforex,pending,,
-https://www.monaxa.com/,,monaxa,pending,,
-https://www.elana.net/en/trading,,elana,pending,,
-https://www.accumarkets.co.za/,,accumarkets,pending,,
+https://www.phillipnova.com.sg/,,phillipnova,skipped,2026-11-21,insufficient verifiable data: site returns 403 and MAS register entry not confirmed; licence scope for CFDs and deposit/spread/leverage missing
+https://didimax.co.id/English,,didimax,done,2026-11-21,
+akyatirim.com.tr,,akyatirim,skipped,2026-11-21,"insufficient verifiable data: no min deposit, spread or leverage published for forex/CFD"
+https://errante.com/,,errante,done,2026-11-21,
+https://www.hantec.com,,hantec,skipped,2026-11-21,"insufficient verifiable data: licences unconfirmed on registers; no official min deposit, spread or founding year"
+https://www.hfx.co.id/,,hfx,skipped,2026-11-21,insufficient verifiable data: site blocks fetching; licence only from aggregator sites
+https://freshforex.com/,,freshforex,skipped,2026-11-21,insufficient verifiable data: site blocks fetching; licence only from aggregator sites
+https://www.monaxa.com/,,monaxa,skipped,2026-11-21,"insufficient verifiable data: Anguilla entity, no regulator or licence stated, no account specs"
+https://www.elana.net/en/trading,,elana,skipped,2026-11-21,"insufficient verifiable data: licence number not stated, no min deposit/spread/leverage"
+https://www.accumarkets.co.za/,,accumarkets,skipped,2026-11-21,insufficient verifiable data: homepage returned no licence or account specs
 https://flatexdegiro.com,,flatexdegiro,pending,,
 https://www.colmexpro.com/,,colmexpro,pending,,
 https://tnfx.co/,,tnfx,pending,,
