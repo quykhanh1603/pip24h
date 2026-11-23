@@ -1,0 +1,6 @@
+{
+ "slug": "nxgmarkets",
+ "queueUrl": "https://www.nxgmarkets.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: MISA/FSCA licences not confirmed on registers; founding year missing"
+}

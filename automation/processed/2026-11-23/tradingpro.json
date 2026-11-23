@@ -1,0 +1,6 @@
+{
+ "slug": "tradingpro",
+ "queueUrl": "https://www.tradingpro.com",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site blocks fetching; only aggregator sources for licences"
+}

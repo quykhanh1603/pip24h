@@ -1,0 +1,6 @@
+{
+ "slug": "cobratrading",
+ "queueUrl": "https://cobratrading.com",
+ "status": "skip",
+ "skipReason": "not a forex/crypto broker: US equities/options broker, not a forex/crypto broker"
+}

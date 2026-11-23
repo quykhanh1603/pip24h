@@ -1,0 +1,6 @@
+{
+ "slug": "fxglobe",
+ "queueUrl": "https://fxglobe.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site unreachable (HTTP 504) after retries"
+}

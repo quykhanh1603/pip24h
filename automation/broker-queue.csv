@@ -226,16 +226,16 @@ https://www.kcmtrade.com/,,kcmtrade,skipped,2026-11-22,"insufficient verifiable 
 https://www.landprime.com/,,landprime,done,2026-11-22,
 https://otetmarkets.com/,,otetmarkets,skipped,2026-11-22,insufficient verifiable data: no financial regulator named (St Lucia registration only)
 https://www.maxco.co.id/,,maxco,skipped,2026-11-22,insufficient verifiable data: no licence numbers or trading figures published
-https://fxnx.com/,,fxnx,pending,,
-https://www.btcdana.com/,,btcdana,pending,,
-https://cobratrading.com,,cobratrading,pending,,
-https://investizo.com/,,investizo,pending,,
-https://fxglobe.com/,,fxglobe,pending,,
-https://www.ingot.io/,,ingot,pending,,
-https://vittaverse.com/,,vittaverse,pending,,
-https://www.nxgmarkets.com/,,nxgmarkets,pending,,
-https://www.tradingpro.com,,tradingpro,pending,,
-https://4xc.com/,,4xc,pending,,
+https://fxnx.com/,,fxnx,skipped,2026-11-23,insufficient verifiable data: no financial regulator named (Saint Lucia company registration only)
+https://www.btcdana.com/,,btcdana,done,2026-11-23,
+https://cobratrading.com,,cobratrading,skipped,2026-11-23,"not a forex/crypto broker: US equities/options broker, not a forex/crypto broker"
+https://investizo.com/,,investizo,skipped,2026-11-23,insufficient verifiable data: no financial regulator named (SVG company registration only)
+https://fxglobe.com/,,fxglobe,skipped,2026-11-23,insufficient verifiable data: site unreachable (HTTP 504) after retries
+https://www.ingot.io/,,ingot,done,2026-11-23,
+https://vittaverse.com/,,vittaverse,skipped,2026-11-23,"insufficient verifiable data: no licence numbers, founding year, deposit or spread found"
+https://www.nxgmarkets.com/,,nxgmarkets,skipped,2026-11-23,insufficient verifiable data: MISA/FSCA licences not confirmed on registers; founding year missing
+https://www.tradingpro.com,,tradingpro,skipped,2026-11-23,insufficient verifiable data: site blocks fetching; only aggregator sources for licences
+https://4xc.com/,,4xc,skipped,2026-11-23,"insufficient verifiable data: only licence claims; no deposit, spread, leverage, platform data and register shows no number"
 https://www.spreadco.com/,,spreadco,pending,,
 https://www.top1markets.com/,,top1markets,pending,,
 https://dbinvesting.com/,,dbinvesting,pending,,

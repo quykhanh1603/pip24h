@@ -1,0 +1,6 @@
+{
+ "slug": "4xc",
+ "queueUrl": "https://4xc.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: only licence claims; no deposit, spread, leverage, platform data and register shows no number"
+}
