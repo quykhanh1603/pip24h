@@ -236,16 +236,16 @@ https://vittaverse.com/,,vittaverse,skipped,2026-11-23,"insufficient verifiable 
 https://www.nxgmarkets.com/,,nxgmarkets,skipped,2026-11-23,insufficient verifiable data: MISA/FSCA licences not confirmed on registers; founding year missing
 https://www.tradingpro.com,,tradingpro,skipped,2026-11-23,insufficient verifiable data: site blocks fetching; only aggregator sources for licences
 https://4xc.com/,,4xc,skipped,2026-11-23,"insufficient verifiable data: only licence claims; no deposit, spread, leverage, platform data and register shows no number"
-https://www.spreadco.com/,,spreadco,pending,,
-https://www.top1markets.com/,,top1markets,pending,,
-https://dbinvesting.com/,,dbinvesting,pending,,
-https://www.intertrader.com/,,intertrader,pending,,
-https://www.teletrade.org/,,teletrade,pending,,
-https://fxon.com/,,fxon,pending,,
-forex.finam.ru,,finam,pending,,
-https://mubashercapital.com,,mubashercapital,pending,,
-https://speedtrader.com,,speedtrader,pending,,
-https://www.varchev.com/,,varchev,pending,,
+https://www.spreadco.com/,,spreadco,skipped,2026-11-24,"insufficient verifiable data: FCA register entry could not be loaded; founding year, minimum deposit and spread figures not published"
+https://www.top1markets.com/,,top1markets,skipped,2026-11-24,"insufficient verifiable data: licences (VFSC 40436, ASIC AR) not found on regulator registers; no founding year, minimum deposit or spread figures"
+https://dbinvesting.com/,,dbinvesting,done,2026-11-24,
+https://www.intertrader.com/,,intertrader,skipped,2026-11-24,"insufficient verifiable data: homepage empty, conflicting entity/regulator statements (Gibraltar vs Mauritius), GFSC register not reachable"
+https://www.teletrade.org/,,teletrade,skipped,2026-11-24,"insufficient verifiable data: current licence not stated on site (only a dated CySEC reference for a different entity); no min deposit, spread or leverage figures"
+https://fxon.com/,,fxon,skipped,2026-11-24,site shows services temporarily suspended; no licence or trading data published
+forex.finam.ru,,finam,skipped,2026-11-24,"insufficient verifiable data: site blocks fetching, Bank of Russia licence only seen via press repost, no min deposit/spread/leverage"
+https://mubashercapital.com,,mubashercapital,skipped,2026-11-24,"insufficient verifiable data: no regulator or licence stated, not a clear forex/crypto retail broker; no trading specs"
+https://speedtrader.com,,speedtrader,skipped,2026-11-24,not a forex/crypto broker: US equities and options day-trading broker-dealer; no founding year or clear minimum deposit
+https://www.varchev.com/,,varchev,done,2026-11-24,
 https://jadwa.com,,jadwa,pending,,
 https://utex.io/,,utex,pending,,
 https://nomotrade.com/,,nomotrade,pending,,
