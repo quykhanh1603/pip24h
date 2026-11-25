@@ -246,16 +246,16 @@ forex.finam.ru,,finam,skipped,2026-11-24,"insufficient verifiable data: site blo
 https://mubashercapital.com,,mubashercapital,skipped,2026-11-24,"insufficient verifiable data: no regulator or licence stated, not a clear forex/crypto retail broker; no trading specs"
 https://speedtrader.com,,speedtrader,skipped,2026-11-24,not a forex/crypto broker: US equities and options day-trading broker-dealer; no founding year or clear minimum deposit
 https://www.varchev.com/,,varchev,done,2026-11-24,
-https://jadwa.com,,jadwa,pending,,
-https://utex.io/,,utex,pending,,
-https://nomotrade.com/,,nomotrade,pending,,
-https://terrainvestimentos.com.br,,terrainvestimentos,pending,,
-https://www.primexcapital.com/,,primexcapital,pending,,
-https://go4rex.com/,,go4rex,pending,,
-https://brokstock.co.za/,,brokstock,pending,,
-https://www.gtjai.com/,,gtjai,pending,,
-https://www.fortfinancial.org/,,fortfinancial,pending,,
-https://ozios.com/en,,ozios,pending,,
+https://jadwa.com,,jadwa,skipped,2026-11-25,not a retail broker: Saudi asset manager/advisory firm
+https://utex.io/,,utex,skipped,2026-11-25,insufficient verifiable data: no licence or regulator stated; no spread/fee figures; founding year not stated
+https://nomotrade.com/,,nomotrade,skipped,2026-11-25,insufficient verifiable data: no regulator or licence (only Saint Lucia company registration); leverage/spread/founding year not stated
+https://terrainvestimentos.com.br,,terrainvestimentos,skipped,2026-11-25,insufficient verifiable data: homepage returned 503; CVM authorisation not confirmed on the regulator's register; no forex/crypto specs
+https://www.primexcapital.com/,,primexcapital,skipped,2026-11-25,"insufficient verifiable data: no regulator or licence number stated (only a 'CMA UAE' label), not confirmed on any register"
+https://go4rex.com/,,go4rex,skipped,2026-11-25,"insufficient verifiable data: Seychelles FSA SD023 claim not confirmed on the FSA register (search showed FX Capital Ltd listed with a mismatched website); min deposit, leverage, founding year missing"
+https://brokstock.co.za/,,brokstock,skipped,2026-11-25,"insufficient verifiable data: FSCA FSP 51404 not confirmed on the FSCA register (only company documents and a JSE directory); min deposit, spread, leverage, founding year missing"
+https://www.gtjai.com/,,gtjai,skipped,2026-11-25,"insufficient verifiable data: SFC licence not confirmed on the SFC register this run; homepage gives no min deposit, spread, leverage; mainly a securities brokerage, not forex/crypto"
+https://www.fortfinancial.org/,,fortfinancial,skipped,2026-11-25,not a retail broker: US credit union (Fort Financial Credit Union)
+https://ozios.com/en,,ozios,skipped,2026-11-25,"insufficient verifiable data: CySEC CIF 335/17 not confirmed on the CySEC register (register fetch failed); min deposit, spread and founding year not stated"
 https://onezero.com,,onezero,pending,,
 https://www.dnamarkets.com/,,dnamarkets,pending,,
 https://cmsprime.com/,,cmsprime,pending,,

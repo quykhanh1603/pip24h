@@ -1,0 +1,6 @@
+{
+ "slug": "fortfinancial",
+ "queueUrl": "https://www.fortfinancial.org/",
+ "status": "skip",
+ "skipReason": "not a retail broker: US credit union (Fort Financial Credit Union)"
+}

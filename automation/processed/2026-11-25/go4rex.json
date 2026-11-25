@@ -1,0 +1,6 @@
+{
+ "slug": "go4rex",
+ "queueUrl": "https://go4rex.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: Seychelles FSA SD023 claim not confirmed on the FSA register (search showed FX Capital Ltd listed with a mismatched website); min deposit, leverage, founding year missing"
+}

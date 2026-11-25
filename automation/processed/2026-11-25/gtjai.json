@@ -1,0 +1,6 @@
+{
+ "slug": "gtjai",
+ "queueUrl": "https://www.gtjai.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: SFC licence not confirmed on the SFC register this run; homepage gives no min deposit, spread, leverage; mainly a securities brokerage, not forex/crypto"
+}

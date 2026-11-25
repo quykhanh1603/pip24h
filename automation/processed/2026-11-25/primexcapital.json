@@ -1,0 +1,6 @@
+{
+ "slug": "primexcapital",
+ "queueUrl": "https://www.primexcapital.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no regulator or licence number stated (only a 'CMA UAE' label), not confirmed on any register"
+}

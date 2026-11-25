@@ -1,0 +1,6 @@
+{
+ "slug": "utex",
+ "queueUrl": "https://utex.io/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no licence or regulator stated; no spread/fee figures; founding year not stated"
+}

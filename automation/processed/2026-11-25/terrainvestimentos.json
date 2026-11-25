@@ -1,0 +1,6 @@
+{
+ "slug": "terrainvestimentos",
+ "queueUrl": "https://terrainvestimentos.com.br",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: homepage returned 503; CVM authorisation not confirmed on the regulator's register; no forex/crypto specs"
+}
