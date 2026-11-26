@@ -1,0 +1,6 @@
+{
+ "slug": "grandcapital",
+ "queueUrl": "https://grandcapital.net/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site returned 403; searches show Seychelles FSA scam alert, FCA and Greek HCMC warnings about grandcapital entities, not fully verified on registers during this run"
+}

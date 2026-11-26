@@ -1,0 +1,6 @@
+{
+ "slug": "marketsvox",
+ "queueUrl": "https://marketsvox.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: founding year, min deposit, spreads and leverage not stated on site (only platforms)"
+}

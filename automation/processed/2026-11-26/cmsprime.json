@@ -1,0 +1,6 @@
+{
+ "slug": "cmsprime",
+ "queueUrl": "https://cmsprime.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: Mauritius FSC licence GB19024331 not found on FSC register; entities not mapped to licences; spread units not stated"
+}

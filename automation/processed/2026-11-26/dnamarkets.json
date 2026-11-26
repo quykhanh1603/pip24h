@@ -1,0 +1,6 @@
+{
+ "slug": "dnamarkets",
+ "queueUrl": "https://www.dnamarkets.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site redirects to a client portal with no readable legal/spec pages; licences (ASIC AFSL 514425 via Focus Markets Pty Ltd, SVG entity) seen only on third-party sites and not checked on registers"
+}

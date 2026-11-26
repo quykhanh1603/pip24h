@@ -1,0 +1,75 @@
+{
+ "slug": "kama-capital",
+ "queueUrl": "https://kama-capital.com/",
+ "status": "ok",
+ "name": "KAMA Capital",
+ "website": "https://kama-capital.com/",
+ "logo": "",
+ "assetType": "forex",
+ "rating": 2.3,
+ "foundedYear": 2022,
+ "minDeposit": "$20",
+ "maxLeverage": "1:500",
+ "instantWithdrawal": false,
+ "category": [],
+ "platforms": [
+  "MetaTrader 5"
+ ],
+ "licenses": [
+  {
+   "regulator": "fsc-mu",
+   "text": "FSC (Mauritius)",
+   "number": "GB22200704",
+   "entity": "KAMA Capital Ltd",
+   "status": "verified",
+   "verifiedDate": "2026-11-26"
+  },
+  {
+   "regulator": null,
+   "text": "UAE Capital Market Authority (Category 1 and 5) - licences 20200000239 and 20200000181",
+   "entity": "KAMA Capital Securities Broker L.L.C.",
+   "status": "unverified"
+  },
+  {
+   "regulator": null,
+   "text": "FSA (St. Vincent & the Grenadines) - registration 2049",
+   "entity": "KAMA Capital LLC",
+   "status": "unverified"
+  }
+ ],
+ "sources": [
+  "https://kama-capital.com/company",
+  "https://kama-capital.com/",
+  "https://www.fscmauritius.org/en/supervision/register-of-licensees?alph=K"
+ ],
+ "en": {
+  "summary": "KAMA Capital is a Dubai-based CFD broker founded in 2022 offering MT5 with Classic accounts from $20 and leverage up to 1:500, licensed in Mauritius.",
+  "pros": [
+   "Classic account opens from $20 with leverage up to 1:500",
+   "KAMA Capital Ltd is listed on the FSC Mauritius register of licensees",
+   "Also offers Prime, Institutional and HFT accounts with FIX API access"
+  ],
+  "cons": [
+   "Verified licence is from Mauritius (offshore); UAE licences could not be confirmed on a register",
+   "Founded in 2022, so a short operating history",
+   "Spreads described only as low or raw, with no figures for Classic or Prime accounts"
+  ],
+  "body": "## Regulation and safety\n\nKAMA Capital operates through three entities. KAMA Capital Ltd (registration 193899 GBC) holds an Investment Dealer (Full-Service Dealer, excluding Underwriting) licence from the Financial Services Commission of Mauritius; the entity appears on the FSC's register of licensees with a 30 January 2023 date (checked 2026-11-26), while the licence number GB22200704 is taken from the broker's website. KAMA Capital Securities Broker L.L.C. is described as licensed by the UAE Capital Market Authority for Category 1 and Category 5 activities, and KAMA Capital LLC is registered with the St. Vincent & the Grenadines FSA (registration 2049, a registration rather than a licence). We could not confirm the UAE or SVG entries on a regulator register. Mauritius is an offshore jurisdiction with lighter investor protection than tier-1 regulators.\n\n## Trading conditions\n\nThe company was founded in 2022 and is headquartered in Dubai. Four account types are listed: Classic ($20 minimum, leverage up to 1:500, no commission), Prime ($5,000, up to 1:500), Institutional ($50,000, up to 1:100) and HFT (on request, up to 1:400). Spreads are described as low, ultra-low or raw rather than as figures. Instruments are forex, metals, commodities, indices and stock CFDs.\n\n## Platforms\n\nTrading is on MetaTrader 5, with iOS and Android apps and FIX API access for institutional and HFT clients.\n\n## Who is it for?\n\nKAMA Capital may suit traders who accept an offshore licence and want a low entry deposit or institutional-style accounts. Those who prefer a long track record or top-tier oversight should compare brokers regulated by the FCA, ASIC or similar. CFDs carry a high risk of rapid loss."
+ },
+ "ja": {
+  "summary": "KAMA Capitalは2022年設立のドバイ拠点のCFDブローカーで、モーリシャスのライセンスを持ち、20ドルからのClassic口座と最大500倍のレバレッジを提供します。",
+  "minDeposit": "20ドル",
+  "maxLeverage": "最大500倍",
+  "pros": [
+   "Classic口座は20ドルから開設でき、最大レバレッジは500倍",
+   "KAMA Capital LtdはモーリシャスFSCのライセンス保有者登録簿に掲載されている",
+   "Prime・Institutional・HFT口座やFIX APIも提供"
+  ],
+  "cons": [
+   "登録簿で確認できたライセンスはモーリシャス（オフショア）のみで、UAEのライセンスは登録簿で確認できていない",
+   "2022年設立で運営実績が短い",
+   "ClassicやPrime口座のスプレッドは具体的な数値が示されていない"
+  ],
+  "body": "## 規制と安全性\n\nKAMA Capitalは3つの法人で運営されています。KAMA Capital Ltd（登録番号193899 GBC）はモーリシャス金融サービス委員会（FSC）から投資ディーラー（フルサービスディーラー、引受を除く）ライセンスを受けており、FSCのライセンス保有者登録簿に2023年1月30日付で掲載されています（2026-11-26確認）。ライセンス番号GB22200704は同社サイトの記載に基づきます。KAMA Capital Securities Broker L.L.C.はUAEの資本市場当局のカテゴリー1・5の認可を受けていると説明され、KAMA Capital LLCはセントビンセント・グレナディーンFSAに登録されています（登録番号2049、ライセンスではなく登録）。UAEとSVGの情報は規制当局の登録簿では確認できていません。モーリシャスはオフショア管轄で、トップティアの規制当局より投資家保護は限定的です。\n\n## 取引条件\n\n同社は2022年設立で、本拠地はドバイです。口座はClassic（最低入金20ドル、最大1:500、手数料なし）、Prime（5,000ドル、最大1:500）、Institutional（50,000ドル、最大1:100）、HFT（要問い合わせ、最大1:400）の4種類です。スプレッドは数値ではなく「低い」「超低」「Raw」と表現されています。取引商品はFX、金属、商品、株価指数、株式のCFDです。\n\n## 取引プラットフォーム\n\nMetaTrader 5を採用し、iOS・Android向けアプリと、機関投資家・HFT向けのFIX APIがあります。\n\n## どんな人に向いているか\n\nオフショアのライセンスを理解したうえで、少額から始めたい方や機関投資家向け口座を求める方に向いています。長い実績や厳格な規制を重視する場合は、FCAやASICなどの監督下にあるブローカーと比較してください。CFDは急速に損失が生じるリスクが高い商品です。"
+ }
+}

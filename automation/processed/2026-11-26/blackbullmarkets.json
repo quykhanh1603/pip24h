@@ -1,0 +1,6 @@
+{
+ "slug": "blackbullmarkets",
+ "queueUrl": "https://blackbullmarkets.com",
+ "status": "skip",
+ "skipReason": "same company as existing broker blackbull (BlackBull Markets) under another domain"
+}

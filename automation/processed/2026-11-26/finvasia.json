@@ -1,0 +1,6 @@
+{
+ "slug": "finvasia",
+ "queueUrl": "https://www.finvasia.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: site content not readable; no confirmed licence, spreads or specs"
+}
