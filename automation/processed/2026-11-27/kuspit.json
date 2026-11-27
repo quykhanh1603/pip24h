@@ -1,0 +1,6 @@
+{
+ "slug": "kuspit",
+ "queueUrl": "https://kuspit.com",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: no licence information found on site; not a forex/CFD broker profile"
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "giraffemarkets",
+ "queueUrl": "https://www.giraffemarkets.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: FSC Mauritius licence GB24203636 not found on FSC register; missing founding year and min deposit"
+}

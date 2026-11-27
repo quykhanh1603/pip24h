@@ -1,0 +1,6 @@
+{
+ "slug": "kvbplus",
+ "queueUrl": "https://www.kvbplus.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: ASIC/FSC licences not confirmed on registers; min deposit, leverage and founding year not published on the site"
+}

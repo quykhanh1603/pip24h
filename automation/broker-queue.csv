@@ -266,16 +266,16 @@ https://acg-markets.com/,,acg-markets,done,2026-11-26,
 https://prescient.co.za,,prescient,skipped,2026-11-26,not a retail forex/crypto broker: South African asset manager / stockbroking group
 https://www.finvasia.com/,,finvasia,skipped,2026-11-26,"insufficient verifiable data: site content not readable; no confirmed licence, spreads or specs"
 https://blackbullmarkets.com,,blackbullmarkets,skipped,2026-11-26,same company as existing broker blackbull (BlackBull Markets) under another domain
-https://www.tradeall.com/,,tradeall,pending,,
-https://www.blackwellglobal.com/,,blackwellglobal,pending,,
-https://www.giraffemarkets.com/,,giraffemarkets,pending,,
-https://www.ace-fx.com/,,ace-fx,pending,,
-https://fundedpeaks.com,,fundedpeaks,pending,,
-https://tickticktrader.com,,tickticktrader,pending,,
-https://www.fxclearing.com/,,fxclearing,pending,,
-https://beirmancapital.com/,,beirmancapital,pending,,
-https://kuspit.com,,kuspit,pending,,
-https://www.kvbplus.com/,,kvbplus,pending,,
+https://www.tradeall.com/,,tradeall,skipped,2026-11-27,insufficient verifiable data: SPK licence stated by firm and KAP filing but not confirmed on SPK register; no min deposit or numeric spread; founding year ambiguous
+https://www.blackwellglobal.com/,,blackwellglobal,skipped,2026-11-27,"insufficient verifiable data: FCA/FSC/SCB licences not confirmed on registers (registers not reachable); missing min deposit, spread, max leverage"
+https://www.giraffemarkets.com/,,giraffemarkets,skipped,2026-11-27,insufficient verifiable data: FSC Mauritius licence GB24203636 not found on FSC register; missing founding year and min deposit
+https://www.ace-fx.com/,,ace-fx,skipped,2026-11-27,not a retail broker: currency exchange / travel money service
+https://fundedpeaks.com,,fundedpeaks,skipped,2026-11-27,site unreachable (domain did not resolve); likely prop firm
+https://tickticktrader.com,,tickticktrader,skipped,2026-11-27,site blocks fetching (403); no verifiable licence or data found
+https://www.fxclearing.com/,,fxclearing,skipped,2026-11-27,insufficient verifiable data: no financial regulator (only a Botswana company registration)
+https://beirmancapital.com/,,beirmancapital,skipped,2026-11-27,insufficient verifiable data: no regulator or licence named; no founding year
+https://kuspit.com,,kuspit,skipped,2026-11-27,insufficient verifiable data: no licence information found on site; not a forex/CFD broker profile
+https://www.kvbplus.com/,,kvbplus,skipped,2026-11-27,"insufficient verifiable data: ASIC/FSC licences not confirmed on registers; min deposit, leverage and founding year not published on the site"
 https://anzocapital.com/,,anzocapital,pending,,
 https://centroidsol.com,,centroidsol,pending,,
 https://duramarkets.com/,,duramarkets,pending,,

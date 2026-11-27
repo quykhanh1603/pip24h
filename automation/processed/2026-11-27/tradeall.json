@@ -1,0 +1,6 @@
+{
+ "slug": "tradeall",
+ "queueUrl": "https://www.tradeall.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: SPK licence stated by firm and KAP filing but not confirmed on SPK register; no min deposit or numeric spread; founding year ambiguous"
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "fundedpeaks",
+ "queueUrl": "https://fundedpeaks.com",
+ "status": "skip",
+ "skipReason": "site unreachable (domain did not resolve); likely prop firm"
+}

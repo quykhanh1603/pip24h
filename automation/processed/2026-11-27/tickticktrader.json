@@ -1,0 +1,6 @@
+{
+ "slug": "tickticktrader",
+ "queueUrl": "https://tickticktrader.com",
+ "status": "skip",
+ "skipReason": "site blocks fetching (403); no verifiable licence or data found"
+}

@@ -1,0 +1,6 @@
+{
+ "slug": "blackwellglobal",
+ "queueUrl": "https://www.blackwellglobal.com/",
+ "status": "skip",
+ "skipReason": "insufficient verifiable data: FCA/FSC/SCB licences not confirmed on registers (registers not reachable); missing min deposit, spread, max leverage"
+}
