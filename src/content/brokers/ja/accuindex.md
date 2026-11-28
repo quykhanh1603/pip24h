@@ -30,7 +30,7 @@ cons:
   - "EU居住のお客様はMiFID規制により最大レバレッジが1:50に制限される"
   - "WikiFXには利益の取消や出金拒否に関する利用者からの申し立てがいくつか記録されている"
   - "銀行送金での出金には1回あたり約$25の手数料がかかる"
-affiliateUrl: "https://www.accuindex.com/register-live?ibId=608913&agreementId=935"
+affiliateUrl: "https://www.accuindex.com/register-live?ibId=642964&agreementId=1264"
 featured: false
 updatedDate: 2026-09-04
 ---

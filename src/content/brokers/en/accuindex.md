@@ -30,7 +30,7 @@ cons:
   - "Leverage is capped at 1:50 for EU clients under CySEC's MiFID rules"
   - "WikiFX has logged user complaints related to profit cancellations and withdrawal rejections"
   - "Bank wire withdrawal fees run around $25 per transaction"
-affiliateUrl: "https://www.accuindex.com/register-live?ibId=608913&agreementId=935"
+affiliateUrl: "https://www.accuindex.com/register-live?ibId=642964&agreementId=1264"
 featured: false
 updatedDate: 2026-09-04
 ---
