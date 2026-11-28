@@ -276,16 +276,16 @@ https://www.fxclearing.com/,,fxclearing,skipped,2026-11-27,insufficient verifiab
 https://beirmancapital.com/,,beirmancapital,skipped,2026-11-27,insufficient verifiable data: no regulator or licence named; no founding year
 https://kuspit.com,,kuspit,skipped,2026-11-27,insufficient verifiable data: no licence information found on site; not a forex/CFD broker profile
 https://www.kvbplus.com/,,kvbplus,skipped,2026-11-27,"insufficient verifiable data: ASIC/FSC licences not confirmed on registers; min deposit, leverage and founding year not published on the site"
-https://anzocapital.com/,,anzocapital,pending,,
-https://centroidsol.com,,centroidsol,pending,,
-https://duramarkets.com/,,duramarkets,pending,,
-https://apexmarkets.io,,apexmarkets,pending,,
-https://www.inveslo.com/,,inveslo,pending,,
-https://www.capitalstreetfx.com/,,capitalstreetfx,pending,,
-benchmark.bg,,benchmark,pending,,
-https://www.cornertrader.ch/,,cornertrader,pending,,
-https://thebcr.com/,,thebcr,pending,,
-https://alramz.ae,,alramz,pending,,
+https://anzocapital.com/,,anzocapital,skipped,2026-11-28,insufficient verifiable data: site content not readable without JavaScript; licence status conflicting across third-party sources (ASIC/FCA/offshore); impersonator warning on IOSCO I-SCAN
+https://centroidsol.com,,centroidsol,skipped,2026-11-28,not a retail broker: bridge/liquidity software vendor (Centroid Solutions)
+https://duramarkets.com/,,duramarkets,done,2026-11-28,
+https://apexmarkets.io,,apexmarkets,skipped,2026-11-28,not a retail broker: site states Apex is a software development/integration company that does not provide brokerage services
+https://www.inveslo.com/,,inveslo,done,2026-11-28,
+https://www.capitalstreetfx.com/,,capitalstreetfx,done,2026-11-28,
+benchmark.bg,,benchmark,done,2026-11-28,
+https://www.cornertrader.ch/,,cornertrader,skipped,2026-11-28,"insufficient verifiable data: no minimum deposit, platform or leverage details found; FINMA entity (Cornèr Banca SA) name differs from site's Cornèr Bank Ltd"
+https://thebcr.com/,,thebcr,done,2026-11-28,
+https://alramz.ae,,alramz,skipped,2026-11-28,"insufficient verifiable data: homepage lacks regulator, licence and trading-condition details"
 https://fx2funding.com,,fx2funding,pending,,
 https://www.tdmarkets.com/,,tdmarkets,pending,,
 https://fxglory.com/,,fxglory,pending,,
